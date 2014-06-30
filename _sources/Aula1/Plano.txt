@@ -84,7 +84,7 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
 
 .. activecode:: introdução
 
-	print "Ola Mundo"
+	print("Ola Mundo")
 
 É importante neste momento:
 
@@ -96,7 +96,7 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
 .. activecode:: idade
 
 	idade = 15
-	print "Minha idade:", idade
+	print("Minha idade:",idade)
 
 
 Por fim, demonstre que programa é construir soluções. Podemos instruir o computador a automatizar este processo. Quais soluções podem ser desenvolvidas para facilitar nossas vidas? Quais programas precisam ser desenvolvidos? Há espaço para mais jogos? 
@@ -111,4 +111,5 @@ Referências
 ----------
 
 `Site oficial do Python <http://python.org>`__
+
 `Porque Aprender a Programar <http://ramalho.pro.br/aprendaprog/cap0.html>`__

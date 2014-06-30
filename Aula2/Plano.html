@@ -258,7 +258,90 @@
 </div>
 <div class="section" id="atividades">
 <h1>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h1>
-<p>Instique os alunos a experimentarem o console, introduza os conceitos de uma calculadora simples.</p>
+<ol class="arabic simple">
+<li>Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos</li>
+<li>Demonstre a execução de um programa simples</li>
+</ol>
+
+<div id="cont"></div>
+<div id="idade" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="idade_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_saveb" onclick="saveEditor('idade');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_loadb" onclick="requestCode('idade');">Load</button>
+
+</div>
+<br/>
+<div id="idade_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="idade_code" class="active_code", prefixcode="undefined" lang="python">
+nascimento = input("Em que ano voce nasceu?")
+idade = 2014 - int(nascimento)
+print("Voce ja tem", idade, "anos!")
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="idade_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="idade_suffix" style="display:none">
+</pre><pre id="idade_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (idade)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#idade_saveb').toggle();
+    $('#idade_loadb').toggle();
+}
+if ($("#idade_code_div").parents(".admonition").length == 0 && $("#idade_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#idade_code_div").offset({
+			left: $("#idade .clearfix").offset().left
+		});
+	}
+	$("#idade_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#idade_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#idade_runb").parent().siblings(".ac_output").show();
+			runit('idade',this, undefined);
+			$("#idade_runb").on("click", function(){
+				runit('idade',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#idade_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#idade_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#idade_runb").on("click", function(){
+		console.log("button clicked");
+		runit('idade',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Instigue os alunos a experimentarem o console, introduza os conceitos de uma calculadora simples.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
@@ -298,10 +381,10 @@
 <br/>
 <div id="Operações_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Operações_code" class="active_code", prefixcode="undefined" lang="python">
-print 4 + 3
-print 10 - 6
-print 7 * 6
-print 9 / 3
+print(4 + 3)
+print(10 - 6)
+print(7 * 6)
+print(9 / 3)
 </textarea>
 </div>
 <div class="ac_output">
@@ -366,9 +449,9 @@ else{
 </div>
 
 <p>Demonstre a prioridade dos operadores matemáticos.</p>
-<div class="admonition-lidando-com-numeros-fracionados-no-python-2-7-x admonition">
-<p class="first admonition-title">Lidando com números fracionados no Python 2.7.x</p>
-<p class="last">Experimente fazer <tt class="docutils literal"><span class="pre">3/2</span></tt> teremos <tt class="docutils literal"><span class="pre">1</span></tt> e não <tt class="docutils literal"><span class="pre">1.5</span></tt>. A versão do Python (2.7) que utilizamos para este curso trata os números como inteiros, portamo se quisermos obter o valor correto é preciso escrever a sentença com um <tt class="docutils literal"><span class="pre">.</span></tt> tal como <tt class="docutils literal"><span class="pre">3/2.</span></tt> ou <tt class="docutils literal"><span class="pre">3./2</span></tt></p>
+<div class="admonition-lidando-com-numeros-fracionarios-no-python-2 admonition">
+<p class="first admonition-title">Lidando com números fracionários no Python 2</p>
+<p class="last">Experimente fazer <tt class="docutils literal"><span class="pre">3/2</span></tt> teremos <tt class="docutils literal"><span class="pre">1</span></tt> e não <tt class="docutils literal"><span class="pre">1.5</span></tt>. Esta versão do Python trata os números como inteiros, portanto se quisermos obter o valor correto é preciso escrever a sentença com um <tt class="docutils literal"><span class="pre">.</span></tt> tal como <tt class="docutils literal"><span class="pre">3/2.</span></tt> ou <tt class="docutils literal"><span class="pre">3./2</span></tt></p>
 </div>
 <p><strong>Interpretando os erros</strong></p>
 <p>Ensine os alunos a decifrar as mensagens de erros.</p>
@@ -384,7 +467,109 @@ else{
 <span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
 </pre></div>
 </div>
-<p>Normalmente os erros são relacionados a comandos <strong>não definidos</strong> e <strong>sintaxe</strong>. Oriente aos alunos a <em>ler</em> sempre estas mensagens.</p>
+<p>A primeira parte <tt class="docutils literal"><span class="pre">SyntaxError</span></tt> é o tipo do erro, e após o sinal de <tt class="docutils literal"><span class="pre">:</span></tt> vem a descrição: erro de sintaxe inválida.
+Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.</p>
+<p><strong>Tipos</strong></p>
+<p>Faça uma diferenciação nos tipos de dados utilizados, faça uma analogia aos conjuntos.</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Números inteiros</dt>
+<dd><p class="first last">Exemplos: <tt class="docutils literal"><span class="pre">1</span></tt>, <tt class="docutils literal"><span class="pre">2</span></tt>, <tt class="docutils literal"><span class="pre">3</span></tt>, <tt class="docutils literal"><span class="pre">4</span></tt>, <tt class="docutils literal"><span class="pre">5</span></tt>, ..., <tt class="docutils literal"><span class="pre">99</span></tt>, ...</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Números fracionários</dt>
+<dd><p class="first last">Exemplos: <tt class="docutils literal"><span class="pre">0.0001</span></tt>, <tt class="docutils literal"><span class="pre">0.5</span></tt>, <tt class="docutils literal"><span class="pre">3.14159</span></tt> , <tt class="docutils literal"><span class="pre">12.5</span></tt>, ...</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Tipo Texto</dt>
+<dd><p class="first last">Exemplos: <tt class="docutils literal"><span class="pre">&quot;10&quot;</span></tt>, <tt class="docutils literal"><span class="pre">&quot;3.14159&quot;,</span> <span class="pre">``&quot;nome&quot;</span></tt></p>
+</dd>
+</dl>
+</li>
+</ul>
+
+<div id="cont"></div>
+<div id="Tipos" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="Tipos_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="Tipos_saveb" onclick="saveEditor('Tipos');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="Tipos_loadb" onclick="requestCode('Tipos');">Load</button>
+
+</div>
+<br/>
+<div id="Tipos_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="Tipos_code" class="active_code", prefixcode="undefined" lang="python">
+print(type(42))
+print(type(3.14))
+print(type("texto"))
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="Tipos_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="Tipos_suffix" style="display:none">
+</pre><pre id="Tipos_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (Tipos)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#Tipos_saveb').toggle();
+    $('#Tipos_loadb').toggle();
+}
+if ($("#Tipos_code_div").parents(".admonition").length == 0 && $("#Tipos_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#Tipos_code_div").offset({
+			left: $("#Tipos .clearfix").offset().left
+		});
+	}
+	$("#Tipos_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#Tipos_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#Tipos_runb").parent().siblings(".ac_output").show();
+			runit('Tipos',this, undefined);
+			$("#Tipos_runb").on("click", function(){
+				runit('Tipos',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#Tipos_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#Tipos_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#Tipos_runb").on("click", function(){
+		console.log("button clicked");
+		runit('Tipos',this, undefined);
+	});
+}
+</script>
+
+</div>
+
 </div>
 <div class="section" id="avaliacao">
 <h1>Avaliação<a class="headerlink" href="#avaliacao" title="Permalink to this headline">¶</a></h1>

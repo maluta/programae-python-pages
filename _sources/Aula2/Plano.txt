@@ -27,7 +27,16 @@ Materiais
 Atividades
 ----------
 
-Instique os alunos a experimentarem o console, introduza os conceitos de uma calculadora simples. 
+1. Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos
+2. Demonstre a execução de um programa simples
+
+.. activecode:: idade
+
+	nascimento = input("Em que ano voce nasceu?")
+	idade = 2014 - int(nascimento)
+	print("Voce ja tem", idade, "anos!")
+
+Instigue os alunos a experimentarem o console, introduza os conceitos de uma calculadora simples. 
 
 =================	=============	
 Operação			Exemplo
@@ -42,16 +51,16 @@ Para imprimir o resultado dentro de um programa, não se esqueça do ``print``
 
 .. activecode:: Operações Básicas
 
-	print 4 + 3
-	print 10 - 6
-	print 7 * 6
-	print 9 / 3
+	print(4 + 3)
+	print(10 - 6)
+	print(7 * 6)
+	print(9 / 3)
 
 Demonstre a prioridade dos operadores matemáticos. 
 
-.. admonition:: Lidando com números fracionados no Python 2.7.x
+.. admonition:: Lidando com números fracionários no Python 2
 
-		Experimente fazer ``3/2`` teremos ``1`` e não ``1.5``. A versão do Python (2.7) que utilizamos para este curso trata os números como inteiros, portamo se quisermos obter o valor correto é preciso escrever a sentença com um ``.`` tal como ``3/2.`` ou ``3./2``
+		Experimente fazer ``3/2`` teremos ``1`` e não ``1.5``. Esta versão do Python trata os números como inteiros, portanto se quisermos obter o valor correto é preciso escrever a sentença com um ``.`` tal como ``3/2.`` ou ``3./2``
 
 **Interpretando os erros** 
 
@@ -70,8 +79,30 @@ Ensine os alunos a decifrar as mensagens de erros.
           ^
 	SyntaxError: invalid syntax
 
-Normalmente os erros são relacionados a comandos **não definidos** e **sintaxe**. Oriente aos alunos a *ler* sempre estas mensagens. 
+A primeira parte ``SyntaxError`` é o tipo do erro, e após o sinal de ``:`` vem a descrição: erro de sintaxe inválida.
+Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.
 
+**Tipos**
+
+Faça uma diferenciação nos tipos de dados utilizados, faça uma analogia aos conjuntos.
+
+
+* Números inteiros
+	Exemplos: ``1``, ``2``, ``3``, ``4``, ``5``, ..., ``99``, ...
+
+
+* Números fracionários
+	Exemplos: ``0.0001``, ``0.5``, ``3.14159`` , ``12.5``, ...
+
+* Tipo Texto
+	Exemplos: ``"10"``, ``"3.14159", ``"nome"``
+
+
+.. activecode:: Tipos
+
+	print(type(42))
+	print(type(3.14))
+	print(type("texto"))
 	
 Avaliação
 ----------

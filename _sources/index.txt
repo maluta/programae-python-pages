@@ -33,3 +33,24 @@ Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo in
    :maxdepth: 2
 
    Aula2/Plano.rst
+
+Aula 3: Armazenando itens no Python
+:::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Aula3/Plano.rst
+
+Aula 4: Desenhando com a Tartaruga 
+:::::::::::::::::::::::::::::::::
+
+Aula 5: Sentenças de Controle I 
+:::::::::::::::::::::::::::::::::
+
+Aula 6: Sentenças de Controle II
+:::::::::::::::::::::::::::::::::
+
+Aula 7: Re-uso de código 
+:::::::::::::::::::::::::::::::::
+
