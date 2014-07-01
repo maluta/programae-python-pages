@@ -37,20 +37,34 @@ Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo in
 Aula 3: Armazenando itens no Python
 :::::::::::::::::::::::::::::::::
 
+Iremos intruduzir maneiras de armazenamento de dados e começar a propor idéias de um jogo em modo texto. 
+
 .. toctree::
    :maxdepth: 2
 
    Aula3/Plano.rst
 
-Aula 4: Desenhando com a Tartaruga 
+Aula 4: Pensando o jogo
 :::::::::::::::::::::::::::::::::
 
-Aula 5: Sentenças de Controle I 
+Os primeiros passos do jogo levam a conceitos de estruturas de controle e laços. 
+
+.. toctree::
+   :maxdepth: 2
+
+
+Aula 5: Detalhamento e finalização
 :::::::::::::::::::::::::::::::::
 
-Aula 6: Sentenças de Controle II
+Iremos descrever um jogo na qual o aluno irá percorrer os passos dos jogos através de perguntas e ações. 
+
+.. toctree::
+   :maxdepth: 2
+
+Aula 6: Desenhando com a Tartaruga
 :::::::::::::::::::::::::::::::::
 
-Aula 7: Re-uso de código 
+Aula 7: Sentenças de Controle I 
 :::::::::::::::::::::::::::::::::
+
 

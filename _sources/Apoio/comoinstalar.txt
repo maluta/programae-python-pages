@@ -22,6 +22,13 @@ Python2 (!!!para discussão!!!)
 Linux
 ====================
 
+** Fedora **
+
+TBA
+
+
+** Ubuntu **
+
 Python 3 (preferível)
 
 ``sudo apt-get install idle-python3.3``

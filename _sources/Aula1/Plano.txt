@@ -28,8 +28,9 @@ Apresente o conceito de computador como um dispositivo assistente pessoal que co
 Objetivos
 ----------
 
-- Introduzir os alunos o conceito de arquitetura de computadores
-- Demonstrar a importância de aprender uma linguagem de programação
+- Introduzir os alunos o conceito de arquitetura de computadores.
+- Demonstrar a importância de aprender uma linguagem de programação.
+- Entender a diferença entre um programa e uma linguagem de programação.
 
 Materiais
 ----------
@@ -45,19 +46,12 @@ Atividades
 Trabalhe os conceitos de **arquitetura** de computadores nestes 5 grupos macros:
 
 - **CPU** (*Central Processing Unit*)
-	Construido para ser obsessivo pela pergunta *“O que fazer agora?”* Cite por exemplo que um processador moderno faz esta pergunta bilhões de vezes por segundo (Lembremos que 1Giga ~ 1000000000)
-
 - **Memória Principal** (*Main Memory*)
-	Trabalha em conjunto com a CPU para armazenar e é tão rápido quanto ela, tem o revés de perder os dados quando o computador é desligado. É neste espaço que o programa *em execução* ira utilizar. 
-
 - **Memória Secundária** (*Secondary Memory*)
-	Muito mais lenta mas mantém a informação enquanto o computador é desligado (ex. pendrive, disco rígido). É neste espaço que iremos salvar nossos programas. 
-
 - **Dispositivos de Entrada/Saída** (*Output Devices*)
-	São os periféricos como monitor (screen), teclado (keyboard), mouse, microfone, caixas-de-som (speaker). Enfim,	as maneiras de interagir com o computador. 
-
 - **Rede**
-	Pode-se usar uma analogia com a memória secundaria, uma foma mais lenta de acesso a informação e que nem sempre pode estar disponível. 
+
+Mostre como estes grupos e faça analogias. 
 
 .. admonition:: Dica
 
@@ -86,12 +80,7 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
 
 	print("Ola Mundo")
 
-É importante neste momento:
-
-- Gerar erros de sintaxe.
-- Escrever palavras reservadas e não reservadas.
-- Como armazenar uma variável (uma idéia é salvar a idade dos alunos).
-- Liberdade para explorar. 
+É importante neste momento mostrar como o computador recebe as instruções, interpreta e executa uma ação. 
 
 .. activecode:: idade
 
@@ -99,13 +88,16 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
 	print("Minha idade:",idade)
 
 
-Por fim, demonstre que programa é construir soluções. Podemos instruir o computador a automatizar este processo. Quais soluções podem ser desenvolvidas para facilitar nossas vidas? Quais programas precisam ser desenvolvidos? Há espaço para mais jogos? 
+Por fim, demonstre que programa é construir soluções. Podemos instruir o computador a automatizar este processo. 
+
+Terine discutindo quais soluções podem ser desenvolvidas para facilitar nossas vidas? 
+Quais programas precisam ser desenvolvidos? Há espaço para jogos? Contextualize!
 
 
 Avaliação
 ----------
 
-Avalie a participação dos alunos na primeira parte e o interesse em experimentar a ferramenta. 
+Nesta etapa avalie a participação dos alunos.
 
 Referências
 ----------

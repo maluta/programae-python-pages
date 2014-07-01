@@ -15,9 +15,10 @@ Objetivos
 ----------
 
 - Instalar o Python
-- Se familiarizar com o IDLE
-- Criar um programa simples. Rode pela shell e pela linha de comando
+- Primeiro contato com o ambiente: IDLE
+- Criar um programa simples. Rode pelo *console* e através de um **arquivo**
 - Entender a diferença entre um programa e uma linguagem de programação.
+- Interpretar erros básicos
 
 Materiais
 ----------
@@ -36,7 +37,7 @@ Atividades
 	idade = 2014 - int(nascimento)
 	print("Voce ja tem", idade, "anos!")
 
-Instigue os alunos a experimentarem o console, introduza os conceitos de uma calculadora simples. 
+Instigue os alunos a experimentarem o console, introduza as instruções para uma calculadora simples. 
 
 =================	=============	
 Operação			Exemplo
@@ -47,7 +48,7 @@ Multiplicação (*)	``7 * 6``
 Divisão	(/)			``9 / 3``
 =================	=============
 
-Para imprimir o resultado dentro de um programa, não se esqueça do ``print``
+Para imprimir o resultado dentro de um programa (arquivo), não se esqueça do ``print``
 
 .. activecode:: Operações Básicas
 
@@ -58,9 +59,16 @@ Para imprimir o resultado dentro de um programa, não se esqueça do ``print``
 
 Demonstre a prioridade dos operadores matemáticos. 
 
-.. admonition:: Lidando com números fracionários no Python 2
+".. admonition:: Lidando com números fracionários no Python 2
 
-		Experimente fazer ``3/2`` teremos ``1`` e não ``1.5``. Esta versão do Python trata os números como inteiros, portanto se quisermos obter o valor correto é preciso escrever a sentença com um ``.`` tal como ``3/2.`` ou ``3./2``
+		Ao fazer ``3/2`` teremos ``1`` e não ``1.5``. Esta versão do Python trata os números como inteiros, portanto se quisermos obter o valor correto é preciso escrever a sentença com um ``.`` tal como ``3/2.`` ou ``3./2``
+
+É importante neste momento:
+
+- Gerar erros de sintaxe.
+- Escrever palavras reservadas e não reservadas.
+- Como armazenar uma variável (uma idéia é salvar a idade dos alunos).
+- Liberdade para explorar. 
 
 **Interpretando os erros** 
 
@@ -82,27 +90,8 @@ Ensine os alunos a decifrar as mensagens de erros.
 A primeira parte ``SyntaxError`` é o tipo do erro, e após o sinal de ``:`` vem a descrição: erro de sintaxe inválida.
 Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.
 
-**Tipos**
 
-Faça uma diferenciação nos tipos de dados utilizados, faça uma analogia aos conjuntos.
-
-
-* Números inteiros
-	Exemplos: ``1``, ``2``, ``3``, ``4``, ``5``, ..., ``99``, ...
-
-
-* Números fracionários
-	Exemplos: ``0.0001``, ``0.5``, ``3.14159`` , ``12.5``, ...
-
-* Tipo Texto
-	Exemplos: ``"10"``, ``"3.14159", ``"nome"``
-
-
-.. activecode:: Tipos
-
-	print(type(42))
-	print(type(3.14))
-	print(type("texto"))
-	
 Avaliação
 ----------
+
+Avalie a participação e curiosidade dos alunos.
