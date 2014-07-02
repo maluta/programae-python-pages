@@ -8,11 +8,11 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Motivação
-----------
+Aula 2
+======
 
 Objetivos
-----------
++++++++++
 
 - Instalar o Python
 - Primeiro contato com o ambiente: IDLE
@@ -20,13 +20,15 @@ Objetivos
 - Entender a diferença entre um programa e uma linguagem de programação.
 - Interpretar erros básicos
 
-Materiais
-----------
+Preparação
+++++++++++
+
+**Materiais**
 
 - IDLE
 
 Atividades
-----------
+++++++++++
 
 1. Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos
 2. Demonstre a execução de um programa simples
@@ -91,7 +93,7 @@ A primeira parte ``SyntaxError`` é o tipo do erro, e após o sinal de ``:`` vem
 Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.
 
 
-Avaliação
-----------
+Reflexão
+++++++++
 
 Avalie a participação e curiosidade dos alunos.

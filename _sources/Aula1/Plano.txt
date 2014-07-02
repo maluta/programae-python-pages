@@ -8,8 +8,29 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Motivação
-----------
+Aula 1
+==========
+
+Objetivos
++++++++++
+
+- Introduzir os alunos o conceito de arquitetura de computadores.
+- Demonstrar a importância de aprender uma linguagem de programação.
+- Entender a diferença entre um programa e uma linguagem de programação.
+
+Preparação
+++++++++++
+
+**Materiais**
+
+
+- Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ caso contrário apresente a versão online (*em desenvolvimento*). 
+
+
+Atividades
+++++++++++
+
+**Conceitos computacionais**
 
 Comece por instigar os alunos com a pergunta: 
 
@@ -24,24 +45,6 @@ Destaque as respostas mais populares e siga com a proposta de apresentar como o 
 Apresente o conceito de computador como um dispositivo assistente pessoal que constantemente nos pergunta:
 
 ``“O que [devo fazer] agora?”`` 
-
-Objetivos
-----------
-
-- Introduzir os alunos o conceito de arquitetura de computadores.
-- Demonstrar a importância de aprender uma linguagem de programação.
-- Entender a diferença entre um programa e uma linguagem de programação.
-
-Materiais
-----------
-
-- Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ caso contrário apresente a versão online (*em desenvolvimento*). 
-
-
-Atividades
-----------
-
-**Parte1**
 
 Trabalhe os conceitos de **arquitetura** de computadores nestes 5 grupos macros:
 
@@ -58,8 +61,6 @@ Mostre como estes grupos e faça analogias.
 		Recorte quadrados de papel e indifique cada uma das partes, pergunte como elas podem ser associadas? 
 
 Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa. 
-
-**Parte 2**
 
 Siga com a questão: ``O que é necessário saber para me tornar um programador?``
 
@@ -94,13 +95,12 @@ Terine discutindo quais soluções podem ser desenvolvidas para facilitar nossas
 Quais programas precisam ser desenvolvidos? Há espaço para jogos? Contextualize!
 
 
-Avaliação
-----------
+Reflexão
++++++++++
 
 Nesta etapa avalie a participação dos alunos.
 
-Referências
-----------
+**Referências**
 
 `Site oficial do Python <http://python.org>`__
 

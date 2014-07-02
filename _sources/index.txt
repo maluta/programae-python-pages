@@ -17,20 +17,25 @@ Planos de Aula - Programaê - Python
 Aula 1: Começando
 :::::::::::::::::::::::::::
 
-Despertar o interesse para programação, evidenciando seus benefícios. Este aula é o primeiro contato com conceitos, ferramenta e linguagem (Tempo: 60 min)
+Despertar o interesse para programação, evidenciando seus benefícios. Este aula é o primeiro contato com conceitos, ferramenta e linguagem (Tempo: 60 min) 
+
+`Ver conteúdo <Aula1/Plano.html>`_
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    Aula1/Plano.rst
+
 
 Aula 2: Conceitos
 :::::::::::::::::::::::::::::::::
 
 Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo interativo (console) e introduzir alguns conceitos da linguagem. 
 
+`Ver conteúdo <Aula2/Plano.html>`_
+
 .. toctree::
-   :maxdepth: 2
+   :hidden: 
 
    Aula2/Plano.rst
 
@@ -39,18 +44,22 @@ Aula 3: Armazenando itens no Python
 
 Iremos intruduzir maneiras de armazenamento de dados e começar a propor idéias de um jogo em modo texto. 
 
+`Ver conteúdo <Aula3/Plano.html>`_
+
 .. toctree::
-   :maxdepth: 2
+   :hidden: 
 
    Aula3/Plano.rst
 
 Aula 4: Pensando o jogo
 :::::::::::::::::::::::::::::::::
 
+`Ver conteúdo <Aula4/Plano.html>`_
+
 Os primeiros passos do jogo levam a conceitos de estruturas de controle e laços. 
 
 .. toctree::
-   :maxdepth: 2
+   :hidden: 2
 
 
 Aula 5: Detalhamento e finalização
@@ -58,8 +67,10 @@ Aula 5: Detalhamento e finalização
 
 Iremos descrever um jogo na qual o aluno irá percorrer os passos dos jogos através de perguntas e ações. 
 
+`Ver conteúdo <Aula5/Plano.html>`_
+
 .. toctree::
-   :maxdepth: 2
+   :hidden: 2
 
 Aula 6: Desenhando com a Tartaruga
 :::::::::::::::::::::::::::::::::
