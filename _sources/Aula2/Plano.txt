@@ -14,30 +14,26 @@ Aula 2
 Objetivos
 +++++++++
 
-- Instalar o Python
-- Primeiro contato com o ambiente: IDLE
-- Criar um programa simples. Rode pelo *console* e através de um **arquivo**
+- Primeiro contato com o ambiente: IDLE.
+- Criar um programa simples. Rode pelo *console* e através de um **arquivo**.
 - Entender a diferença entre um programa e uma linguagem de programação.
-- Interpretar erros básicos
+- Interpretar erros básicos.
+- Primeiros trabalhos da fábrica.
 
 Preparação
 ++++++++++
 
 **Materiais**
 
-- IDLE
+- IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
 
 Atividades
-++++++++++
++++++++++++
 
-1. Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos
-2. Demonstre a execução de um programa simples
+**Conceitos computacionais**
 
-.. activecode:: idade
-
-	nascimento = input("Em que ano voce nasceu?")
-	idade = 2014 - int(nascimento)
-	print("Voce ja tem", idade, "anos!")
+1. Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos.
+2. Demonstre a execução de um programa simples.
 
 Instigue os alunos a experimentarem o console, introduza as instruções para uma calculadora simples. 
 
@@ -48,6 +44,7 @@ Adição (+)			``4 + 3``
 Subtração (-)		``10 - 6``
 Multiplicação (*)	``7 * 6``
 Divisão	(/)			``9 / 3``
+Resto	(%)			``9 % 3``
 =================	=============
 
 Para imprimir o resultado dentro de um programa (arquivo), não se esqueça do ``print``
@@ -58,19 +55,27 @@ Para imprimir o resultado dentro de um programa (arquivo), não se esqueça do `
 	print(10 - 6)
 	print(7 * 6)
 	print(9 / 3)
+	print(10 % 6)
 
 Demonstre a prioridade dos operadores matemáticos. 
 
-".. admonition:: Lidando com números fracionários no Python 2
-
-		Ao fazer ``3/2`` teremos ``1`` e não ``1.5``. Esta versão do Python trata os números como inteiros, portanto se quisermos obter o valor correto é preciso escrever a sentença com um ``.`` tal como ``3/2.`` ou ``3./2``
-
 É importante neste momento:
 
+- Contruir sentenças
+- Observar a precedências dos operadores.
 - Gerar erros de sintaxe.
 - Escrever palavras reservadas e não reservadas.
-- Como armazenar uma variável (uma idéia é salvar a idade dos alunos).
+- Armazenar valores em variáveis (lembre-se do operador de atribuição ``=``)
+- Lembre-se que podemos usar quantas variáveis quisermos 
+- Sobrescrever variáveis.
+
+.. admonition:: Discussão
+
+		Qual o propósito de uma variável? Porquê um programa precisa de uma variável? 
+
+
 - Liberdade para explorar. 
+
 
 **Interpretando os erros** 
 
@@ -92,8 +97,17 @@ Ensine os alunos a decifrar as mensagens de erros.
 A primeira parte ``SyntaxError`` é o tipo do erro, e após o sinal de ``:`` vem a descrição: erro de sintaxe inválida.
 Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.
 
+.. admonition:: Comentários 
+
+	No Python um comentários de uma linha são definidos pelo símbolo ``#`` e comentários de múltiplas linhas pelos blocos ``""" """``
+
+
+**Desafio**
+
+- Como fazer um programa para saber se um número é par ou impar?
+
 
 Reflexão
-++++++++
++++++++++
 
-Avalie a participação e curiosidade dos alunos.
+Avalie a participação e curiosidade dos alunos, experimentar nesta parte irá faciliar a construção nas aulas seguintes.

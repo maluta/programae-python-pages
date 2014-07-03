@@ -14,93 +14,80 @@ Aula 3
 Objetivos
 +++++++++
 
-- Compreender como uma variável armazena uma informção. 
-- Compreender a diferença entre um número e uma *string*
-- Ententer o propósito de listas (*list*) e tuplas (*tuple*)
+
+- Salvar e executar programas no IDLE
+- Entender alguns tipos de dados
+- Utilizar as funções ``print()`` e ``input()``
+- Ententer o propósito de listas (``list``)
 
 
 Preparação
-+++++++++
+++++++++++
 
 **Materiais**
 
-- IDLE
+- IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
+
 
 Atividades
 ++++++++++
 
-1. Relembre as primeiras lições abrindo o console e executando um programa
-2. Crie um programa para armazenar um número em uma variável 
 
-.. admonition:: Discussão
+**Conceitos computacionais**
 
-		Qual o propósito de uma variável? Porquê um programa precisa de uma variável? 
+1. Relembre as funcionalidades do IDLE como abrir e salvar programas.
+2. Crie um programa para armazenar um número em uma variável.
+3. Quais os outros tipos de informação podemos armazenas numa variável? 
 
-3. Quais os outros tipos de informação podemos armazenas numa variável? Introduza listas. 
-
-4. Tipos de dados.
-
-Faça uma diferenciação nos tipos de dados utilizados, faça uma analogia aos conjuntos.
-
-
-* Números inteiros
-	Exemplos: ``1``, ``2``, ``3``, ``4``, ``5``, ..., ``99``, ...
-
-
-* Números fracionários
-	Exemplos: ``0.0001``, ``0.5``, ``3.14159`` , ``12.5``, ...
-
-* Tipo Texto
-	Exemplos: ``"10"``, ``"3.14159", ``"nome"``
-
-* Tipo Lista
-	Exemploa: ``[]``, ``"['a','b','c']"``, ``[1,2,3]``
-
-
-.. activecode:: Tipos
-
-	print(type(42))
-	print(type(3.14))
-	print(type("texto"))
-	print(type(['a','b','c']))
-
-
-4. Armazene alguns valores em listas simples (nomes de times de futebol, por exemplo). Remova um item de uma lista e também de uma *string*.
-
-Para intruduzir o conceito de procedimento, mostre a execução do programa passo a passo, uma idéia:
-
-.. codelens:: ex
-
-	alunos = ["Pedro","Maria","Jose"]
-	alunos.remove("Jose")
-	nome = "pedro"
-	nome = nome.replace("p","")
-
-5. Defina uma tupla. Tente remover um elemento. Discuta a utilidade das tuplas. 
-
-6. Utilize marcadores como ``%s`` para colocar   
+Relembre como armazenar uma *string* numa variável e algumas operações.
 
 .. sourcecode:: python
 	
-	nome = "Pedro"
-	idade = 16
-	print("%s tem %d" % (nome,idade))
+	>>> nome = "Pedro " # atribuição
+	>>> sobrenome = "Silva"
+	>>> nome_completo = nome + " " + sobrenome # concatenação
 
-7. Introduza o conceito de jogo-texto de aventura e oriente os alunos a utilizar o que eles sabem até então para começar a construir as sentenças.
+4. Introduza listas.
+5. Tipos de dados.
 
-.. activecode:: intro_jogo_texto
+Faça uma diferenciação nos tipos de dados utilizados.
 
-	print("NOME DO JOGO")
-	nome = input("qual seu nome?")
-	print("Ola' %s vamos inicar! " % nome)
-	idade = input("qual sua idade?")
-	if idade > 15:
-		print("Escolha as opcoes:")
-		# adicione opções aqui
-	else:
-		print("Voce nao tem idade para jogar")
+
++------------------------+-------------------------------------------------------+---------+
+|       Tipo             |   Exemplos                                            | Tipo    +
++========================+=======================================================+=========+
+| Números inteiros       | ``1``, ``2``, ``3``, ``4``, ``5``, ..., ``99``, ...   | 'int'   |
++------------------------+-------------------------------------------------------+---------+
+| Números fracionários   | ``0.0001``, ``0.5``, ``3.14159``, ``12.5``, ...       | 'float' |
++------------------------+-------------------------------------------------------+---------+
+| Texto                  | ``"10"``, ``"3.14159"``, ``"nome"``                   | 'string'|
++------------------------+-------------------------------------------------------+---------+
+| Lista                  |``[]``, ``"['a','b','c']"``, ``[1,2,3]``               | 'list'  |
++------------------------+-------------------------------------------------------+---------+
+
+
+6. Armazene alguns valores em listas simples (nomes de times de futebol, por exemplo). Remova um item de uma lista e também de uma *string*.
+7. Apresente formalmente a função ``print()``
+8. Apresente formalmente a função ``input()``
+
+Para intruduzir o conceito de procedimento, mostre a execução do programa passo a passo, uma idéia:
+
+.. activecode:: aula3
+
+	alunos = []
+	nome = input("Diga um nome?")
+	alunos.append(nome)
+	nome = input("Diga outro nome?")
+	alunos.append(nome)
+	print(alunos)
 	
+	
+**Proposta** 
+	
+- Inserir os nomes dos alunos da turma numa lista
+
 
 Reflexão
 ++++++++
+
 

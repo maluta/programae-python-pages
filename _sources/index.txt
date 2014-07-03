@@ -17,7 +17,7 @@ Planos de Aula - Programaê - Python
 Aula 1: Começando
 :::::::::::::::::::::::::::
 
-Despertar o interesse para programação, evidenciando seus benefícios. Este aula é o primeiro contato com conceitos, ferramenta e linguagem (Tempo: 60 min) 
+Despertar o interesse para programação, evidenciando seus benefícios. Este aula é o primeiro contato com conceitos, ferramenta e linguagem (Tempo min: 60 min) 
 
 `Ver conteúdo <Aula1/Plano.html>`_
 
@@ -27,7 +27,7 @@ Despertar o interesse para programação, evidenciando seus benefícios. Este au
    Aula1/Plano.rst
 
 
-Aula 2: Conceitos
+Aula 2: Experimentação
 :::::::::::::::::::::::::::::::::
 
 Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo interativo (console) e introduzir alguns conceitos da linguagem. 
@@ -39,8 +39,8 @@ Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo in
 
    Aula2/Plano.rst
 
-Aula 3: Armazenando itens no Python
-:::::::::::::::::::::::::::::::::
+Aula 3: Fábrica de Jogos
+::::::::::::::::::::::::::::::::::::
 
 Iremos intruduzir maneiras de armazenamento de dados e começar a propor idéias de um jogo em modo texto. 
 
@@ -54,26 +54,27 @@ Iremos intruduzir maneiras de armazenamento de dados e começar a propor idéias
 Aula 4: Pensando o jogo
 :::::::::::::::::::::::::::::::::
 
-`Ver conteúdo <Aula4/Plano.html>`_
-
 Os primeiros passos do jogo levam a conceitos de estruturas de controle e laços. 
 
+
+`Ver conteúdo <Aula4/Plano.html>`_
+
 .. toctree::
-   :hidden: 2
+   :hidden: 
 
 
 Aula 5: Detalhamento e finalização
-:::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::
 
 Iremos descrever um jogo na qual o aluno irá percorrer os passos dos jogos através de perguntas e ações. 
 
 `Ver conteúdo <Aula5/Plano.html>`_
 
 .. toctree::
-   :hidden: 2
+   :hidden: 
 
 Aula 6: Desenhando com a Tartaruga
-:::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::
 
 Aula 7: Sentenças de Controle I 
 :::::::::::::::::::::::::::::::::
