@@ -65,9 +65,16 @@ a função ele executa o código definido no mini-programa.
 **Proposta** 
 
 - Construir um número para sortear os números da Megasena. 
-	
+
+Comandos permitidos:
+
+* ``print()``
+* ``input()`` (o grupo que pensar em que podemos fazer jogos com mais de 6 número, utilizando esta funcão, ganhará bônus em progmoney)
+* lista ``[]``
+* ``randint()``
 	
 Reflexão
+
 ++++++++
 
 
