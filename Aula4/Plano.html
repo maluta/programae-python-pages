@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 4 &mdash; Programaê</title>
+    <title>Aula 4: Acesso &amp; Controle &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -192,10 +192,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 4</a><ul>
+<li><a class="reference internal" href="#">Aula 4: Acesso &amp; Controle</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
+<li><a class="reference internal" href="#reflexao">Reflexão</a></li>
 </ul>
 </li>
 </ul>
@@ -228,16 +229,21 @@
 
 <div class="container">
   
-  <div class="section" id="aula-4">
-<h1>Aula 4<a class="headerlink" href="#aula-4" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-4-acesso-controle">
+<h1>Aula 4: Acesso &amp; Controle<a class="headerlink" href="#aula-4-acesso-controle" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Argumentos para funções</li>
 <li>Utilizar o comando <tt class="docutils literal"><span class="pre">import</span></tt></li>
+<li>Argumentos para funções</li>
 <li>O conceito e acesso a módulos</li>
-<li>Condicionais <tt class="docutils literal"><span class="pre">if</span></tt></li>
-<li>Comparações</li>
+<li>Condicionais</li>
+<li>Blocos</li>
+<li>Operações de comparações</li>
+<li>Sentenças com <tt class="docutils literal"><span class="pre">if</span></tt></li>
+<li>Sentenças com <tt class="docutils literal"><span class="pre">while</span></tt></li>
+<li>A diferença entre <tt class="docutils literal"><span class="pre">=</span></tt> e <tt class="docutils literal"><span class="pre">==</span></tt></li>
+<li>A função <tt class="docutils literal"><span class="pre">random.randint()</span></tt></li>
 </ul>
 </div>
 <div class="section" id="preparacao">
@@ -249,13 +255,16 @@
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conceitos computacionais</strong></p>
-<p>1. Defina o conceito de função, faça analogia com um mini-programa, quando <em>chamamos</em>
-a função ele executa o código definido no mini-programa.
-2. Reforce o conceito de parâmetros nas funções previamente utilizadas
-<tt class="docutils literal"><span class="pre">print()</span></tt> e <tt class="docutils literal"><span class="pre">input()</span></tt> onde <em>passamos</em> parametros.
-3. Apresente o comando <tt class="docutils literal"><span class="pre">import</span></tt> na qual iremos importar uma &#8220;caixa&#8221; de funções
-(esta &#8220;caixa&#8221; dá-se o nome de módulo).
-4. Após carregar o módulo <tt class="docutils literal"><span class="pre">random</span></tt> apresente algumas funcionalidades.</p>
+<ol class="arabic simple">
+<li>Defina o conceito de função, faça analogia com um mini-programa, quando <em>chamamos</em> a função ele executa o código definido no mini-programa.</li>
+<li>Reforce o conceito de parâmetros nas funções previamente utilizadas <tt class="docutils literal"><span class="pre">print()</span></tt> e <tt class="docutils literal"><span class="pre">input()</span></tt> onde <em>passamos</em> parametros, no primeiro caso o refere-se conteúdo a ser impresso e no último uma descrição (opcional) para o valor a ser imputado.</li>
+<li>Apresente o comando <tt class="docutils literal"><span class="pre">import</span></tt> na qual iremos importar uma &#8220;caixa&#8221; de funções (esta &#8220;caixa&#8221; dá-se o nome de módulo).</li>
+<li>Após carregar o módulo <tt class="docutils literal"><span class="pre">random.randint()</span></tt> apresente algumas funcionalidades.</li>
+</ol>
+<div class="admonition-acesso-a-funcoes admonition">
+<p class="first admonition-title">Acesso a funções</p>
+<p class="last">Tente invocar uma função sem fazer um <tt class="docutils literal"><span class="pre">import</span></tt>. Faça os alunos pensarem porquê?</p>
+</div>
 
 <div id="cont"></div>
 <div id="random" lang="python" class="ac_section alert alert-warning" >
@@ -269,7 +278,7 @@ a função ele executa o código definido no mini-programa.
 <br/>
 <div id="random_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="random_code" class="active_code", prefixcode="undefined" lang="python">
-import random # nossa caixa de funcionalidades
+import random # nossa "caixa" de funcionalidades
 numero = random.randint(1,10)
 print(numero)
 numero = random.randint(1,10)
@@ -338,108 +347,74 @@ else{
 </div>
 
 <ol class="arabic simple" start="5">
-<li><em>Como instruimos o computador a fazer decisões?</em> Apresente a função <tt class="docutils literal"><span class="pre">if</span></tt> (se).</li>
+<li>Os blocos de código são instruções que respeitam a mesma indentação. Reforce a necessidade deles nas instruções a seguir.</li>
+<li><em>Como instruimos o computador a fazer decisões?</em> Apresente a função <tt class="docutils literal"><span class="pre">if</span></tt> (<em>se</em>).</li>
+<li>Repetição (<em>loops</em>) utilizando o <tt class="docutils literal"><span class="pre">while</span></tt></li>
+<li>Comparações matemáticas: <tt class="docutils literal"><span class="pre">&gt;</span></tt> (<em>maior que</em>) <tt class="docutils literal"><span class="pre">&lt;</span></tt> (<em>menor que</em>) <tt class="docutils literal"><span class="pre">==</span></tt> (<em>igual que</em>) e <tt class="docutils literal"><span class="pre">!=</span></tt> (<em>diferente de</em>)</li>
 </ol>
+<p>Podemos resumir estes conceitos num jogo de adivinhar o número entre 1 e 20.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">random</span>
 
-<div id="cont"></div>
-<div id="intro_jogo_texto" lang="python" class="ac_section alert alert-warning" >
+<span class="n">tentativas</span> <span class="o">=</span> <span class="mi">0</span>
 
-<div class="ac_actions">
-<button class='btn btn-success' id="intro_jogo_texto_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro_jogo_texto_saveb" onclick="saveEditor('intro_jogo_texto');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro_jogo_texto_loadb" onclick="requestCode('intro_jogo_texto');">Load</button>
+<span class="k">print</span><span class="p">(</span><span class="s">u&quot;Olá, qual é o seu nome?&quot;</span><span class="p">)</span>
+<span class="n">nome</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 
+<span class="n">numero</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">u&quot;Olá! &quot;</span> <span class="o">+</span> <span class="n">nome</span> <span class="o">+</span> <span class="s">u&quot;eu estou pensando num número entre 1 e 20&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">u&quot;Você consegue adivinhar com apenas 6 tentativas?&quot;</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">tentativas</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">u&quot;Escreva um valor&quot;</span><span class="p">)</span>
+        <span class="n">chute</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="n">chute</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">chute</span><span class="p">)</span> <span class="c"># converte para o tipo &#39;int&#39;</span>
+
+        <span class="n">tentativas</span> <span class="o">=</span> <span class="n">tentativas</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">chute</span> <span class="o">&lt;</span> <span class="n">numero</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">u&quot;Você chutou um valor baixo... tente novamente&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">chute</span> <span class="o">&gt;</span> <span class="n">numero</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">u&quot;Você digitou um valor muito alto! Tente novamente&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">chute</span> <span class="o">==</span> <span class="n">numero</span><span class="p">:</span>
+                <span class="k">break</span>
+
+<span class="k">if</span> <span class="n">chute</span> <span class="o">==</span> <span class="n">numero</span><span class="p">:</span>
+        <span class="n">tentativas</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">tentativas</span><span class="p">)</span> <span class="c"># converte para o tipo string</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">u&quot;Parabéns &quot;</span> <span class="o">+</span> <span class="n">nome</span> <span class="o">+</span> <span class="s">u&quot;!&quot;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">u&quot;Você acertou em &quot;</span> <span class="o">+</span> <span class="n">tentativas</span> <span class="o">+</span> <span class="s">u&quot; tentativas.&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">chute</span> <span class="o">!=</span> <span class="n">numero</span><span class="p">:</span>
+        <span class="n">numero</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">u&quot;Que pena... o número que eu estava pensando era &quot;</span> <span class="o">+</span> <span class="n">numero</span> <span class="o">+</span> <span class="s">u&quot;.&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
-<br/>
-<div id="intro_jogo_texto_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="intro_jogo_texto_code" class="active_code", prefixcode="undefined" lang="python">
-print("<<NOME DO JOGO>>>")
-nome = input("qual seu nome?")
-print("Ola' %s vamos inicar! " % nome)
-idade = input("qual sua idade?")
-if idade > 15:
-        print("Escolha as opcoes:")
-        print("1. Carro")
-        print("2. Moto")
-        print("3. Bicicleta")
-else:
-        print("Voce nao tem idade para jogar")
-</textarea>
-</div>
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="intro_jogo_texto_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="intro_jogo_texto_suffix" style="display:none">
-</pre><pre id="intro_jogo_texto_pre" class="active_out">
-
-</pre>
-
-</div> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (intro_jogo_texto)</span> </p>
-
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#intro_jogo_texto_saveb').toggle();
-    $('#intro_jogo_texto_loadb').toggle();
-}
-if ($("#intro_jogo_texto_code_div").parents(".admonition").length == 0 && $("#intro_jogo_texto_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#intro_jogo_texto_code_div").offset({
-			left: $("#intro_jogo_texto .clearfix").offset().left
-		});
-	}
-	$("#intro_jogo_texto_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#intro_jogo_texto_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#intro_jogo_texto_runb").parent().siblings(".ac_output").show();
-			runit('intro_jogo_texto',this, undefined);
-			$("#intro_jogo_texto_runb").on("click", function(){
-				runit('intro_jogo_texto',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#intro_jogo_texto_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#intro_jogo_texto_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#intro_jogo_texto_runb").on("click", function(){
-		console.log("button clicked");
-		runit('intro_jogo_texto',this, undefined);
-	});
-}
-</script>
-
-</div>
-
+<p>Explique passo a passo este programa, atentanto para:</p>
+<ul class="simple">
+<li>blocos de indentação, o que é código do <tt class="docutils literal"><span class="pre">while</span></tt> e do <tt class="docutils literal"><span class="pre">if</span></tt></li>
+<li>condições de execução do <tt class="docutils literal"><span class="pre">while</span></tt></li>
+<li>condições de execução do <tt class="docutils literal"><span class="pre">if</span></tt></li>
+<li>as funções de conversão <tt class="docutils literal"><span class="pre">int()</span></tt> e <tt class="docutils literal"><span class="pre">str()</span></tt></li>
+<li>o comando <tt class="docutils literal"><span class="pre">break</span></tt> para interromper automaticamente a execução do laço while.</li>
+</ul>
 <p><strong>Proposta</strong></p>
 <ul class="simple">
-<li>Construir um número para sortear os números da Megasena.</li>
+<li>Construir um número para sortear os números da Mega Sena.</li>
 </ul>
 <p>Comandos permitidos:</p>
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">print()</span></tt></li>
-<li><tt class="docutils literal"><span class="pre">input()</span></tt> (o grupo que pensar em que podemos fazer jogos com mais de 6 número, utilizando esta funcão, ganhará bônus em progmoney)</li>
-<li>lista <tt class="docutils literal"><span class="pre">[]</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">input()</span></tt> (o grupo que pensar em que podemos fazer jogos com mais de 6 números, utilizando estruturas de controle (<tt class="docutils literal"><span class="pre">if</span></tt>), ganhará bônus em progmoney)</li>
+<li>lista <tt class="docutils literal"><span class="pre">[]</span></tt> e a função <tt class="docutils literal"><span class="pre">.append()</span></tt></li>
 <li><tt class="docutils literal"><span class="pre">randint()</span></tt></li>
 </ul>
-<p>Reflexão</p>
-<hr class="docutils" />
+</div>
+<div class="section" id="reflexao">
+<h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Como organizar o código fonte com funções?</li>
+<li>Os módulos como &#8220;caixas&#8221; de funcionalidades.</li>
+</ul>
 </div>
 </div>
 

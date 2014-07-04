@@ -22,12 +22,12 @@ Python2 (!!!para discussão!!!)
 Linux
 ====================
 
-** Fedora **
+**Fedora**
 
 TBA
 
 
-** Ubuntu **
+**Ubuntu**
 
 Python 3 (preferível)
 

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 6: Aventuras no texto (I) &mdash; Programaê</title>
+    <title>Aula 8: Aventuras no texto &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -192,7 +192,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 6: Aventuras no texto (I)</a><ul>
+<li><a class="reference internal" href="#">Aula 8: Aventuras no texto</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -229,17 +229,10 @@
 
 <div class="container">
   
-  <div class="section" id="aula-6-aventuras-no-texto-i">
-<h1>Aula 6: Aventuras no texto (I)<a class="headerlink" href="#aula-6-aventuras-no-texto-i" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-8-aventuras-no-texto">
+<h1>Aula 8: Aventuras no texto<a class="headerlink" href="#aula-8-aventuras-no-texto" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Definir uma função própria com <tt class="docutils literal"><span class="pre">def</span></tt></li>
-<li>Introdução da aventuras em modo texto</li>
-<li>A palavra reservada <tt class="docutils literal"><span class="pre">pass</span></tt></li>
-<li>Tipos Lógicos (Booleanos)</li>
-<li>Começar a construir um enrredo</li>
-</ul>
 </div>
 <div class="section" id="preparacao">
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
@@ -249,327 +242,11 @@
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
-<p>O objetivo das <strong>texto-aventuras</strong> é criar um jogo ficcional e interativo na qual o personagem é levado, de acordo com a opção do jogador, a uma determinada parte do jogo. Iremos utilizar os conceitos aprendidos até então para construir este tipo de narrativa!</p>
-<p>Um exemplo:</p>
-<div class="highlight-python"><div class="highlight"><pre>Você esta em um mundo cheio de dragões. Na sua frente,
-você vê duas cavernas. Em uma delas, o dragão é seu amigo
-e vai compartilhar o tesouro com você. Na outra o dragão
-é hostil e violento e irá destruí-lo num piscar de olhos.
-
-Qual das cavernas você deseja entrar (1 ou 2)?
-1
-
-Você se aproxima da caverna
-Esta escuro e assustador.
-
-Um dragão enorme salta na sua frente. Ele abre a mandíbula e...
-Te devora em uma mordida.
-
-Você quer jogar de novo?
-</pre></div>
-</div>
 <p><strong>Conceitos computacionais</strong></p>
-<ol class="arabic simple">
-<li>Apresente a estrutura para construção de uma função utilizando a palavra reservada <tt class="docutils literal"><span class="pre">def</span></tt></li>
-</ol>
-
-<div id="cont"></div>
-<div id="intro" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="intro_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro_saveb" onclick="saveEditor('intro');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro_loadb" onclick="requestCode('intro');">Load</button>
-
-</div>
-<br/>
-<div id="intro_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="intro_code" class="active_code", prefixcode="undefined" lang="python">
-def intro():
-  print(u"Introdução ao jogo")
-
-def regras():
-  print(u"1. regra a")
-  print(u"2. regra b")
-  print(u"3. regra c")
-
-intro()
-regras()
-</textarea>
-</div>
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="intro_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="intro_suffix" style="display:none">
-</pre><pre id="intro_pre" class="active_out">
-
-</pre>
-
-</div> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (intro)</span> </p>
-
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#intro_saveb').toggle();
-    $('#intro_loadb').toggle();
-}
-if ($("#intro_code_div").parents(".admonition").length == 0 && $("#intro_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#intro_code_div").offset({
-			left: $("#intro .clearfix").offset().left
-		});
-	}
-	$("#intro_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#intro_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#intro_runb").parent().siblings(".ac_output").show();
-			runit('intro',this, undefined);
-			$("#intro_runb").on("click", function(){
-				runit('intro',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#intro_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#intro_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#intro_runb").on("click", function(){
-		console.log("button clicked");
-		runit('intro',this, undefined);
-	});
-}
-</script>
-
-</div>
-
-<dl class="docutils">
-<dt>É importante destacar:</dt>
-<dd><ul class="first last">
-<li><p class="first">indentação do bloco: espaço ou tab (mas não misture os dois)</p>
-</li>
-<li><p class="first">a definição de função segue o seguinte formato:</p>
-<blockquote>
-<div><p><tt class="docutils literal"><span class="pre">def</span></tt> <strong>nome</strong> <tt class="docutils literal"><span class="pre">(</span></tt> <strong>parametros</strong> <tt class="docutils literal"><span class="pre">)</span></tt> <tt class="docutils literal"><span class="pre">:</span></tt></p>
-</div></blockquote>
-</li>
-<li><p class="first">a função <strong>precisa</strong> executar uma ação, imprimir algo, retornar um valor, etc</p>
-</li>
-</ul>
-</dd>
-</dl>
-<div class="admonition-definicao admonition">
-<p class="first admonition-title">Definição</p>
-<p class="last">Se quisermos definir uma função mas ainda não implementar a lógica podemos utilizar a palavra reservada <tt class="docutils literal"><span class="pre">pass</span></tt></p>
-</div>
-<ol class="arabic simple" start="2">
-<li>Mostre que as fuções podem receber parâmetros e retornar valores.</li>
-</ol>
-
-<div id="cont"></div>
-<div id="intro1" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="intro1_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro1_saveb" onclick="saveEditor('intro1');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro1_loadb" onclick="requestCode('intro1');">Load</button>
-
-</div>
-<br/>
-<div id="intro1_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="intro1_code" class="active_code", prefixcode="undefined" lang="python">
-def verifica_idade(idade):
-  if idade > 15:
-      return True
-  else:
-      return False
-
-print( verifica_idade(15) )
-print( verifica_idade(16) )
-</textarea>
-</div>
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="intro1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="intro1_suffix" style="display:none">
-</pre><pre id="intro1_pre" class="active_out">
-
-</pre>
-
-</div> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (intro1)</span> </p>
-
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#intro1_saveb').toggle();
-    $('#intro1_loadb').toggle();
-}
-if ($("#intro1_code_div").parents(".admonition").length == 0 && $("#intro1_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#intro1_code_div").offset({
-			left: $("#intro1 .clearfix").offset().left
-		});
-	}
-	$("#intro1_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#intro1_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#intro1_runb").parent().siblings(".ac_output").show();
-			runit('intro1',this, undefined);
-			$("#intro1_runb").on("click", function(){
-				runit('intro1',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#intro1_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#intro1_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#intro1_runb").on("click", function(){
-		console.log("button clicked");
-		runit('intro1',this, undefined);
-	});
-}
-</script>
-
-</div>
-
-<ol class="arabic simple" start="3">
-<li><tt class="docutils literal"><span class="pre">True</span></tt> e <tt class="docutils literal"><span class="pre">False</span></tt> são palavras reservadas da linguagem.</li>
-<li>Apresente alguns conceitos dos operadores Booleanos: <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt> e <tt class="docutils literal"><span class="pre">not</span></tt>.</li>
-</ol>
-
-<div id="cont"></div>
-<div id="intro2" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="intro2_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro2_saveb" onclick="saveEditor('intro2');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="intro2_loadb" onclick="requestCode('intro2');">Load</button>
-
-</div>
-<br/>
-<div id="intro2_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="intro2_code" class="active_code", prefixcode="undefined" lang="python">
-print( False and False ) # falso
-print( False or False )  # falso
-print()
-print( True and False )  # falso
-print( True or False )   # verdadeiro
-print()
-print( True and True )   # verdadeiro
-print( True or True )    # verdadeiro
-print()
-print ( not False )      # inverte
-print ( not True)
-</textarea>
-</div>
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="intro2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="intro2_suffix" style="display:none">
-</pre><pre id="intro2_pre" class="active_out">
-
-</pre>
-
-</div> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (intro2)</span> </p>
-
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#intro2_saveb').toggle();
-    $('#intro2_loadb').toggle();
-}
-if ($("#intro2_code_div").parents(".admonition").length == 0 && $("#intro2_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#intro2_code_div").offset({
-			left: $("#intro2 .clearfix").offset().left
-		});
-	}
-	$("#intro2_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#intro2_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#intro2_runb").parent().siblings(".ac_output").show();
-			runit('intro2',this, undefined);
-			$("#intro2_runb").on("click", function(){
-				runit('intro2',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#intro2_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#intro2_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#intro2_runb").on("click", function(){
-		console.log("button clicked");
-		runit('intro2',this, undefined);
-	});
-}
-</script>
-
-</div>
-
 <p><strong>Prosposta</strong></p>
-<ul class="simple">
-<li>Reserve um tempo para o grupo discutir e apresentar o enredo da história.</li>
-<li>Fale com os alunos quais poderiam ser as frases do jogo, quais ambientes, quais tipos de perguntas</li>
-<li>Peça uma rápida apresentação (3 min) do enredo</li>
-<li>Submeta uma votação na classe, o grupo com mais votos irá ganhar 50 progmoney.</li>
-</ul>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Você já conhece alguma texto-aventura?</li>
-<li>Faça uma pesquisa nas histórias existentes.</li>
-<li>Jogos de RPG podem ser automatizados?</li>
-</ul>
 </div>
 </div>
 

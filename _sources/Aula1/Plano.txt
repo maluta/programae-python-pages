@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 1
-==========
+Aula 1: Regras & Conceitos
+==========================
 
 Objetivos
 ++++++++++

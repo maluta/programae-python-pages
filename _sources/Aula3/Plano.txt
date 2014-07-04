@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 3
----------
+Aula 3: Tipos de Dados
+======================
 
 Objetivos
 +++++++++
@@ -70,24 +70,32 @@ Faça uma diferenciação nos tipos de dados utilizados.
 7. Apresente formalmente a função ``print()``
 8. Apresente formalmente a função ``input()``
 
+.. admonition:: Nota sobre acentuação
+
+		Na Python3 (utilizado na IDLE) podemos utilizar caracteres especiais sem problemas, contudo devido a uma limitação da plataforma, utlizamos a notação ``u" "`` quando nos referimos a trechos de texto (*strings*) com caracteres especiais. 
+
 Para intruduzir o conceito de procedimento, mostre a execução do programa passo a passo, uma idéia:
 
-.. activecode:: aula3
+.. activecode:: nomes_lista
 
 	alunos = []
-	nome = input("Diga um nome?")
+	nome = input(u"Qual é o seu nome?")
 	alunos.append(nome)
 	nome = input("Diga outro nome?")
 	alunos.append(nome)
 	print(alunos)
 	
-	
+
 **Proposta** 
 	
-- Inserir os nomes dos alunos da turma numa lista
+- Criar uma lista de instruções. 
+- Inserir os nomes dos alunos da turma numa lista.
 
 
 Reflexão
 ++++++++
+
+- Há problemas para serem automatizados nas aulas de matemática?
+- Como podemos organizar nosso cotidiano com estuturas de dados computacionais? 
 
 
