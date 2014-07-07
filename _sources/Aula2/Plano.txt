@@ -8,24 +8,23 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 2: Experimentação
+Aula 2: Calculadora
 ======================
 
 Objetivos
 +++++++++
 
-- Primeiro contato com o ambiente: IDLE.
-- Criar um programa simples. Rode pelo *console* e através de um **arquivo**.
-- Entender a diferença entre um programa e uma linguagem de programação.
-- Interpretar erros básicos.
-- Primeiros trabalhos da fábrica.
+- Construir uma sequência de instruções dentro do ambiente (IDLE)
+- Compreender a lógica dos operadores aritméticos básicos dentro do console.- Entender a diferença entre um programa e uma linguagem de programação.
 
 Preparação
 ++++++++++
 
 **Materiais**
 
-- IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
+- Ambiente IDLE (Veja na seção de ajuda: `Como instalar o Python <../Apoio/comoinstalar.html>`__)
+- `Console <../Apoio/idle.html#console-iterativo>`__ do IDLE
+
 
 Atividades
 +++++++++++
@@ -47,8 +46,6 @@ Divisão	(/)			``9 / 3``
 Resto	(%)			``9 % 3``
 =================	=============
 
-Para imprimir o resultado dentro de um programa (arquivo), não se esqueça do ``print``
-
 .. activecode:: Operações Básicas
 
 	print(4 + 3)
@@ -57,55 +54,29 @@ Para imprimir o resultado dentro de um programa (arquivo), não se esqueça do `
 	print(9 / 3)
 	print(10 % 6)
 
-Demonstre a prioridade dos operadores matemáticos. 
+Note que no *console* do IDLE não precisamos de utilizar a função ``print()`` para obtermos o resultado de uma sentença aritmética.
 
 É importante neste momento:
 
-- Contruir sentenças
-- Observar a precedências dos operadores.
-- Gerar erros de sintaxe.
-- Escrever palavras reservadas e não reservadas.
-- Armazenar valores em variáveis (lembre-se do operador de atribuição ``=``)
-- Lembre-se que podemos usar quantas variáveis quisermos 
-- Sobrescrever variáveis.
-
-.. admonition:: Discussão
-
-		Qual o propósito de uma variável? Porquê um programa precisa de uma variável? 
+- Contruir expressões matemáticas
+- Demonstre a prioridade dos operadores matemáticos. 
+- Lembrar que representação de um número fracionário utiliza ``.`` e não ``,`` 
 
 
-- Liberdade para explorar. 
+.. admonition:: Dificuldades
 
+  Se você notar alguma dificuldade grave de absorção dos conteúdos, utilize os `videos <https://pt.khanacademy.org/math/arithmetic>`__ da Khan Academy como complementação!
 
-**Interpretando os erros** 
+**Proposta**
 
-Ensine os alunos a decifrar as mensagens de erros. 
+Apresente operações para lidar com:
 
-.. sourcecode:: python
+- Testes com a procedência dos operadores.
+- Conversão de medidas.
+- Conversão de moedas.
 
-	>>>algumcomando
-	Traceback (most recent call last):
-  	  File "<stdin>", line 1, in <module>
-	NameError: name 'algumcomando' is not defined
-
-	>>> 4 1 +
-  	  File "<stdin>", line 1
-          4 1 +
-          ^
-	SyntaxError: invalid syntax
-
-A primeira parte ``SyntaxError`` é o tipo do erro, e após o sinal de ``:`` vem a descrição: erro de sintaxe inválida.
-Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.
-
-.. admonition:: Comentários 
-
-	No Python um comentários de uma linha são definidos pelo símbolo ``#`` e comentários de múltiplas linhas pelos blocos ``""" """``
-
-
-**Desafio**
-
-- Como fazer um programa para saber se um número é par ou impar?
-
+Uma sugestão de primeiro desafio para as equipes é converter o *progmoney* em R$, sugira um índice de conversão (ex. ``1 $> = 0.01 R$``)
+ 
 
 Reflexão
 +++++++++

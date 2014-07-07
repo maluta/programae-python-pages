@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 2: Experimentação &mdash; Programaê</title>
+    <title>Aula 2: Calculadora &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -107,7 +107,7 @@
       </button>
 
       <div>
-        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/python/default/user/login">&nbsp; </a>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="#">&nbsp; </a>
         <a class="navbar-brand" href="../index.html">Programaê</a>
       </div>
     </div>
@@ -129,7 +129,8 @@
                   <b>Programaê!</b>
                 </div>
                 <a href="http://www.programae.org.br">Página Oficinal</a>
-              </li>
+		<a href="../Apoio/console.html">Console interativo</a>  
+                </li>
           </ul>
         </li>
         <!-- end social media dropdown -->
@@ -177,6 +178,7 @@
           <ul class="dropdown-menu user-menu">
             <li><a href='/python/static/programae/navhelp.html'>Ajuda</a></li>
             <li><a href='../Apoio/comoinstalar.html'>Como instalar o Python</a></li>
+            <li><a href='../Apoio/idle.html'>Dicas IDLE</a></li>
             <li class="divider"></li>
             <li><a href='../Apoio/glossario.html'>Glossário</a></li>
             <li><a href='#'>...</a></li>
@@ -194,7 +196,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 2: Experimentação</a><ul>
+<li><a class="reference internal" href="#">Aula 2: Calculadora</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -243,23 +245,21 @@
 
 <div class="container">
   
-  <div class="section" id="aula-2-experimentacao">
-<h1>Aula 2: Experimentação<a class="headerlink" href="#aula-2-experimentacao" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-2-calculadora">
+<h1>Aula 2: Calculadora<a class="headerlink" href="#aula-2-calculadora" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Primeiro contato com o ambiente: IDLE.</li>
-<li>Criar um programa simples. Rode pelo <em>console</em> e através de um <strong>arquivo</strong>.</li>
-<li>Entender a diferença entre um programa e uma linguagem de programação.</li>
-<li>Interpretar erros básicos.</li>
-<li>Primeiros trabalhos da fábrica.</li>
+<li>Construir uma sequência de instruções dentro do ambiente (IDLE)</li>
+<li>Compreender a lógica dos operadores aritméticos básicos dentro do console.- Entender a diferença entre um programa e uma linguagem de programação.</li>
 </ul>
 </div>
 <div class="section" id="preparacao">
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
 <p><strong>Materiais</strong></p>
 <ul class="simple">
-<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
+<li>Ambiente IDLE (Veja na seção de ajuda: <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a>)</li>
+<li><a class="reference external" href="../Apoio/idle.html#console-iterativo">Console</a> do IDLE</li>
 </ul>
 </div>
 <div class="section" id="atividades">
@@ -298,7 +298,6 @@
 </tr>
 </tbody>
 </table>
-<p>Para imprimir o resultado dentro de um programa (arquivo), não se esqueça do <tt class="docutils literal"><span class="pre">print</span></tt></p>
 
 <div id="cont"></div>
 <div id="Operações" lang="python" class="ac_section alert alert-warning" >
@@ -380,48 +379,25 @@ else{
 
 </div>
 
-<p>Demonstre a prioridade dos operadores matemáticos.</p>
+<p>Note que no <em>console</em> do IDLE não precisamos de utilizar a função <tt class="docutils literal"><span class="pre">print()</span></tt> para obtermos o resultado de uma sentença aritmética.</p>
 <p>É importante neste momento:</p>
 <ul class="simple">
-<li>Contruir sentenças</li>
-<li>Observar a precedências dos operadores.</li>
-<li>Gerar erros de sintaxe.</li>
-<li>Escrever palavras reservadas e não reservadas.</li>
-<li>Armazenar valores em variáveis (lembre-se do operador de atribuição <tt class="docutils literal"><span class="pre">=</span></tt>)</li>
-<li>Lembre-se que podemos usar quantas variáveis quisermos</li>
-<li>Sobrescrever variáveis.</li>
+<li>Contruir expressões matemáticas</li>
+<li>Demonstre a prioridade dos operadores matemáticos.</li>
+<li>Lembrar que representação de um número fracionário utiliza <tt class="docutils literal"><span class="pre">.</span></tt> e não <tt class="docutils literal"><span class="pre">,</span></tt></li>
 </ul>
-<div class="admonition-discussao admonition">
-<p class="first admonition-title">Discussão</p>
-<p class="last">Qual o propósito de uma variável? Porquê um programa precisa de uma variável?</p>
+<div class="admonition-dificuldades admonition">
+<p class="first admonition-title">Dificuldades</p>
+<p class="last">Se você notar alguma dificuldade grave de absorção dos conteúdos, utilize os <a class="reference external" href="https://pt.khanacademy.org/math/arithmetic">videos</a> da Khan Academy como complementação!</p>
 </div>
+<p><strong>Proposta</strong></p>
+<p>Apresente operações para lidar com:</p>
 <ul class="simple">
-<li>Liberdade para explorar.</li>
+<li>Testes com a procedência dos operadores.</li>
+<li>Conversão de medidas.</li>
+<li>Conversão de moedas.</li>
 </ul>
-<p><strong>Interpretando os erros</strong></p>
-<p>Ensine os alunos a decifrar as mensagens de erros.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="go">&gt;&gt;&gt;algumcomando</span>
-<span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="gr">NameError</span>: <span class="n">name &#39;algumcomando&#39; is not defined</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">4</span> <span class="mi">1</span> <span class="o">+</span>
-  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
-<span class="gr">  4 1 +</span>
-<span class="gr">  ^</span>
-<span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
-</pre></div>
-</div>
-<p>A primeira parte <tt class="docutils literal"><span class="pre">SyntaxError</span></tt> é o tipo do erro, e após o sinal de <tt class="docutils literal"><span class="pre">:</span></tt> vem a descrição: erro de sintaxe inválida.
-Geralmente os erros mais comuns são relacionados a sintaxe, falta de definição e tipos errados.</p>
-<div class="admonition-comentarios admonition">
-<p class="first admonition-title">Comentários</p>
-<p class="last">No Python um comentários de uma linha são definidos pelo símbolo <tt class="docutils literal"><span class="pre">#</span></tt> e comentários de múltiplas linhas pelos blocos <tt class="docutils literal"><span class="pre">&quot;&quot;&quot;</span> <span class="pre">&quot;&quot;&quot;</span></tt></p>
-</div>
-<p><strong>Desafio</strong></p>
-<ul class="simple">
-<li>Como fazer um programa para saber se um número é par ou impar?</li>
-</ul>
+<p>Uma sugestão de primeiro desafio para as equipes é converter o <em>progmoney</em> em R$, sugira um índice de conversão (ex. <tt class="docutils literal"><span class="pre">1</span> <span class="pre">$&gt;</span> <span class="pre">=</span> <span class="pre">0.01</span> <span class="pre">R$</span></tt>)</p>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>

@@ -8,17 +8,17 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 3: Tipos de Dados
+Aula 3: Variáveis
 ======================
 
 Objetivos
 +++++++++
 
 
-- Salvar e executar programas no IDLE
-- Entender alguns tipos de dados
-- Utilizar as funções ``print()`` e ``input()``
-- Ententer o propósito de listas (``list``)
+- Aprender como salvar e executar programas no IDLE.
+- Entender o conceito de variável.
+- Entender quais tipos de dados podem ser armazenados. 
+- Melhorar a legibilidade.
 
 
 Preparação
@@ -27,7 +27,7 @@ Preparação
 **Materiais**
 
 - IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
-
+- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#sugestao-de-layout>`__ códigos no IDLE.
 
 Atividades
 ++++++++++
@@ -35,20 +35,42 @@ Atividades
 
 **Conceitos computacionais**
 
-1. Relembre as funcionalidades do IDLE como abrir e salvar programas.
-2. Crie um programa para armazenar um número em uma variável.
-3. Quais os outros tipos de informação podemos armazenas numa variável? 
+1. Relembre as funcionalidades do IDLE utilizando o console.
+2. Ainda no console, crie um programa para armazenar um número em uma variável.
+3. Transfira este conceito para o `editor de texto <../Apoio/idle.html#novo-codigo>`__.
 
-Relembre como armazenar uma *string* numa variável e algumas operações.
+.. activecode:: var
+
+  ano = 2014
+
+
+4. Defina um tipo texto (chamado *string*) 
 
 .. sourcecode:: python
 	
 	>>> nome = "Pedro " # atribuição
 	>>> sobrenome = "Silva"
-	>>> nome_completo = nome + " " + sobrenome # concatenação
+	
+5. Lembre que os conceitos aritméticos aplicam-se em variáveis.
 
-4. Introduza listas.
-5. Tipos de dados.
+.. activecode:: concat
+
+  nome = "nome"
+  sobrenome = "sobrenome"
+  nome_completo = nome + sobrenome
+  print(nome_completo)
+
+6. Quais as regras para definir um nome de variável? 
+
+.. admonition:: Definição.
+
+  O nome de uma variável preciasa respeitar algumas regras como:
+  
+  - não pode começar com números. (ex. ``1a``)
+  - não pode possuir caracteres especiais, como símbolos matemáticos (ex. ``1-``)
+  - o caracte ``_`` pode ser utilizado para agrupar nomes grandes (ex. ``nome_completo`` é OK)
+  
+4. Quais os outros *tipos* de informação podemos armazenas numa variável? 
 
 Faça uma diferenciação nos tipos de dados utilizados.
 
@@ -62,13 +84,6 @@ Faça uma diferenciação nos tipos de dados utilizados.
 +------------------------+-------------------------------------------------------+---------+
 | Texto                  | ``"10"``, ``"3.14159"``, ``"nome"``                   | 'string'|
 +------------------------+-------------------------------------------------------+---------+
-| Lista                  |``[]``, ``"['a','b','c']"``, ``[1,2,3]``               | 'list'  |
-+------------------------+-------------------------------------------------------+---------+
-
-
-6. Armazene alguns valores em listas simples (nomes de times de futebol, por exemplo). Remova um item de uma lista e também de uma *string*.
-7. Apresente formalmente a função ``print()``
-8. Apresente formalmente a função ``input()``
 
 .. admonition:: Nota sobre acentuação
 

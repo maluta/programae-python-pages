@@ -71,7 +71,7 @@
     <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
-    <link rel="next" title="Aula 2: Experimentação" href="../Aula2/Plano.html" />
+    <link rel="next" title="Aula 2: Calculadora" href="../Aula2/Plano.html" />
     <link rel="prev" title="Planos de Aula - Programaê - Python" href="../index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -107,7 +107,7 @@
       </button>
 
       <div>
-        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/python/default/user/login">&nbsp; </a>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="#">&nbsp; </a>
         <a class="navbar-brand" href="../index.html">Programaê</a>
       </div>
     </div>
@@ -129,7 +129,8 @@
                   <b>Programaê!</b>
                 </div>
                 <a href="http://www.programae.org.br">Página Oficinal</a>
-              </li>
+		<a href="../Apoio/console.html">Console interativo</a>  
+                </li>
           </ul>
         </li>
         <!-- end social media dropdown -->
@@ -177,6 +178,7 @@
           <ul class="dropdown-menu user-menu">
             <li><a href='/python/static/programae/navhelp.html'>Ajuda</a></li>
             <li><a href='../Apoio/comoinstalar.html'>Como instalar o Python</a></li>
+            <li><a href='../Apoio/idle.html'>Dicas IDLE</a></li>
             <li class="divider"></li>
             <li><a href='../Apoio/glossario.html'>Glossário</a></li>
             <li><a href='#'>...</a></li>
@@ -214,7 +216,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Aula 2: Experimentação' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Aula 2: Calculadora' data-toggle="tooltip" >
     <a href="../Aula2/Plano.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -247,10 +249,11 @@
 <h1>Aula 1: Regras &amp; Conceitos<a class="headerlink" href="#aula-1-regras-conceitos" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
+<p>Nesta aula, os alunos deverão:</p>
 <ul class="simple">
 <li>Entender o conceito da <em>Fábrica de Jogos</em> deste curso.</li>
-<li>Introduzir os alunos o conceito de arquitetura de computadores.</li>
-<li>Demonstrar a importância de aprender uma linguagem de programação.</li>
+<li>Desenvolver o raciocíno lógico dentro da arquitetura lógica dos computadores.</li>
+<li>Compreender a importância de aprender uma linguagem de programação.</li>
 <li>Entender a diferença entre um programa e uma linguagem de programação.</li>
 </ul>
 </div>
@@ -258,15 +261,22 @@
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
 <p><strong>Materiais</strong></p>
 <ul class="simple">
-<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
+<li>Utilizaremos um ambinete de desenvolvimento integrável, o IDLE  (veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a>)</li>
 </ul>
+<div class="admonition-lembre-se admonition">
+<p class="first admonition-title">Lembre-se</p>
+<p class="last">O ambiente deve ser instalado localmente nas máquinas, contudo em caso de problema utilize nosso espaço de <a class="reference external" href="../Apoio/console.html">experimentação</a>.</p>
+</div>
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conceitos computacionais</strong></p>
 <p>Comece por instigar os alunos com a pergunta: <em>Porquê alguém deveria aprender a fazer programas de computador?</em></p>
 <p>Orientando-os a buscar referências no dia-a-dia, onde a computação é aplicada. Contextualize com exemplos tais como serviços na internet, exemplos: e-mail, Facebook, Twitter. Nesta parte é importante destacar que a computação (<em>software</em>) não esta presente apenas nos computadores pessoais (<em>desktop</em>) mas em celulares, carros, televisores, etc; e que isso não é um futuro distante mas sim o presente.</p>
-<p>Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa” ou seja, com o método de execução de um programa funciona. Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores. Um exemplo é contar o número de palavras de um texto (habilidade melhor executada por um computador) e interpretar o conteúdo do mesmo texto (habilidade melhor executada por um ser humano).</p>
+<p>Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa” ou seja, com o método de execução de um programa funciona. Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores.</p>
+<blockquote>
+<div>Computadores (repetição) X Humanos (pensamento)</div></blockquote>
+<p>Um exemplo é contar o número de palavras de um texto (habilidade melhor executada por um computador) e interpretar o conteúdo do mesmo texto (habilidade melhor executada por um ser humano).</p>
 <p>Apresente o conceito de computador como um dispositivo assistente pessoal que constantemente nos pergunta:</p>
 <p><em>“O que [devo fazer] agora?”</em></p>
 <p>Trabalhe os conceitos de <strong>arquitetura</strong> de computadores nestes 5 grupos macros:</p>
@@ -277,7 +287,6 @@
 <li><strong>Dispositivos de Entrada/Saída</strong> (<em>Output Devices</em>)</li>
 <li><strong>Rede</strong></li>
 </ul>
-<p>Mostre como estes grupos e faça analogias. Uma dica é Recortar quadrados de papel e indifique cada uma das partes, pergunte como elas podem ser associadas?</p>
 <p>Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa.</p>
 <p>Siga com a questão: <a href="#id1"><span class="problematic" id="id2">**</span></a>O que é necessário saber para me tornar um programador?</p>
 <p>Sugestões para discussão:</p>
@@ -302,8 +311,7 @@
 <br/>
 <div id="idade_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="idade_code" class="active_code", prefixcode="undefined" lang="python">
-idade = 15
-print("Minha idade:",idade)
+print(u"Olá Mundo")
 </textarea>
 </div>
 <div class="ac_output">
@@ -367,20 +375,25 @@ else{
 
 </div>
 
-<p>Por fim, demonstre que programa é construir soluções. Podemos instruir o computador a automatizar este processo.</p>
-<p>Termine apresentando a <strong>Fábrica de Jogos</strong> e suas regras:</p>
+<p>Por fim, demonstre que programa é resolver problemas (construir soluções). Podemos instruir o computador a automatizar este processo.</p>
+<p><strong>Experimentação</strong></p>
+<ol class="arabic simple">
+<li>Uma boa sugestão é escrever um programa, no terminal interativo, para imprimir o nome de cada aluno na tela.</li>
+<li>Agrupe <tt class="docutils literal"><span class="pre">prints()</span></tt> para demonstrar a execução linear do código.</li>
+</ol>
+<p>Termine apresentando as regras da <strong>Fábrica de Jogos</strong>:</p>
 <div class="admonition-regras admonition">
 <p class="first admonition-title">Regras</p>
 <ul class="last simple">
-<li>Separe a turma em grupos de até 3 alunos.</li>
+<li>Grupos de até 3 alunos.</li>
 <li>Nas próximas aulas, os alunos receberão o desafios de construir um jogo.</li>
-<li>O professor (na figura de investidor) irá dar 100 <a class="reference external" href="../Apoio/progmoney.html">progmoney</a>  (sigla <tt class="docutils literal"><span class="pre">$&gt;&gt;&gt;</span></tt>) para cada grupo começar a empresa de jogos.</li>
-<li>Em cada aula os alunos receberão uma lista de comandos permitidos para construção do jogos.</li>
-<li>A construção de código tem um <em>custo</em> de progmoney</li>
-<li>Cada linha de código custa <tt class="docutils literal"><span class="pre">1</span> <span class="pre">$&gt;&gt;&gt;</span></tt>.</li>
-<li>Uso de instruções não permitidas custam <tt class="docutils literal"><span class="pre">30</span> <span class="pre">$&gt;&gt;&gt;</span></tt></li>
-<li>Ao aprender funcionalidade novas os grupos recebem mais progmoney.</li>
-<li>Existe uma tabela de preços por instrução.</li>
+<li>O professor (na figura de investidor) irá distribuir 100 <a class="reference external" href="../Apoio/progmoney.html">progmoney</a>  (sigla <tt class="docutils literal"><span class="pre">$&gt;</span></tt>) para cada grupo começar a empresa.</li>
+<li>Em cada aula os alunos receberão uma lista de comandos <strong>permitidos</strong> para construção do jogos.</li>
+<li>A construção de código tem um <em>custo</em> em <em>progmoney</em></li>
+<li>Cada linha de código custa <tt class="docutils literal"><span class="pre">1</span> <span class="pre">$&gt;</span></tt>.</li>
+<li>Uso de instruções não permitidas custam <tt class="docutils literal"><span class="pre">30</span> <span class="pre">$&gt;</span></tt></li>
+<li>Ao aprender funcionalidade novas os grupos adquirem mais <em>progmoney</em>.</li>
+<li>Os preços por instrução/comando estão em uma <a class="reference external" href="../Apoio/progmoney.html">tabela</a>.</li>
 </ul>
 </div>
 </div>
@@ -389,8 +402,8 @@ else{
 <p>Nesta aula vimos com o computador pode automatizar nossas vidas, mas é importante destacar que a <strong>criatividade</strong> é ferramenta para construção.
 Nesta etapa avalie a participação e interesse dos alunos. Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.</p>
 <p><strong>Referências</strong></p>
-<p><a class="reference external" href="http://python.org">Site oficial do Python</a></p>
-<p><a class="reference external" href="http://ramalho.pro.br/aprendaprog/cap0.html">Porque Aprender a Programar</a></p>
+<p><a class="reference external" href="http://python.org">Site oficial do Python</a>
+<a class="reference external" href="http://ramalho.pro.br/aprendaprog/cap0.html">Porque Aprender a Programar</a></p>
 </div>
 </div>
 

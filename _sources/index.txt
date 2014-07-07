@@ -27,7 +27,7 @@ Despertar o interesse para programação, evidenciando seus benefícios. Este au
    Aula1/Plano.rst
 
 
-Aula 2: Experimentação
+Aula 2: Calculadora
 :::::::::::::::::::::::::::::::::
 
 Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo interativo (console) e introduzir alguns conceitos da linguagem. (Tempo min: 60 min)  
@@ -39,7 +39,7 @@ Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo in
 
    Aula2/Plano.rst
 
-Aula 3: Tipos de dados
+Aula 3: Variáveis
 ::::::::::::::::::::::::::::::::::::
 
 Apresentação sobre variáveis, alguns tipos de dados simples e listas. (Tempo min: 60 min)  
