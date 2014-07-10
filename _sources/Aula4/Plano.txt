@@ -8,117 +8,145 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 4: Acesso & Controle
-=========================
+Aula 4: Acesso a funcionalidades
+================================
 
 Objetivos
 +++++++++
 
-- Utilizar o comando ``import``
-- Argumentos para funções
-- O conceito e acesso a módulos
-- Condicionais 
-- Blocos
-- Operações de comparações
-- Sentenças com ``if``
-- Sentenças com ``while``
-- A diferença entre ``=`` e ``==``
-- A função ``random.randint()``
+- Entender o que são funções e seus argumentos.
+- Aprender a utilizar o comando ``import``.
+- Compreender o conceito e acesso a módulos.
+- Trabalhar com números aleatórios.
+ 
 
 Preparação
 ++++++++++
 
 - IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
+- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#sugestao-de-layout>`__ códigos no IDLE.
 
 Atividades
 ++++++++++
 
 **Conceitos computacionais**
 
-1. Defina o conceito de função, faça analogia com um mini-programa, quando *chamamos* a função ele executa o código definido no mini-programa.
-2. Reforce o conceito de parâmetros nas funções previamente utilizadas ``print()`` e ``input()`` onde *passamos* parametros, no primeiro caso o refere-se conteúdo a ser impresso e no último uma descrição (opcional) para o valor a ser imputado. 
-3. Apresente o comando ``import`` na qual iremos importar uma "caixa" de funções (esta "caixa" dá-se o nome de módulo). 
-4. Após carregar o módulo ``random.randint()`` apresente algumas funcionalidades. 
+Até o momento nos familiarizamos com as `idéias e conceitos <../Aula1/Plano.html>`__ para construir programas, começamos a nos familiarizar 
+com o `ambiente <../Apoio/idle.html>`__ IDLE e brincamos com `operadores matemáticos <../Aula2/Plano.html#atividades>`__ e finalmente aprendemos 
+a `definir variáveis <../Aula3/Plano.html>`__. 
 
-.. admonition:: Acesso a funções
+.. admonition:: Funções
 
-	Tente invocar uma função sem fazer um ``import``. Faça os alunos pensarem porquê? 
+  Funções são uma espécie de "*mini*-programa" dentro do código que permite executá-lo facilmente. Para acessá-las 
+  basta saber o seu *nome* e *argumentos*. 
+  
+  A funções seguem a estrutura: ``nome`` ``(`` ``argumentos`` ``)`` e podem retornar valores ou não. 
+  
+  Nas aulas anteriores utilizamos duas funções print() e input()
+  
+  - Quando fazemos ``print(u"Olá Mundo")`` estamos invocando a função ``print()`` com o **argumento** ``u"Olá Mundo"``.
+  - Já ao utilizar a função ``input()`` temos a opção de passar um parâmetro (ex. ``input(u"qual o seu nome?")`` sendo que ela **retorna**
+    o valor, que nos exemplos anteriores atribuimos a uma variável.
+
+1. Além das funções de **entrada/saída** (print/input) apresente outras funções, algumas sugestões:
+
++------------+---------------------------------------------------+-----------------+--------------------+---------------------+
+| Função     | O que ela faz?                                    | Argumentos      |      Retorno       | Exemplo             |
++============+===================================================+=================+====================+=====================+
+| ``type()`` | descobre o tipo da variável                       | objeto          |  tipo  do objeto   |  ``type(4)``        |
++------------+---------------------------------------------------+-----------------+--------------------+---------------------+
+| ``len()``  | retorna o número de caracteres de uma sequência   | string ou lista |  número inteiro    | ``len("programaê")``|
++------------+---------------------------------------------------+-----------------+--------------------+---------------------+
+| ``help()`` | retorna detalhes de acesso/retorno de uma função  | nome da função  | descrição da função| ``help(print)``     | 
++------------+---------------------------------------------------+-----------------+--------------------+---------------------+
 
 
-.. activecode:: random
+Trabalhe no `console interativo <../Apoio/idle.html#console-iterativo>`__ estas funções.
 
-	import random # nossa "caixa" de funcionalidades
-	numero = random.randint(1,10)
-	print(numero)
-	numero = random.randint(1,10)
-	print(numero)
+2. A linguagem Python contém muitas funções pré-definidas, as citadas acima são chamadas de funções *built-in* ou seja, estão "embutidas" e não dependem 
+de nenhum passo extra para serem acessadas: veja uma `lista de funções <../Apoio/builtin.html>`__ embutidas e trabalhe algumas com os alunos. 
 
-5. Os blocos de código são instruções que respeitam a mesma indentação. Reforce a necessidade deles nas instruções a seguir.
+3. Para acessarmos um conjunto maior de funções precisamos definir explicitamente sua localização, é preciso importá-la acessarmos dentro do programa. Para tal
+utilizamos a palavra-reservada ``import``, nesta aula iremos apresentar o pacote **random** que contem funções para trabalhar com números aleatórios.
 
-6. *Como instruimos o computador a fazer decisões?* Apresente a função ``if`` (*se*).
-
-7. Repetição (*loops*) utilizando o ``while``
-
-8. Comparações matemáticas: ``>`` (*maior que*) ``<`` (*menor que*) ``==`` (*igual que*) e ``!=`` (*diferente de*)
-
-Podemos resumir estes conceitos num jogo de adivinhar o número entre 1 e 20. 
+Por definição as instruções para importar módulos são definidas no inicio do programa.
 
 .. sourcecode:: python
 
-	import random
-	
-	tentativas = 0
-	
-	print(u"Olá, qual é o seu nome?")
-	nome = input()
-	
-	numero = random.randint(1,20)
-	print(u"Olá! " + nome + u"eu estou pensando num número entre 1 e 20")
-	print(u"Você consegue adivinhar com apenas 6 tentativas?")
-	
-	while tentativas < 6:
-		print(u"Escreva um valor")
-		chute = input()
-		chute = int(chute) # converte para o tipo 'int' 
+  """
+  definições
+  """
+  
+  import random
+  
+  # resto do programa.
+  
+Para exemplificar esta aula utilizaremos funções definidas no módulo (*pacote*) random: ``randint()`` e ``choice``. 
+Proponha as seguintes atividades:
 
-		tentativas = tentativas + 1
-		if chute < numero:
-			print(u"Você chutou um valor baixo... tente novamente")
-			
-		if chute > numero:
-			print(u"Você digitou um valor muito alto! Tente novamente")
-			
-		if chute == numero:
-			break
-		
-	if chute == numero:
-		tentativas = str(tentativas) # converte para o tipo string
-		print(u"Parabéns " + nome + u"!")
-		print(u"Você acertou em " + tentativas + u" tentativas.")
+4. Gerar um número aleatório inteiro entre ``-5`` e ``5``
+
+.. activecode:: random1
+
+	import random # nossa "caixa" de funcionalidades
+	numero = random.randint(-5,5)
+	print(numero)
+
+Note que para acessar precisamos primeiro definir o módulo e depois a função em questão, o ``.`` faz esta "ligação" entre módulo e função. 
+Execute mais algumas vezes para ver os números se alternando.
 	
-	if chute != numero:
-		numero = str(numero)
-		print(u"Que pena... o número que eu estava pensando era " + numero + u".")
-		
+	
+- Escolher um número na lista de cores.
 
-Explique passo a passo este programa, atentanto para:
+.. activecode:: random2
 
-- blocos de indentação, o que é código do ``while`` e do ``if``
-- condições de execução do ``while``
-- condições de execução do ``if``
-- as funções de conversão ``int()`` e ``str()`` 
-- o comando ``break`` para interromper automaticamente a execução do laço while.
+  import random
+  cores = ('azul', 'amarelo', 'verde', 'azul', 'branco' )
+  print(random.choice(cores))
+  
+Note que a função ``choice()`` recebe uma lista de itens (cores) e escolhe apenas um, note que não precisamos de uma variável, podemos chamar a função dentro 
+da função ``print()``. 
+
+.. admonition:: Funções aninhadas
+
+  É importante nesta aula destacar conceito de *retorno* de uma função como parâmetro de outra, a leitura deve ser de dentro para fora. No exemplo abaixo usamos três funções:
+  *input*, *len* e *print*. Com o ``input()`` obtemos a funcionalidade do usuário poder inserir um valor, seguimos com a função ``len()`` que pega o retorno do *input*
+  e calcula o número de caracteres, por fim utlizamos o resultado como argumento função ``print()``.
+
+  .. sourcecode:: python
+  
+    print(len(input("qual o seu nome: ")))
+
+- Simular a jogada de um dado de 6 lados. 
+
+.. activecode:: dado
+
+  import random
+  print(random.randint(1,6))
+
+   
+
+.. admonition:: Acesso a funções
+
+  Tente invocar uma função sem fazer um ``import``. Mostre o quando esquecemos de importar um erro de falta de definição é apresentado.
+  
+    ``NameError: name 'random' is not defined``
+
+
 
 **Proposta** 
 
-- Construir um número para sortear os números da Mega Sena. 
+- Utilize o ``randint`` e a função ``choice`` para criar algum programa. 
 
-Comandos permitidos:
+Exemplos:
 
-* ``print()``
-* ``input()`` (o grupo que pensar em que podemos fazer jogos com mais de 6 números, utilizando estruturas de controle (``if``), ganhará bônus em progmoney)
-* lista ``[]`` e a função ``.append()``
+- MegaSena - construir um número para sortear os números.
+- Sorteio - Escolher uma pessoa (semelhante ao problema com cores)
+
+Comandos sugeridos:
+
 * ``randint()``
+* ``choice()`` 
 	
 
 Reflexão

@@ -265,7 +265,6 @@
 <ol class="arabic simple">
 <li>Relembre as funcionalidades do IDLE utilizando o console.</li>
 <li>Ainda no console, crie um programa para armazenar um número em uma variável.</li>
-<li>Transfira este conceito para o <a class="reference external" href="../Apoio/idle.html#novo-codigo">editor de texto</a>.</li>
 </ol>
 
 <div id="cont"></div>
@@ -344,66 +343,68 @@ else{
 
 </div>
 
-<ol class="arabic simple" start="4">
-<li>Defina um tipo texto (chamado <em>string</em>)</li>
+<ol class="arabic simple" start="3">
+<li>Transfira este conceito para o <a class="reference external" href="../Apoio/idle.html#novo-codigo">editor de texto</a>.</li>
+<li>Defina um tipo (<em>string</em>) para armazar textos.</li>
 </ol>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">nome</span> <span class="o">=</span> <span class="s">&quot;Pedro &quot;</span> <span class="c"># atribuição</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">nome</span> <span class="o">=</span> <span class="s">&quot;Pedro &quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sobrenome</span> <span class="o">=</span> <span class="s">&quot;Silva&quot;</span>
 </pre></div>
 </div>
+<p>Repare que o <em>tipo</em> da variável é definido no momento que associamos um valor a ela.</p>
 <ol class="arabic simple" start="5">
-<li>Lembre que os conceitos aritméticos aplicam-se em variáveis.</li>
+<li>Verifique quais conceitos aritméticos aplicam-se em variáveis que armazenam números.</li>
 </ol>
 
 <div id="cont"></div>
-<div id="concat" lang="python" class="ac_section alert alert-warning" >
+<div id="idade" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="concat_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="concat_saveb" onclick="saveEditor('concat');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="concat_loadb" onclick="requestCode('concat');">Load</button>
+<button class='btn btn-success' id="idade_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_saveb" onclick="saveEditor('idade');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_loadb" onclick="requestCode('idade');">Load</button>
 
 </div>
 <br/>
-<div id="concat_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="concat_code" class="active_code", prefixcode="undefined" lang="python">
-nome = "nome"
-sobrenome = "sobrenome"
-nome_completo = nome + sobrenome
-print(nome_completo)
+<div id="idade_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="idade_code" class="active_code", prefixcode="undefined" lang="python">
+ano = 2014
+nascimento = 1998
+idade = ano - nascimento
+print(idade)
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="concat_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="idade_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="concat_suffix" style="display:none">
-</pre><pre id="concat_pre" class="active_out">
+<pre id="idade_suffix" style="display:none">
+</pre><pre id="idade_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (concat)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (idade)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#concat_saveb').toggle();
-    $('#concat_loadb').toggle();
+    $('#idade_saveb').toggle();
+    $('#idade_loadb').toggle();
 }
-if ($("#concat_code_div").parents(".admonition").length == 0 && $("#concat_code_div").parents("#exercises").length == 0){
+if ($("#idade_code_div").parents(".admonition").length == 0 && $("#idade_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#concat_code_div").offset({
-			left: $("#concat .clearfix").offset().left
+		$("#idade_code_div").offset({
+			left: $("#idade .clearfix").offset().left
 		});
 	}
-	$("#concat_runb").one("click", function(){
+	$("#idade_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#concat_code_div").animate({
+				$("#idade_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -412,10 +413,10 @@ if ($("#concat_code_div").parents(".admonition").length == 0 && $("#concat_code_
 			}
 		})
 		.queue(function (next) {
-			$("#concat_runb").parent().siblings(".ac_output").show();
-			runit('concat',this, undefined);
-			$("#concat_runb").on("click", function(){
-				runit('concat',this, undefined);
+			$("#idade_runb").parent().siblings(".ac_output").show();
+			runit('idade',this, undefined);
+			$("#idade_runb").on("click", function(){
+				runit('idade',this, undefined);
 			});
 		})
 		
@@ -423,11 +424,93 @@ if ($("#concat_code_div").parents(".admonition").length == 0 && $("#concat_code_
 }
 else{
 	console.log("inside new if")
-	$("#concat_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#concat_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#concat_runb").on("click", function(){
+	$("#idade_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#idade_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#idade_runb").on("click", function(){
 		console.log("button clicked");
-		runit('concat',this, undefined);
+		runit('idade',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Destaque que cada <em>tipo</em> de dado permite operações diferentes, por exemplo, se armazenarmos um tipo <strong>string</strong> podemos concatenar (<tt class="docutils literal"><span class="pre">+</span></tt>) ou repetir (<tt class="docutils literal"><span class="pre">*</span></tt>) mas não subtrair ou dividir.</p>
+
+<div id="cont"></div>
+<div id="string" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="string_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="string_saveb" onclick="saveEditor('string');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="string_loadb" onclick="requestCode('string');">Load</button>
+
+</div>
+<br/>
+<div id="string_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="string_code" class="active_code", prefixcode="undefined" lang="python">
+nome = "nome"
+sobrenome = "sobrenome"
+nome_completo = nome + sobrenome
+print(nome_completo)
+print(nome * 5)
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="string_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="string_suffix" style="display:none">
+</pre><pre id="string_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (string)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#string_saveb').toggle();
+    $('#string_loadb').toggle();
+}
+if ($("#string_code_div").parents(".admonition").length == 0 && $("#string_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#string_code_div").offset({
+			left: $("#string .clearfix").offset().left
+		});
+	}
+	$("#string_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#string_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#string_runb").parent().siblings(".ac_output").show();
+			runit('string',this, undefined);
+			$("#string_runb").on("click", function(){
+				runit('string',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#string_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#string_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#string_runb").on("click", function(){
+		console.log("button clicked");
+		runit('string',this, undefined);
 	});
 }
 </script>
@@ -446,7 +529,7 @@ else{
 <li>o caracte <tt class="docutils literal"><span class="pre">_</span></tt> pode ser utilizado para agrupar nomes grandes (ex. <tt class="docutils literal"><span class="pre">nome_completo</span></tt> é OK)</li>
 </ul>
 </div>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="7">
 <li>Quais os outros <em>tipos</em> de informação podemos armazenas numa variável?</li>
 </ol>
 <p>Faça uma diferenciação nos tipos de dados utilizados.</p>
@@ -480,61 +563,61 @@ else{
 </table>
 <div class="admonition-nota-sobre-acentuacao admonition">
 <p class="first admonition-title">Nota sobre acentuação</p>
-<p class="last">Na Python3 (utilizado na IDLE) podemos utilizar caracteres especiais sem problemas, contudo devido a uma limitação da plataforma, utlizamos a notação <tt class="docutils literal"><span class="pre">u&quot;</span> <span class="pre">&quot;</span></tt> quando nos referimos a trechos de texto (<em>strings</em>) com caracteres especiais.</p>
+<p class="last">Dentro da IDLE podemos utilizar acentuação, contudo devido a uma limitação desta plataforma, utlizamos a notação <tt class="docutils literal"><span class="pre">u&quot;</span> <span class="pre">&quot;</span></tt> quando nos referimos a trechos de texto (<em>strings</em>) com acentos.</p>
 </div>
-<p>Para intruduzir o conceito de procedimento, mostre a execução do programa passo a passo, uma idéia:</p>
+<p>Ao concatenar uma variável, podemos notar que não existe o espaço em branco entra elas, para tal, podemos definir uma terceira variável que irá armazenar um <em>espaço em branco</em>.</p>
 
 <div id="cont"></div>
-<div id="nomes_lista" lang="python" class="ac_section alert alert-warning" >
+<div id="concat2" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="nomes_lista_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="nomes_lista_saveb" onclick="saveEditor('nomes_lista');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="nomes_lista_loadb" onclick="requestCode('nomes_lista');">Load</button>
+<button class='btn btn-success' id="concat2_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="concat2_saveb" onclick="saveEditor('concat2');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="concat2_loadb" onclick="requestCode('concat2');">Load</button>
 
 </div>
 <br/>
-<div id="nomes_lista_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="nomes_lista_code" class="active_code", prefixcode="undefined" lang="python">
-alunos = []
-nome = input(u"Qual é o seu nome?")
-alunos.append(nome)
-nome = input("Diga outro nome?")
-alunos.append(nome)
-print(alunos)
+<div id="concat2_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="concat2_code" class="active_code", prefixcode="undefined" lang="python">
+print(u"Qual é o seu primeiro nome?")
+nome = input()
+print(u"Qual é seu sobrenome?")
+sobrenome = input()
+espaco = " "
+print(nome + espaco + sobrenome)
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="nomes_lista_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="concat2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="nomes_lista_suffix" style="display:none">
-</pre><pre id="nomes_lista_pre" class="active_out">
+<pre id="concat2_suffix" style="display:none">
+</pre><pre id="concat2_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (nomes_lista)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (concat2)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#nomes_lista_saveb').toggle();
-    $('#nomes_lista_loadb').toggle();
+    $('#concat2_saveb').toggle();
+    $('#concat2_loadb').toggle();
 }
-if ($("#nomes_lista_code_div").parents(".admonition").length == 0 && $("#nomes_lista_code_div").parents("#exercises").length == 0){
+if ($("#concat2_code_div").parents(".admonition").length == 0 && $("#concat2_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#nomes_lista_code_div").offset({
-			left: $("#nomes_lista .clearfix").offset().left
+		$("#concat2_code_div").offset({
+			left: $("#concat2 .clearfix").offset().left
 		});
 	}
-	$("#nomes_lista_runb").one("click", function(){
+	$("#concat2_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#nomes_lista_code_div").animate({
+				$("#concat2_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -543,10 +626,10 @@ if ($("#nomes_lista_code_div").parents(".admonition").length == 0 && $("#nomes_l
 			}
 		})
 		.queue(function (next) {
-			$("#nomes_lista_runb").parent().siblings(".ac_output").show();
-			runit('nomes_lista',this, undefined);
-			$("#nomes_lista_runb").on("click", function(){
-				runit('nomes_lista',this, undefined);
+			$("#concat2_runb").parent().siblings(".ac_output").show();
+			runit('concat2',this, undefined);
+			$("#concat2_runb").on("click", function(){
+				runit('concat2',this, undefined);
 			});
 		})
 		
@@ -554,11 +637,125 @@ if ($("#nomes_lista_code_div").parents(".admonition").length == 0 && $("#nomes_l
 }
 else{
 	console.log("inside new if")
-	$("#nomes_lista_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#nomes_lista_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#nomes_lista_runb").on("click", function(){
+	$("#concat2_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#concat2_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#concat2_runb").on("click", function(){
 		console.log("button clicked");
-		runit('nomes_lista',this, undefined);
+		runit('concat2',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<div class="admonition-captura-de-dados admonition">
+<p class="first admonition-title">Captura de dados</p>
+<p class="last">A função <tt class="docutils literal"><span class="pre">input()</span></tt> captura o valor digitado pelo usuário depois que ele aperta a tecla ⏎ (<em>Enter</em> ou <em>return</em>). No exemplo acima atribuimos este valor
+a uma variável.</p>
+</div>
+<p><strong>Comentários</strong></p>
+<p>As vezes faz-se necessário explicar com mais detalhes trechos de código, por exemplo, qual motivo de estarmos declarando uma variável chamada <tt class="docutils literal"><span class="pre">ano</span></tt>?
+É uma <a class="reference external" href="../Apoio/boaspraticas.html">boa pratica</a> de programação definir nomes de variáveis capazes de contextualizar seu conteúdo, contudo nem sempre isso é possível e definir nomes
+de variáveis exageradamente grandes pode criar problemas de legibilidade do código.  Para tal a linguagem Python permite escrever comentários,
+ou seja, blocos de códigos que serão ignorados pelo computador na hora de transformas o código em linguagem de máquina, existem dois tipo:</p>
+<ul class="simple">
+<li>Para comentários de uma <strong>única</strong> linha, utilizamos o caractere <tt class="docutils literal"><span class="pre">#</span></tt></li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># define a idade do jogador</span>
+<span class="n">idade</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Para comentários de <strong>múltiplas</strong> linhas, utilizamos <tt class="docutils literal"><span class="pre">&quot;&quot;&quot;</span></tt> ou <tt class="docutils literal"><span class="pre">'''</span></tt></li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Este é um exemplo de comentário</span>
+<span class="sd">em várias linhas, e o que esta dentro deste bloco</span>
+<span class="sd">não será executado, a variável abaixo não será definida.</span>
+<span class="sd">idade = 10</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<div class="admonition-bonus admonition">
+<p class="first admonition-title">Bônus</p>
+<dl class="last docutils">
+<dt>Como declarar diversas variáveis com uma única linha de código?</dt>
+<dd>Apenas separe cada uma com <tt class="docutils literal"><span class="pre">,</span></tt> e depois do <tt class="docutils literal"><span class="pre">=</span></tt> atribua o conteúdo respectivo.</dd>
+</dl>
+</div>
+
+<div id="cont"></div>
+<div id="bonus" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="bonus_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="bonus_saveb" onclick="saveEditor('bonus');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="bonus_loadb" onclick="requestCode('bonus');">Load</button>
+
+</div>
+<br/>
+<div id="bonus_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="bonus_code" class="active_code", prefixcode="undefined" lang="python">
+# multiplas definições com uma linha de código
+nome, sobrenome, idade = u"José", u"Silva", 20
+print(nome,sobrenome,idade)
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="bonus_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="bonus_suffix" style="display:none">
+</pre><pre id="bonus_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (bonus)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#bonus_saveb').toggle();
+    $('#bonus_loadb').toggle();
+}
+if ($("#bonus_code_div").parents(".admonition").length == 0 && $("#bonus_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#bonus_code_div").offset({
+			left: $("#bonus .clearfix").offset().left
+		});
+	}
+	$("#bonus_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#bonus_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#bonus_runb").parent().siblings(".ac_output").show();
+			runit('bonus',this, undefined);
+			$("#bonus_runb").on("click", function(){
+				runit('bonus',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#bonus_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#bonus_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#bonus_runb").on("click", function(){
+		console.log("button clicked");
+		runit('bonus',this, undefined);
 	});
 }
 </script>
@@ -566,17 +763,39 @@ else{
 </div>
 
 <p><strong>Proposta</strong></p>
+<ol class="arabic simple">
+<li>Combine com os alunos um padrão paro os arquivos, que tipo de conteúdo seria interessante acrescentar na forma de comentários?</li>
+</ol>
+<p>Algumas dicas:</p>
 <ul class="simple">
-<li>Criar uma lista de instruções.</li>
-<li>Inserir os nomes dos alunos da turma numa lista.</li>
+<li><a class="reference external" href="http://pt.wikipedia.org/wiki/Metadados">Meta</a>-informações: nome do arquivo, data, autores, descrição, contato, quais outros campos poderiam ser utilizados?</li>
+<li>Permissões de uso, apresente como opção as licenças <a class="reference external" href="http://creativecommons.org/choose/?lang=pt_BR">Creative Commons</a>.</li>
 </ul>
+<p>Um exemplo de cabeçalho:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">idade.py - programa que calcula a idade</span>
+
+<span class="sd">Licença: CC BY-SA</span>
+
+<span class="sd">Autores: Lucas &lt;lucas@programae.org.br&gt;</span>
+<span class="sd">         Tiago &lt;tiago@programae.org.br&gt;</span>
+
+<span class="sd">Data: 18/08/2014</span>
+
+<span class="sd">Versão: 1.0</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Defina uma variável chama <tt class="docutils literal"><span class="pre">__autor__</span></tt> que deverá ser sempre preenchiada com o nome da empresa escolhida por cada grupo.</li>
+</ol>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">__autor__</span> <span class="o">=</span> <span class="s">&#39;empresa&#39;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Há problemas para serem automatizados nas aulas de matemática?</li>
-<li>Como podemos organizar nosso cotidiano com estuturas de dados computacionais?</li>
-</ul>
 </div>
 </div>
 
