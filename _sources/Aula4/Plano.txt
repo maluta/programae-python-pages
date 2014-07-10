@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 4: Acesso a funcionalidades
-================================
+Aula 4: Primeiras funcionalidades
+===========================================
 
 Objetivos
 +++++++++
@@ -24,7 +24,7 @@ Preparação
 ++++++++++
 
 - IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
-- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#sugestao-de-layout>`__ códigos no IDLE.
+- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
 
 Atividades
 ++++++++++
@@ -136,12 +136,12 @@ da função ``print()``.
 
 **Proposta** 
 
-- Utilize o ``randint`` e a função ``choice`` para criar algum programa. 
+- Utilize o ``randint`` e a função ``choice`` para criar um programa de sorteios.
 
 Exemplos:
 
 - MegaSena - construir um número para sortear os números.
-- Sorteio - Escolher uma pessoa (semelhante ao problema com cores)
+- AmigoSecreto - Escolher uma pessoa (semelhante ao problema com cores)
 
 Comandos sugeridos:
 
@@ -151,10 +151,6 @@ Comandos sugeridos:
 
 Reflexão
 ++++++++
-
-- Como organizar o código fonte com funções?
-- Os módulos como "caixas" de funcionalidades.
-
 
 
 

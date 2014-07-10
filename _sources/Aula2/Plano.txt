@@ -81,4 +81,3 @@ Uma sugestão de primeiro desafio para as equipes é converter o *progmoney* em 
 Reflexão
 +++++++++
 
-Avalie a participação e curiosidade dos alunos, experimentar nesta parte irá faciliar a construção nas aulas seguintes.

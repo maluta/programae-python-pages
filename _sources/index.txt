@@ -1,6 +1,6 @@
 
 =====================
-Planos de Aula - Programaê - Python
+Programaê - Python - Planos de Aula 
 =====================
 
 .. Here is were you specify the content and order of your new book.
@@ -51,8 +51,8 @@ Apresentação sobre variáveis, alguns tipos de dados simples e listas. (Tempo 
 
    Aula3/Plano.rst
 
-Aula 4: Acesso & Controle 
-:::::::::::::::::::::::::::::::::
+Aula 4: Primeiras funcionalidades
+::::::::::::::::::::::::::::::::::::::::::::
 
 Acesso a módulos, funções (números aleatórios) e algumas estruturas básicas de controle. (Tempo min: 60 min) 
 
@@ -63,7 +63,7 @@ Acesso a módulos, funções (números aleatórios) e algumas estruturas básica
    :hidden: 
 
 
-Aula 5: Mais com textos
+Aula 5: Controles (I)
 :::::::::::::::::::::::::::::::::::
 
 Tudo que você precisa saber para manipular textos com seus alunos. (Tempo min: 60 min) 

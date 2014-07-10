@@ -27,7 +27,7 @@ Preparação
 **Materiais**
 
 - IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
-- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#sugestao-de-layout>`__ códigos no IDLE.
+- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
 
 Atividades
 ++++++++++

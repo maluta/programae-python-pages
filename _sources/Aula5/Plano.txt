@@ -8,22 +8,22 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 5: Mais com textos
+Aula 5: Controles (I)
 =======================
 
 Objetivos
 +++++++++
 
-- Experimentar possibilidades com o comando ``print()``
-- Verificar o tamanho da string com a instrução ``len()``
-- Concatenação de strings
-- Fatiamento de strings
-- Métodos *comuns* para strings
+- Utilizar operadores comparações.
+- Utilizar operadores Booleanos (True e False)
+- Aprender sentenças com ``if``
+
 
 Preparação
 ++++++++++
 
 - IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
+- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
 
 
 Atividades
@@ -31,77 +31,132 @@ Atividades
 
 **Conceitos computacionais** 
 
-1. Começe por definir uma string simple, entre aspas (*lembre-se do ``u""`` apresentado na aula aterior se for utilizar acentuação*)
+Até o momento utilizamos instruções sequenciais para dar *ordens* ao computador. Agora iremos entrar num mudo novo, onde teremos de tomar **decisões**.
+Contudo, antes de apresentar os mecanismos da linguagem vamos aprender como efetuar comparações.
 
-.. admonition:: "" ou ''?
+Abra o `console <../Apoio/idle.html#console-iterativo>`__ e trabalhe alguns exemplos:
 
-	Tanto faz. Você pode usar ``print('texto')`` ou ``print("texto")``
+.. sourcecode:: python
+
+  >>> -1 > 1
+  False
+  >>> 10 < 9
+  False
+  >>> 2+2 == 5
+  False
+
+Repare que sempre obtemos como resposta ``False`` (falso) ou ``True`` (verdadeiro). 
+
+Também podemos aplicar estes operadores em outros tipos de dados, por exemplo, não-numéricos:
+
+.. sourcecode:: python
+
+  >>> "a" == "b"
+  False
+  >>> "a" < "b"
+  True
+
+É importante destacar para os alunos dois pontos, quando utilizamos o operador de comparação de igualdade (``==``) estamos nos referindo o **conteúdo** das variáveis, estamos
+vendo se "a" *é igual a* "b". Entretando quando utilizamos o operador ``>`` ou ``<`` a lógica é outra. Para entedermos é preciso demonstrar a função (`built-in <../Apoio/builtin.html>`__) 
+``ord()``.
+
+.. activecode:: ord
+
+  print("a",ord("a"))
+  print("b",ord("b"))
+  
+ 
+Repare que quando efetuamos a operação ``<`` na verdade estamos comparando se o código referente a letra ``a`` (97) é menor que o da letra ``b`` (98).
+
+De posse dos conceitos de comparação podemos seguir e aprender a primeira instrução para efetuar decisões no Python, a palavra-reservada ``if``.
+
+Começemos com um exemplo:
+
+.. activecode:: if
+
+  idade = input(u"Qual é a sua idade?") 
+  idade = int(idade)
+  if idade > 14 == True:
+    print(u"Bem-vindo ao curso de Python!")
+    print(u"Sua idade é " + str(idade) + " anos.")
+  
+Vamos analisar cada linha individualmente:
+
+- ``#1`` → Chama a função input() passando como parâmetro a pergunta *'Qual é a sua idade?'* e armazena a resposta na variável idade.
+- ``#2`` → Neste momento utilizamos a função (*built-in*) ``str()`` para converter o tipo string para o tipo inteiro. 
+- ``#3`` → **Se** o conteúdo da variável idade for maior que 14 executa a próxima linha:
+- ``#4`` → Caso a sentença verdadeira chama a função ``print`` com a mensagem de boas vindas.
+- ``#5`` → Novamente utilizamos a função (built-in) ``str()`` que faz o oposto da função *int()* e converte um tipo numérico em string.
+
+.. admonition:: Indentação
+
+  Repare que as instruções das linhas 4 e 5 estão um pouco deslocados para a direita. A este recuo dá-se o nome de **indentação**
+  ou seja, é um bloco de código que é executado dentro de um *contexto*. No exemplo acima, as duas linhas ``print`` só são executadas 
+  se confirmarem a condição definida no ``if``.
+  
+  **Para a separação de blocos de código, a linguagem Python usa espaços em branco.**
+  
+Para exemplificar vamos definir um protótipo do comando ``if`` que não faz absolutamente nada. 
+    
+.. sourcecode:: python
+  
+  if True:
+    pass
+  
+Veja que a condição é **sempre** verdadeira (True) e a palavra-reservada ``pass`` faz com que o código seja validado sem que ainda precisemos pensar na 
+*implementação* caso a condição do *if* seja confirmada.
+
+Mais exemplos com ``if``.
+
+.. activecode:: ex_if
+
+  nome = u"José"
+  if nome == u"José":
+    print(u"Seu nome é: " + nome)
 
 
-2. Armazene e imprima numa variável 
-3. Mostre como contar o número de caracteres com a função ``len()`` 
+Por fim, apresente a necessidade de ter o segundo caminho, caso a condição da sentença não seja confirmada, para tal apenas complementamos com a palavra ``else``.
 
-.. activecode:: strings1
+Vamos retomar a estrutura do **if**:
 
-	 texto = u"programar é muito bom"
-	 print(texto)
-	 print(len(texto))
+  ``if`` expressão ``:``
 
-4. Reforce a questão de indice da string, demonstrando a forma de acessar.
-5. Fatiamento de strings.
+    código caso *expressão* seja confirmada.
+  
+  ``else:`` 
+  
+    código caso a *expressão* **não** seja confirmada.
 
-.. activecode:: strings2
 
-	 texto = u"programar É muito bom"
-	 print(texto[0]) # primeiro caractere
-	 print(texto[:9]) # do ínicio (índice zero) até o índice 8
-	 print(texto[10:11]) # apenas o índice 10
-	 print(texto[12:17]) # do índice 12 até o 16
-	 print(texto[18:]) # do índice 18 até o final
-	 
-Pontos importantes: 
+    
+**Proposta**
 
-- O índice da string começa em "0"
-- Não se esqueça que o espaço em branco ``" "`` também está no índice. 
-- Para acessar um único caracter utilizamos: ``texto[índice]``
-- Para um fatiamento pode ser completo utilizamos **posição de início** ``:`` **posição final** (mas em incluí-la).
+- Utilize as funções para números aleatórios para fazer um jogo de adivinhação.
+- Utilize o ``if`` para introduzir a idéia probabilidades, por exemplo, a instrução ``random.randint(1,3)`` tem 33,3% de chances (em média) de occorer
+  cada uma das possibilidades. Exemplo:
+  
+.. activecode:: prob 
 
-6. Trabalhe funções comuns para manipular strings
+  import random
+  print(u"Você caminha em direção a sala...")
+  if random.randint(1,2) == 1: 
+      print(u"Um monstro aparece")
+  else:
+      print(u"Tudo esta calmo e tranquilo")
+  
 
-.. activecode:: strings3
+Quando fazemo ``randint(1,2)`` podemos ter como resposta ``1`` ou ``2``, ou seja, em média cada uma das resposta aparecera em 50% dos casos. 
 
-	texto = u"programar É muito bom"
-	print( texto ) # texto original
-	print( texto.upper() ) # todo o texto em letras maiúsculas
-	print( texto.lower() ) # todo o texto em letras minúsculas
-	print( texto.capitalize() ) # texto com a primeira letra maiúscula
-	print( texto.count('a') ) # quantas vezes a letra 'a' aparece
-	print( texto.find('a') ) # retorna o índice da primeira ocorrência da letra 'a'
-	print( texto.replace(' ','_') ) # substitui todos os espaços em branco por '_'
-	
-.. admonition:: Caracteres de escape (``\``)
+- Comece a trabalha com os alunos o "enredo" da história. Como esta pode ser construída. 
 
-	- barra invertida ``\\`` 
-	- aspas simples ``\'`` 
-	- aspas duplas ``\"`` 
-	- quebra de linha ``\n``
-	- seção tabular ``\t``
+.. admonition:: RPG
 
-**Proposta** 
+  Pergunte na sala se algum dos alunos conhece jogos de `RPG <http://pt.wikipedia.org/wiki/Role-playing_game>`__ (*Role-playing Game*), eles podem dar dicas de como estrutura uma aventura. 
 
-- Impressão de poesias (haikais) com ``print()`` e o delimitador ``\t``
 
-.. activecode:: strings4
 
-	texto="Pra que cara feia?\n\tNa vida,\nNinguém paga meia.\n\n(Paulo Leminski)"
-	print(texto)
-
-- Construir um validador de *twitts*. Como saber se meu texto "cabe" dentro de uma mensagem no **Twitter** (limite de 140 caracteres)
-- Construir um buscador de palavras no textual 
 
 
 Reflexão
 ++++++++
-
-- Onde este tipo de manipulação pode ser utilizado nas aulas de literatura/português?
 

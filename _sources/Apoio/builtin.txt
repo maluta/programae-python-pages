@@ -3,6 +3,26 @@
 Funções Built-in
 ==========================
 
+.. admonition:: Como utilizá-las?
+
+  No editor de textos e/ou console basta invocá-las pelo nome. 
+  
+  Para mais detalhes utilize ``help(nomedafunção)``, exemplo:
+  
+  .. sourcecode:: python
+  
+    >>> help(ord)
+    Help on built-in function ord in module builtins:
+
+    ord(...)
+      ord(c) -> integer
+      
+      Return the integer ordinal of a one-character string.
+
+  Lembre-se que é apenas o nome da função, sem o parenteses.  
+
+Lista completa
+--------------
 
 +-----------------+----------------+----------------+--------------+------------------+
 |``abs()``        |``dict()``      |``help()``      |``min()``     |``setattr()``     |
