@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 1: Regras &amp; Conceitos &mdash; Programaê</title>
+    <title>Aula 6: Aventuras no texto (I) &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -71,8 +71,6 @@
     <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
-    <link rel="next" title="Aula 2: Calculadora" href="../Aula2/Plano.html" />
-    <link rel="prev" title="Programaê - Python - Planos de Aula" href="../index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -196,7 +194,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 1: Regras &amp; Conceitos</a><ul>
+<li><a class="reference internal" href="#">Aula 6: Aventuras no texto (I)</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -210,18 +208,6 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Programaê - Python - Planos de Aula" data-toggle="tooltip">
-    <a href="../index.html" >
-      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
-    </a>
-  </li>
-  
-  <li id="relations-next" title='Next Chapter - Aula 2: Calculadora' data-toggle="tooltip" >
-    <a href="../Aula2/Plano.html" >
-      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
-    </a>
-  </li>
-  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -245,109 +231,105 @@
 
 <div class="container">
   
-  <div class="section" id="aula-1-regras-conceitos">
-<h1>Aula 1: Regras &amp; Conceitos<a class="headerlink" href="#aula-1-regras-conceitos" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-6-aventuras-no-texto-i">
+<h1>Aula 6: Aventuras no texto (I)<a class="headerlink" href="#aula-6-aventuras-no-texto-i" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
-<p>Nesta aula, os alunos deverão:</p>
 <ul class="simple">
-<li>Desenvolver o raciocíno lógico dentro da arquitetura dos computadores.</li>
-<li>Compreender a importância de aprender uma linguagem de programação.</li>
-<li>Entender a diferença entre um programa e uma linguagem de programação.</li>
-<li>Entender o conceito da <em>Fábrica de Jogos</em> deste curso.</li>
+<li>Definir uma função própria com <tt class="docutils literal"><span class="pre">def</span></tt></li>
+<li>Introdução da aventuras em modo texto</li>
+<li>A palavra reservada <tt class="docutils literal"><span class="pre">pass</span></tt></li>
+<li>Tipos Lógicos (Booleanos)</li>
+<li>Começar a construir um enrredo</li>
 </ul>
 </div>
 <div class="section" id="preparacao">
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
-<p><strong>Materiais</strong></p>
 <ul class="simple">
-<li>Utilizaremos um ambiente de desenvolvimento integrável, o IDLE  (veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a>)</li>
+<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
 </ul>
-<div class="admonition-lembre-se admonition">
-<p class="first admonition-title">Lembre-se</p>
-<p class="last">O ambiente deve ser instalado localmente nas máquinas, contudo em caso de problema utilize nosso espaço de <a class="reference external" href="../Apoio/console.html">experimentação</a>.</p>
-</div>
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
+<p>O objetivo das <strong>texto-aventuras</strong> é criar um jogo ficcional e interativo na qual o personagem é levado, de acordo com a opção do jogador, a uma determinada parte do jogo. Iremos utilizar os conceitos aprendidos até então para construir este tipo de narrativa!</p>
+<p>Um exemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre>Você esta em um mundo cheio de dragões. Na sua frente,
+você vê duas cavernas. Em uma delas, o dragão é seu amigo
+e vai compartilhar o tesouro com você. Na outra o dragão
+é hostil e violento e irá destruí-lo num piscar de olhos.
+
+Qual das cavernas você deseja entrar (1 ou 2)?
+1
+
+Você se aproxima da caverna
+Esta escuro e assustador.
+
+Um dragão enorme salta na sua frente. Ele abre a mandíbula e...
+Te devora em uma mordida.
+
+Você quer jogar de novo?
+</pre></div>
+</div>
 <p><strong>Conceitos computacionais</strong></p>
-<p>Comece por instigar os alunos com a pergunta: <em>Porquê alguém deveria aprender a fazer programas de computador?</em></p>
-<p>Orientando-os a buscar referências no dia-a-dia, onde a computação é aplicada. Contextualize com exemplos tais como serviços na internet: e-mail, Facebook, Twitter.
-Nesta parte é importante destacar que a computação (<em>software</em>) não está presente apenas nos computadores pessoais (<em>desktop</em>) mas em celulares, carros,
-televisores, etc; e que isso não é um futuro distante mas sim o presente.</p>
-<p>Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa”, ou seja, como o método de execução de um programa funciona.
-Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores.</p>
-<blockquote>
-<div>Computadores (repetição) X Humanos (pensamento)</div></blockquote>
-<p>Um exemplo é contar o número de palavras de um texto (habilidade melhor executada por um computador) e interpretar o conteúdo do mesmo texto (habilidade melhor executada por um ser humano).</p>
-<p>Apresente o conceito de computador como um dispositivo assistente pessoal que constantemente nos pergunta:</p>
-<p><em>“O que [devo fazer] agora?”</em></p>
-<p>Trabalhe os conceitos de <strong>arquitetura</strong> de computadores nestes 5 grupos macros:</p>
-<ul class="simple">
-<li><strong>CPU</strong> (<em>Central Processing Unit</em>)</li>
-<li><strong>Memória Principal</strong> (<em>Main Memory</em>)</li>
-<li><strong>Memória Secundária</strong> (<em>Secondary Memory</em>)</li>
-<li><strong>Dispositivos de Entrada/Saída</strong> (<em>Output Devices</em>)</li>
-<li><strong>Rede</strong></li>
-</ul>
-<p>Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa.</p>
-<p>Siga com a questão: <strong>O que é necessário saber para me tornar um programador?</strong></p>
-<p>Sugestões para discussão:</p>
 <ol class="arabic simple">
-<li><strong>Aprender uma linguagem de programação</strong>, faça analogias como aprender outro idioma, conhecendo o vocabulário e a gramática.</li>
-<li><strong>Aprender a se comunicar</strong> de forma clara (da mesma forma que contamos uma história e melhoramos a medida que nos exercitamos). O programa é a “história” e o problema a ser resolvido é a &#8220;idéia&#8221;.</li>
+<li>Apresente a estrutura para construção de uma função utilizando a palavra reservada <tt class="docutils literal"><span class="pre">def</span></tt></li>
 </ol>
-<p>Comece por diferenciar uma linguagem humana como Português, Inglês ou Espanhol de uma linguagem de programação como o Python, apresentando as diferenças entre elas, especialmente ao tamanho do vocabulário que nas linguagens de programação são chamadas de palavras reservadas.</p>
-<p>Podemos pensar num treinador de cachorros que usa palavras especiais para algumas ações: “senta!”, “parado!” e “pega!”. Se utilizarmos outras palavras que o cachorro não reconhece ele não irá compreender.</p>
-<p>Liste algumas palavras reservadas do vocabulário Python, como: <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">del</span></tt>, <tt class="docutils literal"><span class="pre">for</span></tt>, <tt class="docutils literal"><span class="pre">is</span></tt>, <tt class="docutils literal"><span class="pre">raise</span></tt>, <tt class="docutils literal"><span class="pre">assert</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, <tt class="docutils literal"><span class="pre">from</span></tt>, <tt class="docutils literal"><span class="pre">lambda</span></tt>, <tt class="docutils literal"><span class="pre">return</span></tt>, <tt class="docutils literal"><span class="pre">break</span></tt>, <tt class="docutils literal"><span class="pre">else</span></tt>, <tt class="docutils literal"><span class="pre">global</span></tt>, <tt class="docutils literal"><span class="pre">not</span></tt>, <tt class="docutils literal"><span class="pre">try</span></tt>, <tt class="docutils literal"><span class="pre">class</span></tt>, <tt class="docutils literal"><span class="pre">exec</span></tt>, <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt>, <tt class="docutils literal"><span class="pre">while</span></tt>, <tt class="docutils literal"><span class="pre">continue</span></tt>, <tt class="docutils literal"><span class="pre">exec</span></tt>, <tt class="docutils literal"><span class="pre">import</span></tt>, <tt class="docutils literal"><span class="pre">pass</span></tt>, <tt class="docutils literal"><span class="pre">yeld</span></tt>, <tt class="docutils literal"><span class="pre">def</span></tt>, <tt class="docutils literal"><span class="pre">print</span></tt>.</p>
-<p>Não se preocupe neste momento em descrever cada uma, o importante é destacar como começar a falar, para isso vamos utilizar o comando <tt class="docutils literal"><span class="pre">print</span></tt> da linguagem. É importante neste momento mostrar como o computador recebe as instruções, interpreta e executa uma ação.</p>
 
 <div id="cont"></div>
-<div id="idade" lang="python" class="ac_section alert alert-warning" >
+<div id="intro" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="idade_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_saveb" onclick="saveEditor('idade');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_loadb" onclick="requestCode('idade');">Load</button>
+<button class='btn btn-success' id="intro_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="intro_saveb" onclick="saveEditor('intro');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="intro_loadb" onclick="requestCode('intro');">Load</button>
 
 </div>
 <br/>
-<div id="idade_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="idade_code" class="active_code", prefixcode="undefined" lang="python">
-print(u"Olá Mundo")
+<div id="intro_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="intro_code" class="active_code", prefixcode="undefined" lang="python">
+def intro():
+  print(u"Introdução ao jogo")
+
+def regras():
+  print(u"1. regra a")
+  print(u"2. regra b")
+  print(u"3. regra c")
+
+intro()
+regras()
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="idade_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="intro_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="idade_suffix" style="display:none">
-</pre><pre id="idade_pre" class="active_out">
+<pre id="intro_suffix" style="display:none">
+</pre><pre id="intro_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (idade)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (intro)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#idade_saveb').toggle();
-    $('#idade_loadb').toggle();
+    $('#intro_saveb').toggle();
+    $('#intro_loadb').toggle();
 }
-if ($("#idade_code_div").parents(".admonition").length == 0 && $("#idade_code_div").parents("#exercises").length == 0){
+if ($("#intro_code_div").parents(".admonition").length == 0 && $("#intro_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#idade_code_div").offset({
-			left: $("#idade .clearfix").offset().left
+		$("#intro_code_div").offset({
+			left: $("#intro .clearfix").offset().left
 		});
 	}
-	$("#idade_runb").one("click", function(){
+	$("#intro_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#idade_code_div").animate({
+				$("#intro_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -356,10 +338,10 @@ if ($("#idade_code_div").parents(".admonition").length == 0 && $("#idade_code_di
 			}
 		})
 		.queue(function (next) {
-			$("#idade_runb").parent().siblings(".ac_output").show();
-			runit('idade',this, undefined);
-			$("#idade_runb").on("click", function(){
-				runit('idade',this, undefined);
+			$("#intro_runb").parent().siblings(".ac_output").show();
+			runit('intro',this, undefined);
+			$("#intro_runb").on("click", function(){
+				runit('intro',this, undefined);
 			});
 		})
 		
@@ -367,47 +349,229 @@ if ($("#idade_code_div").parents(".admonition").length == 0 && $("#idade_code_di
 }
 else{
 	console.log("inside new if")
-	$("#idade_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#idade_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#idade_runb").on("click", function(){
+	$("#intro_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#intro_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#intro_runb").on("click", function(){
 		console.log("button clicked");
-		runit('idade',this, undefined);
+		runit('intro',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p>Por fim, demonstre que programar é resolver problemas (construir soluções). Podemos instruir o computador a automatizar este processo.</p>
-<p><strong>Experimentação</strong></p>
-<ol class="arabic simple">
-<li>Uma boa sugestão é escrever um programa, no terminal interativo, para imprimir o nome de cada aluno na tela.</li>
-<li>Agrupe <tt class="docutils literal"><span class="pre">print()</span></tt> para demonstrar a execução linear do código.</li>
-</ol>
-<p>Termine apresentando as regras da <strong>Fábrica de Jogos</strong>:</p>
-<div class="admonition-regras admonition">
-<p class="first admonition-title">Regras</p>
-<ul class="last simple">
-<li>Grupos de até 3 alunos.</li>
-<li>Nas próximas aulas, os alunos receberão o desafios de construir um jogo.</li>
-<li>O professor (na figura de investidor) irá distribuir 100 <a class="reference external" href="../Apoio/progmoney.html">progmoney</a>  (sigla <tt class="docutils literal"><span class="pre">$&gt;</span></tt>) para cada grupo começar a empresa.</li>
-<li>Em cada aula os alunos receberão uma lista de comandos <strong>permitidos</strong> para construção do jogos.</li>
-<li>A construção de código tem um <em>custo</em> em <em>progmoney</em></li>
-<li>Cada linha de código custa <tt class="docutils literal"><span class="pre">1</span> <span class="pre">$&gt;</span></tt>.</li>
-<li>Uso de instruções não permitidas custam <tt class="docutils literal"><span class="pre">30</span> <span class="pre">$&gt;</span></tt></li>
-<li>Ao aprender funcionalidade novas os grupos adquirem mais <em>progmoney</em>.</li>
-<li>Os preços por instrução/comando estão em uma <a class="reference external" href="../Apoio/progmoney.html">tabela</a>.</li>
+<dl class="docutils">
+<dt>É importante destacar:</dt>
+<dd><ul class="first last">
+<li><p class="first">indentação do bloco: espaço ou tab (mas não misture os dois)</p>
+</li>
+<li><p class="first">a definição de função segue o seguinte formato:</p>
+<blockquote>
+<div><p><tt class="docutils literal"><span class="pre">def</span></tt> <strong>nome</strong> <tt class="docutils literal"><span class="pre">(</span></tt> <strong>parametros</strong> <tt class="docutils literal"><span class="pre">)</span></tt> <tt class="docutils literal"><span class="pre">:</span></tt></p>
+</div></blockquote>
+</li>
+<li><p class="first">a função <strong>precisa</strong> executar uma ação, imprimir algo, retornar um valor, etc</p>
+</li>
 </ul>
+</dd>
+</dl>
+<div class="admonition-definicao admonition">
+<p class="first admonition-title">Definição</p>
+<p class="last">Se quisermos definir uma função mas ainda não implementar a lógica podemos utilizar a palavra reservada <tt class="docutils literal"><span class="pre">pass</span></tt></p>
 </div>
+<ol class="arabic simple" start="2">
+<li>Mostre que as fuções podem receber parâmetros e retornar valores.</li>
+</ol>
+
+<div id="cont"></div>
+<div id="intro1" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="intro1_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="intro1_saveb" onclick="saveEditor('intro1');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="intro1_loadb" onclick="requestCode('intro1');">Load</button>
+
+</div>
+<br/>
+<div id="intro1_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="intro1_code" class="active_code", prefixcode="undefined" lang="python">
+def verifica_idade(idade):
+  if idade > 15:
+      return True
+  else:
+      return False
+
+print( verifica_idade(15) )
+print( verifica_idade(16) )
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="intro1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="intro1_suffix" style="display:none">
+</pre><pre id="intro1_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (intro1)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#intro1_saveb').toggle();
+    $('#intro1_loadb').toggle();
+}
+if ($("#intro1_code_div").parents(".admonition").length == 0 && $("#intro1_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#intro1_code_div").offset({
+			left: $("#intro1 .clearfix").offset().left
+		});
+	}
+	$("#intro1_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#intro1_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#intro1_runb").parent().siblings(".ac_output").show();
+			runit('intro1',this, undefined);
+			$("#intro1_runb").on("click", function(){
+				runit('intro1',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#intro1_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#intro1_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#intro1_runb").on("click", function(){
+		console.log("button clicked");
+		runit('intro1',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<ol class="arabic simple" start="3">
+<li><tt class="docutils literal"><span class="pre">True</span></tt> e <tt class="docutils literal"><span class="pre">False</span></tt> são palavras reservadas da linguagem.</li>
+<li>Apresente alguns conceitos dos operadores Booleanos: <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt> e <tt class="docutils literal"><span class="pre">not</span></tt>.</li>
+</ol>
+
+<div id="cont"></div>
+<div id="intro2" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="intro2_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="intro2_saveb" onclick="saveEditor('intro2');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="intro2_loadb" onclick="requestCode('intro2');">Load</button>
+
+</div>
+<br/>
+<div id="intro2_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="intro2_code" class="active_code", prefixcode="undefined" lang="python">
+print( False and False ) # falso
+print( False or False )  # falso
+print()
+print( True and False )  # falso
+print( True or False )   # verdadeiro
+print()
+print( True and True )   # verdadeiro
+print( True or True )    # verdadeiro
+print()
+print ( not False )      # inverte
+print ( not True)
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="intro2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="intro2_suffix" style="display:none">
+</pre><pre id="intro2_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (intro2)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#intro2_saveb').toggle();
+    $('#intro2_loadb').toggle();
+}
+if ($("#intro2_code_div").parents(".admonition").length == 0 && $("#intro2_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#intro2_code_div").offset({
+			left: $("#intro2 .clearfix").offset().left
+		});
+	}
+	$("#intro2_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#intro2_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#intro2_runb").parent().siblings(".ac_output").show();
+			runit('intro2',this, undefined);
+			$("#intro2_runb").on("click", function(){
+				runit('intro2',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#intro2_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#intro2_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#intro2_runb").on("click", function(){
+		console.log("button clicked");
+		runit('intro2',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p><strong>Prosposta</strong></p>
+<ul class="simple">
+<li>Reserve um tempo para o grupo discutir e apresentar o enredo da história.</li>
+<li>Fale com os alunos quais poderiam ser as frases do jogo, quais ambientes, quais tipos de perguntas</li>
+<li>Peça uma rápida apresentação (3 min) do enredo</li>
+<li>Submeta uma votação na classe, o grupo com mais votos irá ganhar 50 progmoney.</li>
+</ul>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<p>Nesta aula vimos como o computador pode automatizar nossas vidas, mas é importante destacar que a <strong>criatividade</strong> é ferramenta para construção.
-Nesta etapa avalie a participação e interesse dos alunos. Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da
-linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.</p>
-<p><strong>Referências</strong></p>
-<p><a class="reference external" href="http://python.org">Site oficial do Python</a></p>
-<p><a class="reference external" href="http://ramalho.pro.br/aprendaprog/cap0.html">Porque Aprender a Programar</a></p>
+<ul class="simple">
+<li>Você já conhece alguma texto-aventura?</li>
+<li>Faça uma pesquisa nas histórias existentes.</li>
+<li>Jogos de RPG podem ser automatizados?</li>
+</ul>
 </div>
 </div>
 

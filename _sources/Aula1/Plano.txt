@@ -16,17 +16,17 @@ Objetivos
 
 Nesta aula, os alunos deverão:
 
-- Entender o conceito da *Fábrica de Jogos* deste curso.
-- Desenvolver o raciocíno lógico dentro da arquitetura lógica dos computadores. 
+- Desenvolver o raciocíno lógico dentro da arquitetura dos computadores. 
 - Compreender a importância de aprender uma linguagem de programação.
 - Entender a diferença entre um programa e uma linguagem de programação.
+- Entender o conceito da *Fábrica de Jogos* deste curso.
 
 Preparação
 ++++++++++
 
 **Materiais**
 
-- Utilizaremos um ambinete de desenvolvimento integrável, o IDLE  (veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__)
+- Utilizaremos um ambiente de desenvolvimento integrável, o IDLE  (veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__)
 
 .. admonition:: Lembre-se
 
@@ -39,9 +39,12 @@ Atividades
 
 Comece por instigar os alunos com a pergunta: *Porquê alguém deveria aprender a fazer programas de computador?*
 
-Orientando-os a buscar referências no dia-a-dia, onde a computação é aplicada. Contextualize com exemplos tais como serviços na internet, exemplos: e-mail, Facebook, Twitter. Nesta parte é importante destacar que a computação (*software*) não esta presente apenas nos computadores pessoais (*desktop*) mas em celulares, carros, televisores, etc; e que isso não é um futuro distante mas sim o presente.
+Orientando-os a buscar referências no dia-a-dia, onde a computação é aplicada. Contextualize com exemplos tais como serviços na internet: e-mail, Facebook, Twitter. 
+Nesta parte é importante destacar que a computação (*software*) não está presente apenas nos computadores pessoais (*desktop*) mas em celulares, carros, 
+televisores, etc; e que isso não é um futuro distante mas sim o presente.
 
-Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa” ou seja, com o método de execução de um programa funciona. Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores.
+Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa”, ou seja, como o método de execução de um programa funciona. 
+Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores.
 
 	Computadores (repetição) X Humanos (pensamento)
 
@@ -61,7 +64,7 @@ Trabalhe os conceitos de **arquitetura** de computadores nestes 5 grupos macros:
 
 Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa. 
 
-Siga com a questão: **O que é necessário saber para me tornar um programador?
+Siga com a questão: **O que é necessário saber para me tornar um programador?**
 
 Sugestões para discussão:
 
@@ -81,12 +84,12 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
 	print(u"Olá Mundo")
 
 
-Por fim, demonstre que programa é resolver problemas (construir soluções). Podemos instruir o computador a automatizar este processo. 
+Por fim, demonstre que programar é resolver problemas (construir soluções). Podemos instruir o computador a automatizar este processo. 
 
 **Experimentação**
 
 1. Uma boa sugestão é escrever um programa, no terminal interativo, para imprimir o nome de cada aluno na tela. 
-2. Agrupe ``prints()`` para demonstrar a execução linear do código. 
+2. Agrupe ``print()`` para demonstrar a execução linear do código. 
 
 
 Termine apresentando as regras da **Fábrica de Jogos**:
@@ -106,10 +109,12 @@ Termine apresentando as regras da **Fábrica de Jogos**:
 Reflexão
 +++++++++
 
-Nesta aula vimos com o computador pode automatizar nossas vidas, mas é importante destacar que a **criatividade** é ferramenta para construção. 
-Nesta etapa avalie a participação e interesse dos alunos. Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
+Nesta aula vimos como o computador pode automatizar nossas vidas, mas é importante destacar que a **criatividade** é ferramenta para construção. 
+Nesta etapa avalie a participação e interesse dos alunos. Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da 
+linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
 
 **Referências**
 
 `Site oficial do Python <http://python.org>`__
+
 `Porque Aprender a Programar <http://ramalho.pro.br/aprendaprog/cap0.html>`__

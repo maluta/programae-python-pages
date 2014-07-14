@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 6: Repetições (I) &mdash; Programaê</title>
+    <title>Aula 5: Mais com textos &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -194,7 +194,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 6: Repetições (I)</a><ul>
+<li><a class="reference internal" href="#">Aula 5: Mais com textos</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -231,104 +231,87 @@
 
 <div class="container">
   
-  <div class="section" id="aula-6-repeticoes-i">
-<h1>Aula 6: Repetições (I)<a class="headerlink" href="#aula-6-repeticoes-i" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-5-mais-com-textos">
+<h1>Aula 5: Mais com textos<a class="headerlink" href="#aula-5-mais-com-textos" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Aprender a utilizar laços <tt class="docutils literal"><span class="pre">for</span></tt></li>
+<li>Experimentar possibilidades com o comando <tt class="docutils literal"><span class="pre">print()</span></tt></li>
+<li>Verificar o tamanho da string com a instrução <tt class="docutils literal"><span class="pre">len()</span></tt></li>
+<li>Concatenação de strings</li>
+<li>Fatiamento de strings</li>
+<li>Métodos <em>comuns</em> para strings</li>
 </ul>
 </div>
 <div class="section" id="preparacao">
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
-<li><a class="reference external" href="../Apoio/idle.html#sugestao-de-layout">Editar</a> e <a class="reference external" href="../Apoio/idle.html#executando-um-codigo">executar</a> códigos no IDLE.</li>
 </ul>
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conceitos computacionais</strong></p>
-<p>O título desta aula é simples e direto: <strong>repetições</strong>. Introduza o conceito através de exemplos e comece por algo simples como imprimir
-uma lista de números na tela. Uma solução seria utilizar uma sequência de <tt class="docutils literal"><span class="pre">print()</span></tt>, <tt class="docutils literal"><span class="pre">print()</span></tt> , <tt class="docutils literal"><span class="pre">print()</span></tt> ..., levante algumas questões:</p>
-<ul class="simple">
-<li>Se esta lista for muito longa?</li>
-<li>Existe algo que podemos fazer para melhorar?</li>
-</ul>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;4&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;5&quot;</span><span class="p">)</span>
-<span class="c"># ...</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;50&quot;</span><span class="p">)</span>
-<span class="c"># ...</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;99&quot;</span><span class="p">)</span>
-</pre></div>
+<ol class="arabic simple">
+<li>Começe por definir uma string simple, entre aspas (<em>lembre-se do ``u&#8221;&#8220;`` apresentado na aula aterior se for utilizar acentuação</em>)</li>
+</ol>
+<div class="admonition-ou admonition">
+<p class="first admonition-title">&#8220;&#8221; ou &#8216;&#8217;?</p>
+<p class="last">Tanto faz. Você pode usar <tt class="docutils literal"><span class="pre">print('texto')</span></tt> ou <tt class="docutils literal"><span class="pre">print(&quot;texto&quot;)</span></tt></p>
 </div>
-<p>Continue e apresente um exemplo mais completo, como seria um programa para perguntar a idade de todos os alunos da sala?</p>
+<ol class="arabic simple" start="2">
+<li>Armazene e imprima numa variável</li>
+<li>Mostre como contar o número de caracteres com a função <tt class="docutils literal"><span class="pre">len()</span></tt></li>
+</ol>
 
 <div id="cont"></div>
-<div id="cad" lang="python" class="ac_section alert alert-warning" >
+<div id="strings1" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="cad_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="cad_saveb" onclick="saveEditor('cad');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="cad_loadb" onclick="requestCode('cad');">Load</button>
+<button class='btn btn-success' id="strings1_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings1_saveb" onclick="saveEditor('strings1');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings1_loadb" onclick="requestCode('strings1');">Load</button>
 
 </div>
 <br/>
-<div id="cad_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="cad_code" class="active_code", prefixcode="undefined" lang="python">
-print("Cadastro de idades")
-
-nome_1 =  input("Digite seu nome:  ")
-idade_1 = input("Digite sua idade: ")
-
-nome_2 =  input("Digite seu nome:  ")
-idade_2 = input("Digite sua idade: ")
-
-nome_3 =  input("Digite seu nome:  ")
-idade_3 = input("Digite sua idade: ")
-
-print("Cadastrado: " + nome_1 + " (" + idade_1 + " anos) ")
-print("Cadastrado: " + nome_2 + " (" + idade_2 + " anos) ")
-print("Cadastrado: " + nome_3 + " (" + idade_3 + " anos) ")
-
-#...
+<div id="strings1_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="strings1_code" class="active_code", prefixcode="undefined" lang="python">
+texto = u"programar é muito bom"
+print(texto)
+print(len(texto))
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="cad_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="strings1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="cad_suffix" style="display:none">
-</pre><pre id="cad_pre" class="active_out">
+<pre id="strings1_suffix" style="display:none">
+</pre><pre id="strings1_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (cad)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (strings1)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#cad_saveb').toggle();
-    $('#cad_loadb').toggle();
+    $('#strings1_saveb').toggle();
+    $('#strings1_loadb').toggle();
 }
-if ($("#cad_code_div").parents(".admonition").length == 0 && $("#cad_code_div").parents("#exercises").length == 0){
+if ($("#strings1_code_div").parents(".admonition").length == 0 && $("#strings1_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#cad_code_div").offset({
-			left: $("#cad .clearfix").offset().left
+		$("#strings1_code_div").offset({
+			left: $("#strings1 .clearfix").offset().left
 		});
 	}
-	$("#cad_runb").one("click", function(){
+	$("#strings1_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#cad_code_div").animate({
+				$("#strings1_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -337,10 +320,10 @@ if ($("#cad_code_div").parents(".admonition").length == 0 && $("#cad_code_div").
 			}
 		})
 		.queue(function (next) {
-			$("#cad_runb").parent().siblings(".ac_output").show();
-			runit('cad',this, undefined);
-			$("#cad_runb").on("click", function(){
-				runit('cad',this, undefined);
+			$("#strings1_runb").parent().siblings(".ac_output").show();
+			runit('strings1',this, undefined);
+			$("#strings1_runb").on("click", function(){
+				runit('strings1',this, undefined);
 			});
 		})
 		
@@ -348,69 +331,73 @@ if ($("#cad_code_div").parents(".admonition").length == 0 && $("#cad_code_div").
 }
 else{
 	console.log("inside new if")
-	$("#cad_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#cad_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#cad_runb").on("click", function(){
+	$("#strings1_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#strings1_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#strings1_runb").on("click", function(){
 		console.log("button clicked");
-		runit('cad',this, undefined);
+		runit('strings1',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p>Mostre o impacto na quantidade de linhas de código se quiséssemos cadastrar todos os alunos da sala.</p>
-<p>Aprendemos até então apenas como dar instruções sequênciais ao programa, para resolver este problemas precisamos aprender
-mais algumas palavras-reservadas.</p>
-<p>A primeira é a dupla de comandos <tt class="docutils literal"><span class="pre">for</span></tt> e <tt class="docutils literal"><span class="pre">in</span></tt>, veja o funcionamento para imprimir 5 itens na tela.</p>
+<ol class="arabic simple" start="4">
+<li>Reforce a questão de indice da string, demonstrando a forma de acessar.</li>
+<li>Fatiamento de strings.</li>
+</ol>
 
 <div id="cont"></div>
-<div id="for" lang="python" class="ac_section alert alert-warning" >
+<div id="strings2" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="for_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="for_saveb" onclick="saveEditor('for');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="for_loadb" onclick="requestCode('for');">Load</button>
+<button class='btn btn-success' id="strings2_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings2_saveb" onclick="saveEditor('strings2');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings2_loadb" onclick="requestCode('strings2');">Load</button>
 
 </div>
 <br/>
-<div id="for_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="for_code" class="active_code", prefixcode="undefined" lang="python">
-for item in range(5):
-  print(item)
+<div id="strings2_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="strings2_code" class="active_code", prefixcode="undefined" lang="python">
+texto = u"programar É muito bom"
+print(texto[0]) # primeiro caractere
+print(texto[:9]) # do ínicio (índice zero) até o índice 8
+print(texto[10:11]) # apenas o índice 10
+print(texto[12:17]) # do índice 12 até o 16
+print(texto[18:]) # do índice 18 até o final
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="for_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="strings2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="for_suffix" style="display:none">
-</pre><pre id="for_pre" class="active_out">
+<pre id="strings2_suffix" style="display:none">
+</pre><pre id="strings2_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (for)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (strings2)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#for_saveb').toggle();
-    $('#for_loadb').toggle();
+    $('#strings2_saveb').toggle();
+    $('#strings2_loadb').toggle();
 }
-if ($("#for_code_div").parents(".admonition").length == 0 && $("#for_code_div").parents("#exercises").length == 0){
+if ($("#strings2_code_div").parents(".admonition").length == 0 && $("#strings2_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#for_code_div").offset({
-			left: $("#for .clearfix").offset().left
+		$("#strings2_code_div").offset({
+			left: $("#strings2 .clearfix").offset().left
 		});
 	}
-	$("#for_runb").one("click", function(){
+	$("#strings2_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#for_code_div").animate({
+				$("#strings2_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -419,10 +406,10 @@ if ($("#for_code_div").parents(".admonition").length == 0 && $("#for_code_div").
 			}
 		})
 		.queue(function (next) {
-			$("#for_runb").parent().siblings(".ac_output").show();
-			runit('for',this, undefined);
-			$("#for_runb").on("click", function(){
-				runit('for',this, undefined);
+			$("#strings2_runb").parent().siblings(".ac_output").show();
+			runit('strings2',this, undefined);
+			$("#strings2_runb").on("click", function(){
+				runit('strings2',this, undefined);
 			});
 		})
 		
@@ -430,49 +417,213 @@ if ($("#for_code_div").parents(".admonition").length == 0 && $("#for_code_div").
 }
 else{
 	console.log("inside new if")
-	$("#for_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#for_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#for_runb").on("click", function(){
+	$("#strings2_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#strings2_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#strings2_runb").on("click", function(){
 		console.log("button clicked");
-		runit('for',this, undefined);
+		runit('strings2',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p>Comentários linha-a-linha:</p>
-<ul>
-<li><p class="first">A linha 1 pode ser lida como:</p>
-<p><em>para cada &#8220;valor&#8221; dentro da &#8220;faixa&#8221; faça</em></p>
-</li>
-<li><p class="first">A linha dois é o bloco de código que será executado a cada interação (lembre-se da <a class="reference external" href="../Apoio/boaspraticas.html#indentacao">indentação</a> )</p>
-</li>
+<p>Pontos importantes:</p>
+<ul class="simple">
+<li>O índice da string começa em &#8220;0&#8221;</li>
+<li>Não se esqueça que o espaço em branco <tt class="docutils literal"><span class="pre">&quot;</span> <span class="pre">&quot;</span></tt> também está no índice.</li>
+<li>Para acessar um único caracter utilizamos: <tt class="docutils literal"><span class="pre">texto[índice]</span></tt></li>
+<li>Para um fatiamento pode ser completo utilizamos <strong>posição de início</strong> <tt class="docutils literal"><span class="pre">:</span></tt> <strong>posição final</strong> (mas em incluí-la).</li>
 </ul>
-<div class="admonition-a-funcao-range admonition">
-<p class="first admonition-title">A função <tt class="docutils literal"><span class="pre">range()</span></tt></p>
-<p>Na linha 1 utilizamos uma função chamada <tt class="docutils literal"><span class="pre">range</span></tt> que pertence ao grupo de funções <a class="reference external" href="../Apoio/builtin.html">embutidas</a> do
-Python. É importante dar uma atenção especial a ela, destacando alguns pontos:</p>
-<ul class="last">
-<li><p class="first">A função <tt class="docutils literal"><span class="pre">range()</span></tt> que gera um lista de valores de acordo com os argumentos passados para ela.</p>
-</li>
-<li><p class="first">Ao passarmos somente um parâmetro, a função <tt class="docutils literal"><span class="pre">range()</span></tt> retorna uma lista de números. Diferente do que imaginamos, ela não
-retorna uma lista até o número especificado (nesse caso, de 0 a 5) mas sim um intervalo que se inicia no <strong>zero</strong> e termina
-no número inteiro que <strong>antecede</strong> o número especificado.</p>
-<p>Na notação matemática para intervalos, a função range do exemplo anterior criaria o seguinte intervalo: [0,5).
-Isto é, um intervalo fechado à esquerda e aberto à direita.</p>
-<img alt="../_images/intervalo.png" src="../_images/intervalo.png" />
-</li>
+<ol class="arabic simple" start="6">
+<li>Trabalhe funções comuns para manipular strings</li>
+</ol>
+
+<div id="cont"></div>
+<div id="strings3" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="strings3_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings3_saveb" onclick="saveEditor('strings3');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings3_loadb" onclick="requestCode('strings3');">Load</button>
+
+</div>
+<br/>
+<div id="strings3_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="strings3_code" class="active_code", prefixcode="undefined" lang="python">
+texto = u"programar É muito bom"
+print( texto ) # texto original
+print( texto.upper() ) # todo o texto em letras maiúsculas
+print( texto.lower() ) # todo o texto em letras minúsculas
+print( texto.capitalize() ) # texto com a primeira letra maiúscula
+print( texto.count('a') ) # quantas vezes a letra 'a' aparece
+print( texto.find('a') ) # retorna o índice da primeira ocorrência da letra 'a'
+print( texto.replace(' ','_') ) # substitui todos os espaços em branco por '_'
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="strings3_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="strings3_suffix" style="display:none">
+</pre><pre id="strings3_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (strings3)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#strings3_saveb').toggle();
+    $('#strings3_loadb').toggle();
+}
+if ($("#strings3_code_div").parents(".admonition").length == 0 && $("#strings3_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#strings3_code_div").offset({
+			left: $("#strings3 .clearfix").offset().left
+		});
+	}
+	$("#strings3_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#strings3_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#strings3_runb").parent().siblings(".ac_output").show();
+			runit('strings3',this, undefined);
+			$("#strings3_runb").on("click", function(){
+				runit('strings3',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#strings3_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#strings3_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#strings3_runb").on("click", function(){
+		console.log("button clicked");
+		runit('strings3',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<div class="admonition-caracteres-de-escape admonition">
+<p class="first admonition-title">Caracteres de escape (<tt class="docutils literal"><span class="pre">\</span></tt>)</p>
+<ul class="last simple">
+<li>barra invertida <tt class="docutils literal"><span class="pre">\\</span></tt></li>
+<li>aspas simples <tt class="docutils literal"><span class="pre">\'</span></tt></li>
+<li>aspas duplas <tt class="docutils literal"><span class="pre">\&quot;</span></tt></li>
+<li>quebra de linha <tt class="docutils literal"><span class="pre">\n</span></tt></li>
+<li>seção tabular <tt class="docutils literal"><span class="pre">\t</span></tt></li>
 </ul>
 </div>
-<p><strong>Atividades</strong></p>
+<p><strong>Proposta</strong></p>
 <ul class="simple">
-<li>Utilize o espaço da aula para introduzir mais exemplos.</li>
+<li>Impressão de poesias (haikais) com <tt class="docutils literal"><span class="pre">print()</span></tt> e o delimitador <tt class="docutils literal"><span class="pre">\t</span></tt></li>
+</ul>
+
+<div id="cont"></div>
+<div id="strings4" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="strings4_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings4_saveb" onclick="saveEditor('strings4');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="strings4_loadb" onclick="requestCode('strings4');">Load</button>
+
+</div>
+<br/>
+<div id="strings4_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="strings4_code" class="active_code", prefixcode="undefined" lang="python">
+texto="Pra que cara feia?\n\tNa vida,\nNinguém paga meia.\n\n(Paulo Leminski)"
+print(texto)
+</textarea>
+</div>
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="strings4_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="strings4_suffix" style="display:none">
+</pre><pre id="strings4_pre" class="active_out">
+
+</pre>
+
+</div> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (strings4)</span> </p>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#strings4_saveb').toggle();
+    $('#strings4_loadb').toggle();
+}
+if ($("#strings4_code_div").parents(".admonition").length == 0 && $("#strings4_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#strings4_code_div").offset({
+			left: $("#strings4 .clearfix").offset().left
+		});
+	}
+	$("#strings4_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#strings4_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#strings4_runb").parent().siblings(".ac_output").show();
+			runit('strings4',this, undefined);
+			$("#strings4_runb").on("click", function(){
+				runit('strings4',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#strings4_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#strings4_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#strings4_runb").on("click", function(){
+		console.log("button clicked");
+		runit('strings4',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<ul class="simple">
+<li>Construir um validador de <em>twitts</em>. Como saber se meu texto &#8220;cabe&#8221; dentro de uma mensagem no <strong>Twitter</strong> (limite de 140 caracteres)</li>
+<li>Construir um buscador de palavras no textual</li>
 </ul>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<p>É importante que todos aprendam a pensar nos objetivos e resultados.</p>
+<ul class="simple">
+<li>Onde este tipo de manipulação pode ser utilizado nas aulas de literatura/português?</li>
+</ul>
 </div>
 </div>
 

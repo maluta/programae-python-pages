@@ -14,7 +14,7 @@ Aula 5: Mais com textos
 Objetivos
 +++++++++
 
-- Experimentar possibilidades de uso do comando ``print()``
+- Experimentar possibilidades com o comando ``print()``
 - Verificar o tamanho da string com a instrução ``len()``
 - Concatenação de strings
 - Fatiamento de strings
@@ -24,21 +24,21 @@ Preparação
 ++++++++++
 
 - IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__ 
-- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
+
 
 Atividades
 ++++++++++
 
 **Conceitos computacionais** 
 
-1. Comece por definir uma string simples, entre aspas.
+1. Começe por definir uma string simple, entre aspas (*lembre-se do ``u""`` apresentado na aula aterior se for utilizar acentuação*)
 
-.. admonition:: Aspas duplas ou simples?
+.. admonition:: "" ou ''?
 
-	Desde que exista um padrão, tanto faz. Você pode usar ``print('texto')`` ou ``print("texto")``
+	Tanto faz. Você pode usar ``print('texto')`` ou ``print("texto")``
 
 
-2. Armazene e imprima o conteúdo de variável 
+2. Armazene e imprima numa variável 
 3. Mostre como contar o número de caracteres com a função ``len()`` 
 
 .. activecode:: strings1
@@ -47,23 +47,7 @@ Atividades
 	 print(texto)
 	 print(len(texto))
 
-4. Reforce a questão de índices dentro do tipo string, demonstrando as formas de acesso. Você pode fazer isso de maneira fácil no `console <../Apoio/idle.html#console-iterativo>`__. 
-
-.. sourcecode:: python
-
-  >>> "Programaê"[0]
-  'P'
-  >>> "Programaê"[8]
-  'ê'
-  >>> "Programaê"[9]
-  Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-  IndexError: string index out of range
-
-
-A palavra "Programaê" tem 9 caracteres. O primeiro ``[0]`` e o último ``[8]``, ao tentarmos acessar um índice acima, ex ``[10]`` obtemos 
-um erro indicando que o índice esta fora da faixa permitida. 
-
+4. Reforce a questão de indice da string, demonstrando a forma de acessar.
 5. Fatiamento de strings.
 
 .. activecode:: strings2
@@ -77,9 +61,8 @@ um erro indicando que o índice esta fora da faixa permitida.
 	 
 Pontos importantes: 
 
-- O índice da string sempre começa em "0" (o primeiro item é a posição zero)
-- Não se esqueça que espaços em branco ``" "`` também são considerados. 
-
+- O índice da string começa em "0"
+- Não se esqueça que o espaço em branco ``" "`` também está no índice. 
 - Para acessar um único caracter utilizamos: ``texto[índice]``
 - Para um fatiamento pode ser completo utilizamos **posição de início** ``:`` **posição final** (mas em incluí-la).
 
@@ -96,11 +79,6 @@ Pontos importantes:
 	print( texto.find('a') ) # retorna o índice da primeira ocorrência da letra 'a'
 	print( texto.replace(' ','_') ) # substitui todos os espaços em branco por '_'
 	
-
-É possível deixar o texto mais amigável introduzindo quebras de linha ou caracteres especiais. Por exemplo, 
-como adicionar uma aspas se ela é o delimitador do tipo string? A linguagem Python oferece um caractere de *escape*, 
-ou seja, tudo que estiver em seguida ao ``\`` irá ser ignorado pelo interprador. Alguns exemplos:
-
 .. admonition:: Caracteres de escape (``\``)
 
 	- barra invertida ``\\`` 
@@ -109,19 +87,6 @@ ou seja, tudo que estiver em seguida ao ``\`` irá ser ignorado pelo interprador
 	- quebra de linha ``\n``
 	- seção tabular ``\t``
 
-Um erro comum acontece ao definirmos uma *string*. Ao utilizarmos um caractere de escape para introduzir uma aspa e esquecermos 
-fechá-la obteremos um erro de sintaxe, descrito no exemplo abaixo: 
-	
-.. sourcecode:: python
-   
-  >>> print("programaê\")
-  File "<stdin>", line 1
-    print("programaê\")
-                       ^
-  SyntaxError: EOL while scanning string literal
-
-	
-	
 **Proposta** 
 
 - Impressão de poesias (haikais) com ``print()`` e o delimitador ``\t``

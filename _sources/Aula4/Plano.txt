@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 4: Primeiras funcionalidades
-===========================================
+Aula 4: Primeiras Funcionalidades
+=================================
 
 Objetivos
 +++++++++
@@ -31,22 +31,21 @@ Atividades
 
 **Conceitos computacionais**
 
-Até o momento nos familiarizamos com as `idéias e conceitos <../Aula1/Plano.html>`__ para construir programas, começamos a nos familiarizar 
-com o `ambiente <../Apoio/idle.html>`__ IDLE e brincamos com `operadores matemáticos <../Aula2/Plano.html#atividades>`__ e finalmente aprendemos 
-a `definir variáveis <../Aula3/Plano.html>`__. 
+Até o momento nos familiarizamos com as `idéias e conceitos <../Aula1/Plano.html>`__ para construir programas, começamos a conhecer 
+o `ambiente <../Apoio/idle.html>`__ IDLE, brincamos com `operadores matemáticos <../Aula2/Plano.html#atividades>`__ e finalmente aprendemos a `definir variáveis <../Aula3/Plano.html>`__. 
 
 .. admonition:: Funções
 
   Funções são uma espécie de "*mini*-programa" dentro do código que permite executá-lo facilmente. Para acessá-las 
   basta saber o seu *nome* e *argumentos*. 
   
-  A funções seguem a estrutura: ``nome`` ``(`` ``argumentos`` ``)`` e podem retornar valores ou não. 
+  No Python elas seguem a estrutura: ``nome`` ``(`` ``argumentos`` ``)`` e podem retornar valores ou não. 
   
   Nas aulas anteriores utilizamos duas funções print() e input()
   
   - Quando fazemos ``print(u"Olá Mundo")`` estamos invocando a função ``print()`` com o **argumento** ``u"Olá Mundo"``.
   - Já ao utilizar a função ``input()`` temos a opção de passar um parâmetro (ex. ``input(u"qual o seu nome?")`` sendo que ela **retorna**
-    o valor, que nos exemplos anteriores atribuimos a uma variável.
+    o valor inserido pelo usuário. Nos exemplos anteriores atribuimos esta entrada a uma variável.
 
 1. Além das funções de **entrada/saída** (print/input) apresente outras funções, algumas sugestões:
 
@@ -92,7 +91,7 @@ Proponha as seguintes atividades:
 	numero = random.randint(-5,5)
 	print(numero)
 
-Note que para acessar precisamos primeiro definir o módulo e depois a função em questão, o ``.`` faz esta "ligação" entre módulo e função. 
+Para acessar precisamos primeiro definir o módulo e depois a função em questão, o ``.`` faz esta "ligação" entre módulo e função. 
 Execute mais algumas vezes para ver os números se alternando.
 	
 	
@@ -104,14 +103,15 @@ Execute mais algumas vezes para ver os números se alternando.
   cores = ('azul', 'amarelo', 'verde', 'azul', 'branco' )
   print(random.choice(cores))
   
-Note que a função ``choice()`` recebe uma lista de itens (cores) e escolhe apenas um, note que não precisamos de uma variável, podemos chamar a função dentro 
-da função ``print()``. 
+Note que a função ``choice()`` recebe uma lista de itens (cores) e retorna apenas uma. Neste exemplo não utilizamos variável,
+pegamos o retorno da função *choice* e passamos como parâmetro para a função *print*, conhecida comumente como funções aninhadas.
+
 
 .. admonition:: Funções aninhadas
 
   É importante nesta aula destacar conceito de *retorno* de uma função como parâmetro de outra, a leitura deve ser de dentro para fora. No exemplo abaixo usamos três funções:
   *input*, *len* e *print*. Com o ``input()`` obtemos a funcionalidade do usuário poder inserir um valor, seguimos com a função ``len()`` que pega o retorno do *input*
-  e calcula o número de caracteres, por fim utlizamos o resultado como argumento função ``print()``.
+  e calcula o número de caracteres, por fim utilizamos o resultado como argumento função ``print()``.
 
   .. sourcecode:: python
   
@@ -123,15 +123,14 @@ da função ``print()``.
 
   import random
   print(random.randint(1,6))
-
    
 
 .. admonition:: Acesso a funções
 
-  Tente invocar uma função sem fazer um ``import``. Mostre o quando esquecemos de importar um erro de falta de definição é apresentado.
+  Tente invocar uma função sem fazer um ``import``. Mostre que quando esquecemos de importar uma biblioteca 
+  geramos um erro de falta de definição.
   
     ``NameError: name 'random' is not defined``
-
 
 
 **Proposta** 

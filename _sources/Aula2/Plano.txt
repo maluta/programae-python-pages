@@ -15,7 +15,7 @@ Objetivos
 +++++++++
 
 - Construir uma sequência de instruções dentro do ambiente (IDLE)
-- Compreender a lógica dos operadores aritméticos básicos dentro do console.- Entender a diferença entre um programa e uma linguagem de programação.
+- Compreender a lógica dos operadores aritméticos básicos dentro do `console <../Apoio/idle.html#console-interativo>`__.
 
 Preparação
 ++++++++++
@@ -23,7 +23,7 @@ Preparação
 **Materiais**
 
 - Ambiente IDLE (Veja na seção de ajuda: `Como instalar o Python <../Apoio/comoinstalar.html>`__)
-- `Console <../Apoio/idle.html#console-iterativo>`__ do IDLE
+- `Console <../Apoio/idle.html#console-interativo>`__ do IDLE
 
 
 Atividades
@@ -48,19 +48,19 @@ Resto	(%)			``9 % 3``
 
 .. activecode:: Operações Básicas
 
-	print(4 + 3)
-	print(10 - 6)
-	print(7 * 6)
-	print(9 / 3)
-	print(10 % 6)
+  print(4 + 3)
+  print(10 - 6)
+  print(7 * 6)
+  print(9 / 3)
+  print(10 % 6)
 
 Note que no *console* do IDLE não precisamos de utilizar a função ``print()`` para obtermos o resultado de uma sentença aritmética.
 
 É importante neste momento:
 
-- Contruir expressões matemáticas
+- Construir expressões matemáticas.
 - Demonstre a prioridade dos operadores matemáticos. 
-- Lembrar que representação de um número fracionário utiliza ``.`` e não ``,`` 
+- Lembrar que representação de um número fracionário utiliza ``.`` e não ``,``.
 
 
 .. admonition:: Dificuldades
@@ -80,4 +80,18 @@ Uma sugestão de primeiro desafio para as equipes é converter o *progmoney* em 
 
 Reflexão
 +++++++++
+
+Nesta aula é importante que todos tenham compreendido os conceitos aritméticos básicos bem como o ambiente de desenvolvimento (IDLE)
+que utilizaremos nas próximas aulas. Estimule os alunos a compartilharem suas experiências com a classe.
+Algumas perguntas que podem ajudar:
+
+- O que fizemos e que funcionou?
+- O que fizemos e que não funcionou?
+- Quais as dúvidas mais comuns que apareceram durante a aula? 
+- Qual as maiores dificuldades na execução das atividades? 
+
+
+
+
+
 

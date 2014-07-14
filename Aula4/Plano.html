@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 4: Primeiras funcionalidades &mdash; Programaê</title>
+    <title>Aula 4: Primeiras Funcionalidades &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -194,7 +194,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 4: Primeiras funcionalidades</a><ul>
+<li><a class="reference internal" href="#">Aula 4: Primeiras Funcionalidades</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -232,7 +232,7 @@
 <div class="container">
   
   <div class="section" id="aula-4-primeiras-funcionalidades">
-<h1>Aula 4: Primeiras funcionalidades<a class="headerlink" href="#aula-4-primeiras-funcionalidades" title="Permalink to this headline">¶</a></h1>
+<h1>Aula 4: Primeiras Funcionalidades<a class="headerlink" href="#aula-4-primeiras-funcionalidades" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -252,19 +252,18 @@
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conceitos computacionais</strong></p>
-<p>Até o momento nos familiarizamos com as <a class="reference external" href="../Aula1/Plano.html">idéias e conceitos</a> para construir programas, começamos a nos familiarizar
-com o <a class="reference external" href="../Apoio/idle.html">ambiente</a> IDLE e brincamos com <a class="reference external" href="../Aula2/Plano.html#atividades">operadores matemáticos</a> e finalmente aprendemos
-a <a class="reference external" href="../Aula3/Plano.html">definir variáveis</a>.</p>
+<p>Até o momento nos familiarizamos com as <a class="reference external" href="../Aula1/Plano.html">idéias e conceitos</a> para construir programas, começamos a conhecer
+o <a class="reference external" href="../Apoio/idle.html">ambiente</a> IDLE, brincamos com <a class="reference external" href="../Aula2/Plano.html#atividades">operadores matemáticos</a> e finalmente aprendemos a <a class="reference external" href="../Aula3/Plano.html">definir variáveis</a>.</p>
 <div class="admonition-funcoes admonition">
 <p class="first admonition-title">Funções</p>
 <p>Funções são uma espécie de &#8220;<em>mini</em>-programa&#8221; dentro do código que permite executá-lo facilmente. Para acessá-las
 basta saber o seu <em>nome</em> e <em>argumentos</em>.</p>
-<p>A funções seguem a estrutura: <tt class="docutils literal"><span class="pre">nome</span></tt> <tt class="docutils literal"><span class="pre">(</span></tt> <tt class="docutils literal"><span class="pre">argumentos</span></tt> <tt class="docutils literal"><span class="pre">)</span></tt> e podem retornar valores ou não.</p>
+<p>No Python elas seguem a estrutura: <tt class="docutils literal"><span class="pre">nome</span></tt> <tt class="docutils literal"><span class="pre">(</span></tt> <tt class="docutils literal"><span class="pre">argumentos</span></tt> <tt class="docutils literal"><span class="pre">)</span></tt> e podem retornar valores ou não.</p>
 <p>Nas aulas anteriores utilizamos duas funções print() e input()</p>
 <ul class="last simple">
 <li>Quando fazemos <tt class="docutils literal"><span class="pre">print(u&quot;Olá</span> <span class="pre">Mundo&quot;)</span></tt> estamos invocando a função <tt class="docutils literal"><span class="pre">print()</span></tt> com o <strong>argumento</strong> <tt class="docutils literal"><span class="pre">u&quot;Olá</span> <span class="pre">Mundo&quot;</span></tt>.</li>
 <li>Já ao utilizar a função <tt class="docutils literal"><span class="pre">input()</span></tt> temos a opção de passar um parâmetro (ex. <tt class="docutils literal"><span class="pre">input(u&quot;qual</span> <span class="pre">o</span> <span class="pre">seu</span> <span class="pre">nome?&quot;)</span></tt> sendo que ela <strong>retorna</strong>
-o valor, que nos exemplos anteriores atribuimos a uma variável.</li>
+o valor inserido pelo usuário. Nos exemplos anteriores atribuimos esta entrada a uma variável.</li>
 </ul>
 </div>
 <ol class="arabic simple">
@@ -406,7 +405,7 @@ else{
 
 </div>
 
-<p>Note que para acessar precisamos primeiro definir o módulo e depois a função em questão, o <tt class="docutils literal"><span class="pre">.</span></tt> faz esta &#8220;ligação&#8221; entre módulo e função.
+<p>Para acessar precisamos primeiro definir o módulo e depois a função em questão, o <tt class="docutils literal"><span class="pre">.</span></tt> faz esta &#8220;ligação&#8221; entre módulo e função.
 Execute mais algumas vezes para ver os números se alternando.</p>
 <ul class="simple">
 <li>Escolher um número na lista de cores.</li>
@@ -490,13 +489,13 @@ else{
 
 </div>
 
-<p>Note que a função <tt class="docutils literal"><span class="pre">choice()</span></tt> recebe uma lista de itens (cores) e escolhe apenas um, note que não precisamos de uma variável, podemos chamar a função dentro
-da função <tt class="docutils literal"><span class="pre">print()</span></tt>.</p>
+<p>Note que a função <tt class="docutils literal"><span class="pre">choice()</span></tt> recebe uma lista de itens (cores) e retorna apenas uma. Neste exemplo não utilizamos variável,
+pegamos o retorno da função <em>choice</em> e passamos como parâmetro para a função <em>print</em>, conhecida comumente como funções aninhadas.</p>
 <div class="admonition-funcoes-aninhadas admonition">
 <p class="first admonition-title">Funções aninhadas</p>
 <p>É importante nesta aula destacar conceito de <em>retorno</em> de uma função como parâmetro de outra, a leitura deve ser de dentro para fora. No exemplo abaixo usamos três funções:
 <em>input</em>, <em>len</em> e <em>print</em>. Com o <tt class="docutils literal"><span class="pre">input()</span></tt> obtemos a funcionalidade do usuário poder inserir um valor, seguimos com a função <tt class="docutils literal"><span class="pre">len()</span></tt> que pega o retorno do <em>input</em>
-e calcula o número de caracteres, por fim utlizamos o resultado como argumento função <tt class="docutils literal"><span class="pre">print()</span></tt>.</p>
+e calcula o número de caracteres, por fim utilizamos o resultado como argumento função <tt class="docutils literal"><span class="pre">print()</span></tt>.</p>
 <div class="last highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;qual o seu nome: &quot;</span><span class="p">)))</span>
 </pre></div>
 </div>
@@ -584,7 +583,8 @@ else{
 
 <div class="admonition-acesso-a-funcoes admonition">
 <p class="first admonition-title">Acesso a funções</p>
-<p>Tente invocar uma função sem fazer um <tt class="docutils literal"><span class="pre">import</span></tt>. Mostre o quando esquecemos de importar um erro de falta de definição é apresentado.</p>
+<p>Tente invocar uma função sem fazer um <tt class="docutils literal"><span class="pre">import</span></tt>. Mostre que quando esquecemos de importar uma biblioteca
+geramos um erro de falta de definição.</p>
 <blockquote class="last">
 <div><tt class="docutils literal"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'random'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span></tt></div></blockquote>
 </div>

@@ -31,8 +31,9 @@ Atividades
 
 **Conceitos computacionais** 
 
-Até o momento utilizamos instruções sequenciais para dar *ordens* ao computador. Agora iremos entrar num mudo novo, onde teremos de tomar **decisões**.
-Contudo, antes de apresentar os mecanismos da linguagem vamos aprender como efetuar comparações.
+Até o momento, utilizamos instruções sequenciais para dar ordens ao computador. Agora iremos entrar em um mundo novo, onde teremos 
+de definir **decisões**. Contudo, antes de apresentar os mecanismos da linguagem para tomada de decisões vamos aprender como 
+efetuar comparações.
 
 Abra o `console <../Apoio/idle.html#console-iterativo>`__ e trabalhe alguns exemplos:
 
@@ -84,17 +85,33 @@ Vamos analisar cada linha individualmente:
 
 - ``#1`` → Chama a função input() passando como parâmetro a pergunta *'Qual é a sua idade?'* e armazena a resposta na variável idade.
 - ``#2`` → Neste momento utilizamos a função (*built-in*) ``str()`` para converter o tipo string para o tipo inteiro. 
-- ``#3`` → **Se** o conteúdo da variável idade for maior que 14 executa a próxima linha:
-- ``#4`` → Caso a sentença verdadeira chama a função ``print`` com a mensagem de boas vindas.
+- ``#3`` → **Se** o conteúdo da variável idade for maior que 14 executa a próxima linha.
+- ``#4`` → Caso a sentença da linha 3 seja verdadeira a função ``print`` com a mensagem de boas vindas é executada. 
 - ``#5`` → Novamente utilizamos a função (built-in) ``str()`` que faz o oposto da função *int()* e converte um tipo numérico em string.
+
+**Fluxograma**
+
+Apresente os fluxogramas como ferramentas de apoio para estruturar o raciocínio. Desenhe no papel (ou lousa) como seria o 
+trecho de execução de parte do programa.  Abaixo temos a condição ``if`` que dependendo da reposta sim/não executa um bloco de 
+código diferente. 
+
+.. image:: ../../_static/fluxograma.png
+  :height: 640px
+  :width: 480px
+  :scale: 50%
+  :align: center
+  
+Não há regras fixas para a construção do fluxograma, a proposta aqui é apenas esboçar o fluxo do programa.
 
 .. admonition:: Indentação
 
   Repare que as instruções das linhas 4 e 5 estão um pouco deslocados para a direita. A este recuo dá-se o nome de **indentação**
   ou seja, é um bloco de código que é executado dentro de um *contexto*. No exemplo acima, as duas linhas ``print`` só são executadas 
-  se confirmarem a condição definida no ``if``.
+  se confirmarem a condição definida no ``if``. 
   
   **Para a separação de blocos de código, a linguagem Python usa espaços em branco.**
+  
+  Veja mais exemplos `aqui <../Apoio/boaspraticas.html#indentacao>`__.
   
 Para exemplificar vamos definir um protótipo do comando ``if`` que não faz absolutamente nada. 
     
@@ -117,22 +134,11 @@ Mais exemplos com ``if``.
 
 Por fim, apresente a necessidade de ter o segundo caminho, caso a condição da sentença não seja confirmada, para tal apenas complementamos com a palavra ``else``.
 
-Vamos retomar a estrutura do **if**:
-
-  ``if`` expressão ``:``
-
-    código caso *expressão* seja confirmada.
-  
-  ``else:`` 
-  
-    código caso a *expressão* **não** seja confirmada.
-
-
     
 **Proposta**
 
 - Utilize as funções para números aleatórios para fazer um jogo de adivinhação.
-- Utilize o ``if`` para introduzir a idéia probabilidades, por exemplo, a instrução ``random.randint(1,3)`` tem 33,3% de chances (em média) de occorer
+- Sugestão: Utilize o ``if`` para introduzir a idéia probabilidades, por exemplo, a instrução ``random.randint(1,3)`` tem 33,3% de chances (em média) de occorer
   cada uma das possibilidades. Exemplo:
   
 .. activecode:: prob 
@@ -145,16 +151,13 @@ Vamos retomar a estrutura do **if**:
       print(u"Tudo esta calmo e tranquilo")
   
 
-Quando fazemo ``randint(1,2)`` podemos ter como resposta ``1`` ou ``2``, ou seja, em média cada uma das resposta aparecera em 50% dos casos. 
+Quando fazemos ``randint(1,2)`` podemos ter como resposta ``1`` ou ``2`` logo, cada uma das resposta, em média, aparecerá em 50% dos casos. 
 
-- Comece a trabalha com os alunos o "enredo" da história. Como esta pode ser construída. 
+- Comece a trabalhar com os alunos o "enredo" da história. Como esta pode ser construída?
 
 .. admonition:: RPG
 
   Pergunte na sala se algum dos alunos conhece jogos de `RPG <http://pt.wikipedia.org/wiki/Role-playing_game>`__ (*Role-playing Game*), eles podem dar dicas de como estrutura uma aventura. 
-
-
-
 
 
 Reflexão

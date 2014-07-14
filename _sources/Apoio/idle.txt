@@ -10,10 +10,10 @@ Para executar
 
 .. image:: ../../_static/6.PNG 
 
-Console iterativo
+Console interativo
 ------------------
 
-Utilize o console iterativo para testes rápidos. 
+Utilize o console interativo para testes rápidos. 
 
 .. image:: ../../_static/7.PNG
   :height: 800px
@@ -31,7 +31,7 @@ Novo código
 Sugestão de layout
 ------------------
 
-Um idéia de posicionamento para trabalhar com as janelas:
+Uma idéia de posicionamento para trabalhar com as janelas:
 
 - do lado **esquerdo**: o console interativo (onde a *saída* do programa sera apresentada) 
 - do lado **direito**: o editor de textos

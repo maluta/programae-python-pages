@@ -17,8 +17,6 @@ Programaê - Python - Planos de Aula
 Aula 1: Regras & Conceitos
 :::::::::::::::::::::::::::
 
-Despertar o interesse para programação, evidenciando seus benefícios. Este aula é o primeiro contato com conceitos, ferramenta e linguagem além do modelo de pontuação das aulas (Tempo min: 60 min) 
-
 `Ver conteúdo <Aula1/Plano.html>`_
 
 .. toctree::
@@ -30,7 +28,6 @@ Despertar o interesse para programação, evidenciando seus benefícios. Este au
 Aula 2: Calculadora
 :::::::::::::::::::::::::::::::::
 
-Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo interativo (console) e introduzir alguns conceitos da linguagem. (Tempo min: 60 min)  
 
 `Ver conteúdo <Aula2/Plano.html>`_
 
@@ -42,7 +39,6 @@ Brincando com o console. Esta aula ira desenvolver o primeiro contato no modo in
 Aula 3: Variáveis
 ::::::::::::::::::::::::::::::::::::
 
-Apresentação sobre variáveis, alguns tipos de dados simples e listas. (Tempo min: 60 min)  
 
 `Ver conteúdo <Aula3/Plano.html>`_
 
@@ -54,9 +50,6 @@ Apresentação sobre variáveis, alguns tipos de dados simples e listas. (Tempo 
 Aula 4: Primeiras funcionalidades
 ::::::::::::::::::::::::::::::::::::::::::::
 
-Acesso a módulos, funções (números aleatórios) e algumas estruturas básicas de controle. (Tempo min: 60 min) 
-
-
 `Ver conteúdo <Aula4/Plano.html>`_
 
 .. toctree::
@@ -66,12 +59,22 @@ Acesso a módulos, funções (números aleatórios) e algumas estruturas básica
 Aula 5: Controles (I)
 :::::::::::::::::::::::::::::::::::
 
-Tudo que você precisa saber para manipular textos com seus alunos. (Tempo min: 60 min) 
 
 `Ver conteúdo <Aula5/Plano.html>`_
 
 .. toctree::
    :hidden: 
+   
+   
+Aula 5: Repetições (I)
+:::::::::::::::::::::::::::::::::::
+
+`Ver conteúdo <Aula6/Plano.html>`_
+
+.. toctree::
+   :hidden: 
+   
+   
 
 Aula 6: Aventuras no texto (I)
 :::::::::::::::::::::::::::::::::::

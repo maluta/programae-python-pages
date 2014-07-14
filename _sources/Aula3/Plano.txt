@@ -38,16 +38,16 @@ Atividades
 1. Relembre as funcionalidades do IDLE utilizando o console.
 2. Ainda no console, crie um programa para armazenar um número em uma variável.
 
-.. activecode:: var
+.. activecode:: variavel
 
   ano = 2014
 
 3. Transfira este conceito para o `editor de texto <../Apoio/idle.html#novo-codigo>`__.
-4. Defina um tipo (*string*) para armazar textos.
+4. Defina um tipo (*string*) para armazenar textos.
 
 .. sourcecode:: python
 	
-	>>> nome = "Pedro " 
+	>>> nome = "Pedro" 
 	>>> sobrenome = "Silva"
 	
 
@@ -78,11 +78,11 @@ Destaque que cada *tipo* de dado permite operações diferentes, por exemplo, se
 
 .. admonition:: Definição.
 
-  O nome de uma variável preciasa respeitar algumas regras como:
+  O nome de uma variável precisa respeitar algumas regras como:
   
   - não pode começar com números. (ex. ``1a``)
   - não pode possuir caracteres especiais, como símbolos matemáticos (ex. ``1-``)
-  - o caracte ``_`` pode ser utilizado para agrupar nomes grandes (ex. ``nome_completo`` é OK)
+  - o caractere ``_`` pode ser utilizado para agrupar nomes grandes (ex. ``nome_completo`` é OK)
   
 7. Quais os outros *tipos* de informação podemos armazenas numa variável? 
 

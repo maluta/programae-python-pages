@@ -268,51 +268,51 @@
 </ol>
 
 <div id="cont"></div>
-<div id="var" lang="python" class="ac_section alert alert-warning" >
+<div id="variavel" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="var_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="var_saveb" onclick="saveEditor('var');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="var_loadb" onclick="requestCode('var');">Load</button>
+<button class='btn btn-success' id="variavel_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="variavel_saveb" onclick="saveEditor('variavel');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="variavel_loadb" onclick="requestCode('variavel');">Load</button>
 
 </div>
 <br/>
-<div id="var_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="var_code" class="active_code", prefixcode="undefined" lang="python">
+<div id="variavel_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="variavel_code" class="active_code", prefixcode="undefined" lang="python">
 ano = 2014
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="var_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="variavel_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="var_suffix" style="display:none">
-</pre><pre id="var_pre" class="active_out">
+<pre id="variavel_suffix" style="display:none">
+</pre><pre id="variavel_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (var)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (variavel)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#var_saveb').toggle();
-    $('#var_loadb').toggle();
+    $('#variavel_saveb').toggle();
+    $('#variavel_loadb').toggle();
 }
-if ($("#var_code_div").parents(".admonition").length == 0 && $("#var_code_div").parents("#exercises").length == 0){
+if ($("#variavel_code_div").parents(".admonition").length == 0 && $("#variavel_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#var_code_div").offset({
-			left: $("#var .clearfix").offset().left
+		$("#variavel_code_div").offset({
+			left: $("#variavel .clearfix").offset().left
 		});
 	}
-	$("#var_runb").one("click", function(){
+	$("#variavel_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#var_code_div").animate({
+				$("#variavel_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -321,10 +321,10 @@ if ($("#var_code_div").parents(".admonition").length == 0 && $("#var_code_div").
 			}
 		})
 		.queue(function (next) {
-			$("#var_runb").parent().siblings(".ac_output").show();
-			runit('var',this, undefined);
-			$("#var_runb").on("click", function(){
-				runit('var',this, undefined);
+			$("#variavel_runb").parent().siblings(".ac_output").show();
+			runit('variavel',this, undefined);
+			$("#variavel_runb").on("click", function(){
+				runit('variavel',this, undefined);
 			});
 		})
 		
@@ -332,11 +332,11 @@ if ($("#var_code_div").parents(".admonition").length == 0 && $("#var_code_div").
 }
 else{
 	console.log("inside new if")
-	$("#var_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#var_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#var_runb").on("click", function(){
+	$("#variavel_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#variavel_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#variavel_runb").on("click", function(){
 		console.log("button clicked");
-		runit('var',this, undefined);
+		runit('variavel',this, undefined);
 	});
 }
 </script>
@@ -345,9 +345,9 @@ else{
 
 <ol class="arabic simple" start="3">
 <li>Transfira este conceito para o <a class="reference external" href="../Apoio/idle.html#novo-codigo">editor de texto</a>.</li>
-<li>Defina um tipo (<em>string</em>) para armazar textos.</li>
+<li>Defina um tipo (<em>string</em>) para armazenar textos.</li>
 </ol>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">nome</span> <span class="o">=</span> <span class="s">&quot;Pedro &quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">nome</span> <span class="o">=</span> <span class="s">&quot;Pedro&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sobrenome</span> <span class="o">=</span> <span class="s">&quot;Silva&quot;</span>
 </pre></div>
 </div>
@@ -522,11 +522,11 @@ else{
 </ol>
 <div class="admonition-definicao admonition">
 <p class="first admonition-title">Definição.</p>
-<p>O nome de uma variável preciasa respeitar algumas regras como:</p>
+<p>O nome de uma variável precisa respeitar algumas regras como:</p>
 <ul class="last simple">
 <li>não pode começar com números. (ex. <tt class="docutils literal"><span class="pre">1a</span></tt>)</li>
 <li>não pode possuir caracteres especiais, como símbolos matemáticos (ex. <tt class="docutils literal"><span class="pre">1-</span></tt>)</li>
-<li>o caracte <tt class="docutils literal"><span class="pre">_</span></tt> pode ser utilizado para agrupar nomes grandes (ex. <tt class="docutils literal"><span class="pre">nome_completo</span></tt> é OK)</li>
+<li>o caractere <tt class="docutils literal"><span class="pre">_</span></tt> pode ser utilizado para agrupar nomes grandes (ex. <tt class="docutils literal"><span class="pre">nome_completo</span></tt> é OK)</li>
 </ul>
 </div>
 <ol class="arabic simple" start="7">
