@@ -3,7 +3,15 @@
 Progmoney
 ====================
 
-Moeda virtual utilizada nas aulas.
+
+Banco
++++++
+
+O professor será o responsável por contolar os créditos das equipes.
+(Planilha)
+
+Preços de utilização
+++++++++++++++++++++
 
 +------------------------+----------------+
 |                        |   Custo        |
@@ -20,9 +28,3 @@ Moeda virtual utilizada nas aulas.
 +------------------------+----------------+
 | ``randint()``          |     5          |
 +------------------------+----------------+
-|
-+------------------------+----------------+
-
-
-+------------------------+----------------+
-

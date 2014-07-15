@@ -110,6 +110,20 @@ Não há regras fixas para a construção do fluxograma, a proposta aqui é apen
   se confirmarem a condição definida no ``if``. 
   
   **Para a separação de blocos de código, a linguagem Python usa espaços em branco.**
+
+  Coloque o exercício anterior em blocos indentados.
+
+  .. parsonsprob:: q1_ind
+  
+   -----
+   idade = input(u"Qual é a sua idade?") 
+   idade = int(idade)
+   =====
+   if idade > 14 == True:
+   =====
+          print(u"Bem-vindo ao curso de Python!")
+          print(u"Sua idade é " + str(idade) + " anos.")
+     
   
   Veja mais exemplos `aqui <../Apoio/boaspraticas.html#indentacao>`__.
   

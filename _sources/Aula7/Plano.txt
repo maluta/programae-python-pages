@@ -8,7 +8,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 5: Mais com textos
+Aula 7: Textos
 =======================
 
 Objetivos
@@ -85,7 +85,7 @@ Pontos importantes:
 
 6. Trabalhe funções comuns para manipular strings
 
-.. activecode:: strings3
+.. activecode:: s3
 
 	texto = u"programar É muito bom"
 	print( texto ) # texto original
@@ -93,8 +93,19 @@ Pontos importantes:
 	print( texto.lower() ) # todo o texto em letras minúsculas
 	print( texto.capitalize() ) # texto com a primeira letra maiúscula
 	print( texto.count('a') ) # quantas vezes a letra 'a' aparece
-	print( texto.find('a') ) # retorna o índice da primeira ocorrência da letra 'a'
-	print( texto.replace(' ','_') ) # substitui todos os espaços em branco por '_'
+	
+	
+.. admonition:: Funções mais avançadas: encontrar & substituir
+
+  As funções ``find`` e ``replace`` são sugestões para demonstrar o processo de encontrar e substituir textos.
+  
+  .. sourcecode:: python
+  
+    # retorna o índice da primeira ocorrência da letra 'a'
+    print( u"programar É muito bom".find('a') ) 
+    
+    # substitui todos os espaços em branco por '_'
+    print( u"programar É muito bom".replace(' ','_') ) 
 	
 
 É possível deixar o texto mais amigável introduzindo quebras de linha ou caracteres especiais. Por exemplo, 
@@ -120,8 +131,31 @@ fechá-la obteremos um erro de sintaxe, descrito no exemplo abaixo:
                        ^
   SyntaxError: EOL while scanning string literal
 
-	
-	
+**Percorrendo strings** 
+
+Na `aula anterior <../Aula6/Plano.html>`__ aprendemos um uso do ``for`` para percorrer uma faixa de números. Incentive os alunos a pensar 
+como utilizar os tópicos aprendidos na aula de hoje pare ensinar percorrer uma string. 
+
+Utilize este pequeno programa para mostrar a execução no modo passo a passo. 
+
+.. codelens:: s5
+
+  texto = "meu texto"  
+  tamanho = len(texto)
+  for pos in range(tamanho): 
+    caractere = texto[pos]
+    print(caractere)
+
+
+Mas se pensarmos uma string como uma lista de caracteres? 
+Podemos aplicar a mesma idéia ara percorrer uma *string*.
+
+.. activecode:: s6
+
+  for caractere in "meu texto":
+    print(caractere)
+  
+
 **Proposta** 
 
 - Impressão de poesias (haikais) com ``print()`` e o delimitador ``\t``

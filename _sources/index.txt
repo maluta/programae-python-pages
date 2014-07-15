@@ -47,13 +47,15 @@ Aula 3: Variáveis
 
    Aula3/Plano.rst
 
-Aula 4: Primeiras funcionalidades
+Aula 4: Primeiras Funcionalidades
 ::::::::::::::::::::::::::::::::::::::::::::
 
 `Ver conteúdo <Aula4/Plano.html>`_
 
 .. toctree::
    :hidden: 
+   
+   Aula4/Plano.rst
 
 
 Aula 5: Controles (I)
@@ -65,8 +67,10 @@ Aula 5: Controles (I)
 .. toctree::
    :hidden: 
    
+   Aula5/Plano.rst
    
-Aula 5: Repetições (I)
+   
+Aula 6: Repetições (I)
 :::::::::::::::::::::::::::::::::::
 
 `Ver conteúdo <Aula6/Plano.html>`_
@@ -74,26 +78,36 @@ Aula 5: Repetições (I)
 .. toctree::
    :hidden: 
    
+   Aula6/Plano.rst
    
 
-Aula 6: Aventuras no texto (I)
+Aula 7: Textos
 :::::::::::::::::::::::::::::::::::
 
-Como construir uma história ficcional interativa. (Tempo min: 60 min) 
-
-`Ver conteúdo <Aula6/Plano.html>`_
-
-.. toctree::
-   :hidden: 
-
-
-Aula 7: Aventuras no texto (II)
-:::::::::::::::::::::::::::::::::
-
-Continuação de como construir uma história ficcional interativa. (Tempo min: 60 min) 
 
 `Ver conteúdo <Aula7/Plano.html>`_
 
 .. toctree::
    :hidden: 
+   
+   Aula7/Plano.rst
 
+
+Aula 8: Funções
+:::::::::::::::::::::::::::::::::
+
+
+`Ver conteúdo <Aula8/Plano.html>`_
+
+.. toctree::
+   :hidden: 
+
+
+Aula 9: Listas
+:::::::::::::::::::::::::::::::::
+
+
+`Ver conteúdo <Aula9/Plano.html>`_
+
+.. toctree::
+   :hidden: 

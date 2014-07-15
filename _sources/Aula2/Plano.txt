@@ -78,6 +78,12 @@ Apresente operações para lidar com:
 Uma sugestão de primeiro desafio para as equipes é converter o *progmoney* em R$, sugira um índice de conversão (ex. ``1 $> = 0.01 R$``)
  
 
+**Atividades para a empresa**
+
+- Acumular *progmoney* resolvendo exercícios do banco de idéias.
+
+
+ 
 Reflexão
 +++++++++
 

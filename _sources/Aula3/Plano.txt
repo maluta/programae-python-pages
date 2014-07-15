@@ -192,6 +192,11 @@ Um exemplo de cabeçalho:
 
   __autor__ = 'empresa' 
   
+**Atividades para a empresa**
+
+- Construir os cabeçalhos para os documentos da empresa
+- Acumular pontos do banco de exercícios.
+ 
 
 
 Reflexão

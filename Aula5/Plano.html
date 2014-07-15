@@ -71,6 +71,8 @@
     <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
+    <link rel="next" title="Aula 6: Repetições (I)" href="../Aula6/Plano.html" />
+    <link rel="prev" title="Aula 4: Primeiras Funcionalidades" href="../Aula4/Plano.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -208,6 +210,18 @@
         
         
           
+  <li id="relations-prev" title="Previous Chapter - Aula 4: Primeiras Funcionalidades" data-toggle="tooltip">
+    <a href="../Aula4/Plano.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+  <li id="relations-next" title='Next Chapter - Aula 6: Repetições (I)' data-toggle="tooltip" >
+    <a href="../Aula6/Plano.html" >
+      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -456,6 +470,132 @@ código diferente.</p>
 ou seja, é um bloco de código que é executado dentro de um <em>contexto</em>. No exemplo acima, as duas linhas <tt class="docutils literal"><span class="pre">print</span></tt> só são executadas
 se confirmarem a condição definida no <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
 <p><strong>Para a separação de blocos de código, a linguagem Python usa espaços em branco.</strong></p>
+<p>Coloque o exercício anterior em blocos indentados.</p>
+
+        <div class='parsons alert alert-warning' id="parsons-116">
+        <div class="parsons-text">Q-6: <br /><br /></div>
+        <div style="clear:left;"></div>
+        <div id="parsons-orig-116" style="display:none;">idade = input(u"Qual é a sua idade?")\nidade = int(idade)
+if idade > 14 == True:
+       print(u"Bem-vindo ao curso de Python!")\nprint(u"Sua idade é " + str(idade) + " anos.")</div>
+        <div class="sortable-code-container">
+        <div id="parsons-sortableTrash-116" class="sortable-code"></div>
+        <div id="parsons-sortableCode-116" class="sortable-code"></div>
+    	<div style="clear:left;"></div>
+        </div>
+        <div class="parsons-controls">
+        <input type="button" class='btn btn-success' id="checkMe116" value="Check Me"/>
+        <input type="button" class='btn btn-default' id="reset116" value="Reset"/>
+        <div id="parsons-message-116"></div>
+        </div>
+        </div>
+
+    <script>
+        $pjQ(document).ready(function(){
+		
+			$("#parsons-116").not(".sortable-code").not(".parsons-controls").on("click", function(){
+				 $('html, body').animate({
+					scrollTop: ($("#parsons-116").offset().top - 50)
+				}, 700);
+			}).find(".sortable-code, .parsons-controls").click(function(e) {
+				return false;
+				});	
+            var msgBox = $("#parsons-message-116");
+            msgBox.hide();
+	    var displayErrors = function (fb) {
+	        if(fb.errors.length > 0) {
+                    var hash = pp_116.getHash("#ul-parsons-sortableCode-116");
+                    msgBox.fadeIn(500);
+                    msgBox.attr('class','alert alert-danger');
+                    msgBox.html(fb.errors[0]);
+                    logBookEvent({'event':'parsons', 'act':hash, 'div_id':'q1_ind'});
+
+	        } else {
+                    logBookEvent({'event':'parsons', 'act':'yes', 'div_id':'q1_ind'});
+                    msgBox.fadeIn(100);
+                    msgBox.attr('class','alert alert-success');
+                    msgBox.html("Perfect!")
+                }
+
+        }
+
+        $(window).load(function() {
+            // set min width and height
+            var sortableul = $("#ul-parsons-sortableCode-116");
+            var trashul = $("#ul-parsons-sortableTrash-116");
+            var sortableHeight = sortableul.height();
+            var sortableWidth = sortableul.width();
+            var trashWidth = trashul.width();
+            var trashHeight = trashul.height();
+            var minHeight = Math.max(trashHeight,sortableHeight);
+            var minWidth = Math.max(trashWidth, sortableWidth);
+            trashul.css("min-height",minHeight + "px");
+            sortableul.css("min-height",minHeight + "px");
+            sortableul.height(minHeight);
+            trashul.css("min-width",minWidth + "px");
+            sortableul.css("min-width",minWidth + "px");
+        });
+ 
+
+        var pp_116 = new ParsonsWidget({
+                'sortableId': 'parsons-sortableCode-116',
+		'trashId': 'parsons-sortableTrash-116',
+                'max_wrong_lines': 1,
+                'solution_label': 'Drop blocks here',
+                'feedback_cb' : displayErrors
+        });
+        pp_116.init($pjQ("#parsons-orig-116").text());
+	pp_116.shuffleLines();
+            
+        if(localStorage.getItem('q1_ind') && localStorage.getItem('q1_ind-trash')) {
+            try {
+                var solution = localStorage.getItem('q1_ind');
+                var trash = localStorage.getItem('q1_ind-trash');
+                pp_116.createHTMLFromHashes(solution,trash);
+                pp_116.getFeedback();
+            } catch(err) {
+                var text = "An error occured restoring old q1_ind state.  Error: ";
+                console.log(text + err.message);
+            }
+
+        }
+            $pjQ("#reset116").click(function(event){
+              event.preventDefault();
+              pp_116.shuffleLines();
+            
+            // set min width and height
+            var sortableul = $("#ul-parsons-sortableCode-116");
+            var trashul = $("#ul-parsons-sortableTrash-116");
+            var sortableHeight = sortableul.height();
+            var sortableWidth = sortableul.width();
+            var trashWidth = trashul.width();
+            var trashHeight = trashul.height();
+            var minHeight = Math.max(trashHeight,sortableHeight);
+            var minWidth = Math.max(trashWidth, sortableWidth);
+            trashul.css("min-height",minHeight + "px");
+            sortableul.css("min-height",minHeight + "px");
+            trashul.css("min-width",minWidth + "px");
+            sortableul.css("min-width",minWidth + "px");
+              msgBox.hide();
+            });
+            
+            $pjQ("#checkMe116").click(function(event){
+              event.preventDefault();
+              var hash = pp_116.getHash("#ul-parsons-sortableCode-116");
+              localStorage.setItem('q1_ind',hash);
+              hash = pp_116.getHash("#ul-parsons-sortableTrash-116");
+              localStorage.setItem('q1_ind-trash',hash);
+            
+            pp_116.getFeedback();
+            msgBox.fadeIn(100);
+            
+            });
+            
+        });
+            
+
+    </script>
+
 <p class="last">Veja mais exemplos <a class="reference external" href="../Apoio/boaspraticas.html#indentacao">aqui</a>.</p>
 </div>
 <p>Para exemplificar vamos definir um protótipo do comando <tt class="docutils literal"><span class="pre">if</span></tt> que não faz absolutamente nada.</p>

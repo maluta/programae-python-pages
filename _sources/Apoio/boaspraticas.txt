@@ -18,6 +18,22 @@ podendo ocorrer, em geral, dois tipo de erros:
 - na **execução**: o código-fonte simplesmente não executa a ação proposta. 
 - de **lógica**: o programa executa mas a lógica apresenta falhas.
 
+Uma maneira de visualmente entender o conceito de indentação é organizar os blocos em execícios como descrito abaixo:
+
+.. parsonsprob:: q1_ind
+
+   Coloque os cada funcionalidade dentro do seu bloco indentado:
+   -----
+   def maior(a,b):
+   =====
+      if a &gt; b:
+   =====
+          return a
+   =====
+      else:
+   =====
+          return b
+
 **Exemplos** 
 
 .. image:: ../../_static/i3.png

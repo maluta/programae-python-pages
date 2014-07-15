@@ -106,6 +106,14 @@ Termine apresentando as regras da **Fábrica de Jogos**:
 	- Ao aprender funcionalidade novas os grupos adquirem mais *progmoney*.
 	- Os preços por instrução/comando estão em uma `tabela <../Apoio/progmoney.html>`__.
 
+**Atividades para a empresa**
+
+- Organizar a sala em grupos.
+- Dar um nome a empresa. 
+- Escrever uma carta de apresentação dos componentes. 
+
+	
+	
 Reflexão
 +++++++++
 
