@@ -46,21 +46,30 @@ televisores, etc; e que isso não é um futuro distante mas sim o presente.
 Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa”, ou seja, como o método de execução de um programa funciona. 
 Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores.
 
-	Computadores (repetição) X Humanos (pensamento)
+.. admonition:: Dica
 
-Um exemplo é contar o número de palavras de um texto (habilidade melhor executada por um computador) e interpretar o conteúdo do mesmo texto (habilidade melhor executada por um ser humano).
+  Os computadores trabalham com repetição e os seres humanos com instrospecção (pensamentos) Um exemplo é contar o número de 
+  palavras de um texto (computador) e interpretar o conteúdo do mesmo texto (humano).
 
 Apresente o conceito de computador como um dispositivo assistente pessoal que constantemente nos pergunta:
 
 *“O que [devo fazer] agora?”*
 
-Trabalhe os conceitos de **arquitetura** de computadores nestes 5 grupos macros:
+Trabalhe os conceitos de **arquitetura** de computadores nestes 5 grupos macros (para mais detalhes clique nos links na tabela):
 
-- **CPU** (*Central Processing Unit*)
-- **Memória Principal** (*Main Memory*)
-- **Memória Secundária** (*Secondary Memory*)
-- **Dispositivos de Entrada/Saída** (*Output Devices*)
-- **Rede**
++-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
+|  Item                                                                                         |  Nome em inglês             |  Exemplos            |
++===============================================================================================+=============================+======================+
+|  `CPU <http://pt.wikipedia.org/wiki/Unidade_central_de_processamento>`__                      |  *Central Processing Unit*  |  Intel Core i3       | 
++-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
+|  `Memória Principal <http://pt.wikipedia.org/wiki/Mem%C3%B3ria_prim%C3%A1ria#Tipologia>`__    |  *Main Memory*              |  Memória RAM         |
++-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
+|  `Memória Secundária <http://pt.wikipedia.org/wiki/Mem%C3%B3ria_secund%C3%A1ria#Tipologia>`__ |  *Secondary Memory*         |  HD, Disco rígido    |
++-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
+|  `Disp. Entrada/Saída <http://pt.wikipedia.org/wiki/Entrada/sa%C3%ADda>`__                    |  *Input/Output devices*     |  Teclado, mouse      |
++-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
+|  `Rede <http://pt.wikipedia.org/wiki/Rede_de_computadores>`__                                 |  *Network*                  |  Modem Wi-fi         |
++-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
 
 Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa. 
 
@@ -81,7 +90,7 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
 
 .. activecode:: idade
 
-	print(u"Olá Mundo")
+	print("Ei mundo!")
 
 
 Por fim, demonstre que programar é resolver problemas (construir soluções). Podemos instruir o computador a automatizar este processo. 
@@ -98,8 +107,8 @@ Termine apresentando as regras da **Fábrica de Jogos**:
 
 	- Grupos de até 3 alunos. 
 	- Nas próximas aulas, os alunos receberão o desafios de construir um jogo. 
-	- O professor (na figura de investidor) irá distribuir 100 `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
-	- Em cada aula os alunos receberão uma lista de comandos **permitidos** para construção do jogos. 
+	- O professor (na figura de investidor) irá distribuir 7 `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
+	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na construção dos jogos. 
 	- A construção de código tem um *custo* em *progmoney*
 	- Cada linha de código custa ``1 $>``.
 	- Uso de instruções não permitidas custam ``30 $>``
@@ -110,7 +119,9 @@ Termine apresentando as regras da **Fábrica de Jogos**:
 
 - Organizar a sala em grupos.
 - Dar um nome a empresa. 
-- Escrever uma carta de apresentação dos componentes. 
+- Cada equipe deverá escrever uma carta de apresentação dos componentes.
+- Preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__
+- Adquirir o primeiro cartão de funcionalidade para imprimir comandos na tela. 
 
 	
 	

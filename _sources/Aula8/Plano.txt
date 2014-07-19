@@ -8,7 +8,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 8: Funções 
+Aula 3: Funções 
 ============================
 
 Objetivos
@@ -28,8 +28,8 @@ Atividades
 
 **Conceitos computacionais**
 
-Na `aula 4 <../Aula4/Plano.html>`__ aprendemos que funções são uma espécie de "*mini*-programa" dentro do código que permite executá-lo facilmente.
-Além de utilizar demonstre que podemos construir as nossas próprias funções, a linguagm Python possui uma palavra reservada para tal: ``def``.
+Funções são uma espécie de "*mini*-programa" dentro do código que permite executá-lo facilmente.
+Além de utilizar demonstre que podemos construir as nossas próprias funções, a linguagem Python possui uma palavra reservada para tal: ``def``.
 
 Exemplo: 
 

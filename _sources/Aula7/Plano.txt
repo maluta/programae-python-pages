@@ -169,6 +169,11 @@ Podemos aplicar a mesma idéia ara percorrer uma *string*.
 - Construir um buscador de palavras no textual 
 
 
+**Atividades para a empresa**
+
+-  
+
+
 Reflexão
 ++++++++
 

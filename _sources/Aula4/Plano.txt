@@ -147,6 +147,9 @@ Comandos sugeridos:
 * ``randint()``
 * ``choice()`` 
 	
+**Atividades para a empresa**
+
+- 
 
 Reflexão
 ++++++++

@@ -104,10 +104,10 @@ Comentários linha-a-linha:
     .. image:: ../../_static/intervalo.png
 
 
-**Atividades**
-
-- Utilize o espaço da aula para introduzir mais exemplos. 
     
+**Atividades para a empresa**
+
+- 
     
     
 Reflexão

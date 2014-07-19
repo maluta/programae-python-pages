@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 6: Repetições (I) &mdash; Programaê</title>
+    <title>Exercícios para Aula &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -71,8 +71,6 @@
     <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
-    <link rel="next" title="Aula 7: Textos" href="../Aula7/Plano.html" />
-    <link rel="prev" title="Aula 5: Controles (I)" href="../Aula5/Plano.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -196,13 +194,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 6: Repetições (I)</a><ul>
-<li><a class="reference internal" href="#objetivos">Objetivos</a></li>
-<li><a class="reference internal" href="#preparacao">Preparação</a></li>
-<li><a class="reference internal" href="#atividades">Atividades</a></li>
-<li><a class="reference internal" href="#reflexao">Reflexão</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Exercícios para Aula</a></li>
 </ul>
 </ul>
 </li>
@@ -210,18 +202,6 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Aula 5: Controles (I)" data-toggle="tooltip">
-    <a href="../Aula5/Plano.html" >
-      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
-    </a>
-  </li>
-  
-  <li id="relations-next" title='Next Chapter - Aula 7: Textos' data-toggle="tooltip" >
-    <a href="../Aula7/Plano.html" >
-      <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
-    </a>
-  </li>
-  <li class="divider-vertical"></li>
 
 <script type="text/javascript">
   opts = {'placement':'bottom',
@@ -245,249 +225,27 @@
 
 <div class="container">
   
-  <div class="section" id="aula-6-repeticoes-i">
-<h1>Aula 6: Repetições (I)<a class="headerlink" href="#aula-6-repeticoes-i" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="objetivos">
-<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Aprender a utilizar laços <tt class="docutils literal"><span class="pre">for</span></tt></li>
-</ul>
-</div>
-<div class="section" id="preparacao">
-<h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
-<li><a class="reference external" href="../Apoio/idle.html#sugestao-de-layout">Editar</a> e <a class="reference external" href="../Apoio/idle.html#executando-um-codigo">executar</a> códigos no IDLE.</li>
-</ul>
-</div>
-<div class="section" id="atividades">
-<h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
-<p><strong>Conceitos computacionais</strong></p>
-<p>O título desta aula é simples e direto: <strong>repetições</strong>. Introduza o conceito através de exemplos e comece por algo simples como imprimir
-uma lista de números na tela. Uma solução seria utilizar uma sequência de <tt class="docutils literal"><span class="pre">print()</span></tt>, <tt class="docutils literal"><span class="pre">print()</span></tt> , <tt class="docutils literal"><span class="pre">print()</span></tt> ..., levante algumas questões:</p>
-<ul class="simple">
-<li>Se esta lista for muito longa?</li>
-<li>Existe algo que podemos fazer para melhorar?</li>
-</ul>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;4&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;5&quot;</span><span class="p">)</span>
-<span class="c"># ...</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;50&quot;</span><span class="p">)</span>
-<span class="c"># ...</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;99&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Continue e apresente um exemplo mais completo, como seria um programa para perguntar a idade de todos os alunos da sala?</p>
-
-<div id="cont"></div>
-<div id="cad" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="cad_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="cad_saveb" onclick="saveEditor('cad');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="cad_loadb" onclick="requestCode('cad');">Load</button>
-
-</div>
-<br/>
-<div id="cad_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="cad_code" class="active_code", prefixcode="undefined" lang="python">
-print("Cadastro de idades")
-
-nome_1 =  input("Digite seu nome:  ")
-idade_1 = input("Digite sua idade: ")
-
-nome_2 =  input("Digite seu nome:  ")
-idade_2 = input("Digite sua idade: ")
-
-nome_3 =  input("Digite seu nome:  ")
-idade_3 = input("Digite sua idade: ")
-
-print("Cadastrado: " + nome_1 + " (" + idade_1 + " anos) ")
-print("Cadastrado: " + nome_2 + " (" + idade_2 + " anos) ")
-print("Cadastrado: " + nome_3 + " (" + idade_3 + " anos) ")
-
-#...
-</textarea>
-</div>
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="cad_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="cad_suffix" style="display:none">
-</pre><pre id="cad_pre" class="active_out">
-
-</pre>
-
-</div> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (cad)</span> </p>
-
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#cad_saveb').toggle();
-    $('#cad_loadb').toggle();
-}
-if ($("#cad_code_div").parents(".admonition").length == 0 && $("#cad_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#cad_code_div").offset({
-			left: $("#cad .clearfix").offset().left
-		});
-	}
-	$("#cad_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#cad_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#cad_runb").parent().siblings(".ac_output").show();
-			runit('cad',this, undefined);
-			$("#cad_runb").on("click", function(){
-				runit('cad',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#cad_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#cad_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#cad_runb").on("click", function(){
-		console.log("button clicked");
-		runit('cad',this, undefined);
-	});
-}
-</script>
-
-</div>
-
-<p>Mostre o impacto na quantidade de linhas de código se quiséssemos cadastrar todos os alunos da sala.</p>
-<p>Aprendemos até então apenas como dar instruções sequênciais ao programa, para resolver este problemas precisamos aprender
-mais algumas palavras-reservadas.</p>
-<p>A primeira é a dupla de comandos <tt class="docutils literal"><span class="pre">for</span></tt> e <tt class="docutils literal"><span class="pre">in</span></tt>, veja o funcionamento para imprimir 5 itens na tela.</p>
-
-<div id="cont"></div>
-<div id="for" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="for_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="for_saveb" onclick="saveEditor('for');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="for_loadb" onclick="requestCode('for');">Load</button>
-
-</div>
-<br/>
-<div id="for_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="for_code" class="active_code", prefixcode="undefined" lang="python">
-for item in range(5):
-  print(item)
-</textarea>
-</div>
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="for_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="for_suffix" style="display:none">
-</pre><pre id="for_pre" class="active_out">
-
-</pre>
-
-</div> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (for)</span> </p>
-
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#for_saveb').toggle();
-    $('#for_loadb').toggle();
-}
-if ($("#for_code_div").parents(".admonition").length == 0 && $("#for_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#for_code_div").offset({
-			left: $("#for .clearfix").offset().left
-		});
-	}
-	$("#for_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#for_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#for_runb").parent().siblings(".ac_output").show();
-			runit('for',this, undefined);
-			$("#for_runb").on("click", function(){
-				runit('for',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#for_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#for_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#for_runb").on("click", function(){
-		console.log("button clicked");
-		runit('for',this, undefined);
-	});
-}
-</script>
-
-</div>
-
-<p>Comentários linha-a-linha:</p>
-<ul>
-<li><p class="first">A linha 1 pode ser lida como:</p>
-<p><em>para cada &#8220;valor&#8221; dentro da &#8220;faixa&#8221; faça</em></p>
-</li>
-<li><p class="first">A linha dois é o bloco de código que será executado a cada interação (lembre-se da <a class="reference external" href="../Apoio/boaspraticas.html#indentacao">indentação</a> )</p>
-</li>
-</ul>
-<div class="admonition-a-funcao-range admonition">
-<p class="first admonition-title">A função <tt class="docutils literal"><span class="pre">range()</span></tt></p>
-<p>Na linha 1 utilizamos uma função chamada <tt class="docutils literal"><span class="pre">range</span></tt> que pertence ao grupo de funções <a class="reference external" href="../Apoio/builtin.html">embutidas</a> do
-Python. É importante dar uma atenção especial a ela, destacando alguns pontos:</p>
-<ul class="last">
-<li><p class="first">A função <tt class="docutils literal"><span class="pre">range()</span></tt> que gera um lista de valores de acordo com os argumentos passados para ela.</p>
-</li>
-<li><p class="first">Ao passarmos somente um parâmetro, a função <tt class="docutils literal"><span class="pre">range()</span></tt> retorna uma lista de números. Diferente do que imaginamos, ela não
-retorna uma lista até o número especificado (nesse caso, de 0 a 5) mas sim um intervalo que se inicia no <strong>zero</strong> e termina
-no número inteiro que <strong>antecede</strong> o número especificado.</p>
-<p>Na notação matemática para intervalos, a função range do exemplo anterior criaria o seguinte intervalo: [0,5).
-Isto é, um intervalo fechado à esquerda e aberto à direita.</p>
-<img alt="../_images/intervalo.png" src="../_images/intervalo.png" />
-</li>
-</ul>
-</div>
-<p><strong>Atividades para a empresa</strong></p>
-<ul class="simple">
+  <div class="section" id="exercicios-para-aula">
+<h1>Exercícios para Aula<a class="headerlink" href="#exercicios-para-aula" title="Permalink to this headline">¶</a></h1>
+<p>Aula <a class="reference external" href="../Aula2/Plano.html">referente</a></p>
+<p><strong>Grupo 1 - Frações</strong></p>
+<p>Calcule no console do Python o valor das expressões</p>
+<ol class="loweralpha simple">
 <li></li>
-</ul>
-</div>
-<div class="section" id="reflexao">
-<h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<p>É importante que todos aprendam a pensar nos objetivos e resultados.</p>
-</div>
+</ol>
+<div class="math">
+\[(\frac{1}{2} - \frac{1}{3}) - (\frac{1}{6} - \frac{1}{10})\]</div>
+<ol class="loweralpha simple" start="2">
+<li></li>
+</ol>
+<div class="math">
+\[\frac{1}{3} + \frac{1}{3} + \frac{1}{3}\]</div>
+<p>Dado o número decimal, diga a que fração corresponde:</p>
+<ol class="loweralpha simple">
+<li>0,55</li>
+<li>0,13</li>
+<li>0,00098</li>
+</ol>
 </div>
 
 

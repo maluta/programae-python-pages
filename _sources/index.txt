@@ -36,7 +36,18 @@ Aula 2: Calculadora
 
    Aula2/Plano.rst
 
-Aula 3: Variáveis
+
+Aula 3: Funções
+:::::::::::::::::::::::::::::::::
+
+
+`Ver conteúdo <Aula8/Plano.html>`_
+
+.. toctree::
+   :hidden: 
+
+   
+Aula 4: Variáveis
 ::::::::::::::::::::::::::::::::::::
 
 
@@ -47,7 +58,7 @@ Aula 3: Variáveis
 
    Aula3/Plano.rst
 
-Aula 4: Primeiras Funcionalidades
+Aula 5: Primeiras Funcionalidades
 ::::::::::::::::::::::::::::::::::::::::::::
 
 `Ver conteúdo <Aula4/Plano.html>`_
@@ -58,7 +69,7 @@ Aula 4: Primeiras Funcionalidades
    Aula4/Plano.rst
 
 
-Aula 5: Controles (I)
+Aula 6: Controles (I)
 :::::::::::::::::::::::::::::::::::
 
 
@@ -70,7 +81,7 @@ Aula 5: Controles (I)
    Aula5/Plano.rst
    
    
-Aula 6: Repetições (I)
+Aula 7: Repetições (I)
 :::::::::::::::::::::::::::::::::::
 
 `Ver conteúdo <Aula6/Plano.html>`_
@@ -81,7 +92,7 @@ Aula 6: Repetições (I)
    Aula6/Plano.rst
    
 
-Aula 7: Textos
+Aula 8: Textos
 :::::::::::::::::::::::::::::::::::
 
 
@@ -93,14 +104,6 @@ Aula 7: Textos
    Aula7/Plano.rst
 
 
-Aula 8: Funções
-:::::::::::::::::::::::::::::::::
-
-
-`Ver conteúdo <Aula8/Plano.html>`_
-
-.. toctree::
-   :hidden: 
 
 
 Aula 9: Listas

@@ -174,6 +174,10 @@ Quando fazemos ``randint(1,2)`` podemos ter como resposta ``1`` ou ``2`` logo, c
   Pergunte na sala se algum dos alunos conhece jogos de `RPG <http://pt.wikipedia.org/wiki/Role-playing_game>`__ (*Role-playing Game*), eles podem dar dicas de como estrutura uma aventura. 
 
 
+**Atividades para a empresa**
+
+- 
+  
 Reflexão
 ++++++++
 
