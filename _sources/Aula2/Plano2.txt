@@ -8,7 +8,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 3: Calculadora
+Aula 2: Calculadora
 ======================
 
 Objetivos
@@ -80,11 +80,11 @@ Apresente operações para lidar com:
 - Conversão de medidas.
 - Conversão de moedas.
 
-**Atividades**
+**Atividades para a empresa**
 
-- Os alunos poderão acumular *progmoney* resolvendo exercícios do `banco de idéias <../Aula3/Exercicios.html>`__.
+- Os alunos poderão acumular *progmoney* resolvendo exercícios do `banco de idéias <../Aula2/Exercicios.html>`__.
 - Destravar novos cartões de funcionalidades para serem utilizados em futuros projetos. 
-- Anuncie os `cartões disponíveis <../Apoio/cartoes.html#aula-3>`__.
+- Cartões disponíveis para esta aula (veja mais detalhes sobre os `cartões de funcionalidades <../Apoio/cartoes.html>`__)
 
 +------------------------------+--------------------------------------------------+
 |  Cartões de funcionalidades  |  Custo (`progmoney <../Apoio/progmoney.html>`__) |
@@ -94,10 +94,20 @@ Apresente operações para lidar com:
 |  **Frações**                 |  ``25 $>``                                       |
 +------------------------------+--------------------------------------------------+
 
+Para ver os cartões da aula clique `aqui <../Apoio/cartoes.html#aula-2>`__
+
+ 
 Reflexão
 +++++++++
 
-Além destas `reflexões gerais <../Apoio/feedback.html>`__ note como alunos trabalham os conceitos de matemática, se há alguma dificuldade de utilização.
+Nesta aula é importante que todos tenham compreendido os conceitos aritméticos básicos bem como o ambiente de desenvolvimento (IDLE)
+que utilizaremos nas próximas aulas. Estimule os alunos a compartilharem suas experiências com a classe.
+Algumas perguntas que podem ajudar:
+
+- O que fizemos e que funcionou?
+- O que fizemos e que não funcionou?
+- Quais as dúvidas mais comuns que apareceram durante a aula? 
+- Qual as maiores dificuldades na execução das atividades? 
 
 
 

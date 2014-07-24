@@ -8,7 +8,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 1: Regras & Conceitos
+Aula 1: Motivação & Regras
 ==========================
 
 Objetivos
@@ -16,124 +16,119 @@ Objetivos
 
 Nesta aula, os alunos deverão:
 
-- Desenvolver o raciocíno lógico dentro da arquitetura dos computadores. 
-- Compreender a importância de aprender uma linguagem de programação.
-- Entender a diferença entre um programa e uma linguagem de programação.
-- Entender o conceito da *Fábrica de Jogos* deste curso.
+- Compreender alguns lugares onde a computação é aplicada.
+- Entender a necessidade de aprender a programar. 
+
 
 Preparação
 ++++++++++
 
 **Materiais**
 
-- Utilizaremos um ambiente de desenvolvimento integrável, o IDLE  (veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__)
-
-.. admonition:: Lembre-se
-
-  O ambiente deve ser instalado localmente nas máquinas, contudo em caso de problema utilize nosso espaço de `experimentação <../Apoio/console.html>`__.
+- Cópias da `Ficha de Inscrição <../Apoio/ficha.html>`__ proporcional ao número de grupos (de 3 alunos).
+- Cópias dos cartões de funcionalidades da `aula 1 <../Apoio/cartoes.html#aula-1>`__ proporcional ao número de grupos (de 3 alunos).
 
 Atividades
 ++++++++++
 
-**Conceitos computacionais**
+Instigue os alunos com as seguintes perguntas:
 
-Comece por instigar os alunos com a pergunta: *Porquê alguém deveria aprender a fazer programas de computador?*
++---------------------------------------------------------------------------------+
+| Aonde existem programas de computador?                                          |
++=================================================================================+
+| Busque referências no dia-a-dia, onde a programação é aplicada.                 |
+| Exemplos: GMail, Facebook, Instagram, Twitter                                   |
++---------------------------------------------------------------------------------+
 
-Orientando-os a buscar referências no dia-a-dia, onde a computação é aplicada. Contextualize com exemplos tais como serviços na internet: e-mail, Facebook, Twitter. 
-Nesta parte é importante destacar que a computação (*software*) não está presente apenas nos computadores pessoais (*desktop*) mas em celulares, carros, 
-televisores, etc; e que isso não é um futuro distante mas sim o presente.
+.. admonition:: A computação esta em todo lugar
 
-Destaque as respostas mais populares e siga com a proposta de apresentar como o computador “pensa”, ou seja, como o método de execução de um programa funciona. 
-Faça uma lista de atividades listando as tarefas que são mais comuns a humanos e as tarefas que são mais comuns aos computadores.
+  Nesta parte é importante destacar que podemos criar programamas não apenas para rodar em computadores mas em celulares, carros, 
+  televisores, etc; e que isso não é um futuro distante mas sim o presente.
 
-.. admonition:: Dica
++---------------------------------------------------------------------------------+
+| Porque nós deveriamos aprendemos a programar?                                   |
++=================================================================================+
+| Busque citar exemplos de como podemos criar soluções para os problemas          |
+| do dia a dia                                                                    |
++---------------------------------------------------------------------------------+
 
-  Os computadores trabalham com repetição e os seres humanos com instrospecção (pensamentos) Um exemplo é contar o número de 
-  palavras de um texto (computador) e interpretar o conteúdo do mesmo texto (humano).
-
-Apresente o conceito de computador como um dispositivo assistente pessoal que constantemente nos pergunta:
-
-*“O que [devo fazer] agora?”*
-
-Trabalhe os conceitos de **arquitetura** de computadores nestes 5 grupos macros (para mais detalhes clique nos links na tabela):
-
-+-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
-|  Item                                                                                         |  Nome em inglês             |  Exemplos            |
-+===============================================================================================+=============================+======================+
-|  `CPU <http://pt.wikipedia.org/wiki/Unidade_central_de_processamento>`__                      |  *Central Processing Unit*  |  Intel Core i3       | 
-+-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
-|  `Memória Principal <http://pt.wikipedia.org/wiki/Mem%C3%B3ria_prim%C3%A1ria#Tipologia>`__    |  *Main Memory*              |  Memória RAM         |
-+-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
-|  `Memória Secundária <http://pt.wikipedia.org/wiki/Mem%C3%B3ria_secund%C3%A1ria#Tipologia>`__ |  *Secondary Memory*         |  HD, Disco rígido    |
-+-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
-|  `Disp. Entrada/Saída <http://pt.wikipedia.org/wiki/Entrada/sa%C3%ADda>`__                    |  *Input/Output devices*     |  Teclado, mouse      |
-+-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
-|  `Rede <http://pt.wikipedia.org/wiki/Rede_de_computadores>`__                                 |  *Network*                  |  Modem Wi-fi         |
-+-----------------------------------------------------------------------------------------------+-----------------------------+----------------------+
-
-Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa. 
-
-Siga com a questão: **O que é necessário saber para me tornar um programador?**
-
-Sugestões para discussão:
-
-1. **Aprender uma linguagem de programação**, faça analogias como aprender outro idioma, conhecendo o vocabulário e a gramática.
-2. **Aprender a se comunicar** de forma clara (da mesma forma que contamos uma história e melhoramos a medida que nos exercitamos). O programa é a “história” e o problema a ser resolvido é a "idéia". 
-
-Comece por diferenciar uma linguagem humana como Português, Inglês ou Espanhol de uma linguagem de programação como o Python, apresentando as diferenças entre elas, especialmente ao tamanho do vocabulário que nas linguagens de programação são chamadas de palavras reservadas. 
-
-Podemos pensar num treinador de cachorros que usa palavras especiais para algumas ações: “senta!”, “parado!” e “pega!”. Se utilizarmos outras palavras que o cachorro não reconhece ele não irá compreender. 
-
-Liste algumas palavras reservadas do vocabulário Python, como: ``and``, ``del``, ``for``, ``is``, ``raise``, ``assert``, ``elif``, ``from``, ``lambda``, ``return``, ``break``, ``else``, ``global``, ``not``, ``try``, ``class``, ``exec``, ``if``, ``or``, ``while``, ``continue``, ``exec``, ``import``, ``pass``, ``yeld``, ``def``, ``print``.  
-
-Não se preocupe neste momento em descrever cada uma, o importante é destacar como começar a falar, para isso vamos utilizar o comando ``print`` da linguagem. É importante neste momento mostrar como o computador recebe as instruções, interpreta e executa uma ação. 
-
-.. activecode:: idade
-
-	print("Ei mundo!")
++---------------------------------------------------------------------------------+
+| O que nós precisamos aprender para criar estas soluções?                        |
++=================================================================================+
+| Mostre que o objetivo do curso é aprender as ferramentas necessárias para       |
+| criar programas que resolvam problemas.                                         |
+| Faça uma levantamento, precisamos aprender. Exemplos:                           |
+| como que os computadores trabalham, escolher uma linguagem de programação,      |
+| aprender a nos comunicar com esta linguagem, desenvolver, criar, etc.           |        
++---------------------------------------------------------------------------------+
 
 
-Por fim, demonstre que programar é resolver problemas (construir soluções). Podemos instruir o computador a automatizar este processo. 
+.. admonition:: Analogias
 
-**Experimentação**
+  Uma boa estratégia para apresentar conceitos é utilizar analogias, faça uso sempre que possível
 
-1. Uma boa sugestão é escrever um programa, no terminal interativo, para imprimir o nome de cada aluno na tela. 
-2. Agrupe ``print()`` para demonstrar a execução linear do código. 
+Construa com os alunos uma tabela que contextualize os conceitos descritos na última questão. 
+
+Exemplos:
+  
+1. **Aprender uma linguagem de programação** é como aprender outro idioma, conhecendo o vocabulário e a gramática.
+2. **Escrever programas** é aprender a se comunicar com o computador.
+
+Um resumo fazendo analogia com o idioma Inglês:
 
 
-Termine apresentando as regras da **Fábrica de Jogos**:
++---------------+-------------------------------------------+---------------------------------------+
+| Idioma        |  Unidade linguística com um significado   |  Exemplos                             |
++===============+===========================================+=======================================+
+| Inglês        |  palavra                                  |  flower, car, tree, number            |
++---------------+-------------------------------------------+---------------------------------------+
+| Python        |  palavras-reservadas                      |  ``print``, ``while``, ``import``     |
++---------------+-------------------------------------------+---------------------------------------+
 
-.. admonition:: Regras 
++---------------+-------------------------------------------+------------------------------+
+| Idioma        |  Reunião de palavras com um significado   |  Exemplo                     |
++===============+===========================================+==============================+
+| Inglês        |  sentença, frase                          |   Hoje faz sol               |
++---------------+-------------------------------------------+------------------------------+
+| Python        |  instrução, linha de código               |  ``print("Hoje faz sol")``   |
++---------------+-------------------------------------------+------------------------------+
+
+.. admonition:: Imperativo
+
+  Podemos pensar num treinador de cachorros que usa palavras especiais para algumas ações: “senta!”, “parado!” e “pega!”. Se utilizarmos outras palavras que o cachorro não reconhece ele não irá compreender. 
+
+Depois de abordar estas questões prossiga explicando como o curso será estruturado, as regras para as próximas aulas.
+
+Os alunos irão ser organizar em equipes para conceber, criar e manter uma **Fábrica de Software** que irá desenvolver
+soluções utilizando como ferramenta a programação.
+
+.. admonition:: Regras Gerais
 
 	- Grupos de até 3 alunos. 
-	- Nas próximas aulas, os alunos receberão o desafios de construir um jogo. 
-	- O professor (na figura de investidor) irá distribuir 7 `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
-	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na construção dos jogos. 
+	- Nas próximas aulas, a equipe de alunos (empresa) receberão o desafios e contratos de desenvolvimento.  
+	- O professor (na figura de investidor) irá distribuir uma modena virtual chamada `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
+	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na criação dos programas.  
 	- A construção de código tem um *custo* em *progmoney*
 	- Cada linha de código custa ``1 $>``.
 	- Uso de instruções não permitidas custam ``30 $>``
 	- Ao aprender funcionalidade novas os grupos adquirem mais *progmoney*.
 	- Os preços por instrução/comando estão em uma `tabela <../Apoio/progmoney.html>`__.
 
-**Atividades para a empresa**
 
-- Organizar a sala em grupos.
-- Dar um nome a empresa. 
-- Cada equipe deverá escrever uma carta de apresentação dos componentes.
-- Preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__
-- Adquirir o primeiro cartão de funcionalidade para imprimir comandos na tela. 
+**Atividades**
 
-	
-	
+- Explique as regras da Fábrica.
+- Organize a sala em grupos de 3 alunos.
+- Peça as equipes escolher um nome para empresa. 
+- Peça as equipes para escrever uma descrição da empresa.
+- Cada equipe deverá preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__ e devolver ao professor.
+- Adquirir o primeiro `cartão <../Apoio/cartoes.html#aula-1>`__ de funcionalidade com as informações da empresa e preenchê-lo.
+
 Reflexão
 +++++++++
 
-Nesta aula vimos como o computador pode automatizar nossas vidas, mas é importante destacar que a **criatividade** é ferramenta para construção. 
-Nesta etapa avalie a participação e interesse dos alunos. Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da 
-linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
+Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos observar que computador pode automatizar processos em nossas vidas, 
+É importante destacar sempre que a **criatividade** é ferramenta para construção. Nesta etapa avalie a participação e interesse dos alunos. 
+Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
 
-**Referências**
-
-`Site oficial do Python <http://python.org>`__
-
-`Porque Aprender a Programar <http://ramalho.pro.br/aprendaprog/cap0.html>`__
+Boa aula!!!

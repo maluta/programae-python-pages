@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 2: Calculadora &mdash; Programaê</title>
+    <title>Aula 2: Conceitos &amp; Ambiente &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -72,7 +72,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
     <link rel="next" title="Aula 3: Variáveis" href="../Aula3/Plano.html" />
-    <link rel="prev" title="Aula 1: Regras &amp; Conceitos" href="../Aula1/Plano.html" />
+    <link rel="prev" title="Aula 1: Motivação &amp; Regras" href="../Aula1/Plano.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -196,7 +196,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 2: Calculadora</a><ul>
+<li><a class="reference internal" href="#">Aula 2: Conceitos &amp; Ambiente</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -210,7 +210,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Aula 1: Regras &amp; Conceitos" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Aula 1: Motivação &amp; Regras" data-toggle="tooltip">
     <a href="../Aula1/Plano.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -245,13 +245,15 @@
 
 <div class="container">
   
-  <div class="section" id="aula-2-calculadora">
-<h1>Aula 2: Calculadora<a class="headerlink" href="#aula-2-calculadora" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-2-conceitos-ambiente">
+<h1>Aula 2: Conceitos &amp; Ambiente<a class="headerlink" href="#aula-2-conceitos-ambiente" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Construir uma sequência de instruções dentro do ambiente (IDLE)</li>
-<li>Compreender a lógica dos operadores aritméticos básicos dentro do <a class="reference external" href="../Apoio/idle.html#console-interativo">console</a>.</li>
+<li>Entender as partes que constituem a arquitetura básica de um computador.</li>
+<li>Entender o modelo de execução: pergunta -&gt; resposta.</li>
+<li>Ter o primeiro contato com a Linguagem Python.</li>
+<li>Explorar o ambiente de desenvolvimento.</li>
 </ul>
 </div>
 <div class="section" id="preparacao">
@@ -264,95 +266,121 @@
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-preparacao admonition">
-<p class="first admonition-title">Preparação</p>
-<p class="last">Nas primeiras aulas há muitas novidades, comandos novos, ambiente, termos em inglês.
-Trabalhe sem pressa com os alunos e anote o <a class="reference external" href="../Apoio/feedback.html">feedback</a></p>
-</div>
+<ul class="simple">
+<li>Comece a aula relembrando a última pergunta da aula anterior: <em>&#8220;O que nós precisamos aprender para criar .....?&#8221;</em></li>
+<li>Trabalhe as questões a seguite, que envolvem os primeiros conceitos computacionais necessários.</li>
+</ul>
 <p><strong>Conceitos computacionais</strong></p>
-<ol class="arabic simple">
-<li>Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos, no modelo: comando → resposta.</li>
-</ol>
-<p>Instigue os alunos a experimentarem o console, introduza as instruções para uma calculadora simples.</p>
+<p>Como os computadores trabalham?</p>
+<p>Levante alguns possíveis necessidades que os cientistas desenvolveram o computador, mostre que o computador é muito bom para executar rapidamente tarefas
+repetitivas mas não conseguem tomar decisões por si só, por isso precisam sempre seguir um roteito.</p>
+<p>Um resumo do modelo de funcionamento lógico do computador.</p>
+<img alt="../_images/pergunta_resposta.png" src="../_images/pergunta_resposta.png" />
+<p>Além do modelo lógico de &#8220;pergunta -&gt; resposta&#8221; os computadores possuem uma plataforma física para interação com o mundo externo.</p>
+<p>A seguir apresente os conceitos de <strong>arquitetura</strong> de computadores nestes 5 grupos macros (para mais detalhes clique nos links na tabela):</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="48%" />
+<col width="30%" />
+<col width="21%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Operação</th>
-<th class="head">Exemplo</th>
+<tr class="row-odd"><th class="head">Item</th>
+<th class="head">Nome em inglês</th>
+<th class="head">Exemplos</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Adição (+)</td>
-<td><tt class="docutils literal"><span class="pre">4</span> <span class="pre">+</span> <span class="pre">3</span></tt></td>
+<tr class="row-even"><td><a class="reference external" href="http://pt.wikipedia.org/wiki/Unidade_central_de_processamento">CPU</a></td>
+<td><em>Central Processing Unit</em></td>
+<td>Intel Core i3</td>
 </tr>
-<tr class="row-odd"><td>Subtração (-)</td>
-<td><tt class="docutils literal"><span class="pre">10</span> <span class="pre">-</span> <span class="pre">6</span></tt></td>
+<tr class="row-odd"><td><a class="reference external" href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_prim%C3%A1ria#Tipologia">Memória Principal</a></td>
+<td><em>Main Memory</em></td>
+<td>Memória RAM</td>
 </tr>
-<tr class="row-even"><td>Multiplicação (*)</td>
-<td><tt class="docutils literal"><span class="pre">7</span> <span class="pre">*</span> <span class="pre">6</span></tt></td>
+<tr class="row-even"><td><a class="reference external" href="http://pt.wikipedia.org/wiki/Mem%C3%B3ria_secund%C3%A1ria#Tipologia">Memória Secundária</a></td>
+<td><em>Secondary Memory</em></td>
+<td>HD, Disco rígido</td>
 </tr>
-<tr class="row-odd"><td>Divisão (/)</td>
-<td><tt class="docutils literal"><span class="pre">9</span> <span class="pre">/</span> <span class="pre">3</span></tt></td>
+<tr class="row-odd"><td><a class="reference external" href="http://pt.wikipedia.org/wiki/Entrada/sa%C3%ADda">Disp. Entrada/Saída</a></td>
+<td><em>Input/Output devices</em></td>
+<td>Teclado, mouse</td>
 </tr>
-<tr class="row-even"><td>Resto   (%)</td>
-<td><tt class="docutils literal"><span class="pre">9</span> <span class="pre">%</span> <span class="pre">3</span></tt></td>
+<tr class="row-even"><td><a class="reference external" href="http://pt.wikipedia.org/wiki/Rede_de_computadores">Rede</a></td>
+<td><em>Network</em></td>
+<td>Modem Wi-fi</td>
 </tr>
 </tbody>
 </table>
+<img alt="../_images/arquitetura.png" src="../_images/arquitetura.png" />
+<p>Exemplos de dispositivos de Entrada/Saida</p>
+<img alt="../_images/interface.png" src="../_images/interface.png" />
+<p>Descrição (para detalhes clique nos links)</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="http://pt.wikipedia.org/wiki/High-Definition_Multimedia_Interface">HDMI</a> — Saída</li>
+<li><a class="reference external" href="http://pt.wikipedia.org/wiki/RJ-45">RJ45</a> (rede) — Entrada/Saída</li>
+<li><a class="reference external" href="http://pt.wikipedia.org/wiki/Video_Graphics_Array">VGA</a> — Saída</li>
+<li><a class="reference external" href="http://pt.wikipedia.org/wiki/Universal_Serial_Bus">USB</a> — Entrada/Saída</li>
+</ol>
+<p>Demonstre que o papel do programador é orquestrar todos estes recursos, sempre dando instruções para a CPU que, se necessário, vai requisitar aos outros “blocos” para atender o seu pedido. Tais instruções podem ser dadas diretamente, mas seria um trabalho repetitivo e lento, por isso estas instruções devem ser armazenadas em um programa.</p>
+<p><strong>Python</strong></p>
+<p>Explique o que é a linguagem Python para os alunos focando no contexto do grupo de alunos.</p>
+<p>Algumas sugestões:</p>
+<ul class="simple">
+<li>Python é uma das linguagens de programação mais populares.</li>
+<li>Empresas que utilizam Python: Walt Disney, Google, Intagram, IBM, Globo.com (foque nas possibilidades de trabalho)</li>
+<li>Gratuíto e sem limitações.</li>
+</ul>
+<p>Liste algumas palavras reservadas do vocabulário Python, como: <tt class="docutils literal"><span class="pre">and</span></tt>, <tt class="docutils literal"><span class="pre">del</span></tt>, <tt class="docutils literal"><span class="pre">for</span></tt>, <tt class="docutils literal"><span class="pre">is</span></tt>, <tt class="docutils literal"><span class="pre">raise</span></tt>, <tt class="docutils literal"><span class="pre">assert</span></tt>, <tt class="docutils literal"><span class="pre">elif</span></tt>, <tt class="docutils literal"><span class="pre">from</span></tt>, <tt class="docutils literal"><span class="pre">lambda</span></tt>, <tt class="docutils literal"><span class="pre">return</span></tt>, <tt class="docutils literal"><span class="pre">break</span></tt>, <tt class="docutils literal"><span class="pre">else</span></tt>, <tt class="docutils literal"><span class="pre">global</span></tt>, <tt class="docutils literal"><span class="pre">not</span></tt>, <tt class="docutils literal"><span class="pre">try</span></tt>, <tt class="docutils literal"><span class="pre">class</span></tt>, <tt class="docutils literal"><span class="pre">exec</span></tt>, <tt class="docutils literal"><span class="pre">if</span></tt>, <tt class="docutils literal"><span class="pre">or</span></tt>, <tt class="docutils literal"><span class="pre">while</span></tt>, <tt class="docutils literal"><span class="pre">continue</span></tt>, <tt class="docutils literal"><span class="pre">exec</span></tt>, <tt class="docutils literal"><span class="pre">import</span></tt>, <tt class="docutils literal"><span class="pre">pass</span></tt>, <tt class="docutils literal"><span class="pre">yeld</span></tt>, <tt class="docutils literal"><span class="pre">def</span></tt>, <tt class="docutils literal"><span class="pre">print</span></tt>.</p>
+<p>Não se preocupe neste momento em descrever cada uma, o importante é destacar como começar a falar, para isso vamos utilizar o comando <tt class="docutils literal"><span class="pre">print</span></tt> da linguagem. É importante neste momento mostrar como o computador recebe as instruções, interpreta e executa uma ação.</p>
 
 <div id="cont"></div>
-<div id="Operações" lang="python" class="ac_section alert alert-warning" >
+<div id="idade" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="Operações_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="Operações_saveb" onclick="saveEditor('Operações');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="Operações_loadb" onclick="requestCode('Operações');">Load</button>
+<button class='btn btn-success' id="idade_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_saveb" onclick="saveEditor('idade');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="idade_loadb" onclick="requestCode('idade');">Load</button>
 
 </div>
 <br/>
-<div id="Operações_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="Operações_code" class="active_code", prefixcode="undefined" lang="python">
-print(4 + 3)
-print(10 - 6)
-print(7 * 6)
-print(9 / 3)
-print(10 % 6)
+<div id="idade_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="idade_code" class="active_code", prefixcode="undefined" lang="python">
+print("Ei mundo!")
 </textarea>
 </div>
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="Operações_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="idade_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="Operações_suffix" style="display:none">
-</pre><pre id="Operações_pre" class="active_out">
+<pre id="idade_suffix" style="display:none">
+</pre><pre id="idade_pre" class="active_out">
 
 </pre>
 
 </div> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (Operações)</span> </p>
+<p class="ac_caption"><span class="ac_caption_text"> (idade)</span> </p>
 
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#Operações_saveb').toggle();
-    $('#Operações_loadb').toggle();
+    $('#idade_saveb').toggle();
+    $('#idade_loadb').toggle();
 }
-if ($("#Operações_code_div").parents(".admonition").length == 0 && $("#Operações_code_div").parents("#exercises").length == 0){
+if ($("#idade_code_div").parents(".admonition").length == 0 && $("#idade_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#Operações_code_div").offset({
-			left: $("#Operações .clearfix").offset().left
+		$("#idade_code_div").offset({
+			left: $("#idade .clearfix").offset().left
 		});
 	}
-	$("#Operações_runb").one("click", function(){
+	$("#idade_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#Operações_code_div").animate({
+				$("#idade_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -361,10 +389,10 @@ if ($("#Operações_code_div").parents(".admonition").length == 0 && $("#Operaç
 			}
 		})
 		.queue(function (next) {
-			$("#Operações_runb").parent().siblings(".ac_output").show();
-			runit('Operações',this, undefined);
-			$("#Operações_runb").on("click", function(){
-				runit('Operações',this, undefined);
+			$("#idade_runb").parent().siblings(".ac_output").show();
+			runit('idade',this, undefined);
+			$("#idade_runb").on("click", function(){
+				runit('idade',this, undefined);
 			});
 		})
 		
@@ -372,73 +400,41 @@ if ($("#Operações_code_div").parents(".admonition").length == 0 && $("#Operaç
 }
 else{
 	console.log("inside new if")
-	$("#Operações_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#Operações_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#Operações_runb").on("click", function(){
+	$("#idade_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#idade_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#idade_runb").on("click", function(){
 		console.log("button clicked");
-		runit('Operações',this, undefined);
+		runit('idade',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p>Note que no <em>console</em> do IDLE <strong>não</strong> precisamos de utilizar a função <tt class="docutils literal"><span class="pre">print()</span></tt> para obtermos o resultado de uma sentença aritmética.</p>
-<p>É importante neste momento:</p>
+<p><strong>Atividades</strong></p>
 <ul class="simple">
-<li>Construir expressões matemáticas.</li>
-<li>Demonstre a prioridade dos operadores matemáticos.</li>
-<li>Lembrar que representação de um número fracionário utiliza <tt class="docutils literal"><span class="pre">.</span></tt> e não <tt class="docutils literal"><span class="pre">,</span></tt>.</li>
+<li>Preencha o cartão <strong>Interface</strong> da <a class="reference external" href="../Apoio/cartoes.html#aula-2">aula 2</a></li>
+<li>Trabalhe com os alunos do IDLE</li>
+<li>Anuncie o cartão IDLE básico ao custo de <tt class="docutils literal"><span class="pre">3$&gt;</span></tt> (opcional)</li>
+<li>Para adquirir o cartão print eles precisam escrever no IDLE o nome dos três integrantes do grupo e mostrar ao professor.</li>
 </ul>
-<div class="admonition-dificuldades admonition">
-<p class="first admonition-title">Dificuldades</p>
-<p class="last">Se você notar alguma dificuldade grave de absorção dos conteúdos, utilize os <a class="reference external" href="https://pt.khanacademy.org/math/arithmetic">videos</a> da Khan Academy como complementação!</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Nome A&quot;</span><span class="p">)</span>
+<span class="go">Nome A</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Nome B&quot;</span><span class="p">)</span>
+<span class="go">Nome B</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Nome C&quot;</span><span class="p">)</span>
+<span class="go">Nome C</span>
+</pre></div>
 </div>
-<p><strong>Proposta</strong></p>
-<p>Apresente operações para lidar com:</p>
-<ul class="simple">
-<li>Testes com a procedência dos operadores.</li>
-<li>Conversão de medidas.</li>
-<li>Conversão de moedas.</li>
-</ul>
-<p><strong>Atividades para a empresa</strong></p>
-<ul class="simple">
-<li>Os alunos poderão acumular <em>progmoney</em> resolvendo exercícios do <a class="reference external" href="../Aula2/Exercicios.html">banco de idéias</a>.</li>
-<li>Destravar novos cartões de funcionalidades para serem utilizados em futuros projetos.</li>
-<li>Cartões disponíveis para esta aula (veja mais detalhes sobre os <a class="reference external" href="../Apoio/cartoes.html">cartões de funcionalidades</a>)</li>
-</ul>
-<table border="1" class="docutils">
-<colgroup>
-<col width="38%" />
-<col width="63%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Cartões de funcionalidades</th>
-<th class="head">Custo (<a class="reference external" href="../Apoio/progmoney.html">progmoney</a>)</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><strong>Potenciação</strong></td>
-<td><tt class="docutils literal"><span class="pre">20</span> <span class="pre">$&gt;</span></tt></td>
-</tr>
-<tr class="row-odd"><td><strong>Frações</strong></td>
-<td><tt class="docutils literal"><span class="pre">25</span> <span class="pre">$&gt;</span></tt></td>
-</tr>
-</tbody>
-</table>
-<p>Para ver os cartões da aula clique <a class="reference external" href="../Apoio/cartoes.html#aula-2">aqui</a></p>
+<div class="admonition-instalacao admonition">
+<p class="first admonition-title">Instalação</p>
+<p class="last">Se tiver algum problema com o laboratório verifique com o técnico ou contacte alguém do Programaê!</p>
+</div>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<p>Nesta aula é importante que todos tenham compreendido os conceitos aritméticos básicos bem como o ambiente de desenvolvimento (IDLE)
-que utilizaremos nas próximas aulas. Estimule os alunos a compartilharem suas experiências com a classe.
-Algumas perguntas que podem ajudar:</p>
-<ul class="simple">
-<li>O que fizemos e que funcionou?</li>
-<li>O que fizemos e que não funcionou?</li>
-<li>Quais as dúvidas mais comuns que apareceram durante a aula?</li>
-<li>Qual as maiores dificuldades na execução das atividades?</li>
-</ul>
+<p>Além destas <a class="reference external" href="../Apoio/feedback.html">reflexões gerais</a> note como alunos estão lidando com a idéia dos cartões. Há interesse da sala?</p>
+<p>Boa aula!!!</p>
 </div>
 </div>
 

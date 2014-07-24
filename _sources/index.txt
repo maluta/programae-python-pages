@@ -14,7 +14,7 @@ Programaê - Python - Planos de Aula
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
-Aula 1: Regras & Conceitos
+Aula 1: Motivação & Regras
 :::::::::::::::::::::::::::
 
 `Ver conteúdo <Aula1/Plano.html>`_
@@ -25,7 +25,7 @@ Aula 1: Regras & Conceitos
    Aula1/Plano.rst
 
 
-Aula 2: Calculadora
+Aula 2: Conceitos & Ambiente
 :::::::::::::::::::::::::::::::::
 
 
@@ -37,11 +37,11 @@ Aula 2: Calculadora
    Aula2/Plano.rst
 
 
-Aula 3: Funções
+Aula 3: Calculadora
 :::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula8/Plano.html>`_
+`Ver conteúdo <Aula3/Plano.html>`_
 
 .. toctree::
    :hidden: 
@@ -51,14 +51,14 @@ Aula 4: Variáveis
 ::::::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula3/Plano.html>`_
+`Ver conteúdo <Aula4/Plano.html>`_
 
 .. toctree::
    :hidden: 
 
    Aula3/Plano.rst
 
-Aula 5: Primeiras Funcionalidades
+Aula 5: Funções
 ::::::::::::::::::::::::::::::::::::::::::::
 
 `Ver conteúdo <Aula4/Plano.html>`_
@@ -107,6 +107,26 @@ Aula 8: Textos
 
 
 Aula 9: Listas
+:::::::::::::::::::::::::::::::::
+
+
+`Ver conteúdo <Aula9/Plano.html>`_
+
+.. toctree::
+   :hidden: 
+
+   
+Aula 10: Licensas
+:::::::::::::::::::::::::::::::::
+
+
+`Ver conteúdo <Aula9/Plano.html>`_
+
+.. toctree::
+   :hidden: 
+   
+   
+Aula 11: Projetos
 :::::::::::::::::::::::::::::::::
 
 
