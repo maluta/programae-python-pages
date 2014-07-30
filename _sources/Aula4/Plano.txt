@@ -71,8 +71,6 @@ Destaque que cada *tipo* de dado permite operações diferentes, por exemplo, se
   nome_completo = nome + sobrenome
   print(nome_completo)
   print(nome * 5)
-
-  
   
 6. Quais as regras para definir um nome de variável? 
 
