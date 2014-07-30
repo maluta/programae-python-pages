@@ -7,8 +7,7 @@ Progmoney
 Banco
 +++++
 
-O professor será o responsável por contolar os créditos das equipes.
-(Planilha)
+O educador será o responsável por contolar os créditos das equipes.
 
 Preços de utilização
 ++++++++++++++++++++

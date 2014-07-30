@@ -106,7 +106,7 @@ soluções utilizando como ferramenta a programação.
 
 	- Grupos de até 3 alunos. 
 	- Nas próximas aulas, a equipe de alunos (empresa) receberão o desafios e contratos de desenvolvimento.  
-	- O professor (na figura de investidor) irá distribuir uma modena virtual chamada `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
+	- O educador (na figura de investidor) irá distribuir uma modena virtual chamada `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
 	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na criação dos programas.  
 	- A construção de código tem um *custo* em *progmoney*
 	- Cada linha de código custa ``1 $>``.
@@ -121,7 +121,7 @@ soluções utilizando como ferramenta a programação.
 - Organize a sala em grupos de 3 alunos.
 - Peça as equipes escolher um nome para empresa. 
 - Peça as equipes para escrever uma descrição da empresa.
-- Cada equipe deverá preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__ e devolver ao professor.
+- Cada equipe deverá preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__ e devolver ao educador.
 - Adquirir o primeiro `cartão <../Apoio/cartoes.html#aula-1>`__ de funcionalidade com as informações da empresa e preenchê-lo.
 
 Reflexão

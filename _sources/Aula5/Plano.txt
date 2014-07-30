@@ -176,7 +176,8 @@ Quando fazemos ``randint(1,2)`` podemos ter como resposta ``1`` ou ``2`` logo, c
 
 **Atividades para a empresa**
 
-- 
+- Ofereça a possibilidade de adquirir mais pontos do `banco de exercícios <../Aula5/Exercicios.html>`__.
+
   
 Reflexão
 ++++++++

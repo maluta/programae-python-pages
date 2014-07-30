@@ -97,7 +97,7 @@ Apresente operações para lidar com:
 Reflexão
 +++++++++
 
-Além destas `reflexões gerais <../Apoio/feedback.html>`__ note como alunos trabalham os conceitos de matemática, se há alguma dificuldade de utilização.
+Além das `reflexões gerais <../Apoio/feedback.html>`__ note como alunos trabalham os conceitos de matemática, se há alguma dificuldade de utilização.
 
 
 

@@ -194,13 +194,13 @@ Um exemplo de cabeçalho:
   
 **Atividades para a empresa**
 
-- Construir os cabeçalhos para os documentos da empresa
-- Acumular pontos do banco de exercícios.
- 
+- Construir os cabeçalhos para os documentos da empresa.
+- Ofereça a possibilidade de adquirir mais pontos do `banco de exercícios <../Aula4/Exercicios.html>`__.
 
 
 Reflexão
 ++++++++
 
+Além das `reflexões gerais <../Apoio/feedback.html>`__
 
 

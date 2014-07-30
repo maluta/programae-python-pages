@@ -114,7 +114,8 @@ Não se preocupe neste momento em descrever cada uma, o importante é destacar c
    
 .. admonition:: Instalação
 
-  Se tiver algum problema com o laboratório verifique com o técnico ou contacte alguém do Programaê!
+  Se tiver algum problema com o laboratório verifique com o técnico responsável pelo laboratório apresentando a página de 
+  `como instalar <../Apoio/comoinstalar.html>`__ ou contacte alguém do `Programaê! <../Apoio/contatos.html>`__ 
  
 Reflexão
 +++++++++

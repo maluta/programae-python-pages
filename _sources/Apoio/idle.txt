@@ -43,3 +43,11 @@ Executando um código
 --------------------
 
 .. image:: ../../_static/10.PNG
+
+
+Atalhos
+--------------------
+
+- Último comando: **Alt + p**
+- Autocompletar: **Tab**
+
