@@ -201,4 +201,9 @@ Reflexão
 
 Além das `reflexões gerais <../Apoio/feedback.html>`__
 
+**Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
+
+.. disqus::
+  :shortname: programae
+  :identifier: aula4
 

@@ -807,6 +807,44 @@ else{
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
 <p>Além das <a class="reference external" href="../Apoio/feedback.html">reflexões gerais</a></p>
+<p><strong>Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano</strong></p>
+<script type="text/javascript">
+    function aula4_disqus(source) { 
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'aula4_' + eBookConfig.course;
+                    this.page.url = 'http://aula4_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'programae';    
+            disqus_identifier = 'aula4_' + eBookConfig.course;
+            disqus_url = 'http://aula4_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="aula4" onclick="aula4_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='aula4']").attr('data-disqus-identifier', 'aula4_' + eBookConfig.course);
+</script>
 </div>
 </div>
 

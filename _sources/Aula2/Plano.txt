@@ -123,3 +123,9 @@ Reflexão
 Além destas `reflexões gerais <../Apoio/feedback.html>`__ note como alunos estão lidando com a idéia dos cartões. Há interesse da sala? 
 
 Boa aula!!!
+
+**Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
+
+.. disqus::
+  :shortname: programae
+  :identifier: aula2

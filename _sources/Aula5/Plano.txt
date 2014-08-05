@@ -182,3 +182,11 @@ Quando fazemos ``randint(1,2)`` podemos ter como resposta ``1`` ou ``2`` logo, c
 Reflexão
 ++++++++
 
+TBA
+
+**Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
+
+.. disqus::
+  :shortname: programae
+  :identifier: aula5
+

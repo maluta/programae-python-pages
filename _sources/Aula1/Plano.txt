@@ -132,3 +132,10 @@ Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos observa
 Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
 
 Boa aula!!!
+
+**Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
+
+.. disqus::
+  :shortname: programae
+  :identifier: aula1
+

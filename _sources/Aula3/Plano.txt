@@ -99,6 +99,13 @@ Reflexão
 
 Além das `reflexões gerais <../Apoio/feedback.html>`__ note como alunos trabalham os conceitos de matemática, se há alguma dificuldade de utilização.
 
+**Comentários: Educador, clique no link abaixo e utilize este espaço para fazer comentários sobre este plano**
+
+Não se esqueça de informar o número da aula que você esta comentando. 
+
+.. disqus::
+  :shortname: programae
+  :identifier: aula3
 
 
 

@@ -104,8 +104,6 @@ Aula 8: Textos
    Aula7/Plano.rst
 
 
-
-
 Aula 9: Listas
 :::::::::::::::::::::::::::::::::
 

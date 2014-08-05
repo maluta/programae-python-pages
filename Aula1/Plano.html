@@ -410,6 +410,44 @@ soluções utilizando como ferramenta a programação.</p>
 É importante destacar sempre que a <strong>criatividade</strong> é ferramenta para construção. Nesta etapa avalie a participação e interesse dos alunos.
 Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.</p>
 <p>Boa aula!!!</p>
+<p><strong>Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano</strong></p>
+<script type="text/javascript">
+    function aula1_disqus(source) { 
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'aula1_' + eBookConfig.course;
+                    this.page.url = 'http://aula1_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'programae';    
+            disqus_identifier = 'aula1_' + eBookConfig.course;
+            disqus_url = 'http://aula1_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="aula1" onclick="aula1_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='aula1']").attr('data-disqus-identifier', 'aula1_' + eBookConfig.course);
+</script>
 </div>
 </div>
 
