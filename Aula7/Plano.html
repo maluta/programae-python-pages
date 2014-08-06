@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -281,29 +282,29 @@
 <button class='btn btn-success' id="strings1_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="strings1_saveb" onclick="saveEditor('strings1');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="strings1_loadb" onclick="requestCode('strings1');">Load</button>
+<button class='btn btn-default' id="strings1_vizb" onclick="injectCodelens('strings1');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="strings1_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="strings1_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="strings1_code" class="active_code" prefixcode="undefined" lang="python">
 texto = u"programar é muito bom"
 print(texto)
 print(len(texto))
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="strings1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="strings1_suffix" style="display:none">
-</pre><pre id="strings1_pre" class="active_out">
+</pre><pre id="strings1_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (strings1)</span> </p>
-
+<div id="strings1_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -378,11 +379,12 @@ um erro indicando que o índice esta fora da faixa permitida.</p>
 <button class='btn btn-success' id="strings2_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="strings2_saveb" onclick="saveEditor('strings2');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="strings2_loadb" onclick="requestCode('strings2');">Load</button>
+<button class='btn btn-default' id="strings2_vizb" onclick="injectCodelens('strings2');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="strings2_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="strings2_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="strings2_code" class="active_code" prefixcode="undefined" lang="python">
 texto = u"programar É muito bom"
 print(texto[0]) # primeiro caractere
 print(texto[:9]) # do ínicio (índice zero) até o índice 8
@@ -391,19 +393,18 @@ print(texto[12:17]) # do índice 12 até o 16
 print(texto[18:]) # do índice 18 até o final
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="strings2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="strings2_suffix" style="display:none">
-</pre><pre id="strings2_pre" class="active_out">
+</pre><pre id="strings2_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (strings2)</span> </p>
-
+<div id="strings2_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -470,11 +471,12 @@ else{
 <button class='btn btn-success' id="s3_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="s3_saveb" onclick="saveEditor('s3');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="s3_loadb" onclick="requestCode('s3');">Load</button>
+<button class='btn btn-default' id="s3_vizb" onclick="injectCodelens('s3');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="s3_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="s3_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="s3_code" class="active_code" prefixcode="undefined" lang="python">
 texto = u"programar É muito bom"
 print( texto ) # texto original
 print( texto.upper() ) # todo o texto em letras maiúsculas
@@ -483,19 +485,18 @@ print( texto.capitalize() ) # texto com a primeira letra maiúscula
 print( texto.count('a') ) # quantas vezes a letra 'a' aparece
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="s3_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="s3_suffix" style="display:none">
-</pre><pre id="s3_pre" class="active_out">
+</pre><pre id="s3_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (s3)</span> </p>
-
+<div id="s3_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -627,28 +628,28 @@ Podemos aplicar a mesma idéia ara percorrer uma <em>string</em>.</p>
 <button class='btn btn-success' id="s6_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="s6_saveb" onclick="saveEditor('s6');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="s6_loadb" onclick="requestCode('s6');">Load</button>
+<button class='btn btn-default' id="s6_vizb" onclick="injectCodelens('s6');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="s6_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="s6_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="s6_code" class="active_code" prefixcode="undefined" lang="python">
 for caractere in "meu texto":
   print(caractere)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="s6_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="s6_suffix" style="display:none">
-</pre><pre id="s6_pre" class="active_out">
+</pre><pre id="s6_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (s6)</span> </p>
-
+<div id="s6_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -709,28 +710,28 @@ else{
 <button class='btn btn-success' id="strings4_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="strings4_saveb" onclick="saveEditor('strings4');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="strings4_loadb" onclick="requestCode('strings4');">Load</button>
+<button class='btn btn-default' id="strings4_vizb" onclick="injectCodelens('strings4');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="strings4_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="strings4_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="strings4_code" class="active_code" prefixcode="undefined" lang="python">
 texto="Pra que cara feia?\n\tNa vida,\nNinguém paga meia.\n\n(Paulo Leminski)"
 print(texto)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="strings4_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="strings4_suffix" style="display:none">
-</pre><pre id="strings4_pre" class="active_out">
+</pre><pre id="strings4_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (strings4)</span> </p>
-
+<div id="strings4_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block

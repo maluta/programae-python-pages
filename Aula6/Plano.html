@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -289,11 +290,12 @@ uma lista de números na tela. Uma solução seria utilizar uma sequência de <t
 <button class='btn btn-success' id="cad_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="cad_saveb" onclick="saveEditor('cad');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="cad_loadb" onclick="requestCode('cad');">Load</button>
+<button class='btn btn-default' id="cad_vizb" onclick="injectCodelens('cad');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="cad_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="cad_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="cad_code" class="active_code" prefixcode="undefined" lang="python">
 print("Cadastro de idades")
 
 nome_1 =  input("Digite seu nome:  ")
@@ -312,19 +314,18 @@ print("Cadastrado: " + nome_3 + " (" + idade_3 + " anos) ")
 #...
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="cad_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="cad_suffix" style="display:none">
-</pre><pre id="cad_pre" class="active_out">
+</pre><pre id="cad_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (cad)</span> </p>
-
+<div id="cad_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -385,28 +386,28 @@ mais algumas palavras-reservadas.</p>
 <button class='btn btn-success' id="for_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="for_saveb" onclick="saveEditor('for');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="for_loadb" onclick="requestCode('for');">Load</button>
+<button class='btn btn-default' id="for_vizb" onclick="injectCodelens('for');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="for_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="for_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="for_code" class="active_code" prefixcode="undefined" lang="python">
 for item in range(5):
   print(item)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="for_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="for_suffix" style="display:none">
-</pre><pre id="for_pre" class="active_out">
+</pre><pre id="for_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (for)</span> </p>
-
+<div id="for_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block

@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -334,29 +335,29 @@ Proponha as seguintes atividades:</p>
 <button class='btn btn-success' id="random1_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="random1_saveb" onclick="saveEditor('random1');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="random1_loadb" onclick="requestCode('random1');">Load</button>
+<button class='btn btn-default' id="random1_vizb" onclick="injectCodelens('random1');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="random1_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="random1_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="random1_code" class="active_code" prefixcode="undefined" lang="python">
 import random # nossa "caixa" de funcionalidades
 numero = random.randint(-5,5)
 print(numero)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="random1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="random1_suffix" style="display:none">
-</pre><pre id="random1_pre" class="active_out">
+</pre><pre id="random1_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (random1)</span> </p>
-
+<div id="random1_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -418,29 +419,29 @@ Execute mais algumas vezes para ver os números se alternando.</p>
 <button class='btn btn-success' id="random2_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="random2_saveb" onclick="saveEditor('random2');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="random2_loadb" onclick="requestCode('random2');">Load</button>
+<button class='btn btn-default' id="random2_vizb" onclick="injectCodelens('random2');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="random2_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="random2_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="random2_code" class="active_code" prefixcode="undefined" lang="python">
 import random
 cores = ('azul', 'amarelo', 'verde', 'azul', 'branco' )
 print(random.choice(cores))
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="random2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="random2_suffix" style="display:none">
-</pre><pre id="random2_pre" class="active_out">
+</pre><pre id="random2_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (random2)</span> </p>
-
+<div id="random2_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -511,28 +512,28 @@ e calcula o número de caracteres, por fim utilizamos o resultado como argumento
 <button class='btn btn-success' id="dado_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="dado_saveb" onclick="saveEditor('dado');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="dado_loadb" onclick="requestCode('dado');">Load</button>
+<button class='btn btn-default' id="dado_vizb" onclick="injectCodelens('dado');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="dado_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="dado_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="dado_code" class="active_code" prefixcode="undefined" lang="python">
 import random
 print(random.randint(1,6))
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="dado_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="dado_suffix" style="display:none">
-</pre><pre id="dado_pre" class="active_out">
+</pre><pre id="dado_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (dado)</span> </p>
-
+<div id="dado_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block

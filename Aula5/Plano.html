@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -296,28 +297,28 @@ vendo se &#8220;a&#8221; <em>é igual a</em> &#8220;b&#8221;. Entretando quando 
 <button class='btn btn-success' id="ord_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="ord_saveb" onclick="saveEditor('ord');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="ord_loadb" onclick="requestCode('ord');">Load</button>
+<button class='btn btn-default' id="ord_vizb" onclick="injectCodelens('ord');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="ord_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="ord_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="ord_code" class="active_code" prefixcode="undefined" lang="python">
 print("a",ord("a"))
 print("b",ord("b"))
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="ord_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="ord_suffix" style="display:none">
-</pre><pre id="ord_pre" class="active_out">
+</pre><pre id="ord_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (ord)</span> </p>
-
+<div id="ord_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -377,11 +378,12 @@ else{
 <button class='btn btn-success' id="if_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="if_saveb" onclick="saveEditor('if');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="if_loadb" onclick="requestCode('if');">Load</button>
+<button class='btn btn-default' id="if_vizb" onclick="injectCodelens('if');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="if_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="if_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="if_code" class="active_code" prefixcode="undefined" lang="python">
 idade = input(u"Qual é a sua idade?")
 idade = int(idade)
 if idade > 14 == True:
@@ -389,19 +391,18 @@ if idade > 14 == True:
   print(u"Sua idade é " + str(idade) + " anos.")
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="if_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="if_suffix" style="display:none">
-</pre><pre id="if_pre" class="active_out">
+</pre><pre id="if_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (if)</span> </p>
-
+<div id="if_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -473,7 +474,7 @@ se confirmarem a condição definida no <tt class="docutils literal"><span class
 <p>Coloque o exercício anterior em blocos indentados.</p>
 
         <div class='parsons alert alert-warning' id="parsons-116">
-        <div class="parsons-text">Q-6: <br /><br /></div>
+        <div class="parsons-text">Q-2: <br /><br /></div>
         <div style="clear:left;"></div>
         <div id="parsons-orig-116" style="display:none;">idade = input(u"Qual é a sua idade?")\nidade = int(idade)
 if idade > 14 == True:
@@ -614,29 +615,29 @@ if idade > 14 == True:
 <button class='btn btn-success' id="ex_if_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="ex_if_saveb" onclick="saveEditor('ex_if');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="ex_if_loadb" onclick="requestCode('ex_if');">Load</button>
+<button class='btn btn-default' id="ex_if_vizb" onclick="injectCodelens('ex_if');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="ex_if_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="ex_if_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="ex_if_code" class="active_code" prefixcode="undefined" lang="python">
 nome = u"José"
 if nome == u"José":
   print(u"Seu nome é: " + nome)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="ex_if_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="ex_if_suffix" style="display:none">
-</pre><pre id="ex_if_pre" class="active_out">
+</pre><pre id="ex_if_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (ex_if)</span> </p>
-
+<div id="ex_if_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -700,11 +701,12 @@ cada uma das possibilidades. Exemplo:</li>
 <button class='btn btn-success' id="prob_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="prob_saveb" onclick="saveEditor('prob');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="prob_loadb" onclick="requestCode('prob');">Load</button>
+<button class='btn btn-default' id="prob_vizb" onclick="injectCodelens('prob');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="prob_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="prob_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="prob_code" class="active_code" prefixcode="undefined" lang="python">
 import random
 print(u"Você caminha em direção a sala...")
 if random.randint(1,2) == 1:
@@ -713,19 +715,18 @@ else:
     print(u"Tudo esta calmo e tranquilo")
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="prob_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="prob_suffix" style="display:none">
-</pre><pre id="prob_pre" class="active_out">
+</pre><pre id="prob_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (prob)</span> </p>
-
+<div id="prob_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block

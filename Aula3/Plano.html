@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -310,11 +311,12 @@ Trabalhe sem pressa com os alunos e anote o <a class="reference external" href="
 <button class='btn btn-success' id="Operações_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Operações_saveb" onclick="saveEditor('Operações');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Operações_loadb" onclick="requestCode('Operações');">Load</button>
+<button class='btn btn-default' id="Operações_vizb" onclick="injectCodelens('Operações');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Operações_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="Operações_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="Operações_code" class="active_code" prefixcode="undefined" lang="python">
 print(4 + 3)
 print(10 - 6)
 print(7 * 6)
@@ -322,19 +324,18 @@ print(9 / 3)
 print(10 % 6)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="Operações_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="Operações_suffix" style="display:none">
-</pre><pre id="Operações_pre" class="active_out">
+</pre><pre id="Operações_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (Operações)</span> </p>
-
+<div id="Operações_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block

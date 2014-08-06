@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -279,27 +280,27 @@
 <button class='btn btn-success' id="variavel_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="variavel_saveb" onclick="saveEditor('variavel');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="variavel_loadb" onclick="requestCode('variavel');">Load</button>
+<button class='btn btn-default' id="variavel_vizb" onclick="injectCodelens('variavel');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="variavel_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="variavel_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="variavel_code" class="active_code" prefixcode="undefined" lang="python">
 ano = 2014
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="variavel_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="variavel_suffix" style="display:none">
-</pre><pre id="variavel_pre" class="active_out">
+</pre><pre id="variavel_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (variavel)</span> </p>
-
+<div id="variavel_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -368,30 +369,30 @@ else{
 <button class='btn btn-success' id="idade_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="idade_saveb" onclick="saveEditor('idade');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="idade_loadb" onclick="requestCode('idade');">Load</button>
+<button class='btn btn-default' id="idade_vizb" onclick="injectCodelens('idade');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="idade_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="idade_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="idade_code" class="active_code" prefixcode="undefined" lang="python">
 ano = 2014
 nascimento = 1998
 idade = ano - nascimento
 print(idade)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="idade_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="idade_suffix" style="display:none">
-</pre><pre id="idade_pre" class="active_out">
+</pre><pre id="idade_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (idade)</span> </p>
-
+<div id="idade_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -449,11 +450,12 @@ else{
 <button class='btn btn-success' id="string_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="string_saveb" onclick="saveEditor('string');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="string_loadb" onclick="requestCode('string');">Load</button>
+<button class='btn btn-default' id="string_vizb" onclick="injectCodelens('string');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="string_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="string_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="string_code" class="active_code" prefixcode="undefined" lang="python">
 nome = "nome"
 sobrenome = "sobrenome"
 nome_completo = nome + sobrenome
@@ -461,19 +463,18 @@ print(nome_completo)
 print(nome * 5)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="string_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="string_suffix" style="display:none">
-</pre><pre id="string_pre" class="active_out">
+</pre><pre id="string_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (string)</span> </p>
-
+<div id="string_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -579,11 +580,12 @@ else{
 <button class='btn btn-success' id="concat2_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="concat2_saveb" onclick="saveEditor('concat2');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="concat2_loadb" onclick="requestCode('concat2');">Load</button>
+<button class='btn btn-default' id="concat2_vizb" onclick="injectCodelens('concat2');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="concat2_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="concat2_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="concat2_code" class="active_code" prefixcode="undefined" lang="python">
 print(u"Qual é o seu primeiro nome?")
 nome = input()
 print(u"Qual é seu sobrenome?")
@@ -592,19 +594,18 @@ espaco = " "
 print(nome + espaco + sobrenome)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="concat2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="concat2_suffix" style="display:none">
-</pre><pre id="concat2_pre" class="active_out">
+</pre><pre id="concat2_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (concat2)</span> </p>
-
+<div id="concat2_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -696,29 +697,29 @@ ou seja, blocos de códigos que serão ignorados pelo computador na hora de tran
 <button class='btn btn-success' id="bonus_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="bonus_saveb" onclick="saveEditor('bonus');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="bonus_loadb" onclick="requestCode('bonus');">Load</button>
+<button class='btn btn-default' id="bonus_vizb" onclick="injectCodelens('bonus');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="bonus_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="bonus_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="bonus_code" class="active_code" prefixcode="undefined" lang="python">
 # multiplas definições com uma linha de código
 nome, sobrenome, idade = u"José", u"Silva", 20
 print(nome,sobrenome,idade)
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="bonus_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="bonus_suffix" style="display:none">
-</pre><pre id="bonus_pre" class="active_out">
+</pre><pre id="bonus_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (bonus)</span> </p>
-
+<div id="bonus_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block

@@ -38,6 +38,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/poll.js"></script>
     <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="../_static/pytutor.js"></script>
     <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
@@ -260,30 +261,30 @@ Além de utilizar demonstre que podemos construir as nossas próprias funções,
 <button class='btn btn-success' id="aula8_ex1_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex1_saveb" onclick="saveEditor('aula8_ex1');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex1_loadb" onclick="requestCode('aula8_ex1');">Load</button>
+<button class='btn btn-default' id="aula8_ex1_vizb" onclick="injectCodelens('aula8_ex1');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="aula8_ex1_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="aula8_ex1_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="aula8_ex1_code" class="active_code" prefixcode="undefined" lang="python">
 def minha_funcao():
   print(u"código")
   print(u"da")
   print(u"função")
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="aula8_ex1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="aula8_ex1_suffix" style="display:none">
-</pre><pre id="aula8_ex1_pre" class="active_out">
+</pre><pre id="aula8_ex1_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (aula8_ex1)</span> </p>
-
+<div id="aula8_ex1_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
@@ -364,30 +365,30 @@ próprias funções com inúmeros parâmetros bem como retornar valores das fun�
 <button class='btn btn-success' id="aula8_ex2_runb">Run</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex2_saveb" onclick="saveEditor('aula8_ex2');">Save</button>
 <button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex2_loadb" onclick="requestCode('aula8_ex2');">Load</button>
+<button class='btn btn-default' id="aula8_ex2_vizb" onclick="injectCodelens('aula8_ex2');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="aula8_ex2_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="aula8_ex2_code" class="active_code", prefixcode="undefined" lang="python">
+<textarea cols="50" rows="12" id="aula8_ex2_code" class="active_code" prefixcode="undefined" lang="python">
 def soma(x,y):
   return x + y
 
 print(soma(5,4))
 </textarea>
 </div>
+
 <div class="ac_output">
 <div style="text-align: center">
 <canvas id="aula8_ex2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
 <pre id="aula8_ex2_suffix" style="display:none">
-</pre><pre id="aula8_ex2_pre" class="active_out">
+</pre><pre id="aula8_ex2_pre" class="active_out"></pre>
 
-</pre>
-
-</div> 
+</div> <!-- end output --> 
 <div class="clearfix"></div>
 <p class="ac_caption"><span class="ac_caption_text"> (aula8_ex2)</span> </p>
-
+<div id="aula8_ex2_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
