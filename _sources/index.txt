@@ -20,7 +20,7 @@ Olá educador, estes planos tem como objetivos gerais:
 - Abstrair complexidades.
 - Realizar projetos dentro de um contexto.
 - Desenvolver a autoria digital. 
-- Fortalecimento da cidadania.s
+- Fortalecimento da cidadania.
 
 .. admonition:: Participe!
 
