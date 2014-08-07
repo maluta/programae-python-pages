@@ -45,6 +45,7 @@ Instigue os alunos com as seguintes perguntas:
   Nesta parte é importante destacar que podemos criar programamas não apenas para rodar em computadores mas em celulares, carros, 
   televisores, etc; e que isso não é um futuro distante mas sim o presente.
 
+
 +---------------------------------------------------------------------------------+
 | Porque nós deveriamos aprendemos a programar?                                   |
 +=================================================================================+
@@ -88,7 +89,7 @@ Um resumo fazendo analogia com o idioma Inglês:
 +---------------+-------------------------------------------+------------------------------+
 | Idioma        |  Reunião de palavras com um significado   |  Exemplo                     |
 +===============+===========================================+==============================+
-| Inglês        |  sentença, frase                          |   Hoje faz sol               |
+| Inglês        |  sentença, frase                          |   Today is sunny             |
 +---------------+-------------------------------------------+------------------------------+
 | Python        |  instrução, linha de código               |  ``print("Hoje faz sol")``   |
 +---------------+-------------------------------------------+------------------------------+
@@ -132,7 +133,6 @@ Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos observa
 Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
 
 --------
-
 
 
 Boa aula!!!

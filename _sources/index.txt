@@ -14,6 +14,20 @@ Programaê - Python - Planos de Aula
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
+Olá educador, estes planos tem como objetivos gerais:
+ 
+- Introduzir o pensamento computacional.
+- Abstrair complexidades.
+- Realizar projetos dentro de um contexto.
+- Desenvolver a autoria digital. 
+- Fortalecimento da cidadania.s
+
+.. admonition:: Participe!
+
+  Este é um material *em desenvolvimento*, portanto sua opinão é muito importante.
+  Utilize os espaços para comentários, localizados no final de cada plano ou entre em 
+  `contato <../Apoio/contatos.html>`__.
+   
 Aula 1: Motivação & Regras
 :::::::::::::::::::::::::::
 
