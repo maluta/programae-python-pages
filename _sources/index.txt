@@ -26,7 +26,7 @@ Olá educador, estes planos tem como objetivos gerais:
 
   Este é um material *em desenvolvimento*, portanto sua opinão é muito importante.
   Utilize os espaços para comentários, localizados no final de cada plano ou entre em 
-  `contato <../Apoio/contatos.html>`__.
+  `contato <../programae-python-pages/Apoio/contatos.html>`__.
    
 Aula 1: Motivação & Regras
 :::::::::::::::::::::::::::
