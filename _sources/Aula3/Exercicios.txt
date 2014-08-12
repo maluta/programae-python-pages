@@ -67,10 +67,7 @@ b)
 
         >>> 1/3 * 3
         
-    
-          
-
-
+           
   
 Dado o número decimal, diga a que fração corresponde:
 
@@ -79,3 +76,18 @@ a) 0,55
 b) 0,13
 
 c) 0,00098
+
+.. reveal:: ex4
+    :showtitle: Ver resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+      from fractions import Fraction
+      
+      Fraction('0.55')
+      Fraction('0.13')
+      Fraction('0.00098')
+      
+
+      

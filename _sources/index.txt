@@ -24,9 +24,11 @@ Olá educador, estes planos tem como objetivos gerais:
 
 .. admonition:: Participe!
 
-  Este é um material *em desenvolvimento*, portanto sua opinão é muito importante.
-  Utilize os espaços para comentários, localizados no final de cada plano ou entre em 
-  `contato <../programae-python-pages/Apoio/contatos.html>`__.
+  Esta é uma pré-versão dos planos de aula que disponibilizaremos no site do `Programaê <http://www.programae.org.br>`__.
+  Logo todos os *bugs*, comentários, *feedbacks* são altamente apreciados. Se você não entendeu alguma coisa depois de ler,
+  ou viu uma sentença em particular mal escrita isso é um *problema* e nós gostariamos muito de arrumar. É claro que para tal precisamos 
+  ouvir sobre (hoje em dia ainda é difícil adivinhar...) Utilize a seção de comentários no final de cada plano ou então entre em contato
+  `diretamente <../programae-python-pages/Apoio/contatos.html>`__.
    
 Aula 1: Motivação & Regras
 :::::::::::::::::::::::::::
@@ -60,6 +62,7 @@ Aula 3: Calculadora
 .. toctree::
    :hidden: 
 
+   Aula3/Plano.rst
    
 Aula 4: Variáveis
 ::::::::::::::::::::::::::::::::::::
@@ -70,17 +73,17 @@ Aula 4: Variáveis
 .. toctree::
    :hidden: 
 
-   Aula3/Plano.rst
+   Aula4/Plano.rst
 
 Aula 5: Funções
 ::::::::::::::::::::::::::::::::::::::::::::
 
-`Ver conteúdo <Aula4/Plano.html>`_
+`Ver conteúdo <Aula5/Plano.html>`_
 
 .. toctree::
    :hidden: 
    
-   Aula4/Plano.rst
+   Aula5/Plano.rst
 
 
 Aula 6: Controles (I)
@@ -126,6 +129,8 @@ Aula 9: Listas
 
 .. toctree::
    :hidden: 
+   
+   Aula9/Plano.rst
 
    
 Aula 10: Licenças
@@ -137,6 +142,7 @@ Aula 10: Licenças
 .. toctree::
    :hidden: 
    
+   Aula10/Plano.rst
    
 Aula 11: Projetos
 :::::::::::::::::::::::::::::::::
@@ -145,4 +151,6 @@ Aula 11: Projetos
 `Ver conteúdo <Aula11/Plano.html>`_
 
 .. toctree::
-   :hidden: 
+   :hidden:
+   
+   Aula11/Plano.rst

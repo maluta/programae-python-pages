@@ -366,6 +366,21 @@ else{
 <li>0,13</li>
 <li>0,00098</li>
 </ol>
+
+    <button type='button' id='ex4_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex4').show();$('#ex4_hide').show();$('#ex4').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Ver resposta
+    </button>
+    <button type='button' id='ex4_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex4').hide();$('#ex4_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex4' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">fractions</span> <span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="n">Fraction</span><span class="p">(</span><span class="s">&#39;0.55&#39;</span><span class="p">)</span>
+<span class="n">Fraction</span><span class="p">(</span><span class="s">&#39;0.13&#39;</span><span class="p">)</span>
+<span class="n">Fraction</span><span class="p">(</span><span class="s">&#39;0.00098&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
 </div>
 
 

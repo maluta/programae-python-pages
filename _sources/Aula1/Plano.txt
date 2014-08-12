@@ -75,13 +75,15 @@ Exemplos:
 1. **Aprender uma linguagem de programação** é como aprender outro idioma, conhecendo o vocabulário e a gramática.
 2. **Escrever programas** é aprender a se comunicar com o computador.
 
-Um resumo fazendo analogia com o idioma Inglês:
+Um resumo fazendo analogia com os idiomas Inglês e Português:
 
 
 +---------------+-------------------------------------------+---------------------------------------+
 | Idioma        |  Unidade linguística com um significado   |  Exemplos                             |
 +===============+===========================================+=======================================+
 | Inglês        |  palavra                                  |  flower, car, tree, number            |
++---------------+-------------------------------------------+---------------------------------------+
+| Português     |  palavra                                  |  flor, carro, árvore, número          |
 +---------------+-------------------------------------------+---------------------------------------+
 | Python        |  palavras-reservadas                      |  ``print``, ``while``, ``import``     |
 +---------------+-------------------------------------------+---------------------------------------+
@@ -90,6 +92,8 @@ Um resumo fazendo analogia com o idioma Inglês:
 | Idioma        |  Reunião de palavras com um significado   |  Exemplo                     |
 +===============+===========================================+==============================+
 | Inglês        |  sentença, frase                          |   Today is sunny             |
++---------------+-------------------------------------------+------------------------------+
+| Português     |  sentença, frase                          |   Hoje está ensolarado       |
 +---------------+-------------------------------------------+------------------------------+
 | Python        |  instrução, linha de código               |  ``print("Hoje faz sol")``   |
 +---------------+-------------------------------------------+------------------------------+
@@ -128,7 +132,7 @@ soluções utilizando como ferramenta a programação.
 Reflexão
 +++++++++
 
-Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos observar que computador pode automatizar processos em nossas vidas, 
+Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos, nesta aula, observar que computador pode automatizar processos em nossas vidas. 
 É importante destacar sempre que a **criatividade** é ferramenta para construção. Nesta etapa avalie a participação e interesse dos alunos. 
 Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
 
