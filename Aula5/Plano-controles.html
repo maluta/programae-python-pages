@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Aula 5: Controles (I) &mdash; Programaê</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/assess.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../_static/lib/lis.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <link rel="top" title="Programaê" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8080' ? 'http://127.0.0.1:8080' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/python';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'programae';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+</script>
+
+
+  </head>
+  <body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="#">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">Programaê</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Programaê!</b>
+                </div>
+                <a href="http://www.programae.org.br">Página Oficinal</a>
+		<a href="../Apoio/console.html">Console interativo</a>  
+                </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Índice</a></li>
+            
+            <li><a href='/python/static/programae/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Console Interativo</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/python/static/programae/navhelp.html'>Ajuda</a></li>
+            <li><a href='../Apoio/comoinstalar.html'>Como instalar o Python</a></li>
+            <li><a href='../Apoio/idle.html'>Dicas IDLE</a></li>
+            <li class="divider"></li>
+            <li><a href='../Apoio/glossario.html'>Glossário</a></li>
+            <li><a href='../Apoio/contatos.html'>Contatos</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Aula 5: Controles (I)</a><ul>
+<li><a class="reference internal" href="#objetivos">Objetivos</a></li>
+<li><a class="reference internal" href="#preparacao">Preparação</a></li>
+<li><a class="reference internal" href="#atividades">Atividades</a></li>
+<li><a class="reference internal" href="#reflexao">Reflexão</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  
+  <div class="section" id="aula-5-controles-i">
+<h1>Aula 5: Controles (I)<a class="headerlink" href="#aula-5-controles-i" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Utilizar operadores comparações.</li>
+<li>Utilizar operadores Booleanos (True e False)</li>
+<li>Aprender sentenças com <tt class="docutils literal"><span class="pre">if</span></tt></li>
+</ul>
+</div>
+<div class="section" id="preparacao">
+<h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
+<li><a class="reference external" href="../Apoio/idle.html#sugestao-de-layout">Editar</a> e <a class="reference external" href="../Apoio/idle.html#executando-um-codigo">executar</a> códigos no IDLE.</li>
+</ul>
+</div>
+<div class="section" id="atividades">
+<h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
+<p><strong>Conceitos computacionais</strong></p>
+<p>Até o momento, utilizamos instruções sequenciais para dar ordens ao computador. Agora iremos entrar em um mundo novo, onde teremos
+de definir <strong>decisões</strong>. Contudo, antes de apresentar os mecanismos da linguagem para tomada de decisões vamos aprender como
+efetuar comparações.</p>
+<p>Abra o <a class="reference external" href="../Apoio/idle.html#console-iterativo">console</a> e trabalhe alguns exemplos:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">1</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">9</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>Repare que sempre obtemos como resposta <tt class="docutils literal"><span class="pre">False</span></tt> (falso) ou <tt class="docutils literal"><span class="pre">True</span></tt> (verdadeiro).</p>
+<p>Também podemos aplicar estes operadores em outros tipos de dados, por exemplo, não-numéricos:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;a&quot;</span> <span class="o">==</span> <span class="s">&quot;b&quot;</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;a&quot;</span> <span class="o">&lt;</span> <span class="s">&quot;b&quot;</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>É importante destacar para os alunos dois pontos, quando utilizamos o operador de comparação de igualdade (<tt class="docutils literal"><span class="pre">==</span></tt>) estamos nos referindo o <strong>conteúdo</strong> das variáveis, estamos
+vendo se &#8220;a&#8221; <em>é igual a</em> &#8220;b&#8221;. Entretando quando utilizamos o operador <tt class="docutils literal"><span class="pre">&gt;</span></tt> ou <tt class="docutils literal"><span class="pre">&lt;</span></tt> a lógica é outra. Para entedermos é preciso demonstrar a função (<a class="reference external" href="../Apoio/builtin.html">built-in</a>)
+<tt class="docutils literal"><span class="pre">ord()</span></tt>.</p>
+
+<div id="cont"></div>
+<div id="ord" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="ord_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="ord_saveb" onclick="saveEditor('ord');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="ord_loadb" onclick="requestCode('ord');">Load</button>
+<button class='btn btn-default' id="ord_vizb" onclick="injectCodelens('ord');">Show in Codelens</button>
+
+</div>
+<br/>
+<div id="ord_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="ord_code" class="active_code" prefixcode="undefined" lang="python">
+print("a",ord("a"))
+print("b",ord("b"))
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="ord_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="ord_suffix" style="display:none">
+</pre><pre id="ord_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (ord)</span> </p>
+<div id="ord_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#ord_saveb').toggle();
+    $('#ord_loadb').toggle();
+}
+if ($("#ord_code_div").parents(".admonition").length == 0 && $("#ord_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#ord_code_div").offset({
+			left: $("#ord .clearfix").offset().left
+		});
+	}
+	$("#ord_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#ord_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#ord_runb").parent().siblings(".ac_output").show();
+			runit('ord',this, undefined);
+			$("#ord_runb").on("click", function(){
+				runit('ord',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#ord_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#ord_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#ord_runb").on("click", function(){
+		console.log("button clicked");
+		runit('ord',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Repare que quando efetuamos a operação <tt class="docutils literal"><span class="pre">&lt;</span></tt> na verdade estamos comparando se o código referente a letra <tt class="docutils literal"><span class="pre">a</span></tt> (97) é menor que o da letra <tt class="docutils literal"><span class="pre">b</span></tt> (98).</p>
+<p>De posse dos conceitos de comparação podemos seguir e aprender a primeira instrução para efetuar decisões no Python, a palavra-reservada <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
+<p>Começemos com um exemplo:</p>
+
+<div id="cont"></div>
+<div id="if" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="if_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="if_saveb" onclick="saveEditor('if');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="if_loadb" onclick="requestCode('if');">Load</button>
+<button class='btn btn-default' id="if_vizb" onclick="injectCodelens('if');">Show in Codelens</button>
+
+</div>
+<br/>
+<div id="if_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="if_code" class="active_code" prefixcode="undefined" lang="python">
+idade = input(u"Qual é a sua idade?")
+idade = int(idade)
+if idade > 14 == True:
+  print(u"Bem-vindo ao curso de Python!")
+  print(u"Sua idade é " + str(idade) + " anos.")
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="if_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="if_suffix" style="display:none">
+</pre><pre id="if_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (if)</span> </p>
+<div id="if_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#if_saveb').toggle();
+    $('#if_loadb').toggle();
+}
+if ($("#if_code_div").parents(".admonition").length == 0 && $("#if_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#if_code_div").offset({
+			left: $("#if .clearfix").offset().left
+		});
+	}
+	$("#if_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#if_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#if_runb").parent().siblings(".ac_output").show();
+			runit('if',this, undefined);
+			$("#if_runb").on("click", function(){
+				runit('if',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#if_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#if_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#if_runb").on("click", function(){
+		console.log("button clicked");
+		runit('if',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Vamos analisar cada linha individualmente:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">#1</span></tt> → Chama a função input() passando como parâmetro a pergunta <em>&#8216;Qual é a sua idade?&#8217;</em> e armazena a resposta na variável idade.</li>
+<li><tt class="docutils literal"><span class="pre">#2</span></tt> → Neste momento utilizamos a função (<em>built-in</em>) <tt class="docutils literal"><span class="pre">str()</span></tt> para converter o tipo string para o tipo inteiro.</li>
+<li><tt class="docutils literal"><span class="pre">#3</span></tt> → <strong>Se</strong> o conteúdo da variável idade for maior que 14 executa a próxima linha.</li>
+<li><tt class="docutils literal"><span class="pre">#4</span></tt> → Caso a sentença da linha 3 seja verdadeira a função <tt class="docutils literal"><span class="pre">print</span></tt> com a mensagem de boas vindas é executada.</li>
+<li><tt class="docutils literal"><span class="pre">#5</span></tt> → Novamente utilizamos a função (built-in) <tt class="docutils literal"><span class="pre">str()</span></tt> que faz o oposto da função <em>int()</em> e converte um tipo numérico em string.</li>
+</ul>
+<p><strong>Fluxograma</strong></p>
+<p>Apresente os fluxogramas como ferramentas de apoio para estruturar o raciocínio. Desenhe no papel (ou lousa) como seria o
+trecho de execução de parte do programa.  Abaixo temos a condição <tt class="docutils literal"><span class="pre">if</span></tt> que dependendo da reposta sim/não executa um bloco de
+código diferente.</p>
+<a class="reference internal image-reference" href="../_images/fluxograma.png"><img alt="../_images/fluxograma.png" class="align-center" src="../_images/fluxograma.png" style="width: 240.0px; height: 320.0px;" /></a>
+<p>Não há regras fixas para a construção do fluxograma, a proposta aqui é apenas esboçar o fluxo do programa.</p>
+<div class="admonition-indentacao admonition">
+<p class="first admonition-title">Indentação</p>
+<p>Repare que as instruções das linhas 4 e 5 estão um pouco deslocados para a direita. A este recuo dá-se o nome de <strong>indentação</strong>
+ou seja, é um bloco de código que é executado dentro de um <em>contexto</em>. No exemplo acima, as duas linhas <tt class="docutils literal"><span class="pre">print</span></tt> só são executadas
+se confirmarem a condição definida no <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
+<p><strong>Para a separação de blocos de código, a linguagem Python usa espaços em branco.</strong></p>
+<p>Coloque o exercício anterior em blocos indentados.</p>
+
+        <div class='parsons alert alert-warning' id="parsons-116">
+        <div class="parsons-text">Q-3: <br /><br /></div>
+        <div style="clear:left;"></div>
+        <div id="parsons-orig-116" style="display:none;">idade = input(u"Qual é a sua idade?")\nidade = int(idade)
+if idade > 14 == True:
+       print(u"Bem-vindo ao curso de Python!")\nprint(u"Sua idade é " + str(idade) + " anos.")</div>
+        <div class="sortable-code-container">
+        <div id="parsons-sortableTrash-116" class="sortable-code"></div>
+        <div id="parsons-sortableCode-116" class="sortable-code"></div>
+    	<div style="clear:left;"></div>
+        </div>
+        <div class="parsons-controls">
+        <input type="button" class='btn btn-success' id="checkMe116" value="Check Me"/>
+        <input type="button" class='btn btn-default' id="reset116" value="Reset"/>
+        <div id="parsons-message-116"></div>
+        </div>
+        </div>
+
+    <script>
+        $pjQ(document).ready(function(){
+		
+			$("#parsons-116").not(".sortable-code").not(".parsons-controls").on("click", function(){
+				 $('html, body').animate({
+					scrollTop: ($("#parsons-116").offset().top - 50)
+				}, 700);
+			}).find(".sortable-code, .parsons-controls").click(function(e) {
+				return false;
+				});	
+            var msgBox = $("#parsons-message-116");
+            msgBox.hide();
+	    var displayErrors = function (fb) {
+	        if(fb.errors.length > 0) {
+                    var hash = pp_116.getHash("#ul-parsons-sortableCode-116");
+                    msgBox.fadeIn(500);
+                    msgBox.attr('class','alert alert-danger');
+                    msgBox.html(fb.errors[0]);
+                    logBookEvent({'event':'parsons', 'act':hash, 'div_id':'q1_ind'});
+
+	        } else {
+                    logBookEvent({'event':'parsons', 'act':'yes', 'div_id':'q1_ind'});
+                    msgBox.fadeIn(100);
+                    msgBox.attr('class','alert alert-success');
+                    msgBox.html("Perfect!")
+                }
+
+        }
+
+        $(window).load(function() {
+            // set min width and height
+            var sortableul = $("#ul-parsons-sortableCode-116");
+            var trashul = $("#ul-parsons-sortableTrash-116");
+            var sortableHeight = sortableul.height();
+            var sortableWidth = sortableul.width();
+            var trashWidth = trashul.width();
+            var trashHeight = trashul.height();
+            var minHeight = Math.max(trashHeight,sortableHeight);
+            var minWidth = Math.max(trashWidth, sortableWidth);
+            trashul.css("min-height",minHeight + "px");
+            sortableul.css("min-height",minHeight + "px");
+            sortableul.height(minHeight);
+            trashul.css("min-width",minWidth + "px");
+            sortableul.css("min-width",minWidth + "px");
+        });
+ 
+
+        var pp_116 = new ParsonsWidget({
+                'sortableId': 'parsons-sortableCode-116',
+		'trashId': 'parsons-sortableTrash-116',
+                'max_wrong_lines': 1,
+                'solution_label': 'Drop blocks here',
+                'feedback_cb' : displayErrors
+        });
+        pp_116.init($pjQ("#parsons-orig-116").text());
+	pp_116.shuffleLines();
+            
+        if(localStorage.getItem('q1_ind') && localStorage.getItem('q1_ind-trash')) {
+            try {
+                var solution = localStorage.getItem('q1_ind');
+                var trash = localStorage.getItem('q1_ind-trash');
+                pp_116.createHTMLFromHashes(solution,trash);
+                pp_116.getFeedback();
+            } catch(err) {
+                var text = "An error occured restoring old q1_ind state.  Error: ";
+                console.log(text + err.message);
+            }
+
+        }
+            $pjQ("#reset116").click(function(event){
+              event.preventDefault();
+              pp_116.shuffleLines();
+            
+            // set min width and height
+            var sortableul = $("#ul-parsons-sortableCode-116");
+            var trashul = $("#ul-parsons-sortableTrash-116");
+            var sortableHeight = sortableul.height();
+            var sortableWidth = sortableul.width();
+            var trashWidth = trashul.width();
+            var trashHeight = trashul.height();
+            var minHeight = Math.max(trashHeight,sortableHeight);
+            var minWidth = Math.max(trashWidth, sortableWidth);
+            trashul.css("min-height",minHeight + "px");
+            sortableul.css("min-height",minHeight + "px");
+            trashul.css("min-width",minWidth + "px");
+            sortableul.css("min-width",minWidth + "px");
+              msgBox.hide();
+            });
+            
+            $pjQ("#checkMe116").click(function(event){
+              event.preventDefault();
+              var hash = pp_116.getHash("#ul-parsons-sortableCode-116");
+              localStorage.setItem('q1_ind',hash);
+              hash = pp_116.getHash("#ul-parsons-sortableTrash-116");
+              localStorage.setItem('q1_ind-trash',hash);
+            
+            pp_116.getFeedback();
+            msgBox.fadeIn(100);
+            
+            });
+            
+        });
+            
+
+    </script>
+
+<p class="last">Veja mais exemplos <a class="reference external" href="../Apoio/boaspraticas.html#indentacao">aqui</a>.</p>
+</div>
+<p>Para exemplificar vamos definir um protótipo do comando <tt class="docutils literal"><span class="pre">if</span></tt> que não faz absolutamente nada.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
+  <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Veja que a condição é <strong>sempre</strong> verdadeira (True) e a palavra-reservada <tt class="docutils literal"><span class="pre">pass</span></tt> faz com que o código seja validado sem que ainda precisemos pensar na
+<em>implementação</em> caso a condição do <em>if</em> seja confirmada.</p>
+<p>Mais exemplos com <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
+
+<div id="cont"></div>
+<div id="ex_if" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="ex_if_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="ex_if_saveb" onclick="saveEditor('ex_if');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="ex_if_loadb" onclick="requestCode('ex_if');">Load</button>
+<button class='btn btn-default' id="ex_if_vizb" onclick="injectCodelens('ex_if');">Show in Codelens</button>
+
+</div>
+<br/>
+<div id="ex_if_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="ex_if_code" class="active_code" prefixcode="undefined" lang="python">
+nome = u"José"
+if nome == u"José":
+  print(u"Seu nome é: " + nome)
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="ex_if_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="ex_if_suffix" style="display:none">
+</pre><pre id="ex_if_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (ex_if)</span> </p>
+<div id="ex_if_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#ex_if_saveb').toggle();
+    $('#ex_if_loadb').toggle();
+}
+if ($("#ex_if_code_div").parents(".admonition").length == 0 && $("#ex_if_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#ex_if_code_div").offset({
+			left: $("#ex_if .clearfix").offset().left
+		});
+	}
+	$("#ex_if_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#ex_if_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#ex_if_runb").parent().siblings(".ac_output").show();
+			runit('ex_if',this, undefined);
+			$("#ex_if_runb").on("click", function(){
+				runit('ex_if',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#ex_if_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#ex_if_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#ex_if_runb").on("click", function(){
+		console.log("button clicked");
+		runit('ex_if',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Por fim, apresente a necessidade de ter o segundo caminho, caso a condição da sentença não seja confirmada, para tal apenas complementamos com a palavra <tt class="docutils literal"><span class="pre">else</span></tt>.</p>
+<p><strong>Proposta</strong></p>
+<ul class="simple">
+<li>Utilize as funções para números aleatórios para fazer um jogo de adivinhação.</li>
+<li>Sugestão: Utilize o <tt class="docutils literal"><span class="pre">if</span></tt> para introduzir a idéia probabilidades, por exemplo, a instrução <tt class="docutils literal"><span class="pre">random.randint(1,3)</span></tt> tem 33,3% de chances (em média) de occorer
+cada uma das possibilidades. Exemplo:</li>
+</ul>
+
+<div id="cont"></div>
+<div id="prob" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="prob_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="prob_saveb" onclick="saveEditor('prob');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="prob_loadb" onclick="requestCode('prob');">Load</button>
+<button class='btn btn-default' id="prob_vizb" onclick="injectCodelens('prob');">Show in Codelens</button>
+
+</div>
+<br/>
+<div id="prob_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="prob_code" class="active_code" prefixcode="undefined" lang="python">
+import random
+print(u"Você caminha em direção a sala...")
+if random.randint(1,2) == 1:
+    print(u"Um monstro aparece")
+else:
+    print(u"Tudo esta calmo e tranquilo")
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="prob_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="prob_suffix" style="display:none">
+</pre><pre id="prob_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (prob)</span> </p>
+<div id="prob_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#prob_saveb').toggle();
+    $('#prob_loadb').toggle();
+}
+if ($("#prob_code_div").parents(".admonition").length == 0 && $("#prob_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#prob_code_div").offset({
+			left: $("#prob .clearfix").offset().left
+		});
+	}
+	$("#prob_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#prob_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#prob_runb").parent().siblings(".ac_output").show();
+			runit('prob',this, undefined);
+			$("#prob_runb").on("click", function(){
+				runit('prob',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#prob_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#prob_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#prob_runb").on("click", function(){
+		console.log("button clicked");
+		runit('prob',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Quando fazemos <tt class="docutils literal"><span class="pre">randint(1,2)</span></tt> podemos ter como resposta <tt class="docutils literal"><span class="pre">1</span></tt> ou <tt class="docutils literal"><span class="pre">2</span></tt> logo, cada uma das resposta, em média, aparecerá em 50% dos casos.</p>
+<ul class="simple">
+<li>Comece a trabalhar com os alunos o &#8220;enredo&#8221; da história. Como esta pode ser construída?</li>
+</ul>
+<div class="admonition-rpg admonition">
+<p class="first admonition-title">RPG</p>
+<p class="last">Pergunte na sala se algum dos alunos conhece jogos de <a class="reference external" href="http://pt.wikipedia.org/wiki/Role-playing_game">RPG</a> (<em>Role-playing Game</em>), eles podem dar dicas de como estrutura uma aventura.</p>
+</div>
+<p><strong>Atividades para a empresa</strong></p>
+<ul class="simple">
+<li>Ofereça a possibilidade de adquirir mais pontos do <a class="reference external" href="../Aula5/Exercicios.html">banco de exercícios</a>.</li>
+</ul>
+</div>
+<div class="section" id="reflexao">
+<h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
+<p>TBA</p>
+<p><strong>Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano</strong></p>
+<script type="text/javascript">
+    function aula5_disqus(source) { 
+        if (window.DISQUS) {
+
+            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
+
+            //if Disqus exists, call it's reset method with new parameters
+            DISQUS.reset({
+                reload: true,
+                config: function () {
+                    this.page.identifier = 'aula5_' + eBookConfig.course;
+                    this.page.url = 'http://aula5_'+eBookConfig.course+'.interactivepython.com/#!';
+                }
+            });
+
+        } else {
+            //insert a wrapper in HTML after the relevant "show comments" link
+            $('<div id="disqus_thread"></div>').insertAfter(source);
+
+            // set Disqus required vars
+            disqus_shortname = 'programae';    
+            disqus_identifier = 'aula5_' + eBookConfig.course;
+            disqus_url = 'http://aula5_'+eBookConfig.course+'.interactivepython.com/#!';
+
+            //append the Disqus embed script to HTML
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            $('head').append(dsq);
+
+        }
+    }
+</script>
+
+<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="aula5" onclick="aula5_disqus(this);">Show Comments</a>
+<script type='text/javascript'>
+    $("a[data-disqus-identifier='aula5']").attr('data-disqus-identifier', 'aula5_' + eBookConfig.course);
+</script>
+</div>
+</div>
+
+
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright Fundação Lemann.
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(addUserToFooter);
+    $(document).ready(addNavbarLoginLink);
+    $(document).ready(createEditors);
+    $(document).ready(getNumUsers);
+    $(document).ready(getOnlineUsers);
+    $(document).ready(createScratchActivecode());
+    $(document).ready(styleUnittestResults());
+</script>
+
+<script type="text/javascript">
+  // add the video play button overlay image
+  $(".video-play-overlay").each(function() {
+    $(this).css('background-image', "url(\'../_static/play_overlay_icon.png\')")
+    });
+
+  // This function is needed to allow the dropdown search bar to work;
+  // The default behaviour is that the dropdown menu closes when something in
+  // it (like the search bar) is clicked
+  $(function() {
+    // Fix input element click problem
+    $('.dropdown input, .dropdown label').click(function(e) {
+      e.stopPropagation();
+      });
+  });
+
+  // style codelens buttons (doing it here because PyTutor is a submodule owned by someone else
+  $(function() {
+    $(".ExecutionVisualizer").each(function() {
+      $(this).find("#jmpFirstInstr").addClass('btn btn-default');
+      $(this).find("#jmpStepBack").addClass('btn btn-danger');
+      $(this).find("#jmpStepFwd").addClass('btn btn-success');
+      $(this).find("#jmpLastInstr").addClass('btn btn-default');
+      });
+  });
+
+</script>
+
+
+  </body>
+</html>

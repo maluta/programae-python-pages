@@ -17,7 +17,7 @@ Objetivos
 Nesta aula, os alunos deverão:
 
 - Compreender alguns lugares onde a computação é aplicada.
-- Entender a necessidade de aprender a programar. 
+- Entender a necessidade de aprender a programar.
 
 
 Preparação
@@ -42,7 +42,7 @@ Instigue os alunos com as seguintes perguntas:
 
 .. admonition:: A computação esta em todo lugar
 
-  Nesta parte é importante destacar que podemos criar programamas não apenas para rodar em computadores mas em celulares, carros, 
+  Nesta parte é importante destacar que podemos criar programamas não apenas para rodar em computadores mas em celulares, carros,
   televisores, etc; e que isso não é um futuro distante mas sim o presente.
 
 
@@ -60,7 +60,7 @@ Instigue os alunos com as seguintes perguntas:
 | criar programas que resolvam problemas.                                         |
 | Faça uma levantamento, precisamos aprender. Exemplos:                           |
 | como que os computadores trabalham, escolher uma linguagem de programação,      |
-| aprender a nos comunicar com esta linguagem, desenvolver, criar, etc.           |        
+| aprender a nos comunicar com esta linguagem, desenvolver, criar, etc.           |
 +---------------------------------------------------------------------------------+
 
 
@@ -68,10 +68,10 @@ Instigue os alunos com as seguintes perguntas:
 
   Uma boa estratégia para apresentar conceitos é utilizar analogias, faça uso sempre que possível
 
-Construa com os alunos uma tabela que contextualize os conceitos descritos na última questão. 
+Construa com os alunos uma tabela que contextualize os conceitos descritos na última questão.
 
 Exemplos:
-  
+
 1. **Aprender uma linguagem de programação** é como aprender outro idioma, conhecendo o vocabulário e a gramática.
 2. **Escrever programas** é aprender a se comunicar com o computador.
 
@@ -100,7 +100,7 @@ Um resumo fazendo analogia com os idiomas Inglês e Português:
 
 .. admonition:: Imperativo
 
-  Podemos pensar num treinador de cachorros que usa palavras especiais para algumas ações: “senta!”, “parado!” e “pega!”. Se utilizarmos outras palavras que o cachorro não reconhece ele não irá compreender. 
+  Podemos pensar num treinador de cachorros que usa palavras especiais para algumas ações: “senta!”, “parado!” e “pega!”. Se utilizarmos outras palavras que o cachorro não reconhece ele não irá compreender.
 
 Depois de abordar estas questões prossiga explicando como o curso será estruturado, as regras para as próximas aulas.
 
@@ -109,22 +109,21 @@ soluções utilizando como ferramenta a programação.
 
 .. admonition:: Regras Gerais
 
-	- Grupos de até 3 alunos. 
-	- Nas próximas aulas, a equipe de alunos (empresa) receberão o desafios e contratos de desenvolvimento.  
+	- Grupos de até 3 alunos.
+	- Nas próximas aulas, a equipe de alunos (empresa) receberão o desafios e contratos de desenvolvimento.
 	- O educador (na figura de investidor) irá distribuir uma modena virtual chamada `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
-	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na criação dos programas.  
+	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na criação dos programas.
 	- A construção de código tem um *custo* em *progmoney*
 	- Cada linha de código custa ``1 $>``.
 	- Uso de instruções não permitidas custam ``30 $>``
 	- Ao aprender funcionalidade novas os grupos adquirem mais *progmoney*.
 	- Os preços por instrução/comando estão em uma `tabela <../Apoio/progmoney.html>`__.
 
-
 **Atividades**
 
 - Explique as regras da Fábrica.
 - Organize a sala em grupos de 3 alunos.
-- Peça as equipes escolher um nome para empresa. 
+- Peça as equipes escolher um nome para empresa.
 - Peça as equipes para escrever uma descrição da empresa.
 - Cada equipe deverá preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__ e devolver ao educador.
 - Adquirir o primeiro `cartão <../Apoio/cartoes.html#aula-1>`__ de funcionalidade com as informações da empresa e preenchê-lo.
@@ -132,8 +131,8 @@ soluções utilizando como ferramenta a programação.
 Reflexão
 +++++++++
 
-Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos, nesta aula, observar que computador pode automatizar processos em nossas vidas. 
-É importante destacar sempre que a **criatividade** é ferramenta para construção. Nesta etapa avalie a participação e interesse dos alunos. 
+Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos, nesta aula, observar que computador pode automatizar processos em nossas vidas.
+É importante destacar sempre que a **criatividade** é ferramenta para construção. Nesta etapa avalie a participação e interesse dos alunos.
 Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
 
 --------
@@ -146,4 +145,3 @@ Boa aula!!!
 .. disqus::
   :shortname: programae
   :identifier: aula1
-

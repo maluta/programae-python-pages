@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Aula 5: Controles (I) &mdash; Programaê</title>
+    <title>Aula 5: Funções &mdash; Programaê</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -73,7 +73,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
     <link rel="next" title="Aula 6: Repetições (I)" href="../Aula6/Plano.html" />
-    <link rel="prev" title="Aula 4: Variáveis" href="../Aula4/Plano.html" />
+    <link rel="prev" title="Aula 5: Funções" href="" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -197,7 +197,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acesso rápido <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Aula 5: Controles (I)</a><ul>
+<li><a class="reference internal" href="#">Aula 5: Funções</a><ul>
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
@@ -211,8 +211,8 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Aula 4: Variáveis" data-toggle="tooltip">
-    <a href="../Aula4/Plano.html" >
+  <li id="relations-prev" title="Previous Chapter - Aula 5: Funções" data-toggle="tooltip">
+    <a href="" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -246,97 +246,87 @@
 
 <div class="container">
   
-  <div class="section" id="aula-5-controles-i">
-<h1>Aula 5: Controles (I)<a class="headerlink" href="#aula-5-controles-i" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aula-5-funcoes">
+<h1>Aula 5: Funções<a class="headerlink" href="#aula-5-funcoes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
 <h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Utilizar operadores comparações.</li>
-<li>Utilizar operadores Booleanos (True e False)</li>
-<li>Aprender sentenças com <tt class="docutils literal"><span class="pre">if</span></tt></li>
+<li>Aprender a construir e utilizar funções</li>
+<li>Inicio dos projetos das empresas</li>
 </ul>
 </div>
 <div class="section" id="preparacao">
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
-<li><a class="reference external" href="../Apoio/idle.html#sugestao-de-layout">Editar</a> e <a class="reference external" href="../Apoio/idle.html#executando-um-codigo">executar</a> códigos no IDLE.</li>
+<li>Se ainda não possui o IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
+<li>Conferir se as funcionalidades <a class="reference external" href="../Apoio/idle.html#sugestao-de-layout">Editar</a> e <a class="reference external" href="../Apoio/idle.html#executando-um-codigo">executar</a> códigos no IDLE estã funcionando corretamente.</li>
 </ul>
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
-<p><strong>Conceitos computacionais</strong></p>
-<p>Até o momento, utilizamos instruções sequenciais para dar ordens ao computador. Agora iremos entrar em um mundo novo, onde teremos
-de definir <strong>decisões</strong>. Contudo, antes de apresentar os mecanismos da linguagem para tomada de decisões vamos aprender como
-efetuar comparações.</p>
-<p>Abra o <a class="reference external" href="../Apoio/idle.html#console-iterativo">console</a> e trabalhe alguns exemplos:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">1</span>
-<span class="go">False</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">9</span>
-<span class="go">False</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>
-<span class="go">False</span>
-</pre></div>
+<p><strong>Conceitos computacionais necessários</strong></p>
+<p>Faça os <a class="reference external" href="http://www.codecademy.com/pt-BR/courses/python-beginner-pt-BR-30pxi/0/1">exercícios de funções</a> do Codecademy...</p>
+<div class="admonition-reuso admonition">
+<p class="first admonition-title">Reuso</p>
+<p class="last">É importante trabalhar com os alunos a importância das funções com uma ferramenta para re-aproveitamento do código.</p>
 </div>
-<p>Repare que sempre obtemos como resposta <tt class="docutils literal"><span class="pre">False</span></tt> (falso) ou <tt class="docutils literal"><span class="pre">True</span></tt> (verdadeiro).</p>
-<p>Também podemos aplicar estes operadores em outros tipos de dados, por exemplo, não-numéricos:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;a&quot;</span> <span class="o">==</span> <span class="s">&quot;b&quot;</span>
-<span class="go">False</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;a&quot;</span> <span class="o">&lt;</span> <span class="s">&quot;b&quot;</span>
-<span class="go">True</span>
-</pre></div>
-</div>
-<p>É importante destacar para os alunos dois pontos, quando utilizamos o operador de comparação de igualdade (<tt class="docutils literal"><span class="pre">==</span></tt>) estamos nos referindo o <strong>conteúdo</strong> das variáveis, estamos
-vendo se &#8220;a&#8221; <em>é igual a</em> &#8220;b&#8221;. Entretando quando utilizamos o operador <tt class="docutils literal"><span class="pre">&gt;</span></tt> ou <tt class="docutils literal"><span class="pre">&lt;</span></tt> a lógica é outra. Para entedermos é preciso demonstrar a função (<a class="reference external" href="../Apoio/builtin.html">built-in</a>)
-<tt class="docutils literal"><span class="pre">ord()</span></tt>.</p>
+<p>Prenda-se a Funções são uma espécie de &#8220;<em>mini</em>-programa&#8221; dentro do código que permite executá-lo facilmente.
+Além de utilizar demonstre que podemos construir as nossas próprias funções, a linguagem Python possui uma palavra reservada para tal: <tt class="docutils literal"><span class="pre">def</span></tt>.</p>
+<p><strong>Na sala de aula</strong></p>
+<ol class="arabic simple">
+<li>Abra o Editor de Texto do IDLE</li>
+</ol>
+<p>Exemplo:</p>
 
 <div id="cont"></div>
-<div id="ord" lang="python" class="ac_section alert alert-warning" >
+<div id="aula8_ex1" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="ord_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="ord_saveb" onclick="saveEditor('ord');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="ord_loadb" onclick="requestCode('ord');">Load</button>
-<button class='btn btn-default' id="ord_vizb" onclick="injectCodelens('ord');">Show in Codelens</button>
+<button class='btn btn-success' id="aula8_ex1_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex1_saveb" onclick="saveEditor('aula8_ex1');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex1_loadb" onclick="requestCode('aula8_ex1');">Load</button>
+<button class='btn btn-default' id="aula8_ex1_vizb" onclick="injectCodelens('aula8_ex1');">Show in Codelens</button>
 
 </div>
 <br/>
-<div id="ord_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="ord_code" class="active_code" prefixcode="undefined" lang="python">
-print("a",ord("a"))
-print("b",ord("b"))
+<div id="aula8_ex1_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="aula8_ex1_code" class="active_code" prefixcode="undefined" lang="python">
+def minha_funcao():
+  print(u"código")
+  print(u"da")
+  print(u"função")
 </textarea>
 </div>
 
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="ord_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="aula8_ex1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="ord_suffix" style="display:none">
-</pre><pre id="ord_pre" class="active_out"></pre>
+<pre id="aula8_ex1_suffix" style="display:none">
+</pre><pre id="aula8_ex1_pre" class="active_out"></pre>
 
 </div> <!-- end output --> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (ord)</span> </p>
-<div id="ord_codelens_div" style="display:none"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (aula8_ex1)</span> </p>
+<div id="aula8_ex1_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#ord_saveb').toggle();
-    $('#ord_loadb').toggle();
+    $('#aula8_ex1_saveb').toggle();
+    $('#aula8_ex1_loadb').toggle();
 }
-if ($("#ord_code_div").parents(".admonition").length == 0 && $("#ord_code_div").parents("#exercises").length == 0){
+if ($("#aula8_ex1_code_div").parents(".admonition").length == 0 && $("#aula8_ex1_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#ord_code_div").offset({
-			left: $("#ord .clearfix").offset().left
+		$("#aula8_ex1_code_div").offset({
+			left: $("#aula8_ex1 .clearfix").offset().left
 		});
 	}
-	$("#ord_runb").one("click", function(){
+	$("#aula8_ex1_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#ord_code_div").animate({
+				$("#aula8_ex1_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -345,10 +335,10 @@ if ($("#ord_code_div").parents(".admonition").length == 0 && $("#ord_code_div").
 			}
 		})
 		.queue(function (next) {
-			$("#ord_runb").parent().siblings(".ac_output").show();
-			runit('ord',this, undefined);
-			$("#ord_runb").on("click", function(){
-				runit('ord',this, undefined);
+			$("#aula8_ex1_runb").parent().siblings(".ac_output").show();
+			runit('aula8_ex1',this, undefined);
+			$("#aula8_ex1_runb").on("click", function(){
+				runit('aula8_ex1',this, undefined);
 			});
 		})
 		
@@ -356,306 +346,87 @@ if ($("#ord_code_div").parents(".admonition").length == 0 && $("#ord_code_div").
 }
 else{
 	console.log("inside new if")
-	$("#ord_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#ord_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#ord_runb").on("click", function(){
+	$("#aula8_ex1_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#aula8_ex1_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#aula8_ex1_runb").on("click", function(){
 		console.log("button clicked");
-		runit('ord',this, undefined);
+		runit('aula8_ex1',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p>Repare que quando efetuamos a operação <tt class="docutils literal"><span class="pre">&lt;</span></tt> na verdade estamos comparando se o código referente a letra <tt class="docutils literal"><span class="pre">a</span></tt> (97) é menor que o da letra <tt class="docutils literal"><span class="pre">b</span></tt> (98).</p>
-<p>De posse dos conceitos de comparação podemos seguir e aprender a primeira instrução para efetuar decisões no Python, a palavra-reservada <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
-<p>Começemos com um exemplo:</p>
-
-<div id="cont"></div>
-<div id="if" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="if_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="if_saveb" onclick="saveEditor('if');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="if_loadb" onclick="requestCode('if');">Load</button>
-<button class='btn btn-default' id="if_vizb" onclick="injectCodelens('if');">Show in Codelens</button>
-
-</div>
-<br/>
-<div id="if_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="if_code" class="active_code" prefixcode="undefined" lang="python">
-idade = input(u"Qual é a sua idade?")
-idade = int(idade)
-if idade > 14 == True:
-  print(u"Bem-vindo ao curso de Python!")
-  print(u"Sua idade é " + str(idade) + " anos.")
-</textarea>
-</div>
-
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="if_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="if_suffix" style="display:none">
-</pre><pre id="if_pre" class="active_out"></pre>
-
-</div> <!-- end output --> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (if)</span> </p>
-<div id="if_codelens_div" style="display:none"></div>
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#if_saveb').toggle();
-    $('#if_loadb').toggle();
-}
-if ($("#if_code_div").parents(".admonition").length == 0 && $("#if_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#if_code_div").offset({
-			left: $("#if .clearfix").offset().left
-		});
-	}
-	$("#if_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#if_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#if_runb").parent().siblings(".ac_output").show();
-			runit('if',this, undefined);
-			$("#if_runb").on("click", function(){
-				runit('if',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#if_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#if_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#if_runb").on("click", function(){
-		console.log("button clicked");
-		runit('if',this, undefined);
-	});
-}
-</script>
-
-</div>
-
-<p>Vamos analisar cada linha individualmente:</p>
+<p>Execute o código e proponha as seguintes perguntas:</p>
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">#1</span></tt> → Chama a função input() passando como parâmetro a pergunta <em>&#8216;Qual é a sua idade?&#8217;</em> e armazena a resposta na variável idade.</li>
-<li><tt class="docutils literal"><span class="pre">#2</span></tt> → Neste momento utilizamos a função (<em>built-in</em>) <tt class="docutils literal"><span class="pre">str()</span></tt> para converter o tipo string para o tipo inteiro.</li>
-<li><tt class="docutils literal"><span class="pre">#3</span></tt> → <strong>Se</strong> o conteúdo da variável idade for maior que 14 executa a próxima linha.</li>
-<li><tt class="docutils literal"><span class="pre">#4</span></tt> → Caso a sentença da linha 3 seja verdadeira a função <tt class="docutils literal"><span class="pre">print</span></tt> com a mensagem de boas vindas é executada.</li>
-<li><tt class="docutils literal"><span class="pre">#5</span></tt> → Novamente utilizamos a função (built-in) <tt class="docutils literal"><span class="pre">str()</span></tt> que faz o oposto da função <em>int()</em> e converte um tipo numérico em string.</li>
+<li>Qual a saída deste trecho de código?</li>
+<li>O que é necessário para vermos a execução do <tt class="docutils literal"><span class="pre">print</span></tt></li>
 </ul>
-<p><strong>Fluxograma</strong></p>
-<p>Apresente os fluxogramas como ferramentas de apoio para estruturar o raciocínio. Desenhe no papel (ou lousa) como seria o
-trecho de execução de parte do programa.  Abaixo temos a condição <tt class="docutils literal"><span class="pre">if</span></tt> que dependendo da reposta sim/não executa um bloco de
-código diferente.</p>
-<a class="reference internal image-reference" href="../_images/fluxograma.png"><img alt="../_images/fluxograma.png" class="align-center" src="../_images/fluxograma.png" style="width: 240.0px; height: 320.0px;" /></a>
-<p>Não há regras fixas para a construção do fluxograma, a proposta aqui é apenas esboçar o fluxo do programa.</p>
-<div class="admonition-indentacao admonition">
-<p class="first admonition-title">Indentação</p>
-<p>Repare que as instruções das linhas 4 e 5 estão um pouco deslocados para a direita. A este recuo dá-se o nome de <strong>indentação</strong>
-ou seja, é um bloco de código que é executado dentro de um <em>contexto</em>. No exemplo acima, as duas linhas <tt class="docutils literal"><span class="pre">print</span></tt> só são executadas
-se confirmarem a condição definida no <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
-<p><strong>Para a separação de blocos de código, a linguagem Python usa espaços em branco.</strong></p>
-<p>Coloque o exercício anterior em blocos indentados.</p>
-
-        <div class='parsons alert alert-warning' id="parsons-116">
-        <div class="parsons-text">Q-2: <br /><br /></div>
-        <div style="clear:left;"></div>
-        <div id="parsons-orig-116" style="display:none;">idade = input(u"Qual é a sua idade?")\nidade = int(idade)
-if idade > 14 == True:
-       print(u"Bem-vindo ao curso de Python!")\nprint(u"Sua idade é " + str(idade) + " anos.")</div>
-        <div class="sortable-code-container">
-        <div id="parsons-sortableTrash-116" class="sortable-code"></div>
-        <div id="parsons-sortableCode-116" class="sortable-code"></div>
-    	<div style="clear:left;"></div>
-        </div>
-        <div class="parsons-controls">
-        <input type="button" class='btn btn-success' id="checkMe116" value="Check Me"/>
-        <input type="button" class='btn btn-default' id="reset116" value="Reset"/>
-        <div id="parsons-message-116"></div>
-        </div>
-        </div>
-
-    <script>
-        $pjQ(document).ready(function(){
-		
-			$("#parsons-116").not(".sortable-code").not(".parsons-controls").on("click", function(){
-				 $('html, body').animate({
-					scrollTop: ($("#parsons-116").offset().top - 50)
-				}, 700);
-			}).find(".sortable-code, .parsons-controls").click(function(e) {
-				return false;
-				});	
-            var msgBox = $("#parsons-message-116");
-            msgBox.hide();
-	    var displayErrors = function (fb) {
-	        if(fb.errors.length > 0) {
-                    var hash = pp_116.getHash("#ul-parsons-sortableCode-116");
-                    msgBox.fadeIn(500);
-                    msgBox.attr('class','alert alert-danger');
-                    msgBox.html(fb.errors[0]);
-                    logBookEvent({'event':'parsons', 'act':hash, 'div_id':'q1_ind'});
-
-	        } else {
-                    logBookEvent({'event':'parsons', 'act':'yes', 'div_id':'q1_ind'});
-                    msgBox.fadeIn(100);
-                    msgBox.attr('class','alert alert-success');
-                    msgBox.html("Perfect!")
-                }
-
-        }
-
-        $(window).load(function() {
-            // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-116");
-            var trashul = $("#ul-parsons-sortableTrash-116");
-            var sortableHeight = sortableul.height();
-            var sortableWidth = sortableul.width();
-            var trashWidth = trashul.width();
-            var trashHeight = trashul.height();
-            var minHeight = Math.max(trashHeight,sortableHeight);
-            var minWidth = Math.max(trashWidth, sortableWidth);
-            trashul.css("min-height",minHeight + "px");
-            sortableul.css("min-height",minHeight + "px");
-            sortableul.height(minHeight);
-            trashul.css("min-width",minWidth + "px");
-            sortableul.css("min-width",minWidth + "px");
-        });
- 
-
-        var pp_116 = new ParsonsWidget({
-                'sortableId': 'parsons-sortableCode-116',
-		'trashId': 'parsons-sortableTrash-116',
-                'max_wrong_lines': 1,
-                'solution_label': 'Drop blocks here',
-                'feedback_cb' : displayErrors
-        });
-        pp_116.init($pjQ("#parsons-orig-116").text());
-	pp_116.shuffleLines();
-            
-        if(localStorage.getItem('q1_ind') && localStorage.getItem('q1_ind-trash')) {
-            try {
-                var solution = localStorage.getItem('q1_ind');
-                var trash = localStorage.getItem('q1_ind-trash');
-                pp_116.createHTMLFromHashes(solution,trash);
-                pp_116.getFeedback();
-            } catch(err) {
-                var text = "An error occured restoring old q1_ind state.  Error: ";
-                console.log(text + err.message);
-            }
-
-        }
-            $pjQ("#reset116").click(function(event){
-              event.preventDefault();
-              pp_116.shuffleLines();
-            
-            // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-116");
-            var trashul = $("#ul-parsons-sortableTrash-116");
-            var sortableHeight = sortableul.height();
-            var sortableWidth = sortableul.width();
-            var trashWidth = trashul.width();
-            var trashHeight = trashul.height();
-            var minHeight = Math.max(trashHeight,sortableHeight);
-            var minWidth = Math.max(trashWidth, sortableWidth);
-            trashul.css("min-height",minHeight + "px");
-            sortableul.css("min-height",minHeight + "px");
-            trashul.css("min-width",minWidth + "px");
-            sortableul.css("min-width",minWidth + "px");
-              msgBox.hide();
-            });
-            
-            $pjQ("#checkMe116").click(function(event){
-              event.preventDefault();
-              var hash = pp_116.getHash("#ul-parsons-sortableCode-116");
-              localStorage.setItem('q1_ind',hash);
-              hash = pp_116.getHash("#ul-parsons-sortableTrash-116");
-              localStorage.setItem('q1_ind-trash',hash);
-            
-            pp_116.getFeedback();
-            msgBox.fadeIn(100);
-            
-            });
-            
-        });
-            
-
-    </script>
-
-<p class="last">Veja mais exemplos <a class="reference external" href="../Apoio/boaspraticas.html#indentacao">aqui</a>.</p>
-</div>
-<p>Para exemplificar vamos definir um protótipo do comando <tt class="docutils literal"><span class="pre">if</span></tt> que não faz absolutamente nada.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-  <span class="k">pass</span>
-</pre></div>
-</div>
-<p>Veja que a condição é <strong>sempre</strong> verdadeira (True) e a palavra-reservada <tt class="docutils literal"><span class="pre">pass</span></tt> faz com que o código seja validado sem que ainda precisemos pensar na
-<em>implementação</em> caso a condição do <em>if</em> seja confirmada.</p>
-<p>Mais exemplos com <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
+<dl class="docutils">
+<dt>É importante destacar:</dt>
+<dd><ul class="first simple">
+<li><a class="reference external" href="../Apoio/boaspraticas.html#indentacao">indentação</a> do bloco: 4 espaços ou <em>tab</em>.</li>
+<li>a definição de função segue o seguinte formato:</li>
+</ul>
+<p><tt class="docutils literal"><span class="pre">def</span></tt> <strong>nome</strong> <tt class="docutils literal"><span class="pre">(</span></tt> <strong>parametros</strong> <tt class="docutils literal"><span class="pre">)</span></tt> <tt class="docutils literal"><span class="pre">:</span></tt></p>
+<blockquote class="last">
+<div><p># seu código aqui</p>
+<p><strong>return</strong> valor</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Da mesma forma que passamos parâmetros para as funções <tt class="docutils literal"><span class="pre">print()</span></tt>, <tt class="docutils literal"><span class="pre">len()</span></tt>, <tt class="docutils literal"><span class="pre">input()</span></tt>, <tt class="docutils literal"><span class="pre">range()</span></tt> nas aulas anteriores, podemos criar nossas
+próprias funções com inúmeros parâmetros bem como retornar valores das funções. Um exemplo de função para somar dois números x e y:</p>
 
 <div id="cont"></div>
-<div id="ex_if" lang="python" class="ac_section alert alert-warning" >
+<div id="aula8_ex2" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="ex_if_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="ex_if_saveb" onclick="saveEditor('ex_if');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="ex_if_loadb" onclick="requestCode('ex_if');">Load</button>
-<button class='btn btn-default' id="ex_if_vizb" onclick="injectCodelens('ex_if');">Show in Codelens</button>
+<button class='btn btn-success' id="aula8_ex2_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex2_saveb" onclick="saveEditor('aula8_ex2');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="aula8_ex2_loadb" onclick="requestCode('aula8_ex2');">Load</button>
+<button class='btn btn-default' id="aula8_ex2_vizb" onclick="injectCodelens('aula8_ex2');">Show in Codelens</button>
 
 </div>
 <br/>
-<div id="ex_if_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="ex_if_code" class="active_code" prefixcode="undefined" lang="python">
-nome = u"José"
-if nome == u"José":
-  print(u"Seu nome é: " + nome)
+<div id="aula8_ex2_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="aula8_ex2_code" class="active_code" prefixcode="undefined" lang="python">
+def soma(x,y):
+  return x + y
+
+print(soma(5,4))
 </textarea>
 </div>
 
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="ex_if_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="aula8_ex2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="ex_if_suffix" style="display:none">
-</pre><pre id="ex_if_pre" class="active_out"></pre>
+<pre id="aula8_ex2_suffix" style="display:none">
+</pre><pre id="aula8_ex2_pre" class="active_out"></pre>
 
 </div> <!-- end output --> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (ex_if)</span> </p>
-<div id="ex_if_codelens_div" style="display:none"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (aula8_ex2)</span> </p>
+<div id="aula8_ex2_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#ex_if_saveb').toggle();
-    $('#ex_if_loadb').toggle();
+    $('#aula8_ex2_saveb').toggle();
+    $('#aula8_ex2_loadb').toggle();
 }
-if ($("#ex_if_code_div").parents(".admonition").length == 0 && $("#ex_if_code_div").parents("#exercises").length == 0){
+if ($("#aula8_ex2_code_div").parents(".admonition").length == 0 && $("#aula8_ex2_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#ex_if_code_div").offset({
-			left: $("#ex_if .clearfix").offset().left
+		$("#aula8_ex2_code_div").offset({
+			left: $("#aula8_ex2 .clearfix").offset().left
 		});
 	}
-	$("#ex_if_runb").one("click", function(){
+	$("#aula8_ex2_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#ex_if_code_div").animate({
+				$("#aula8_ex2_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -664,10 +435,10 @@ if ($("#ex_if_code_div").parents(".admonition").length == 0 && $("#ex_if_code_di
 			}
 		})
 		.queue(function (next) {
-			$("#ex_if_runb").parent().siblings(".ac_output").show();
-			runit('ex_if',this, undefined);
-			$("#ex_if_runb").on("click", function(){
-				runit('ex_if',this, undefined);
+			$("#aula8_ex2_runb").parent().siblings(".ac_output").show();
+			runit('aula8_ex2',this, undefined);
+			$("#aula8_ex2_runb").on("click", function(){
+				runit('aula8_ex2',this, undefined);
 			});
 		})
 		
@@ -675,160 +446,34 @@ if ($("#ex_if_code_div").parents(".admonition").length == 0 && $("#ex_if_code_di
 }
 else{
 	console.log("inside new if")
-	$("#ex_if_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#ex_if_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#ex_if_runb").on("click", function(){
+	$("#aula8_ex2_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#aula8_ex2_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#aula8_ex2_runb").on("click", function(){
 		console.log("button clicked");
-		runit('ex_if',this, undefined);
+		runit('aula8_ex2',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p>Por fim, apresente a necessidade de ter o segundo caminho, caso a condição da sentença não seja confirmada, para tal apenas complementamos com a palavra <tt class="docutils literal"><span class="pre">else</span></tt>.</p>
-<p><strong>Proposta</strong></p>
+<p>A escolha do nome de um função segue as mesmas regras das variáveis.</p>
+<p><strong>Prosposta</strong></p>
 <ul class="simple">
-<li>Utilize as funções para números aleatórios para fazer um jogo de adivinhação.</li>
-<li>Sugestão: Utilize o <tt class="docutils literal"><span class="pre">if</span></tt> para introduzir a idéia probabilidades, por exemplo, a instrução <tt class="docutils literal"><span class="pre">random.randint(1,3)</span></tt> tem 33,3% de chances (em média) de occorer
-cada uma das possibilidades. Exemplo:</li>
-</ul>
-
-<div id="cont"></div>
-<div id="prob" lang="python" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="prob_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="prob_saveb" onclick="saveEditor('prob');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="prob_loadb" onclick="requestCode('prob');">Load</button>
-<button class='btn btn-default' id="prob_vizb" onclick="injectCodelens('prob');">Show in Codelens</button>
-
-</div>
-<br/>
-<div id="prob_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="prob_code" class="active_code" prefixcode="undefined" lang="python">
-import random
-print(u"Você caminha em direção a sala...")
-if random.randint(1,2) == 1:
-    print(u"Um monstro aparece")
-else:
-    print(u"Tudo esta calmo e tranquilo")
-</textarea>
-</div>
-
-<div class="ac_output">
-<div style="text-align: center">
-<canvas id="prob_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
-</div>
-<pre id="prob_suffix" style="display:none">
-</pre><pre id="prob_pre" class="active_out"></pre>
-
-</div> <!-- end output --> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (prob)</span> </p>
-<div id="prob_codelens_div" style="display:none"></div>
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#prob_saveb').toggle();
-    $('#prob_loadb').toggle();
-}
-if ($("#prob_code_div").parents(".admonition").length == 0 && $("#prob_code_div").parents("#exercises").length == 0){
-	if ($(window).width() > 975){
-		$("#prob_code_div").offset({
-			left: $("#prob .clearfix").offset().left
-		});
-	}
-	$("#prob_runb").one("click", function(){
-		$({})
-		.queue(function (next) {
-			if ($(window).width() > 975){
-				$("#prob_code_div").animate({
-					left: 40
-				}, 500, next);
-			}
-			else{
-				next();
-			}
-		})
-		.queue(function (next) {
-			$("#prob_runb").parent().siblings(".ac_output").show();
-			runit('prob',this, undefined);
-			$("#prob_runb").on("click", function(){
-				runit('prob',this, undefined);
-			});
-		})
-		
-	});
-}
-else{
-	console.log("inside new if")
-	$("#prob_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#prob_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#prob_runb").on("click", function(){
-		console.log("button clicked");
-		runit('prob',this, undefined);
-	});
-}
-</script>
-
-</div>
-
-<p>Quando fazemos <tt class="docutils literal"><span class="pre">randint(1,2)</span></tt> podemos ter como resposta <tt class="docutils literal"><span class="pre">1</span></tt> ou <tt class="docutils literal"><span class="pre">2</span></tt> logo, cada uma das resposta, em média, aparecerá em 50% dos casos.</p>
-<ul class="simple">
-<li>Comece a trabalhar com os alunos o &#8220;enredo&#8221; da história. Como esta pode ser construída?</li>
-</ul>
-<div class="admonition-rpg admonition">
-<p class="first admonition-title">RPG</p>
-<p class="last">Pergunte na sala se algum dos alunos conhece jogos de <a class="reference external" href="http://pt.wikipedia.org/wiki/Role-playing_game">RPG</a> (<em>Role-playing Game</em>), eles podem dar dicas de como estrutura uma aventura.</p>
-</div>
-<p><strong>Atividades para a empresa</strong></p>
-<ul class="simple">
-<li>Ofereça a possibilidade de adquirir mais pontos do <a class="reference external" href="../Aula5/Exercicios.html">banco de exercícios</a>.</li>
+<li>Construir funções simples para operações aritméticas.</li>
+<li>Como colocar dentro de funções o quê aprendemos nas ultimas aulas?</li>
 </ul>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<p>TBA</p>
-<p><strong>Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano</strong></p>
-<script type="text/javascript">
-    function aula5_disqus(source) { 
-        if (window.DISQUS) {
-
-            $('#disqus_thread').insertAfter(source); //put the DIV for the Disqus box after the link
-
-            //if Disqus exists, call it's reset method with new parameters
-            DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = 'aula5_' + eBookConfig.course;
-                    this.page.url = 'http://aula5_'+eBookConfig.course+'.interactivepython.com/#!';
-                }
-            });
-
-        } else {
-            //insert a wrapper in HTML after the relevant "show comments" link
-            $('<div id="disqus_thread"></div>').insertAfter(source);
-
-            // set Disqus required vars
-            disqus_shortname = 'programae';    
-            disqus_identifier = 'aula5_' + eBookConfig.course;
-            disqus_url = 'http://aula5_'+eBookConfig.course+'.interactivepython.com/#!';
-
-            //append the Disqus embed script to HTML
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            $('head').append(dsq);
-
-        }
-    }
-</script>
-
-<a href="#disqus_thread" class='disqus_thread_link' data-disqus-identifier="aula5" onclick="aula5_disqus(this);">Show Comments</a>
-<script type='text/javascript'>
-    $("a[data-disqus-identifier='aula5']").attr('data-disqus-identifier', 'aula5_' + eBookConfig.course);
-</script>
+<p>Nesta aula é importante que todos tenham compreendido a estrutura básica de funções e sua necessidade.
+A partir de agora o uso de funções será utilizado amplamente e é preciso que os alunos explorem bastante seu uso.</p>
+<ul class="simple">
+<li>O que fizemos e que funcionou?</li>
+<li>O que fizemos e que não funcionou?</li>
+<li>Quais as dúvidas mais comuns que apareceram durante a aula?</li>
+<li>Qual as maiores dificuldades na execução das atividades?</li>
+</ul>
 </div>
 </div>
 
