@@ -265,16 +265,19 @@
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conceitos computacionais necessários</strong></p>
-<p>Faça os <a class="reference external" href="http://www.codecademy.com/pt-BR/courses/python-beginner-pt-BR-30pxi/0/1">exercícios de funções</a> do Codecademy...</p>
+<p>Faça os <a class="reference external" href="http://www.codecademy.com/pt-BR/courses/python-beginner-pt-BR-30pxi/0/1">exercícios de funções</a> do Codecademy.</p>
 <div class="admonition-reuso admonition">
 <p class="first admonition-title">Reuso</p>
 <p class="last">É importante trabalhar com os alunos a importância das funções com uma ferramenta para re-aproveitamento do código.</p>
 </div>
-<p>Prenda-se a Funções são uma espécie de &#8220;<em>mini</em>-programa&#8221; dentro do código que permite executá-lo facilmente.
-Além de utilizar demonstre que podemos construir as nossas próprias funções, a linguagem Python possui uma palavra reservada para tal: <tt class="docutils literal"><span class="pre">def</span></tt>.</p>
+<p>Alguns sinônimos para funções:</p>
+<ul class="simple">
+<li>mini-programa</li>
+<li>código reutilizável</li>
+</ul>
 <p><strong>Na sala de aula</strong></p>
 <ol class="arabic simple">
-<li>Abra o Editor de Texto do IDLE</li>
+<li>Abra o Editor de Texto do IDLE e mostre como declarar uma função.</li>
 </ol>
 <p>Exemplo:</p>
 
@@ -457,12 +460,86 @@ else{
 
 </div>
 
-<p>A escolha do nome de um função segue as mesmas regras das variáveis.</p>
+<p><strong>A escolha do nome de um função segue as mesmas regras das variáveis.</strong></p>
 <p><strong>Prosposta</strong></p>
 <ul class="simple">
 <li>Construir funções simples para operações aritméticas.</li>
 <li>Como colocar dentro de funções o quê aprendemos nas ultimas aulas?</li>
 </ul>
+<p><strong>Exercícios</strong></p>
+<ol class="arabic simple">
+<li>Fazer uma função que imprima o nome de cada um dos membros das equipe.</li>
+</ol>
+
+    <button type='button' id='ex1_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex1').show();$('#ex1_hide').show();$('#ex1').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Ver resposta
+    </button>
+    <button type='button' id='ex1_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex1').hide();$('#ex1_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex1' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">imprime_nomes</span><span class="p">():</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;Nome 1&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;Nome 1&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;Nome 1&quot;</span><span class="p">)</span>
+
+<span class="n">imprime_nomes</span><span class="p">()</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="2">
+<li>Fazer uma função que retorne a soma das idades de cada um dos membros da equipe (lembre de converter para inteiro, é um erro que os alunos comentem com frequência)</li>
+</ol>
+
+    <button type='button' id='ex2_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex2').show();$('#ex2_hide').show();$('#ex2').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Ver resposta
+    </button>
+    <button type='button' id='ex2_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex2').hide();$('#ex2_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex2' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">retorna_soma</span><span class="p">():</span>
+  <span class="n">idade1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Qual a idade da pessoa #1? &quot;</span><span class="p">)</span>
+  <span class="n">idade2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Qual a idade da pessoa #2? &quot;</span><span class="p">)</span>
+  <span class="n">idade3</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Qual a idade da pessoa #3? &quot;</span><span class="p">)</span>
+  <span class="n">soma</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">idade1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">idade2</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">idade3</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">soma</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">retorna_soma</span><span class="p">())</span>
+</pre></div>
+</div>
+
+    </div>
+<p><strong>Gamification: atividades para o jogo</strong></p>
+<p>Proponha uma reflexão de como eles irão utilizar funções na construção dos seus
+programas e jogos. Proponha a atividade para fazer um <strong>validador de idade</strong> para o jogo e
+o <strong>about</strong> (ou seja, a função que imprime os autores do programa)</p>
+<ol class="arabic simple">
+<li>Validador de Idade</li>
+</ol>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">valida_idade</span><span class="p">():</span>
+  <span class="n">idade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Qual sua idade? &quot;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">idade</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">15</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Bem-vindo ao jogo&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">True</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Você não pode jogar!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">False</span>
+
+<span class="c"># precisamos invocar (chamar) a função</span>
+<span class="n">valida_idade</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Sobre (About)</li>
+</ol>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">sobre</span><span class="p">():</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;Este programa foi desenvolvido por:&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;1. Fulano&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;2. Ciclano&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">&quot;3. Beltrano&quot;</span><span class="p">)</span>
+
+<span class="n">sobre</span><span class="p">()</span> <span class="c"># chama a função</span>
+</pre></div>
+</div>
+<p>Peça para que eles salvem o arquivo no editor e enviem a primeira versão com estas duas funções para seu e-mail</p>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
