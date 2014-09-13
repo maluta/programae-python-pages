@@ -149,6 +149,8 @@ o **about** (ou seja, a função que imprime os autores do programa)
   # precisamos invocar (chamar) a função
   valida_idade()
 
+Se eles tiverem dúvidas no `if` fale que ele será abordado com mais detalhes na próxima aula.
+
 2. Sobre (About)
 
 .. sourcecode:: python
@@ -161,7 +163,9 @@ o **about** (ou seja, a função que imprime os autores do programa)
 
   sobre() # chama a função
 
-Peça para que eles salvem o arquivo no editor e enviem a primeira versão com estas duas funções para seu e-mail
+Peça para que eles salvem o arquivo no editor e enviem para seu e-mail.
+
+Caso sobre um tempo, mostre o `Gist <https://gist.github.com/>`_ para armazenar trechos de código.
 
 
 Reflexão
