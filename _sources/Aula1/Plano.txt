@@ -18,6 +18,7 @@ Nesta aula, os alunos deverão:
 
 - Compreender alguns lugares onde a computação é aplicada.
 - Entender a necessidade de aprender a programar.
+- Entender as regras do jogo.
 
 
 Preparação
