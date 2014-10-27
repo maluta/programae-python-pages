@@ -24,6 +24,8 @@ Nesta aula, os alunos deverão:
 Preparação
 ++++++++++
 
+A primeira aula será muitas vezes o primeiro contato dos alunos com programação. É importante destacar que neste curso não há pré-requisitos portanto é preciso levar isso em consideração. Para isso começaremos do final, mostraremos as possibilidades que a linguagem oferece e o que eles conseguirão fazer no final do curso. 
+
 **Materiais**
 
 - Cópias da `Ficha de Inscrição <../Apoio/ficha.html>`__ proporcional ao número de grupos (de 3 alunos).
@@ -32,93 +34,60 @@ Preparação
 Atividades
 ++++++++++
 
-Instigue os alunos com as seguintes perguntas:
+Esta aula é dividida em duas partes, a primeira envole uma discussão com os alunos, procure trabalhar as respostas deles, fazendo ganhcos com o contexto na qual eles estão inserindo e especialmente não invalidando nenhuma resposta. 
 
+**PRIMEIRA PARTE**
+
+Vamos começar em algumas sugestões para discussão:
+
++------------------------------------------------------------------------------------+
+| 1. Aonde existem programas de computador?                                          |
++====================================================================================+
+| Esta pergunta faz todo sentido se contextualizarmos com a realidade dos alunos.    |
+| Começe perguntando se há programas no computador, no celular, na televisão, etc;   |
+| depois passe para coisas não "tangíveis" como sites na internet e sistemas que     |
+| comtrolam o trânsito, os aeroportos e os bancos.                                   |
++------------------------------------------------------------------------------------+
+
+.. admonition:: Em todo lugar
+
+  Destaque a tendência de que hoje e cada vez mais, os sistemas funcionam em todo lugar. Exemplos com o Facebook que acessamos via computador, também é acessível no celuluar e até mesmo nas smart TVs. Apresente um termo novo para descrever este cenário: `computação ubíqua <http://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_ub%C3%ADqua>`__.
+    
 +---------------------------------------------------------------------------------+
-| Aonde existem programas de computador?                                          |
+| 2. Como hoje a tecnologia facilita nossas vidas?                                |
 +=================================================================================+
-| Busque referências no dia-a-dia, onde a programação é aplicada.                 |
-| Exemplos: GMail, Facebook, Instagram, Twitter                                   |
+| Elenque alguns pontos onde a tecnologia proporcionou um ganho de produtividade  |
+| nas nossas vidas, algums exemplos: facilidade para fazer uma pesquisa usando    |
+| a internet, encurtamento de distâncias, comunicação rápida, diminuição de       |
+| filas e congestionamentos.                                                      |
 +---------------------------------------------------------------------------------+
-
-.. admonition:: A computação esta em todo lugar
-
-  Nesta parte é importante destacar que podemos criar programamas não apenas para rodar em computadores mas em celulares, carros,
-  televisores, etc; e que isso não é um futuro distante mas sim o presente.
-
-
+  
 +---------------------------------------------------------------------------------+
-| Porque nós deveriamos aprendemos a programar?                                   |
+| 3. Porque nós deveriamos aprendemos a programar?                                |
 +=================================================================================+
-| Busque citar exemplos de como podemos criar soluções para os problemas          |
-| do dia a dia                                                                    |
+| Mesmo com tantas soluções disponíveis sabemos que falta muita coisa, trabalhe   | 
+| estas possiblidades, como adaptar o computador para resolver um problema real   |
+| do nosso quotidiano? Apresente esta pergunta e anote os comentários.            |
 +---------------------------------------------------------------------------------+
 
 +---------------------------------------------------------------------------------+
-| O que nós precisamos aprender para criar estas soluções?                        |
+| 4. O que nós precisamos aprender para criar estas soluções?                     |
 +=================================================================================+
-| Mostre que o objetivo do curso é aprender as ferramentas necessárias para       |
-| criar programas que resolvam problemas.                                         |
-| Faça uma levantamento, precisamos aprender. Exemplos:                           |
-| como que os computadores trabalham, escolher uma linguagem de programação,      |
-| aprender a nos comunicar com esta linguagem, desenvolver, criar, etc.           |
+| Nesta questão é interessante associar o conteúdo do curso com os mecanismos que |
+| temos hoje para nos comunicar: **a linguagem**.                                 |
+| Para comunicar com o computador vamos aprender uma das suas linguagens e dar    |
+| ordens para realizar o que queremos que ele faça.                               |
 +---------------------------------------------------------------------------------+
 
 
-.. admonition:: Analogias
+**SEGUNDA PARTE**
 
-  Uma boa estratégia para apresentar conceitos é utilizar analogias, faça uso sempre que possível
+Abra o IDLE para mostrar algumas funcionalidades da linguagem, para isso é preciso que você construa um repertório. Iremos sugerir algumas coisas interessantes mas adicione também o que considerar relevante
 
-Construa com os alunos uma tabela que contextualize os conceitos descritos na última questão.
-
-Exemplos:
-
-1. **Aprender uma linguagem de programação** é como aprender outro idioma, conhecendo o vocabulário e a gramática.
-2. **Escrever programas** é aprender a se comunicar com o computador.
-
-Um resumo fazendo analogia com os idiomas Inglês e Português:
-
-
-+---------------+-------------------------------------------+---------------------------------------+
-| Idioma        |  Unidade linguística com um significado   |  Exemplos                             |
-+===============+===========================================+=======================================+
-| Inglês        |  palavra                                  |  flower, car, tree, number            |
-+---------------+-------------------------------------------+---------------------------------------+
-| Português     |  palavra                                  |  flor, carro, árvore, número          |
-+---------------+-------------------------------------------+---------------------------------------+
-| Python        |  palavras-reservadas                      |  ``print``, ``while``, ``import``     |
-+---------------+-------------------------------------------+---------------------------------------+
-
-+---------------+-------------------------------------------+------------------------------+
-| Idioma        |  Reunião de palavras com um significado   |  Exemplo                     |
-+===============+===========================================+==============================+
-| Inglês        |  sentença, frase                          |   Today is sunny             |
-+---------------+-------------------------------------------+------------------------------+
-| Português     |  sentença, frase                          |   Hoje está ensolarado       |
-+---------------+-------------------------------------------+------------------------------+
-| Python        |  instrução, linha de código               |  ``print("Hoje faz sol")``   |
-+---------------+-------------------------------------------+------------------------------+
-
-.. admonition:: Imperativo
-
-  Podemos pensar num treinador de cachorros que usa palavras especiais para algumas ações: “senta!”, “parado!” e “pega!”. Se utilizarmos outras palavras que o cachorro não reconhece ele não irá compreender.
-
-Depois de abordar estas questões prossiga explicando como o curso será estruturado, as regras para as próximas aulas.
-
-Os alunos irão ser organizar em equipes para conceber, criar e manter uma **Fábrica de Software** que irá desenvolver
-soluções utilizando como ferramenta a programação.
-
-.. admonition:: Regras Gerais
-
-	- Grupos de até 3 alunos.
-	- Nas próximas aulas, a equipe de alunos (empresa) receberão o desafios e contratos de desenvolvimento.
-	- O educador (na figura de investidor) irá distribuir uma modena virtual chamada `progmoney <../Apoio/progmoney.html>`__  (sigla ``$>``) para cada grupo começar a empresa.
-	- Em cada aula os alunos **deverão** adquirir `cartões de funcionalidades <../Apoio/cartoes.html>`__ para utilizar na criação dos programas.
-	- A construção de código tem um *custo* em *progmoney*
-	- Cada linha de código custa ``1 $>``.
-	- Uso de instruções não permitidas custam ``30 $>``
-	- Ao aprender funcionalidade novas os grupos adquirem mais *progmoney*.
-	- Os preços por instrução/comando estão em uma `tabela <../Apoio/progmoney.html>`__.
+1. Jogos no estilo Perguntas & Respostas
+2. Gráficos 
+3. Quiz
+4. Manipulação de dados
 
 **Atividades**
 
@@ -128,6 +97,9 @@ soluções utilizando como ferramenta a programação.
 - Peça as equipes para escrever uma descrição da empresa.
 - Cada equipe deverá preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__ e devolver ao educador.
 - Adquirir o primeiro `cartão <../Apoio/cartoes.html#aula-1>`__ de funcionalidade com as informações da empresa e preenchê-lo.
+
+
+
 
 Reflexão
 +++++++++

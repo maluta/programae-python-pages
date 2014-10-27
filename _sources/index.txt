@@ -166,3 +166,17 @@ Aula 11: Projetos
    :hidden:
 
    Aula11/Plano.rst
+
+Bônus: Gamificando as aulas
+:::::::::::::::::::::::::::::::::
+
+É possível utilizar o técnicas de gamificação para dar as aulas.
+
+`Ver conteúdo <Apoio/games.html>`_
+
+.. toctree::
+   :hidden:
+
+   Apoio/games.rst
+   
+   

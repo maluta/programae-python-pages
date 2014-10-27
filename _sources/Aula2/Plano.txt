@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 2: Conceitos & Ambiente
-=============================
+Aula 2: Sintaxe & Ambiente
+==========================
 
 Objetivos
 +++++++++
@@ -31,8 +31,7 @@ Preparação
 Atividades
 +++++++++++
 
-- Comece a aula relembrando a última pergunta da aula anterior: *"O que nós precisamos aprender para criar .....?"* 
-- Trabalhe as questões a seguite, que envolvem os primeiros conceitos computacionais necessários. 
+Comece a aula relembrando a última pergunta da aula anterior: *"O que nós precisamos aprender para criar .....?"* e como saber se comunicar, corretamente, na linguagem do computador.
 
 **Conceitos computacionais**
 
