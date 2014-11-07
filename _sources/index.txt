@@ -1,4 +1,3 @@
-
 =====================
 Programaê - Python - Planos de Aula
 =====================
@@ -30,14 +29,32 @@ Olá educador, estes planos tem como objetivos gerais:
   ouvir sobre (hoje em dia ainda é difícil adivinhar...) Utilize a seção de comentários no final de cada plano ou então entre em contato
   `diretamente <../programae-python-pages/Apoio/contatos.html>`__.
 
-Formação
-::::::::
+Visão Geral
+:::::::::::
+
+Comece a ler por aqui, entenda as possibilidade de trabalhar o material em sala de aula.
+  
+Formação do educador
+::::::::::::::::::::
 
 Todas as referências de conteúdo, leituras, comunidades, para você acompanhar bem os planos de aula.
 
-`Ver conteúdo <Forma/formacao.html>`_
+`Ver conteúdo <Forma/formacao.html>`__
 
 
+Bônus: Gamificando as aulas
+:::::::::::::::::::::::::::::::::
+
+É possível utilizar o técnicas de gamificação para dar as aulas.
+
+`Ver conteúdo <Apoio/games.html>`_
+
+.. toctree::
+   :hidden:
+
+   Apoio/games.rst
+   
+   
 Aula 1: Motivação & Regras
 :::::::::::::::::::::::::::
 
@@ -57,7 +74,12 @@ Aula 2: Conceitos & Ambiente
 :::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula2/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula2/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula2/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula2/Projetos.html>`_
+
 
 .. toctree::
    :hidden:
@@ -69,7 +91,11 @@ Aula 3: Calculadora
 :::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula3/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula3/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula3/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula3/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -80,7 +106,11 @@ Aula 4: Variáveis
 ::::::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula4/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula4/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula4/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula4/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -90,7 +120,13 @@ Aula 4: Variáveis
 Aula 5: Funções
 ::::::::::::::::::::::::::::::::::::::::::::
 
-`Ver conteúdo <Aula5/Plano.html>`_
+
+↳  Ver conteúdo `do plano de aula <Aula5/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula5/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula5/Projetos.html>`_
+
 
 .. toctree::
    :hidden:
@@ -102,7 +138,12 @@ Aula 6: Controles (I)
 :::::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula6/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula6/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula6/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula6/Projetos.html>`_
+
 
 .. toctree::
    :hidden:
@@ -113,7 +154,13 @@ Aula 6: Controles (I)
 Aula 7: Repetições (I)
 :::::::::::::::::::::::::::::::::::
 
-`Ver conteúdo <Aula6/Plano.html>`_
+
+↳  Ver conteúdo `do plano de aula <Aula7/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula7/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula7/Projetos.html>`_
+
 
 .. toctree::
    :hidden:
@@ -125,7 +172,11 @@ Aula 8: Textos
 :::::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula7/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula8/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula8/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula8/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -137,7 +188,11 @@ Aula 9: Listas
 :::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula9/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula9/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula9/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula9/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -149,7 +204,11 @@ Aula 10: Licenças
 :::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula10/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula10/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula10/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula10/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -160,23 +219,14 @@ Aula 11: Projetos
 :::::::::::::::::::::::::::::::::
 
 
-`Ver conteúdo <Aula11/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula11/Plano.html>`_
+
+↳  Ver conteúdo `dos exercícios <Aula11/Exercicios.html>`_
+
+↳  Ver conteúdo `dos projetos <Aula11/Projetos.html>`_
 
 .. toctree::
    :hidden:
 
    Aula11/Plano.rst
 
-Bônus: Gamificando as aulas
-:::::::::::::::::::::::::::::::::
-
-É possível utilizar o técnicas de gamificação para dar as aulas.
-
-`Ver conteúdo <Apoio/games.html>`_
-
-.. toctree::
-   :hidden:
-
-   Apoio/games.rst
-   
-   

@@ -89,17 +89,6 @@ Abra o IDLE para mostrar algumas funcionalidades da linguagem, para isso é prec
 3. Quiz
 4. Manipulação de dados
 
-**Atividades**
-
-- Explique as regras da Fábrica.
-- Organize a sala em grupos de 3 alunos.
-- Peça as equipes escolher um nome para empresa.
-- Peça as equipes para escrever uma descrição da empresa.
-- Cada equipe deverá preencher a `Ficha de Inscrição <../Apoio/ficha.html>`__ e devolver ao educador.
-- Adquirir o primeiro `cartão <../Apoio/cartoes.html#aula-1>`__ de funcionalidade com as informações da empresa e preenchê-lo.
-
-
-
 
 Reflexão
 +++++++++
