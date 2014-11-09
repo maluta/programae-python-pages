@@ -33,7 +33,7 @@ Visão Geral
 :::::::::::
 
 Comece a ler por aqui, entenda as possibilidade de trabalhar o material em sala de aula.
-  
+
 Formação do educador
 ::::::::::::::::::::
 
@@ -42,8 +42,8 @@ Todas as referências de conteúdo, leituras, comunidades, para você acompanhar
 `Ver conteúdo <Forma/formacao.html>`__
 
 
-Bônus: Gamificando as aulas
-:::::::::::::::::::::::::::::::::
+Gamificando as aulas
+::::::::::::::::::::
 
 É possível utilizar o técnicas de gamificação para dar as aulas.
 
@@ -53,8 +53,8 @@ Bônus: Gamificando as aulas
    :hidden:
 
    Apoio/games.rst
-   
-   
+
+
 Aula 1: Motivação & Regras
 :::::::::::::::::::::::::::
 
@@ -229,4 +229,3 @@ Aula 11: Projetos
    :hidden:
 
    Aula11/Plano.rst
-

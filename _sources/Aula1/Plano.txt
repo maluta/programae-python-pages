@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 1: Motivação & Regras
-==========================
+Aula 1: Introdução
+==================
 
 Objetivos
 ++++++++++
@@ -18,91 +18,112 @@ Nesta aula, os alunos deverão:
 
 - Compreender alguns lugares onde a computação é aplicada.
 - Entender a necessidade de aprender a programar.
-- Entender as regras do jogo.
+- Visualizar algumas possibilidades de projetos com o Python.
+- Instalar e ter o primeir contato com a linguagem Python através do console.
 
 
 Preparação
 ++++++++++
 
-A primeira aula será muitas vezes o primeiro contato dos alunos com programação. É importante destacar que neste curso não há pré-requisitos portanto é preciso levar isso em consideração. Para isso começaremos do final, mostraremos as possibilidades que a linguagem oferece e o que eles conseguirão fazer no final do curso. 
+A primeira aula será muitas vezes o primeiro contato dos alunos com o desenvolvimento de programas. Se este for o seu caso, é importante trabalhar bem a contextualização antes de entrar nos detalhes da linguagem e programação. Lembre-se, este curso foi concebido sem pré-requisitos. Uma estratégia que utilizaremos ao longo das aulas é "começar pelo final", mostrando as possibilidades que a linguagem oferece e o que eles conseguirão fazer no final do curso.
 
 **Materiais**
 
-- Cópias da `Ficha de Inscrição <../Apoio/ficha.html>`__ proporcional ao número de grupos (de 3 alunos).
-- Cópias dos cartões de funcionalidades da `aula 1 <../Apoio/cartoes.html#aula-1>`__ proporcional ao número de grupos (de 3 alunos).
+- Python3 configurado e instalado nas máquinas.
+- *Datashow* para os exemplos
 
 Atividades
 ++++++++++
 
-Esta aula é dividida em duas partes, a primeira envole uma discussão com os alunos, procure trabalhar as respostas deles, fazendo ganhcos com o contexto na qual eles estão inserindo e especialmente não invalidando nenhuma resposta. 
+Esta aula é dividida em duas partes, a primeira envole uma discussão com os alunos, procure trabalhar as respostas deles, fazendo ganchos com o contexto na qual eles estão inserindo e especialmente não invalidando nenhuma resposta.
 
-**PRIMEIRA PARTE**
+**PRIMEIRA PARTE** [10 - 15 minutos]
 
-Vamos começar em algumas sugestões para discussão:
+A idéia da primeira parte é fazer um gancho com a vivência da turma, mostrar a presença da tecnologia no nosso dia-a-dia. É uma estratégia de modo a fazer uma transição mais suave para os temas que veremos a seguir. As perguntas abaixo servem como guia para iniciar a discussão, abra um debate curto (poucos minutos, no máximo) para fazê-los pensar.
 
-+------------------------------------------------------------------------------------+
-| 1. Aonde existem programas de computador?                                          |
-+====================================================================================+
-| Esta pergunta faz todo sentido se contextualizarmos com a realidade dos alunos.    |
-| Começe perguntando se há programas no computador, no celular, na televisão, etc;   |
-| depois passe para coisas não "tangíveis" como sites na internet e sistemas que     |
-| comtrolam o trânsito, os aeroportos e os bancos.                                   |
-+------------------------------------------------------------------------------------+
+1. **Aonde existem programas de computador?**
+  Esta pergunta faz todo sentido se contextualizarmos com a realidade dos alunos. Começe perguntando se há programas no computador, no celular, na televisão, etc; depois passe para coisas não "tangíveis" como sites na internet e sistemas que controlam o trânsito, os aeroportos e os bancos.
 
-.. admonition:: Em todo lugar
+2. **Como hoje a tecnologia facilita nossas vidas?**
+  Elenque alguns pontos onde a tecnologia proporcionou um ganho de produtividade nas nossas vidas, algums exemplos: facilidade para fazer uma pesquisa usando a internet, encurtamento de distâncias, comunicação rápida, diminuição de filas e congestionamentos.
 
-  Destaque a tendência de que hoje e cada vez mais, os sistemas funcionam em todo lugar. Exemplos com o Facebook que acessamos via computador, também é acessível no celuluar e até mesmo nas smart TVs. Apresente um termo novo para descrever este cenário: `computação ubíqua <http://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_ub%C3%ADqua>`__.
-    
-+---------------------------------------------------------------------------------+
-| 2. Como hoje a tecnologia facilita nossas vidas?                                |
-+=================================================================================+
-| Elenque alguns pontos onde a tecnologia proporcionou um ganho de produtividade  |
-| nas nossas vidas, algums exemplos: facilidade para fazer uma pesquisa usando    |
-| a internet, encurtamento de distâncias, comunicação rápida, diminuição de       |
-| filas e congestionamentos.                                                      |
-+---------------------------------------------------------------------------------+
-  
-+---------------------------------------------------------------------------------+
-| 3. Porque nós deveriamos aprendemos a programar?                                |
-+=================================================================================+
-| Mesmo com tantas soluções disponíveis sabemos que falta muita coisa, trabalhe   | 
-| estas possiblidades, como adaptar o computador para resolver um problema real   |
-| do nosso quotidiano? Apresente esta pergunta e anote os comentários.            |
-+---------------------------------------------------------------------------------+
+3. **Porque nós deveriamos aprendemos a programar?**
+  Mesmo com tantas soluções disponíveis sabemos que falta muita coisa, trabalhe estas possiblidades, como adaptar o computador para resolver um problema real do nosso quotidiano? Apresente esta pergunta e anote os comentários.            |
 
-+---------------------------------------------------------------------------------+
-| 4. O que nós precisamos aprender para criar estas soluções?                     |
-+=================================================================================+
-| Nesta questão é interessante associar o conteúdo do curso com os mecanismos que |
-| temos hoje para nos comunicar: **a linguagem**.                                 |
-| Para comunicar com o computador vamos aprender uma das suas linguagens e dar    |
-| ordens para realizar o que queremos que ele faça.                               |
-+---------------------------------------------------------------------------------+
+4. **O que nós precisamos aprender para criar estas soluções?**
+  Nesta questão é interessante associar o conteúdo do curso com os mecanismos que temos hoje para nos comunicar: **a linguagem**. Para comunicar com o computador vamos aprender uma das suas linguagens e dar ordens para realizar o que queremos que ele faça.
+
+**SEGUNDA PARTE** [30 minutos]
+
+.. admonition:: Eu ensinaria meu computador a...
+
+  A participação dos alunos no curso muitas vezes é derivado de um interesse em aprender algo novo. Neste momento da aula, inverta esta proposta e pergunte para os alunos o que eles ensinariam para o computador (em vez de o que nós vamos aprender com ele) e anote as respostas no quadro. A dinâmica fica mais interssante se todos participarem, favoreça isso em sala.
+
+Nesta ocasição, trabalhe uma dinâmica em grupo, de *controle&execução* onde você pode eleger uma pessoa para ser um robô que apenas executa ações previamente combinadas (exemplos: ``avance``, ``recue``, ``direita``, ``esquerda``, ``pegar objeto``, ``soltar objeto``)
+
+Dependendo da infra-estrutura disponível:
+
+- Sair de um labirinto
+- Pegar um objeto dentro de um "mapa" cartesiano
+
+Veja os exemplos de como trabalhar na `seção de exercícios da aula <../Aula1/Exercicios.html>`__
+
+Por fim, termine a aula abrindo o IDLE e mostrado a primeira funcionalidade que iremos trabalhar nas próximas aulas: o módulo turtle. Faça o gancho com a dinâmica traduzindo para o código os comandos criados em sala e movimentando a tartaruga.
+
+Abaixo um exemplo:
+
+.. activecode:: turtle
+
+  from turtle import *
+  turtle = Turtle()
+  turtle.shape("turtle")
+  turtle.forward(100)
+  turtle.left(90)
+  turtle.forward(100)
+  turtle.left(90)
+  turtle.forward(100)
+  turtle.left(90)
+  turtle.forward(100)
 
 
-**SEGUNDA PARTE**
 
-Abra o IDLE para mostrar algumas funcionalidades da linguagem, para isso é preciso que você construa um repertório. Iremos sugerir algumas coisas interessantes mas adicione também o que considerar relevante
+Utilize os seguintes exemplos como opção para você trabalhar no IDLE:
 
-1. Jogos no estilo Perguntas & Respostas
-2. Gráficos 
-3. Quiz
-4. Manipulação de dados
+-  Desenhar um quadrado (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/aula1-turtle1.py>`__)
+-  Desenhar um triângulo (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/aula1-turtle2.py>`__)
+-  Desenhar um círculo (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/aula1-turtle3.py>`__)
 
+Dê Ctrl+C no conteúdo e cole no editor de textos do IDLE.
 
 Reflexão
 +++++++++
 
-Além de algumas `reflexões gerais <../Apoio/feedback.html>`__  podemos, nesta aula, observar que computador pode automatizar processos em nossas vidas.
-É importante destacar sempre que a **criatividade** é ferramenta para construção. Nesta etapa avalie a participação e interesse dos alunos.
-Como a proposta das aulas seguintes é orientar os alunos em projetos, pense nas possibilidades da linguagem e mostre como eles poderiam criar algo, categorize os tópicos mais populares.
+(10 minutos)
+
+Ninguém aprende uma nova habilidade na segunda nem na décima vez. Quer tocar bem piano? Procure um bom professor e pratique as escalas milhares de vezes. Trabalhe este conceito com os alunos. Destaque que eles só vão aprender de fato se houver **repetição** proporcionando a confiança necessária para tirar as idéias do papel. Neste início as dificuldade residirão
+
+- na ambientalização com o ambiente de desenvolvimento (IDLE)
+- erros de sintaxe da linguagem.
+
+É importante trabalhar com os alunos o repertório que esta sendo aprendido e sempre registrar o que foi aprendido em cada aula.
+
+**Para casa**
+
+Um bom jeito de introduzir os conceitos é fazendo as atividades de `Hora do Código <http://studio.code.org/hoc/1>`__.
+Sugira como atividade para casa ou então, se houver tempo na aula, trabalhe junto com eles. Os sete primeiros desafios são importantes para as primeiras aulas.
+
+`Fazer exercícios da Hora do Código <http://studio.code.org/hoc/1>`__
+
+
+
+
 
 --------
 
 
 Boa aula!!!
 
-**Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
+**Comentários: Educador, clique no link abaixo (*Show Comments*) e utilize este espaço para fazer comentários sobre este plano**
 
 .. disqus::
   :shortname: programae
