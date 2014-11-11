@@ -1,0 +1,132 @@
+..  Copyright (C)  Fundação Lemann
+
+    Permission is granted to copy, distribute
+    and/or modify this document under the terms of the GNU Free Documentation
+    License, Version 1.3 or any later version published by the Free Software
+    Foundation; with Invariant Sections being Forward, Prefaces, and
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    the license is included in the section entitled "GNU Free Documentation
+    License".
+
+Aula 2: Primeiros movimentos
+============================
+
+Objetivos
++++++++++
+
+- Aprender como executar um código-fonte do IDLE.
+- Aprender a modificar um programa pré-existente para movimentar a tartaruga.
+- Aprender a criar um novo programa de movimentação da tartaruga.
+
+
+Preparação
+++++++++++
+
+- Certifique que você consegue rodar e disponibilizar os exemplos para os alunos.
+- Tire uma cópia da [plano cartesiano] e da ficha de comandos.
+- O conceito de graus (0 - 360) no plano cartesiano.
+
+Atividades
++++++++++++
+
+
+Nesta aula os alunos irão trabalhar o módulo *turtle* no plano cartesiano para entender basicamente os esquemas de movimentação. Nesta aulas sãp conceitos importantes:
+
+- a posição inicial da tartaruga (0,0)
+- os quadrantes para movimentação
+
+
+.. image:: ../../_static/plano_cartesiano.png
+
+
+1. Abra com eles o IDLE
+2. Compartilhe o código exemplo (aula2-ex1.py)
+3. Oriente-os a abrir o arquivo dentro do IDLE.
+
+.. admonition:: Glossário
+
+  Já comece introduzinho os termos em inglês para fazer a movimentação da turtle.
+
+  - avance → forward
+  - recue → backward
+  - direita → right
+  - esquerda → left
+
+.. activecode:: turtle1
+
+  from turtle import *
+
+  # define o "desenhista"
+  tartaruga_1 = Turtle()
+  tartaruga_1.shape("turtle")
+  tartaruga_2 = Turtle()
+  tartaruga_2.shape("turtle")
+  tartaruga_3 = Turtle()
+  tartaruga_3.shape("turtle")
+  tartaruga_4 = Turtle()
+  tartaruga_4.shape("turtle")
+
+
+  tartaruga_1.forward(100)
+
+  tartaruga_2.forward(-100)
+
+  tartaruga_3.left(90)
+  tartaruga_3.forward(100)
+
+  tartaruga_4.right(90)
+  tartaruga_4.forward(100)
+
+4. Repita a operação para o arquivo (aula2-ex2.py)
+
+.. activecode:: turtle2
+
+  from turtle import *
+
+  # define o "desenhista"
+  tartaruga_1 = Turtle()
+  tartaruga_1.shape("turtle")
+  tartaruga_2 = Turtle()
+  tartaruga_2.shape("turtle")
+  tartaruga_3 = Turtle()
+  tartaruga_3.shape("turtle")
+  tartaruga_4 = Turtle()
+  tartaruga_4.shape("turtle")
+
+  tartaruga_1.left(45)
+  tartaruga_1.forward(100)
+
+  tartaruga_2.left(135)
+  tartaruga_2.forward(100)
+
+  tartaruga_3.left(225)
+  tartaruga_3.forward(100)
+
+  tartaruga_4.left(315)
+  tartaruga_4.forward(100)
+
+Repare que há muitas maneiras de escrever a mesma instrução, por exemplo ``forward(-100)`` é a mesma coisa que fazer ``backward(100)``. A mesma coisa acontece para as movimentações com ângulos. ``left(90)`` é igual a ``right(270)``. Trabalhe estas equivalências com a turma.
+
+**Exercícios**
+
+Trabalhe os seguintes exercícios de labirinto com eles:
+
+- aula2-ex1_papel_quadriculado.py
+- aula2-ex2_papel_quadriculado.py
+- aula2-ex3_papel_quadriculado.py
+- aula2-ex4_papel_quadriculado.py
+
+
+Reflexão
++++++++++
+
+É importante neste ocmeço que eles comecem a criar um repertório de comandos, feitos por eles mesmos. Incentive este hábito desde o começo.
+Instigue-os a pensar que outros desenhos podem ser feitos?
+
+Boa aula!!!
+
+**Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
+
+.. disqus::
+  :shortname: programae
+  :identifier: aula2

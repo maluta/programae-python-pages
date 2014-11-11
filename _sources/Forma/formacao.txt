@@ -11,4 +11,26 @@
 Formação
 ========
 
-www.codecademy.com
+"Estamos num esforço de adaptar nosso pensamento, observando o ambiente que nos cerca, investigando e traduzindo para códigos a nossa cultura, na esperança de redescobrir nossa história e moldar nosso futuro"
+
+**A linguagem**
+
+Embora trabalhamos as aulas com o Python na sua versão 3.x a trilha do Codecademy reflete muito bem os aspectos necessários para entender a sintaxe da linguagem ainda num ambiente livre de dependências, basta acesso a  um comptuador com acesso a internet.
+
+1. Passagem por toda a linguagem, Codecademy `Python <http://www.codecademy.com/pt-BR/tracks/python>`__ (~13 horas pra terminar)
+2. Instalação do Python
+3. Familiarização com o ambiente (IDLE)
+4. Praticar
+
+**As aulas**
+
+1. Estudar os planos de aula
+2. Se preparar
+3. Conhecer os erros mais comuns
+
+**Blogs**
+
+Como referência:
+
+- http://freepythontips.wordpress.com/
+- http://www.blog.pythonlibrary.org

@@ -8,7 +8,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 1: Introdução
+Aula 1: Começando
 ==================
 
 Objetivos
@@ -16,21 +16,20 @@ Objetivos
 
 Nesta aula, os alunos deverão:
 
-- Compreender alguns lugares onde a computação é aplicada.
-- Entender a necessidade de aprender a programar.
-- Visualizar algumas possibilidades de projetos com o Python.
-- Instalar e ter o primeir contato com a linguagem Python através do console.
-
+- Refletir sobre diferentes contextos aonde a programação é aplicada.
+- Entender a necessidade de se aprender a programar.
+- Entender a necessidade de se construir instruções muito bem definidas para realizar uma tarefa.
+- Ter o primeiro contato com a linguagem Python através da observação da execução de um programa.
 
 Preparação
 ++++++++++
 
-A primeira aula será muitas vezes o primeiro contato dos alunos com o desenvolvimento de programas. Se este for o seu caso, é importante trabalhar bem a contextualização antes de entrar nos detalhes da linguagem e programação. Lembre-se, este curso foi concebido sem pré-requisitos. Uma estratégia que utilizaremos ao longo das aulas é "começar pelo final", mostrando as possibilidades que a linguagem oferece e o que eles conseguirão fazer no final do curso.
+A primeira aula será muitas vezes o primeiro contato dos alunos com o desenvolvimento de programas. Se este for o seu caso, é importante trabalhar bem a contextualização antes de entrar nos detalhes da linguagem e programação. Lembre-se, este curso foi concebido sem pré-requisitos. Uma estratégia que utilizaremos ao longo das aulas é "começar pelo final", mostrando as possibilidades que a linguagem oferece e o que eles conseguirão fazer no final do curso ao mesmo tempo que eles sairão da aula com algo pronto.
 
 **Materiais**
 
 - Python3 configurado e instalado nas máquinas.
-- *Datashow* para os exemplos
+- Projetor (*Datashow*) para o exemplo em grupo.
 
 Atividades
 ++++++++++
@@ -48,7 +47,7 @@ A idéia da primeira parte é fazer um gancho com a vivência da turma, mostrar 
   Elenque alguns pontos onde a tecnologia proporcionou um ganho de produtividade nas nossas vidas, algums exemplos: facilidade para fazer uma pesquisa usando a internet, encurtamento de distâncias, comunicação rápida, diminuição de filas e congestionamentos.
 
 3. **Porque nós deveriamos aprendemos a programar?**
-  Mesmo com tantas soluções disponíveis sabemos que falta muita coisa, trabalhe estas possiblidades, como adaptar o computador para resolver um problema real do nosso quotidiano? Apresente esta pergunta e anote os comentários.            |
+  Mesmo com tantas soluções disponíveis sabemos que falta muita coisa, trabalhe estas possiblidades, como adaptar o computador para resolver um problema real do nosso quotidiano? Apresente esta pergunta e anote os comentários.
 
 4. **O que nós precisamos aprender para criar estas soluções?**
   Nesta questão é interessante associar o conteúdo do curso com os mecanismos que temos hoje para nos comunicar: **a linguagem**. Para comunicar com o computador vamos aprender uma das suas linguagens e dar ordens para realizar o que queremos que ele faça.
@@ -59,41 +58,100 @@ A idéia da primeira parte é fazer um gancho com a vivência da turma, mostrar 
 
   A participação dos alunos no curso muitas vezes é derivado de um interesse em aprender algo novo. Neste momento da aula, inverta esta proposta e pergunte para os alunos o que eles ensinariam para o computador (em vez de o que nós vamos aprender com ele) e anote as respostas no quadro. A dinâmica fica mais interssante se todos participarem, favoreça isso em sala.
 
-Nesta ocasição, trabalhe uma dinâmica em grupo, de *controle&execução* onde você pode eleger uma pessoa para ser um robô que apenas executa ações previamente combinadas (exemplos: ``avance``, ``recue``, ``direita``, ``esquerda``, ``pegar objeto``, ``soltar objeto``)
+Nesta ocasição, trabalhe uma dinâmica em grupo, de *controle & execução* onde você pode eleger uma pessoa para ser um robô que apenas executa ações previamente combinadas (exemplos de comandos: ``avance``, ``recue``, ``direita``, ``esquerda``, ``pegar objeto``, ``soltar objeto``, etc)
 
-Dependendo da infra-estrutura disponível:
+Dependendo da infra-estrutura disponível, podemos trabalhar com:
 
-- Sair de um labirinto
-- Pegar um objeto dentro de um "mapa" cartesiano
+- A "fuga" de um labirinto.
+- Pegar um objeto dentro de um "mapa".
+- Dar instruções para trocar uma lâmpada
+- etc;
 
-Veja os exemplos de como trabalhar na `seção de exercícios da aula <../Aula1/Exercicios.html>`__
+Veja os exemplos de como trabalhar na `seção de exercícios da aula <../Aula1/Exercicios.html>`__.
 
-Por fim, termine a aula abrindo o IDLE e mostrado a primeira funcionalidade que iremos trabalhar nas próximas aulas: o módulo turtle. Faça o gancho com a dinâmica traduzindo para o código os comandos criados em sala e movimentando a tartaruga.
+Anote num papel ou no quadro os passos que os alunos definiram.
 
-Abaixo um exemplo:
+Finalmente, introduza a última atividade da aula com a proposta de traduzir a dinâmica feita em sala para dentro do computador. Para isso explique as regras e ainda sem entrar em detalhes sobre a linguagem em si, explique que o Python irá nos ajudar a resolver este problema.
+
+Para isso iremos:
+
+- Criar uma tartaruga desenhista ``[linhas 4-5]``
+- Definir a regras de comandos que acabamos de combinar ``[linhas 8-11]``
+- Transcrever para o computador a movimentação que acabamos de fazer ``[linhas 8-11]``
+
+Abaixo você pode experimentar, sem sair desta página, a estrutura de um programa para ser construido junto com eles.
 
 .. activecode:: turtle
 
   from turtle import *
-  turtle = Turtle()
-  turtle.shape("turtle")
-  turtle.forward(100)
-  turtle.left(90)
-  turtle.forward(100)
-  turtle.left(90)
-  turtle.forward(100)
-  turtle.left(90)
-  turtle.forward(100)
+
+  # define o "desenhista"
+  tartaruga = Turtle()
+  tartaruga.shape("turtle")
+
+  # regras
+  tartaruga.avance = tartaruga.forward
+  tartaruga.recue = tartaruga.backward
+  tartaruga.direita = tartaruga.right
+  tartaruga.esquerda = tartaruga.left
+
+  # movimentando
+  tartaruga.avance(100)
+  tartaruga.esquerda(90)
+  tartaruga.avance(100)
+  tartaruga.esquerda(90)
+  tartaruga.avance(100)
+  tartaruga.esquerda(90)
+  tartaruga.avance(100)
+
+Já deixe pronto para este momento um arquivo para ser preenchido com os alunos, algo como:
+
+.. sourcecode:: python
+
+  from turtle import *
+
+  # define o "desenhista"
+  ____(A)____ = Turtle()
+  ____(A)____.shape("turtle")
+
+  # regras
+  ____(A)____.____(B)____ = ____(A)____.forward # pra frente
+  ____(A)____.____(C)____ = ____(A)____.backward # pra trás
+  ____(A)____.____(D)____ = ____(A)____.right # ângulo a direita
+  ____(A)____.____(E)____ = ____(A)____.left  # ângulo a esquerda
+
+  # movimentação
+
+Substitua:
+
+-  ``____(A)____`` por um nome escolhido para ser o desenhista, pode ser o seu nome, o nome de algum aluno, etc. Repare que esta definição será repetida em vários lugares no código.
+-  ``____(B)____`` por um dos comandos que você combinou com a sala para ser o comando que avança o desenhista.
+-  ``____(C)____`` por um dos comandos que você combinou com a sala para ser o comando que recua o desenhista.
+-  ``____(D)____`` por um dos comandos que você combinou com a sala para ser o comando muda a direção a partir do lado direito do desenhista.
+-  ``____(E)____`` por um dos comandos que você combinou com a sala para ser o comando  muda a direção a partir do lado esquerdo do desenhista.
 
 
+.. admonition:: Tamanho da fonte
+
+  Lembre-se que você pode mudar o tamanho da fonte no IDLE.
 
 Utilize os seguintes exemplos como opção para você trabalhar no IDLE:
 
--  Desenhar um quadrado (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/aula1-turtle1.py>`__)
--  Desenhar um triângulo (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/aula1-turtle2.py>`__)
--  Desenhar um círculo (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/aula1-turtle3.py>`__)
+-  Desenhar um quadrado (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/Aula1/aula1-turtle1.py>`__)
+-  Desenhar um triângulo (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/Aula1/aula1-turtle2.py>`__)
+-  Desenhar um círculo (`código-fonte <https://raw.githubusercontent.com/Programae/python-exemplos/master/Aula1/aula1-turtle3.py>`__)
 
-Dê Ctrl+C no conteúdo e cole no editor de textos do IDLE.
+Copie o conteúdo dos links e cole no editor de textos do IDLE.
+
+.. reveal:: ex1
+    :showtitle: Preciso de ajuda para executar os exemplos.
+    :hidetitle: Ocultar
+
+    .. youtube:: 8yKqxFw8WF0
+      :height: 315
+      :width: 560
+      :align: center
+
 
 Reflexão
 +++++++++
@@ -102,14 +160,14 @@ Reflexão
 
 Ninguém aprende uma nova habilidade na segunda nem na décima vez. Quer tocar bem piano? Procure um bom professor e pratique as escalas milhares de vezes. Trabalhe este conceito com os alunos. Destaque que eles só vão aprender de fato se houver **repetição** proporcionando a confiança necessária para tirar as idéias do papel. Neste início as dificuldade residirão
 
-- na ambientalização com o ambiente de desenvolvimento (IDLE)
-- erros de sintaxe da linguagem.
+- Na familiarização com o ambiente de desenvolvimento (IDLE).
+- Erros de sintaxe da linguagem Python.
 
 É importante trabalhar com os alunos o repertório que esta sendo aprendido e sempre registrar o que foi aprendido em cada aula.
 
 **Para casa**
 
-Um bom jeito de introduzir os conceitos é fazendo as atividades de `Hora do Código <http://studio.code.org/hoc/1>`__.
+Um bom jeito de introduzir os conceitos é fazendo as atividades da `Hora do Código <http://studio.code.org/hoc/1>`__.
 Sugira como atividade para casa ou então, se houver tempo na aula, trabalhe junto com eles. Os sete primeiros desafios são importantes para as primeiras aulas.
 
 `Fazer exercícios da Hora do Código <http://studio.code.org/hoc/1>`__
@@ -123,7 +181,7 @@ Sugira como atividade para casa ou então, se houver tempo na aula, trabalhe jun
 
 Boa aula!!!
 
-**Comentários: Educador, clique no link abaixo (*Show Comments*) e utilize este espaço para fazer comentários sobre este plano**
+*Comentários: Educador, clique no link abaixo "Show Comments" e utilize este espaço para fazer comentários sobre este plano*
 
 .. disqus::
   :shortname: programae

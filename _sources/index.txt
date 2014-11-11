@@ -54,15 +54,10 @@ Gamificando as aulas
 
    Apoio/games.rst
 
-
-Aula 1: Motivação & Regras
-:::::::::::::::::::::::::::
+Aula 1: Começando
+:::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula1/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula1/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula1/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -70,97 +65,63 @@ Aula 1: Motivação & Regras
    Aula1/Plano.rst
 
 
-Aula 2: Conceitos & Ambiente
-:::::::::::::::::::::::::::::::::
+Aula 2: Primeiros movimentos
+::::::::::::::::::::::::::::
 
-
-↳  Ver conteúdo `do plano de aula <Aula2/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula2/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula2/Projetos.html>`_
-
+↳  Ver conteúdo `do plano de aula <Aula2.1/Plano.html>`_
 
 .. toctree::
    :hidden:
 
-   Aula2/Plano.rst
+   Aula2.1/Plano.rst
 
 
 Aula 3: Calculadora
-:::::::::::::::::::::::::::::::::
-
+::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula3/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula3/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula3/Projetos.html>`_
 
 .. toctree::
    :hidden:
 
    Aula3/Plano.rst
 
-Aula 4: Variáveis
-::::::::::::::::::::::::::::::::::::
-
+Aula 4: Texto & Projetos
+:::::::::::::::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula4/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula4/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula4/Projetos.html>`_
 
 .. toctree::
    :hidden:
 
    Aula4/Plano.rst
 
-Aula 5: Funções
-::::::::::::::::::::::::::::::::::::::::::::
-
+Aula 5: Perguntas & Respostas (I)
+::::::::::::::::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula5/Plano.html>`_
 
-↳  Ver conteúdo `dos exercícios <Aula5/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula5/Projetos.html>`_
-
-
 .. toctree::
    :hidden:
 
    Aula5/Plano.rst
 
 
-Aula 6: Controles (I)
-:::::::::::::::::::::::::::::::::::
-
+Aula 6: Perguntas & Respostas (II)
+::::::::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula6/Plano.html>`_
 
-↳  Ver conteúdo `dos exercícios <Aula6/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula6/Projetos.html>`_
-
-
 .. toctree::
    :hidden:
 
    Aula5/Plano.rst
 
 
-Aula 7: Repetições (I)
-:::::::::::::::::::::::::::::::::::
-
+Aula 7: Perguntas & Respostas (III)
+:::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula7/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula7/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula7/Projetos.html>`_
-
 
 .. toctree::
    :hidden:
@@ -168,15 +129,10 @@ Aula 7: Repetições (I)
    Aula6/Plano.rst
 
 
-Aula 8: Textos
-:::::::::::::::::::::::::::::::::::
-
+Aula 8: Vitrine (I)
+:::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula8/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula8/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula8/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -184,15 +140,10 @@ Aula 8: Textos
    Aula7/Plano.rst
 
 
-Aula 9: Listas
-:::::::::::::::::::::::::::::::::
-
+Aula 9: Vitrine (||)
+::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula9/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula9/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula9/Projetos.html>`_
 
 .. toctree::
    :hidden:
@@ -200,30 +151,30 @@ Aula 9: Listas
    Aula9/Plano.rst
 
 
-Aula 10: Licenças
-:::::::::::::::::::::::::::::::::
-
+Aula 10 - 14: Desenvolvimento & Trilhas
+:::::::::::::::::::::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula10/Plano.html>`_
-
-↳  Ver conteúdo `dos exercícios <Aula10/Exercicios.html>`_
-
-↳  Ver conteúdo `dos projetos <Aula10/Projetos.html>`_
 
 .. toctree::
    :hidden:
 
    Aula10/Plano.rst
 
-Aula 11: Projetos
-:::::::::::::::::::::::::::::::::
-
+Aula 15: Publicação
+:::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula11/Plano.html>`_
 
-↳  Ver conteúdo `dos exercícios <Aula11/Exercicios.html>`_
+.. toctree::
+   :hidden:
 
-↳  Ver conteúdo `dos projetos <Aula11/Projetos.html>`_
+   Aula11/Plano.rst
+
+Aula 16: Apresentação
+:::::::::::::::::::::
+
+↳  Ver conteúdo `do plano de aula <Aula11/Plano.html>`_
 
 .. toctree::
    :hidden:
