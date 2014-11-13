@@ -28,6 +28,12 @@ Embora trabalhamos as aulas com o Python na sua versão 3.x a trilha do Codecade
 2. Se preparar
 3. Conhecer os erros mais comuns
 
+**Os código para as aulas**
+
+1. Faça o `download <https://github.com/Programae/python-exemplos/archive/master.zip>`__ da plataforma para as aulas.
+2. Descompacte o arquivo zip e execute o arquivo ``aulas.py``
+3. Compartilhe o endereço com os alunos do laboratório.
+
 **Blogs**
 
 Como referência:

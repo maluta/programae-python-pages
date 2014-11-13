@@ -15,7 +15,7 @@ Programaê - Python - Planos de Aula
 
 Olá educador, estes planos tem como objetivos gerais:
 
-- Introduzir o pensamento computacional.
+- Introduzir o pensamento computacional através do uso da linguagem Python.
 - Abstrair complexidades.
 - Realizar projetos dentro de um contexto.
 - Desenvolver a autoria digital.
@@ -29,30 +29,15 @@ Olá educador, estes planos tem como objetivos gerais:
   ouvir sobre (hoje em dia ainda é difícil adivinhar...) Utilize a seção de comentários no final de cada plano ou então entre em contato
   `diretamente <../programae-python-pages/Apoio/contatos.html>`__.
 
-Visão Geral
-:::::::::::
 
-Comece a ler por aqui, entenda as possibilidade de trabalhar o material em sala de aula.
-
-Formação do educador
-::::::::::::::::::::
+Formação & Preparo
+::::::::::::::::::
 
 Todas as referências de conteúdo, leituras, comunidades, para você acompanhar bem os planos de aula.
 
 `Ver conteúdo <Forma/formacao.html>`__
 
 
-Gamificando as aulas
-::::::::::::::::::::
-
-É possível utilizar o técnicas de gamificação para dar as aulas.
-
-`Ver conteúdo <Apoio/games.html>`_
-
-.. toctree::
-   :hidden:
-
-   Apoio/games.rst
 
 Aula 1: Começando
 :::::::::::::::::
@@ -180,3 +165,15 @@ Aula 16: Apresentação
    :hidden:
 
    Aula11/Plano.rst
+
+Gamificando as aulas
+::::::::::::::::::::
+
+É possível utilizar o técnicas de gamificação para dar as aulas.
+
+`Ver conteúdo <Apoio/games.html>`_
+
+.. toctree::
+   :hidden:
+
+   Apoio/games.rst
