@@ -8,14 +8,17 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 3: Calculadora
-======================
+Aula 3: Primeiro programa
+=========================
 
 Objetivos
 +++++++++
 
 - Construir uma sequência de instruções dentro do ambiente (IDLE)
 - Compreender a lógica dos operadores aritméticos básicos dentro do `console <../Apoio/idle.html#console-interativo>`__.
+- Trabalhar com entradas e saída de dados
+- Familiariazar com a sintaxe da linguagem.
+- Entender a metodologia para criar um primeiro programa
 
 Preparação
 ++++++++++
@@ -29,21 +32,19 @@ Preparação
 Atividades
 +++++++++++
 
-.. admonition:: Preparação
+.. admonition:: Lembre-se
 
   Nas primeiras aulas há muitas novidades, comandos novos, ambiente, termos em inglês.
-  Trabalhe sem pressa com os alunos e anote o `feedback <../Apoio/feedback.html>`__ 
+  Trabalhe sem pressa com os alunos e anote o `feedback <../Apoio/feedback.html>`__.
 
 
-**Conceitos computacionais**
+1. Inicialize o console do IDLE e introduza o papel do console para execução de códigos rápidos, no modelo: comando → resposta.
 
-1. Inicialize o console do IDLE e explique o papel do console para execução de códigos rápidos, no modelo: comando → resposta. 
+Instigue os alunos a experimentarem o console, introduza as instruções para uma calculadora simples.
 
-Instigue os alunos a experimentarem o console, introduza as instruções para uma calculadora simples. 
-
-=================	=============	
+=================	=============
 Operação			Exemplo
-=================	=============	
+=================	=============
 Adição (+)			``4 + 3``
 Subtração (-)		``10 - 6``
 Multiplicação (*)	``7 * 6``
@@ -53,46 +54,62 @@ Resto	(%)			``9 % 3``
 
 .. activecode:: Operações Básicas
 
-  print(4 + 3)
-  print(10 - 6)
-  print(7 * 6)
-  print(9 / 3)
-  print(10 % 6)
+  print(4 + 3) # soma
+  print(10 - 6) # subtração
+  print(7 * 6) # multiplicação
+  print(9 / 3) # divisão
+  print(10 % 6) # resto da divisão
+  print(3 ** 3) # exponenciação
 
-Note que no *console* do IDLE **não** precisamos de utilizar a função ``print()`` para obtermos o resultado de uma sentença aritmética.
+Veja o arquivo (aula3-exemplo.py)
+
+Note que no *console* do IDLE **não** precisamos de utilizar o comando ``print()`` para obtermos o resultado de uma sentença aritmética.
 
 É importante neste momento:
 
 - Construir expressões matemáticas.
-- Demonstre a prioridade dos operadores matemáticos. 
+- Demonstre a prioridade dos operadores matemáticos.
 - Lembrar que representação de um número fracionário utiliza ``.`` e não ``,``.
-
 
 .. admonition:: Dificuldades
 
   Se você notar alguma dificuldade grave de absorção dos conteúdos, utilize os `videos <https://pt.khanacademy.org/math/arithmetic>`__ da Khan Academy como complementação!
 
-**Proposta**
+Deixe-os experimentar por alguns minutos no console do python as operações matemáticas. Fique a vontade para instigá-los a pesquisar na internet sobre outras possibilidades de operação matemática.
 
-Apresente operações para lidar com:
+2. Depois apresente como podemos receber uma informação do usuário, apresente o comando ``input()``.
 
-- Testes com a procedência dos operadores.
-- Conversão de medidas.
-- Conversão de moedas.
+.. sourcecode:: python
 
-**Atividades**
+  #estrutura
+  resposta = input("Pergunta? ")
 
-- Os alunos poderão acumular *progmoney* resolvendo exercícios do `banco de idéias <../Aula3/Exercicios.html>`__.
-- Destravar novos cartões de funcionalidades para serem utilizados em futuros projetos. 
-- Anuncie os `cartões disponíveis <../Apoio/cartoes.html#aula-3>`__.
+Apresente e interprete com os alunos a sentença acima, algo como:
 
-+------------------------------+--------------------------------------------------+
-|  Cartões de funcionalidades  |  Custo (`progmoney <../Apoio/progmoney.html>`__) |
-+==============================+==================================================+
-|  **Potenciação**             |  ``20 $>``                                       |
-+------------------------------+--------------------------------------------------+  
-|  **Frações**                 |  ``25 $>``                                       |
-+------------------------------+--------------------------------------------------+
+  Espere o usuário entrar com a resposta referente a ``Pergunta?`` e guarde o valor na variável ``resposta``.
+
+Note que temos dois conceitos importantes aqui: **atribuição** e **variável**.
+
+- o símbolo de igual ``=`` não é uma comparação e sim atribuição
+- uma variável é um nome que guarda um valor para usarmos depois.
+
+O exemplo ``aula3-exemplo3-variavel.py`` contém exemplos de como declarar uma variável, caso haja dúvida recorra a ele como exemplo.
+
+**Primeiro programa**
+
+Apresente a proposta de construir uma calculadora simples, primeiro estruture o ``o quê`` depois o ``como``.
+
+- Quatro operações básicas.
+- Trabalhar com dois números.
+- Apresentar o resultado.
+
+Verifique se temos todos os conhecimentos necessários:
+
+- Aprendemos como trabalhar com as operações matemáticas
+- Sabemos como receber dados do usuário do programa ``input``.
+- Sabemos como apresentar o resultado com o comando ``print``
+
+Para esta parte os ``aula3-exemplo2-errado.py`` e ``aula3-exemplo2-certo.py`` irão ajudar a preparar o exemplo.
 
 Reflexão
 +++++++++
@@ -101,13 +118,8 @@ Além das `reflexões gerais <../Apoio/feedback.html>`__ note como alunos trabal
 
 **Comentários: Educador, clique no link abaixo e utilize este espaço para fazer comentários sobre este plano**
 
-Não se esqueça de informar o número da aula que você esta comentando. 
+Não se esqueça de informar o número da aula que você esta comentando.
 
 .. disqus::
   :shortname: programae
   :identifier: aula3
-
-
-
-
-

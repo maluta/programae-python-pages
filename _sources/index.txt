@@ -50,8 +50,8 @@ Aula 1: Começando
    Aula1/Plano.rst
 
 
-Aula 2: Primeiros movimentos
-::::::::::::::::::::::::::::
+Aula 2: Movimentação
+::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula2.1/Plano.html>`_
 
@@ -61,8 +61,8 @@ Aula 2: Primeiros movimentos
    Aula2.1/Plano.rst
 
 
-Aula 3: Calculadora
-::::::::::::::::::::
+Aula 3: Primeiro programa
+:::::::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula3/Plano.html>`_
 
