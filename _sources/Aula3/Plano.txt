@@ -17,7 +17,7 @@ Objetivos
 - Construir uma sequência de instruções dentro do ambiente (IDLE)
 - Compreender a lógica dos operadores aritméticos básicos dentro do `console <../Apoio/idle.html#console-interativo>`__.
 - Trabalhar com entradas e saída de dados
-- Familiariazar com a sintaxe da linguagem.
+- Familiarizar com a sintaxe da linguagem.
 - Entender a metodologia para criar um primeiro programa
 
 Preparação
@@ -26,7 +26,9 @@ Preparação
 **Materiais**
 
 - Ambiente IDLE (Veja na seção de ajuda: `Como instalar o Python <../Apoio/comoinstalar.html>`__)
-- `Console <../Apoio/idle.html#console-interativo>`__ do IDLE
+- `Console <../Apoio/idle.html#console-interativo>`__ do IDLE.
+- Projetor para executar os exemplos (opcional)
+- Lousa para escrever os códigos
 
 
 Atividades
@@ -52,6 +54,22 @@ Divisão	(/)			``9 / 3``
 Resto	(%)			``9 % 3``
 =================	=============
 
+É importante neste momento:
+
+- Construir expressões matemáticas.
+- Demonstre a prioridade dos operadores matemáticos.
+- Lembrar que representação de um número fracionário utiliza ``.`` e não ``,``.
+
+Note que no *console* do IDLE **não** precisamos de utilizar o comando ``print()`` para obtermos o resultado de uma sentença aritmética, trabalhe com eles mostrando que o console vai ser um espaço para testes no futuro, disponível sempre que eles precisarem validar uma idéia.
+
+Volte para o editor de textos que será a base das aulas, relembre duas coisas com eles:
+
+-  Como abrir o editor para fazer um `novo código <http://localhost:8000/Apoio/idle.html#novo-codigo>`__.
+-  Como organizar o `layout das janelas <http://localhost:8000/Apoio/idle.html#sugestao-de-layout>`__ para trabalhar.
+-  A tecla de atalho (F5) para `executar um programa <http://localhost:8000/Apoio/idle.html#executando-um-codigo>`__.
+
+No editor fale para eles trabalharem a sequência de operadores matemáticos.
+
 .. activecode:: Operações Básicas
 
   print(4 + 3) # soma
@@ -63,30 +81,24 @@ Resto	(%)			``9 % 3``
 
 Veja o arquivo (aula3-exemplo.py)
 
-Note que no *console* do IDLE **não** precisamos de utilizar o comando ``print()`` para obtermos o resultado de uma sentença aritmética.
-
-É importante neste momento:
-
-- Construir expressões matemáticas.
-- Demonstre a prioridade dos operadores matemáticos.
-- Lembrar que representação de um número fracionário utiliza ``.`` e não ``,``.
-
 .. admonition:: Dificuldades
 
   Se você notar alguma dificuldade grave de absorção dos conteúdos, utilize os `videos <https://pt.khanacademy.org/math/arithmetic>`__ da Khan Academy como complementação!
 
-Deixe-os experimentar por alguns minutos no console do python as operações matemáticas. Fique a vontade para instigá-los a pesquisar na internet sobre outras possibilidades de operação matemática.
-
 2. Depois apresente como podemos receber uma informação do usuário, apresente o comando ``input()``.
+
+Trabalhe a definição do comando ``input()`` através do seu uso para incrementar a funcionalidade do código com operações aritméticas. Como podemos fazer um programa que faça operações com os valores que o usuário entrar e não mais com valores fixos?
+
+Mostre como o *input* funciona:
 
 .. sourcecode:: python
 
   #estrutura
-  resposta = input("Pergunta? ")
+  resposta = input("Entre com um valor: ")
 
 Apresente e interprete com os alunos a sentença acima, algo como:
 
-  Espere o usuário entrar com a resposta referente a ``Pergunta?`` e guarde o valor na variável ``resposta``.
+  Espere o usuário entrar com um valor referente a pergunta ``Entre com um valor:`` (que é definida pelo programador) e guarde esta resposta dentro de uma variável chamada ``resposta``.
 
 Note que temos dois conceitos importantes aqui: **atribuição** e **variável**.
 
@@ -95,30 +107,248 @@ Note que temos dois conceitos importantes aqui: **atribuição** e **variável**
 
 O exemplo ``aula3-exemplo3-variavel.py`` contém exemplos de como declarar uma variável, caso haja dúvida recorra a ele como exemplo.
 
-**Primeiro programa**
+**Variáveis são "gavetas" virtuais** (5 minutos)
 
-Apresente a proposta de construir uma calculadora simples, primeiro estruture o ``o quê`` depois o ``como``.
+Faça uma pausa na aula para construir uma analogia, fomente algumas perguntas para entendermos o que é uma variável. Pergunte para eles como uma gaveta funciona? O que podemos guardar lá? Posso guardar papel? E um lápis? Quais a limitações físicas? Depois da participação dos alunos mostre que as variáveis são exatamente como gavetas, elas armazenam coisas, de diferentes tipos e são limitados por um espaço virtual. Comente que nas primeiras aulas iremos utilizar as variáveis para guardar conteúdo do tipo texto e números, mas que aprenderemos no futuro a guardar qualquer tipo de informação numa variável.
+
+Exercícios:
+
+1. Definir uma variável para armazenar o nome e a idade e apresentar o resultado.
+
+.. reveal:: ex1
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        nome = "Jorge"
+        idade = 16
+
+        print(nome)
+        print(idade)
+
+2. Definir uma variável para armazenar o resultado de uma conta matemática.
+
+.. reveal:: ex2
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        conta = 2 + 5
+        print(conta)
+
+3. Criar uma expressão matemática (usando as 4 operações) que resultado no número 100. Armazenar e imprimir o resultado numa variável.
+
+.. reveal:: ex3
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        conta = 50 + (100 * 10) / 2 - 450
+        print(conta)
+
+4. Um código que faça uso do comando ``input`` para pedir pro usuário a idade.
+
+.. reveal:: ex4
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        idade = input("Qual sua idade? ")
+        print(idade)
+
+5. Um código que calcule o ano que o usuário nasceu a partir da idade.
+
+.. reveal:: ex5
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        idade = input("Qual sua idade? ")
+        ano = 2014 - idade
+        print(ano)
+
+
+**Primeiro programa: a calculadora**
+
+Depois da pausa para trabalhar o conceito de atribuição e variáveis volte e apresente a proposta de construir uma calculadora simples, primeiro estruture o ``o quê`` depois o ``como``.
+
+**O quê** pretendemos ter na nossa calculadora:
 
 - Quatro operações básicas.
 - Trabalhar com dois números.
 - Apresentar o resultado.
 
+**Como** faremos?
 Verifique se temos todos os conhecimentos necessários:
 
-- Aprendemos como trabalhar com as operações matemáticas
-- Sabemos como receber dados do usuário do programa ``input``.
-- Sabemos como apresentar o resultado com o comando ``print``
+- Aprendemos como trabalhar com as operações matemáticas ✓
+- Sabemos como receber dados do usuário do programa ``input``. ✓
+- Sabemos como apresentar o resultado com o comando ``print`` ✓
 
-Para esta parte os ``aula3-exemplo2-errado.py`` e ``aula3-exemplo2-certo.py`` irão ajudar a preparar o exemplo.
+Comece fazendo o programa no console e passe o restante para eles trabalharem. Para esta parte os ``aula3-exemplo2-errado.py`` e ``aula3-exemplo2-certo.py`` irão ajudar a preparar o exemplo)
+
+.. sourcecode:: python
+
+  >>> número = input("Entre com um número: ")
+  >>> conta = número + 1
+
+O programa acima contém um erro: pare antes de dar o ``[Enter]`` e pergunte para os alunos qual valor será armazenado dentro da variável conta? Colha algumas respostas e depois tecle enter para continuar a execução do programa.
+
+.. admonition:: Observação
+
+  Uma das habilidades de um bom programador é a observação. Vamos sempre olhar para a resposta que o computador da pra sabermos como lidar com as respostas.
+
+Qual executamos a linha ``conta = número + 1`` obtemos o seguinte erro:
+
+.. sourcecode:: python
+
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  TypeError: Can't convert 'int' object to str implicitly
+
+A última linha  ``TypeError: Can't convert 'int' object to str implicitly`` nos dá uma pista sobre o problema, vá construindo a solução com os alunos. Ela indica que há um erro de tipo ``TypeError`` seguido por uma mensagem que indica que não pode fazer a conversão do objeto do **tipo** 'int' para 'str' de forma implícita. Como saber o tipo da informação que esta armazenado numa variável?
+
+
+Mas como saber o tipo da variável? Apresente o comando ``type()`` e introduza uma atividade para criarmos o mapa de tipos de dados. Mostre o arquivo ``aula3-exemplo4-tipos.py`` como exemplo.
+
+Exercícios:
+
+6. Criar duas variáveis, uma que armazena texto e outra que armazena número, verificar o tipo de cada uma com o comando ``type()``.
+
+.. reveal:: ex6
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        texto = "abcdedf"
+        tipo_texto = type(texto)
+        print(tipo_texto)
+
+        idade = 10
+        tipo_idade = type(idade)
+        print(tipo_idade)
+
+
+
+7. Qual o tipo de dados que o comando ``input`` retorna?
+
+.. reveal:: ex7
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        entrada_input = input("Digite qualquer coisa e tecle [enter]: ")
+        tipo = type(entrada_input)
+        print(tipo)
+
+
+Se soubermos o tipo de dado que trabalhamos, podemos fazer um mapa para conversões.
+
+
++------------------------+-------------------------------------------------------+------------------+-------------------------+
+|       O quê?           |   Exemplos                                            | Tipo no Python   +  Comando para converter |
++========================+=======================================================+==================+=========================+
+| Números inteiros       | ``1``, ``2``, ``3``, ``4``, ``5``, ..., ``99``, ...   | 'int'            |   int()                 |
++------------------------+-------------------------------------------------------+------------------+-------------------------+
+| Números fracionários   | ``0.0001``, ``0.5``, ``3.14159``, ``12.5``, ...       | 'float'          |   float()               |
++------------------------+-------------------------------------------------------+------------------+-------------------------+
+| Texto                  | ``"10"``, ``"3.14159"``, ``"nome"``                   | 'string'         |   str()                 |
++------------------------+-------------------------------------------------------+------------------+-------------------------+
+
+Voltando ao exemplo da calculadora, precisamos converter o valor do input que é tipo texto para inteiro e só assim fazer a conta, volte no exemplo que ocasionou o erro e utilize a função de conversão.
+
+.. sourcecode:: python
+
+    numero = int( input("Entre com um número: ") )
+    conta = numero + 1
+    print(conta)
+
+Exercícios:
+
+8. Faça um programa para somar dois números quaisquer.
+
+.. reveal:: ex8
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        numero_1 = int( input("Digite o primeiro número: ") )
+        numero_2 = int( input("Digite o segundo número: ") )
+
+        print(numero_1 + numero_2)
+
+9. Faça um programa para subtrair dois números quaisquer.
+
+.. reveal:: ex9
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        numero_1 = int( input("Digite o primeiro número: ") )
+        numero_2 = int( input("Digite o segundo número: ") )
+
+        print(numero_1 - numero_2)
+
+10. Faça um programa para dividr dois números quaisquer.
+
+.. reveal:: ex10
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        numero_1 = int( input("Digite o primeiro número: ") )
+        numero_2 = int( input("Digite o segundo número: ") )
+
+        print(numero_1 / numero_2)
+
+
+11. Faça um programa para multiplicar dois números quaisquer.
+
+.. reveal:: ex11
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        numero_1 = int( input("Digite o primeiro número: ") )
+        numero_2 = int( input("Digite o segundo número: ") )
+
+        print(numero_1 * numero_2)
+
+
 
 Reflexão
-+++++++++
+++++++++
 
-Além das `reflexões gerais <../Apoio/feedback.html>`__ note como alunos trabalham os conceitos de matemática, se há alguma dificuldade de utilização.
+Trabalhe os últimos 10 minutos da aula uma breve discussão do que foi visto.
+Tente destacar as principais dificuldades encontradas durante a aula, instigue nos alunos a comentar sobre alguns dos tópicos visto em sala:
+
+- Operações
+    - Quais outras operações poderiam ser utilizadas na calculadora?
+- Variáveis
+    - Como que as variáveis facilitam nossa vida?
+    - Como escolher um nome para a variável? Dicas?
+- A dupla: ``print``/``input``
+    - Qual a função destes dois comandos?
+- Tipos
+    - Quais são os tipos mais comuns até o momento?
+    - Na sua casa suas gavetas guardam tipos diferentes de coisas?
+- Conversões de tipos
+    - Qual a necessidade de converter um valor?
+    - Qual o tipo que o comando ``input()`` retorna?
+
 
 **Comentários: Educador, clique no link abaixo e utilize este espaço para fazer comentários sobre este plano**
-
-Não se esqueça de informar o número da aula que você esta comentando.
 
 .. disqus::
   :shortname: programae

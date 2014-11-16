@@ -15,8 +15,6 @@ Formação
 
 **A linguagem**
 
-
-
 1. Passagem por toda a linguagem, trilha **Codecademy** `Python <http://www.codecademy.com/pt-BR/tracks/python>`__ (~13 horas pra terminar)
   Embora iremos trabalhar as aulas com o Python na sua última versão (3) a trilha do Codecademy (que usa uma versão anterior da linguagem) reflete muito bem os aspectos necessários para entender a sintaxe dentro de um ambiente livre de dependências, basta utilizar o navegador de computador com acesso a internet. As diferenças entre o Python3 e Python2 serão trabalhadas posteriormente.
 2. Instalação do Python

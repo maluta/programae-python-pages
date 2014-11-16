@@ -152,7 +152,6 @@ Copie o conteúdo dos links e cole no editor de textos do IDLE.
       :width: 560
       :align: center
 
-
 Reflexão
 +++++++++
 

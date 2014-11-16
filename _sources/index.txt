@@ -71,8 +71,8 @@ Aula 3: Primeiro programa
 
    Aula3/Plano.rst
 
-Aula 4: Texto & Projetos
-:::::::::::::::::::::::::::::::::
+Aula 4: Texto & Funções
+:::::::::::::::::::::::
 
 ↳  Ver conteúdo `do plano de aula <Aula4/Plano.html>`_
 

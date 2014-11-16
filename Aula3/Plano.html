@@ -254,7 +254,7 @@
 <li>Construir uma sequência de instruções dentro do ambiente (IDLE)</li>
 <li>Compreender a lógica dos operadores aritméticos básicos dentro do <a class="reference external" href="../Apoio/idle.html#console-interativo">console</a>.</li>
 <li>Trabalhar com entradas e saída de dados</li>
-<li>Familiariazar com a sintaxe da linguagem.</li>
+<li>Familiarizar com a sintaxe da linguagem.</li>
 <li>Entender a metodologia para criar um primeiro programa</li>
 </ul>
 </div>
@@ -263,7 +263,9 @@
 <p><strong>Materiais</strong></p>
 <ul class="simple">
 <li>Ambiente IDLE (Veja na seção de ajuda: <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a>)</li>
-<li><a class="reference external" href="../Apoio/idle.html#console-interativo">Console</a> do IDLE</li>
+<li><a class="reference external" href="../Apoio/idle.html#console-interativo">Console</a> do IDLE.</li>
+<li>Projetor para executar os exemplos (opcional)</li>
+<li>Lousa para escrever os códigos</li>
 </ul>
 </div>
 <div class="section" id="atividades">
@@ -305,6 +307,20 @@ Trabalhe sem pressa com os alunos e anote o <a class="reference external" href="
 </tr>
 </tbody>
 </table>
+<p>É importante neste momento:</p>
+<ul class="simple">
+<li>Construir expressões matemáticas.</li>
+<li>Demonstre a prioridade dos operadores matemáticos.</li>
+<li>Lembrar que representação de um número fracionário utiliza <tt class="docutils literal"><span class="pre">.</span></tt> e não <tt class="docutils literal"><span class="pre">,</span></tt>.</li>
+</ul>
+<p>Note que no <em>console</em> do IDLE <strong>não</strong> precisamos de utilizar o comando <tt class="docutils literal"><span class="pre">print()</span></tt> para obtermos o resultado de uma sentença aritmética, trabalhe com eles mostrando que o console vai ser um espaço para testes no futuro, disponível sempre que eles precisarem validar uma idéia.</p>
+<p>Volte para o editor de textos que será a base das aulas, relembre duas coisas com eles:</p>
+<ul class="simple">
+<li>Como abrir o editor para fazer um <a class="reference external" href="http://localhost:8000/Apoio/idle.html#novo-codigo">novo código</a>.</li>
+<li>Como organizar o <a class="reference external" href="http://localhost:8000/Apoio/idle.html#sugestao-de-layout">layout das janelas</a> para trabalhar.</li>
+<li>A tecla de atalho (F5) para <a class="reference external" href="http://localhost:8000/Apoio/idle.html#executando-um-codigo">executar um programa</a>.</li>
+</ul>
+<p>No editor fale para eles trabalharem a sequência de operadores matemáticos.</p>
 
 <div id="cont"></div>
 <div id="Operações" lang="python" class="ac_section alert alert-warning" >
@@ -388,54 +404,340 @@ else{
 </div>
 
 <p>Veja o arquivo (aula3-exemplo.py)</p>
-<p>Note que no <em>console</em> do IDLE <strong>não</strong> precisamos de utilizar o comando <tt class="docutils literal"><span class="pre">print()</span></tt> para obtermos o resultado de uma sentença aritmética.</p>
-<p>É importante neste momento:</p>
-<ul class="simple">
-<li>Construir expressões matemáticas.</li>
-<li>Demonstre a prioridade dos operadores matemáticos.</li>
-<li>Lembrar que representação de um número fracionário utiliza <tt class="docutils literal"><span class="pre">.</span></tt> e não <tt class="docutils literal"><span class="pre">,</span></tt>.</li>
-</ul>
 <div class="admonition-dificuldades admonition">
 <p class="first admonition-title">Dificuldades</p>
 <p class="last">Se você notar alguma dificuldade grave de absorção dos conteúdos, utilize os <a class="reference external" href="https://pt.khanacademy.org/math/arithmetic">videos</a> da Khan Academy como complementação!</p>
 </div>
-<p>Deixe-os experimentar por alguns minutos no console do python as operações matemáticas. Fique a vontade para instigá-los a pesquisar na internet sobre outras possibilidades de operação matemática.</p>
 <ol class="arabic simple" start="2">
 <li>Depois apresente como podemos receber uma informação do usuário, apresente o comando <tt class="docutils literal"><span class="pre">input()</span></tt>.</li>
 </ol>
+<p>Trabalhe a definição do comando <tt class="docutils literal"><span class="pre">input()</span></tt> através do seu uso para incrementar a funcionalidade do código com operações aritméticas. Como podemos fazer um programa que faça operações com os valores que o usuário entrar e não mais com valores fixos?</p>
+<p>Mostre como o <em>input</em> funciona:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c">#estrutura</span>
-<span class="n">resposta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Pergunta? &quot;</span><span class="p">)</span>
+<span class="n">resposta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Entre com um valor: &quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Apresente e interprete com os alunos a sentença acima, algo como:</p>
 <blockquote>
-<div>Espere o usuário entrar com a resposta referente a <tt class="docutils literal"><span class="pre">Pergunta?</span></tt> e guarde o valor na variável <tt class="docutils literal"><span class="pre">resposta</span></tt>.</div></blockquote>
+<div>Espere o usuário entrar com um valor referente a pergunta <tt class="docutils literal"><span class="pre">Entre</span> <span class="pre">com</span> <span class="pre">um</span> <span class="pre">valor:</span></tt> (que é definida pelo programador) e guarde esta resposta dentro de uma variável chamada <tt class="docutils literal"><span class="pre">resposta</span></tt>.</div></blockquote>
 <p>Note que temos dois conceitos importantes aqui: <strong>atribuição</strong> e <strong>variável</strong>.</p>
 <ul class="simple">
 <li>o símbolo de igual <tt class="docutils literal"><span class="pre">=</span></tt> não é uma comparação e sim atribuição</li>
 <li>uma variável é um nome que guarda um valor para usarmos depois.</li>
 </ul>
 <p>O exemplo <tt class="docutils literal"><span class="pre">aula3-exemplo3-variavel.py</span></tt> contém exemplos de como declarar uma variável, caso haja dúvida recorra a ele como exemplo.</p>
-<p><strong>Primeiro programa</strong></p>
-<p>Apresente a proposta de construir uma calculadora simples, primeiro estruture o <tt class="docutils literal"><span class="pre">o</span> <span class="pre">quê</span></tt> depois o <tt class="docutils literal"><span class="pre">como</span></tt>.</p>
+<p><strong>Variáveis são &#8220;gavetas&#8221; virtuais</strong> (5 minutos)</p>
+<p>Faça uma pausa na aula para construir uma analogia, fomente algumas perguntas para entendermos o que é uma variável. Pergunte para eles como uma gaveta funciona? O que podemos guardar lá? Posso guardar papel? E um lápis? Quais a limitações físicas? Depois da participação dos alunos mostre que as variáveis são exatamente como gavetas, elas armazenam coisas, de diferentes tipos e são limitados por um espaço virtual. Comente que nas primeiras aulas iremos utilizar as variáveis para guardar conteúdo do tipo texto e números, mas que aprenderemos no futuro a guardar qualquer tipo de informação numa variável.</p>
+<p>Exercícios:</p>
+<ol class="arabic simple">
+<li>Definir uma variável para armazenar o nome e a idade e apresentar o resultado.</li>
+</ol>
+
+    <button type='button' id='ex1_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex1').show();$('#ex1_hide').show();$('#ex1').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex1_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex1').hide();$('#ex1_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex1' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">nome</span> <span class="o">=</span> <span class="s">&quot;Jorge&quot;</span>
+<span class="n">idade</span> <span class="o">=</span> <span class="mi">16</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">nome</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">idade</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="2">
+<li>Definir uma variável para armazenar o resultado de uma conta matemática.</li>
+</ol>
+
+    <button type='button' id='ex2_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex2').show();$('#ex2_hide').show();$('#ex2').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex2_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex2').hide();$('#ex2_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex2' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">conta</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="k">print</span><span class="p">(</span><span class="n">conta</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="3">
+<li>Criar uma expressão matemática (usando as 4 operações) que resultado no número 100. Armazenar e imprimir o resultado numa variável.</li>
+</ol>
+
+    <button type='button' id='ex3_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex3').show();$('#ex3_hide').show();$('#ex3').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex3_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex3').hide();$('#ex3_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex3' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">conta</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="p">(</span><span class="mi">100</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">450</span>
+<span class="k">print</span><span class="p">(</span><span class="n">conta</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="4">
+<li>Um código que faça uso do comando <tt class="docutils literal"><span class="pre">input</span></tt> para pedir pro usuário a idade.</li>
+</ol>
+
+    <button type='button' id='ex4_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex4').show();$('#ex4_hide').show();$('#ex4').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex4_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex4').hide();$('#ex4_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex4' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">idade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Qual sua idade? &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">idade</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="5">
+<li>Um código que calcule o ano que o usuário nasceu a partir da idade.</li>
+</ol>
+
+    <button type='button' id='ex5_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex5').show();$('#ex5_hide').show();$('#ex5').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex5_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex5').hide();$('#ex5_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex5' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">idade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Qual sua idade? &quot;</span><span class="p">)</span>
+<span class="n">ano</span> <span class="o">=</span> <span class="mi">2014</span> <span class="o">-</span> <span class="n">idade</span>
+<span class="k">print</span><span class="p">(</span><span class="n">ano</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<p><strong>Primeiro programa: a calculadora</strong></p>
+<p>Depois da pausa para trabalhar o conceito de atribuição e variáveis volte e apresente a proposta de construir uma calculadora simples, primeiro estruture o <tt class="docutils literal"><span class="pre">o</span> <span class="pre">quê</span></tt> depois o <tt class="docutils literal"><span class="pre">como</span></tt>.</p>
+<p><strong>O quê</strong> pretendemos ter na nossa calculadora:</p>
 <ul class="simple">
 <li>Quatro operações básicas.</li>
 <li>Trabalhar com dois números.</li>
 <li>Apresentar o resultado.</li>
 </ul>
-<p>Verifique se temos todos os conhecimentos necessários:</p>
+<p><strong>Como</strong> faremos?
+Verifique se temos todos os conhecimentos necessários:</p>
 <ul class="simple">
-<li>Aprendemos como trabalhar com as operações matemáticas</li>
-<li>Sabemos como receber dados do usuário do programa <tt class="docutils literal"><span class="pre">input</span></tt>.</li>
-<li>Sabemos como apresentar o resultado com o comando <tt class="docutils literal"><span class="pre">print</span></tt></li>
+<li>Aprendemos como trabalhar com as operações matemáticas ✓</li>
+<li>Sabemos como receber dados do usuário do programa <tt class="docutils literal"><span class="pre">input</span></tt>. ✓</li>
+<li>Sabemos como apresentar o resultado com o comando <tt class="docutils literal"><span class="pre">print</span></tt> ✓</li>
 </ul>
-<p>Para esta parte os <tt class="docutils literal"><span class="pre">aula3-exemplo2-errado.py</span></tt> e <tt class="docutils literal"><span class="pre">aula3-exemplo2-certo.py</span></tt> irão ajudar a preparar o exemplo.</p>
+<p>Comece fazendo o programa no console e passe o restante para eles trabalharem. Para esta parte os <tt class="docutils literal"><span class="pre">aula3-exemplo2-errado.py</span></tt> e <tt class="docutils literal"><span class="pre">aula3-exemplo2-certo.py</span></tt> irão ajudar a preparar o exemplo)</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;&gt; número = input(&quot;Entre com um número: &quot;)
+&gt;&gt;&gt; conta = número + 1
+</pre></div>
+</div>
+<p>O programa acima contém um erro: pare antes de dar o <tt class="docutils literal"><span class="pre">[Enter]</span></tt> e pergunte para os alunos qual valor será armazenado dentro da variável conta? Colha algumas respostas e depois tecle enter para continuar a execução do programa.</p>
+<div class="admonition-observacao admonition">
+<p class="first admonition-title">Observação</p>
+<p class="last">Uma das habilidades de um bom programador é a observação. Vamos sempre olhar para a resposta que o computador da pra sabermos como lidar com as respostas.</p>
+</div>
+<p>Qual executamos a linha <tt class="docutils literal"><span class="pre">conta</span> <span class="pre">=</span> <span class="pre">número</span> <span class="pre">+</span> <span class="pre">1</span></tt> obtemos o seguinte erro:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">Can</span><span class="s">&#39;t convert &#39;</span><span class="nb">int</span><span class="s">&#39; object to str implicitly</span>
+</pre></div>
+</div>
+<p>A última linha  <tt class="docutils literal"><span class="pre">TypeError:</span> <span class="pre">Can't</span> <span class="pre">convert</span> <span class="pre">'int'</span> <span class="pre">object</span> <span class="pre">to</span> <span class="pre">str</span> <span class="pre">implicitly</span></tt> nos dá uma pista sobre o problema, vá construindo a solução com os alunos. Ela indica que há um erro de tipo <tt class="docutils literal"><span class="pre">TypeError</span></tt> seguido por uma mensagem que indica que não pode fazer a conversão do objeto do <strong>tipo</strong> &#8216;int&#8217; para &#8216;str&#8217; de forma implícita. Como saber o tipo da informação que esta armazenado numa variável?</p>
+<p>Mas como saber o tipo da variável? Apresente o comando <tt class="docutils literal"><span class="pre">type()</span></tt> e introduza uma atividade para criarmos o mapa de tipos de dados. Mostre o arquivo <tt class="docutils literal"><span class="pre">aula3-exemplo4-tipos.py</span></tt> como exemplo.</p>
+<p>Exercícios:</p>
+<ol class="arabic simple" start="6">
+<li>Criar duas variáveis, uma que armazena texto e outra que armazena número, verificar o tipo de cada uma com o comando <tt class="docutils literal"><span class="pre">type()</span></tt>.</li>
+</ol>
+
+    <button type='button' id='ex6_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex6').show();$('#ex6_hide').show();$('#ex6').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex6_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex6').hide();$('#ex6_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex6' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">texto</span> <span class="o">=</span> <span class="s">&quot;abcdedf&quot;</span>
+<span class="n">tipo_texto</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">texto</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tipo_texto</span><span class="p">)</span>
+
+<span class="n">idade</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">tipo_idade</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">idade</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tipo_idade</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="7">
+<li>Qual o tipo de dados que o comando <tt class="docutils literal"><span class="pre">input</span></tt> retorna?</li>
+</ol>
+
+    <button type='button' id='ex7_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex7').show();$('#ex7_hide').show();$('#ex7').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex7_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex7').hide();$('#ex7_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex7' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">entrada_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite qualquer coisa e tecle [enter]: &quot;</span><span class="p">)</span>
+<span class="n">tipo</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">entrada_input</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tipo</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<p>Se soubermos o tipo de dado que trabalhamos, podemos fazer um mapa para conversões.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="45%" />
+<col width="15%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" rowspan="2">O quê?</th>
+<th class="head" rowspan="2">Exemplos</th>
+<th class="head" rowspan="2">Tipo no Python</th>
+<th class="head" rowspan="2">Comando para converter</th>
+</tr>
+<tr class="row-even"></tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>Números inteiros</td>
+<td><tt class="docutils literal"><span class="pre">1</span></tt>, <tt class="docutils literal"><span class="pre">2</span></tt>, <tt class="docutils literal"><span class="pre">3</span></tt>, <tt class="docutils literal"><span class="pre">4</span></tt>, <tt class="docutils literal"><span class="pre">5</span></tt>, ..., <tt class="docutils literal"><span class="pre">99</span></tt>, ...</td>
+<td>&#8216;int&#8217;</td>
+<td>int()</td>
+</tr>
+<tr class="row-even"><td>Números fracionários</td>
+<td><tt class="docutils literal"><span class="pre">0.0001</span></tt>, <tt class="docutils literal"><span class="pre">0.5</span></tt>, <tt class="docutils literal"><span class="pre">3.14159</span></tt>, <tt class="docutils literal"><span class="pre">12.5</span></tt>, ...</td>
+<td>&#8216;float&#8217;</td>
+<td>float()</td>
+</tr>
+<tr class="row-odd"><td>Texto</td>
+<td><tt class="docutils literal"><span class="pre">&quot;10&quot;</span></tt>, <tt class="docutils literal"><span class="pre">&quot;3.14159&quot;</span></tt>, <tt class="docutils literal"><span class="pre">&quot;nome&quot;</span></tt></td>
+<td>&#8216;string&#8217;</td>
+<td>str()</td>
+</tr>
+</tbody>
+</table>
+<p>Voltando ao exemplo da calculadora, precisamos converter o valor do input que é tipo texto para inteiro e só assim fazer a conta, volte no exemplo que ocasionou o erro e utilize a função de conversão.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Entre com um número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">conta</span> <span class="o">=</span> <span class="n">numero</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">conta</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Exercícios:</p>
+<ol class="arabic simple" start="8">
+<li>Faça um programa para somar dois números quaisquer.</li>
+</ol>
+
+    <button type='button' id='ex8_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex8').show();$('#ex8_hide').show();$('#ex8').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex8_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex8').hide();$('#ex8_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex8' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">numero_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o primeiro número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">numero_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o segundo número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">numero_1</span> <span class="o">+</span> <span class="n">numero_2</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="9">
+<li>Faça um programa para subtrair dois números quaisquer.</li>
+</ol>
+
+    <button type='button' id='ex9_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex9').show();$('#ex9_hide').show();$('#ex9').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex9_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex9').hide();$('#ex9_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex9' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">numero_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o primeiro número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">numero_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o segundo número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">numero_1</span> <span class="o">-</span> <span class="n">numero_2</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="10">
+<li>Faça um programa para dividr dois números quaisquer.</li>
+</ol>
+
+    <button type='button' id='ex10_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex10').show();$('#ex10_hide').show();$('#ex10').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex10_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex10').hide();$('#ex10_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex10' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">numero_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o primeiro número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">numero_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o segundo número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">numero_1</span> <span class="o">/</span> <span class="n">numero_2</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<ol class="arabic simple" start="11">
+<li>Faça um programa para multiplicar dois números quaisquer.</li>
+</ol>
+
+    <button type='button' id='ex11_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex11').show();$('#ex11_hide').show();$('#ex11').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex11_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex11').hide();$('#ex11_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex11' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">numero_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o primeiro número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">numero_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Digite o segundo número: &quot;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">numero_1</span> <span class="o">*</span> <span class="n">numero_2</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
 </div>
 <div class="section" id="reflexao">
 <h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
-<p>Além das <a class="reference external" href="../Apoio/feedback.html">reflexões gerais</a> note como alunos trabalham os conceitos de matemática, se há alguma dificuldade de utilização.</p>
+<p>Trabalhe os últimos 10 minutos da aula uma breve discussão do que foi visto.
+Tente destacar as principais dificuldades encontradas durante a aula, instigue nos alunos a comentar sobre alguns dos tópicos visto em sala:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Operações</dt>
+<dd><ul class="first last simple">
+<li>Quais outras operações poderiam ser utilizadas na calculadora?</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Variáveis</dt>
+<dd><ul class="first last simple">
+<li>Como que as variáveis facilitam nossa vida?</li>
+<li>Como escolher um nome para a variável? Dicas?</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>A dupla: <tt class="docutils literal"><span class="pre">print</span></tt>/<tt class="docutils literal"><span class="pre">input</span></tt></dt>
+<dd><ul class="first last simple">
+<li>Qual a função destes dois comandos?</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Tipos</dt>
+<dd><ul class="first last simple">
+<li>Quais são os tipos mais comuns até o momento?</li>
+<li>Na sua casa suas gavetas guardam tipos diferentes de coisas?</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Conversões de tipos</dt>
+<dd><ul class="first last simple">
+<li>Qual a necessidade de converter um valor?</li>
+<li>Qual o tipo que o comando <tt class="docutils literal"><span class="pre">input()</span></tt> retorna?</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 <p><strong>Comentários: Educador, clique no link abaixo e utilize este espaço para fazer comentários sobre este plano</strong></p>
-<p>Não se esqueça de informar o número da aula que você esta comentando.</p>
 <script type="text/javascript">
     function aula3_disqus(source) { 
         if (window.DISQUS) {
