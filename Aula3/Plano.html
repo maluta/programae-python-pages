@@ -72,7 +72,7 @@
     <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <link rel="top" title="Programaê" href="../index.html" />
-    <link rel="next" title="Aula 4: Variáveis" href="../Aula4/Plano.html" />
+    <link rel="next" title="Aula 4: Texto &amp; Funções" href="../Aula4/Plano.html" />
     <link rel="prev" title="Aula 2: Primeiros movimentos" href="../Aula2.1/Plano.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -217,7 +217,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Aula 4: Variáveis' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Aula 4: Texto &amp; Funções' data-toggle="tooltip" >
     <a href="../Aula4/Plano.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -335,12 +335,12 @@ Trabalhe sem pressa com os alunos e anote o <a class="reference external" href="
 <br/>
 <div id="Operações_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Operações_code" class="active_code" prefixcode="undefined" lang="python">
-print(4 + 3) # soma
-print(10 - 6) # subtração
-print(7 * 6) # multiplicação
-print(9 / 3) # divisão
-print(10 % 6) # resto da divisão
-print(3 ** 3) # exponenciação
+print(4 + 3)
+print(10 - 6)
+print(7 * 6)
+print(9 / 3)
+print(10 % 6)
+print(3 ** 3)
 </textarea>
 </div>
 
@@ -413,8 +413,12 @@ else{
 </ol>
 <p>Trabalhe a definição do comando <tt class="docutils literal"><span class="pre">input()</span></tt> através do seu uso para incrementar a funcionalidade do código com operações aritméticas. Como podemos fazer um programa que faça operações com os valores que o usuário entrar e não mais com valores fixos?</p>
 <p>Mostre como o <em>input</em> funciona:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c">#estrutura</span>
-<span class="n">resposta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Entre com um valor: &quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Entre com um valor: &quot;</span><span class="p">)</span>
+<span class="n">resposta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A função <tt class="docutils literal"><span class="pre">input</span></tt> espera o usuário entrar com o valor e apertar a tecla Enter (⏎), teste ela inicialmente sem parâmetro e depois apresente a funcionalidade de embutir a pergunta dentro do comando. O código equivalente ao apresentado acima ficaria:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">resposta</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Entre com um valor: &quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Apresente e interprete com os alunos a sentença acima, algo como:</p>
@@ -714,6 +718,7 @@ Tente destacar as principais dificuldades encontradas durante a aula, instigue n
 <dt>A dupla: <tt class="docutils literal"><span class="pre">print</span></tt>/<tt class="docutils literal"><span class="pre">input</span></tt></dt>
 <dd><ul class="first last simple">
 <li>Qual a função destes dois comandos?</li>
+<li>Qual a diferença de usar o <tt class="docutils literal"><span class="pre">input()</span></tt> e o <tt class="docutils literal"><span class="pre">input(&quot;&lt;pergunta&gt;&quot;)</span></tt>?</li>
 </ul>
 </dd>
 </dl>

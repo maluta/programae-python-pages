@@ -24,64 +24,246 @@ Preparação
 
 **Materiais**
 
-- IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__
-- `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
+- No Computador:
+    - IDLE configurado com uma fonte mono-espaçada (ex. Courier) [`como faz? <../Apoio/idle.html#alterando-a-fonte>`_]
+    - `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
+- Apoio
+    - Papel quadriculado (`download <../_static/papel_quadriculado.pdf>`_)
 
 Atividades
 ++++++++++
 
-Comece a aula fazendo uma revisão da aula anterior, resgatando o comando ``print``. Veja se eles lembram como o print funciona, senão faça uma revisão. Utilize o exemplo ``aula4-exemplo1.py`` como idéia para retomar o conteúdo. 
+**Revisão** (15 min.)
+
+Comece a aula fazendo uma revisão da aula anterior, resgatando o comando ``print``. Veja se eles lembram como tudo funciona, senão faça breve uma revisão. Utilize o exemplo ``aula4-exemplo1.py`` como idéia para retomar o conteúdo.
+
+Prossiga na recapitulação de dois conceitos-chave da aula anterior: **entrada** e **saída**. Uma sugestão é um programa de "questionário" (o programa chamado ``aula4-entrevista.py`` na qual eles irão fazer um programa para entrevistar o usuário).
+
+Deixe-os começar a fazer o programa de entrevista e recomende, apresentar para os familares e colegas.
+
+**ASCII ART**
+
+Depois da revisão, apresente o que eles irão ver na aula, vamos utilizar a função ``print`` para fazer um programa que irá criar novas fontes de caracteres, apenas utilizando caracteres.
+
+Algum exemplos
+
+.. sourcecode:: none
+
+      _    _    _    __   _                      /\
+     |_)  |_)  / \  /__  |_)   /\   |\/|   /\   |_
+     |    | \  \_/  \_|  | \  /--\  |  |  /--\  |_
+
+.. sourcecode:: none
+
+      ____    ____     ___     ____   ____       _      __  __      _       //\
+     |  _ \  |  _ \   / _ \   / ___| |  _ \     / \    |  \/  |    / \     |/_\|
+     | |_) | | |_) | | | | | | |  _  | |_) |   / _ \   | |\/| |   / _ \   | ____|
+     |  __/  |  _ <  | |_| | | |_| | |  _ <   / ___ \  | |  | |  / ___ \  |  _|_
+     |_|     |_| \_\  \___/   \____| |_| \_\ /_/   \_\ |_|  |_| /_/   \_\ |_____|
 
 
-
-
-**Lembretes**
-
-As vezes faz-se necessário explicar com mais detalhes trechos de código, por exemplo, qual motivo de estarmos declarando uma variável chamada ``ano``?
-É uma `boa pratica <../Apoio/boaspraticas.html>`__ de programação definir nomes de variáveis capazes de contextualizar seu conteúdo, contudo nem sempre isso é possível e definir nomes
-de variáveis exageradamente grandes pode criar problemas de legibilidade do código.  Para tal a linguagem Python permite escrever comentários,
-ou seja, blocos de códigos que serão ignorados pelo computador na hora de transformas o código em linguagem de máquina, existem dois tipo:
-
-- Para comentários de uma **única** linha, utilizamos o caractere ``#``
+Pergunta se eles saberiam criar a visualização acima apenas usando a função ``print``?
 
 .. sourcecode:: python
 
-  # define a idade do jogador
-  idade = 10
+    print("                                               ")
+    print(" _    _    _    __   _                      /\\")
+    print("|_)  |_)  / \  /__  |_)   /\   |\/|   /\   |_  ")
+    print("|    | \  \_/  \_|  | \  /--\  |  |  /--\  |_  ")
+    print("                                               ")
 
-- Para comentários de **múltiplas** linhas, utilizamos ``"""`` ou ``'''``
+
+1. Trabalhe uma atividade para construir a primeira letra do nome deles, demonstre a importância do espaçamento para alinhar as letras.
+   (Dica: o programa ``aula4-alfabeto.py`` contêm as 27 letras do alfabeto)
+
+.. admonition:: Eficiência
+
+  Além da **observação** vista na aula anterior, os bons programadores sabem ser eficiêntes, ou seja, não fazem duas vezes o mesmo trabalho! Imagine o seguinte cenário: teremos que repetir 10 vezes uma letra. Existe algum jeito mais fácil de fazer o código do que usar centenas de  ``prints``?
+
+**Funções**
+
+Apresente as funções como mecanismo de facilitar a vida do programador, mostre um exemplo do uso de funções:
+
+.. activecode:: python
+
+  def trabalho():
+    print("trabalho bem dificil!")
+
+  trabalho()
+  trabalho()
+  trabalho()
+  trabalho()
+
+Tópicos importantes sobre funções
+
+- ``def`` é a palavra-chave, SEMPRE que quisermos fazer uma **def**..inição
+- o nome da função segue as mesmas regras do nome de variável.
+- terminamos a definição da função com ``():`` que será melhor explorado em breve.
+- TUDO que a função for executar precisa estar dentro de um bloco, este bloco é definido por um espaçamento.
+
++------------------------------------+--------------------------------------+
+|            ERRADO                  |              CERTO                   |
++====================================+======================================+
+|.. image:: ../../_static/ident1.png | .. image:: ../../_static/ident2.png  |
++------------------------------------+--------------------------------------+
+
+O termo correto para este "recuo em relação a margem" é **identação** (`ver definição <http://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o>`__). Se prepare para resolver muitos problemas deste tipo enquanto tiver orientando os alunos, treine seu olhar para este tipo de análise rápida.
+
+  ``IndentationError: expected an indented block``
+
+- para invocarmos a função basta chamá-la pelo nome, sem o ``def`` e o ``:``
+
+Exercicios:
+
+- Criar uma função para mostrar apenas a letra do primeiro nome.
+  (Utilize o papel quadriculado para ajudar a planejar as posições, indique que cada quadrado em branco é um espaçamento).
+
+
+.. reveal:: ex1
+    :showtitle: Exemplo
+    :hidetitle: Ocultar
+
+    .. activecode:: f
+
+        def a():
+            print("      _     ")
+            print("     / \    ")
+            print("    / _ \   ")
+            print("   / ___ \  ")
+            print("  /_/___\_\ ")
+
+        a()
+
+**Lembretes (ou comentários)**
+
+As vezes faz-se necessário explicar com mais detalhes trechos de código, por exemplo, qual motivo de estarmos declarando uma função chamada ``a()``? Nada melhor que explicar na nossa língua nativa, o português! Ensine aos alunos que é possível adicionar um comentário (ou lembrete) para descrever melhor o código.
+
+Reserver um tempo na aula para apresentar, agora formalmente, as duas maneiras de se fazer isso:
+
+- Para comentários de uma linha apenas utilizamos a hashtag ``#`` (também conhecido como `cerquilha <http://priberam.pt/dlpo/cerquilha>`_ mas os jovens se indentificam com *hashtag*)
+
+.. sourcecode:: python
+
+    # isto é um comentário de uma linha
+
+
+- Para comentários de múltiplas linhas, utilizamos o texto dentro de 3 aspas duplas (``"""``) ou simples (``'''``). Os dois jeitos valem, só não vale misturar!
 
 .. sourcecode:: python
 
   """
-  Este é um exemplo de comentário
-  em várias linhas, e o que esta dentro deste bloco
-  não será executado, a variável abaixo não será definida.
-  idade = 10
+  isto é um comentário, qualquer coisa
+  que eu escrever aqui o computador não vai
+  interpretar, posso falar qualquer, mas qualquer coisa
   """
 
-.. admonition:: Bônus
+  '''
+  isto também é um comentário,
+  só que com aspas simples
+  funciona muito bem, só não posso confundir ou é
+  aspas simples ou aspas duplas.
+  '''
 
-  Como declarar diversas variáveis com uma única linha de código?
-    Apenas separe cada uma com ``,`` e depois do ``=`` atribua o conteúdo respectivo.
+Oriente os alunos a inserirem nos códigos, a partir de agora, comentários com pequenos textos explicativos.
 
-.. activecode:: bonus
+Código de referência: ``aula-4-comentários.py``
 
-     # multiplas definições com uma linha de código
-     nome, sobrenome, idade = u"José", u"Silva", 20
-     print(nome,sobrenome,idade)
+**Símbolos**
+
+Siga a aula com uma ativade que ira expandir as possibilidades de caracteres, até agora utilizamos as letras do alfabeto (de ``a`` a ``z``) e alguns caracteres especiais como o ``/``, ``_``, ``\``.
+
+Nesta seção iremo ver:
+
+- Como expandir nossos universos de símbolos?
+- Como transformar símbolos em códigos e vice-versa.
+
+Palavras-chave: caracteres UTF-8 e funções: ``chr()`` e ``ord()`` do Python.
+
+Demonstre para a sala que todo caractere possui um código associado, por exemplo, a letra ``a`` possui o código ``97``, a letra ``b`` o código ``98`` e assim por diante.
+
+Letra em código: ``ord()``
+
+.. activecode:: ord
+
+  codigo = ord("a")
+  print(codigo)
+
+Código em letra: ``chr()``
+
+.. activecode:: chr
+
+  letra = chr(97)
+  print(letra)
+
+Experimente outros valores com eles, agora sugira um desafio para a sala:
+
+- Colocar como código um número bem grande, tipo 10000, o que acontece?
+
+Exercício 1: passe os seguintes códigos para os alunos.
+
+- 174
+- 9733
+- 9745
+- 9734
+- 10004
+- 10008
+- 10084
+
+.. reveal:: ex2
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        print(chr(174))
+        print(chr(9733))
+        print(chr(9745))
+        print(chr(9734))
+        print(chr(10004))
+        print(chr(10008))
+        print(chr(10084))
+
+Exercício 2: abra o arquivo ``aula4-simbolos.py`` e peça para eles anotarem pelo menos 10 códigos referentes aos símbolos.
+
+Finalize a aula voltando na atividade de desenhar, e peça para eles criarem novos desenhos a partir dos símbolos que eles aprenderam.
+
+.. image:: ../../_static/utfart.png
+
+.. reveal:: ex3
+    :showtitle: Resposta
+    :hidetitle: Ocultar
+
+    .. sourcecode:: python
+
+        print("""
+
+                                       ._ o o
+                                       \_`-)|_
+                                    ,""       \
+                                  ,"  ## |   ಠ ಠ.
+                                ," ##   ,-\__    `.
+                              ,"       /     `--._;)
+                            ,"     ## /
+                          ,"   ##    /
 
 
+                    """)
 
-**Proposta**
+Dicas:
 
+- Podemos fazer nosso desenho usando um print apenas, colocando o texto entre aspas triplas (igual fazemos nos comentários)
 
+O arquivo ``aula4-desenhos-utf8.py`` contém exemplos disso.
 
+Dica: `@utf8art <https://twitter.com/utf8art>`_ (no Twitter) possui muitos exemplos de desenhos para sugerir nas aulas.
 
-Reflexão
+Reflexão (15 min)
 ++++++++
 
-
+- Trabalhe a construção de atividades que envolvem desenhos.
+- O que pode ser desenhado?
+- Qual as dificuldade pra se criar um desenho?
+- Sugira algumas idéias que poderão ser vistas nas próximas aulas.
 
 **Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano**
 

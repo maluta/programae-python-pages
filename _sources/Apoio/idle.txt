@@ -8,20 +8,20 @@ Algumas dicas para utiliar o IDLE.
 Para executar
 -------------
 
-.. image:: ../../_static/6.PNG 
+.. image:: ../../_static/6.PNG
 
 Console interativo
 ------------------
 
-Utilize o console interativo para testes rápidos. 
+Utilize o console interativo para testes rápidos.
 
 .. image:: ../../_static/7.PNG
   :height: 800px
   :width: 800px
   :scale: 50%
   :align: center
-  
-  
+
+
 Novo código
 ------------------
 
@@ -33,7 +33,7 @@ Sugestão de layout
 
 Uma idéia de posicionamento para trabalhar com as janelas:
 
-- do lado **esquerdo**: o console interativo (onde a *saída* do programa sera apresentada) 
+- do lado **esquerdo**: o console interativo (onde a *saída* do programa sera apresentada)
 - do lado **direito**: o editor de textos
 
 .. image:: ../../_static/9.PNG
@@ -45,9 +45,15 @@ Executando um código
 .. image:: ../../_static/10.PNG
 
 
-Atalhos
---------------------
+Atalhos no console
+------------------
 
 - Último comando: **Alt + p**
 - Autocompletar: **Tab**
 
+Alterando a fonte
+-----------------
+
+No meu superior clique em ``Options`` > ``Configure IDLE...`` > ``Base Editor Font``
+
+.. image:: ../../_static/idlefont.png

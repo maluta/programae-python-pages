@@ -72,12 +72,12 @@ No editor fale para eles trabalharem a sequência de operadores matemáticos.
 
 .. activecode:: Operações Básicas
 
-  print(4 + 3) # soma
-  print(10 - 6) # subtração
-  print(7 * 6) # multiplicação
-  print(9 / 3) # divisão
-  print(10 % 6) # resto da divisão
-  print(3 ** 3) # exponenciação
+  print(4 + 3)
+  print(10 - 6)
+  print(7 * 6)
+  print(9 / 3)
+  print(10 % 6)
+  print(3 ** 3)
 
 Veja o arquivo (aula3-exemplo.py)
 
@@ -93,7 +93,14 @@ Mostre como o *input* funciona:
 
 .. sourcecode:: python
 
-  #estrutura
+  print("Entre com um valor: ")
+  resposta = input()
+
+
+A função ``input`` espera o usuário entrar com o valor e apertar a tecla Enter (⏎), teste ela inicialmente sem parâmetro e depois apresente a funcionalidade de embutir a pergunta dentro do comando. O código equivalente ao apresentado acima ficaria:
+
+.. sourcecode:: python
+
   resposta = input("Entre com um valor: ")
 
 Apresente e interprete com os alunos a sentença acima, algo como:
@@ -340,12 +347,14 @@ Tente destacar as principais dificuldades encontradas durante a aula, instigue n
     - Como escolher um nome para a variável? Dicas?
 - A dupla: ``print``/``input``
     - Qual a função destes dois comandos?
+    - Qual a diferença de usar o ``input()`` e o ``input("<pergunta>")``?
 - Tipos
     - Quais são os tipos mais comuns até o momento?
     - Na sua casa suas gavetas guardam tipos diferentes de coisas?
 - Conversões de tipos
     - Qual a necessidade de converter um valor?
     - Qual o tipo que o comando ``input()`` retorna?
+
 
 
 **Comentários: Educador, clique no link abaixo e utilize este espaço para fazer comentários sobre este plano**

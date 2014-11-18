@@ -201,7 +201,7 @@
 <li><a class="reference internal" href="#objetivos">Objetivos</a></li>
 <li><a class="reference internal" href="#preparacao">Preparação</a></li>
 <li><a class="reference internal" href="#atividades">Atividades</a></li>
-<li><a class="reference internal" href="#reflexao">Reflexão</a></li>
+<li><a class="reference internal" href="#reflexao-15-min">Reflexão (15 min)</a></li>
 </ul>
 </li>
 </ul>
@@ -260,93 +260,118 @@
 <div class="section" id="preparacao">
 <h2>Preparação<a class="headerlink" href="#preparacao" title="Permalink to this headline">¶</a></h2>
 <p><strong>Materiais</strong></p>
-<ul class="simple">
-<li>IDLE - Veja na seção de ajuda <a class="reference external" href="../Apoio/comoinstalar.html">Como instalar o Python</a></li>
+<ul>
+<li><dl class="first docutils">
+<dt>No Computador:</dt>
+<dd><ul class="first last simple">
+<li>IDLE configurado com uma fonte mono-espaçada (ex. Courier) [<a class="reference external" href="../Apoio/idle.html#alterando-a-fonte">como faz?</a>]</li>
 <li><a class="reference external" href="../Apoio/idle.html#sugestao-de-layout">Editar</a> e <a class="reference external" href="../Apoio/idle.html#executando-um-codigo">executar</a> códigos no IDLE.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Apoio</dt>
+<dd><ul class="first last simple">
+<li>Papel quadriculado (<a class="reference external" href="../_static/papel_quadriculado.pdf">download</a>)</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 <div class="section" id="atividades">
 <h2>Atividades<a class="headerlink" href="#atividades" title="Permalink to this headline">¶</a></h2>
-<p>Comece a aula fazendo uma revisão da aula anterior, resgatando o comando <tt class="docutils literal"><span class="pre">print</span></tt>. Veja se eles lembram como o print funciona, senão faça uma revisão. Utilize o exemplo <tt class="docutils literal"><span class="pre">aula4-exemplo1.py</span></tt> como idéia para retomar o conteúdo.</p>
-<p><strong>Lembretes</strong></p>
-<p>As vezes faz-se necessário explicar com mais detalhes trechos de código, por exemplo, qual motivo de estarmos declarando uma variável chamada <tt class="docutils literal"><span class="pre">ano</span></tt>?
-É uma <a class="reference external" href="../Apoio/boaspraticas.html">boa pratica</a> de programação definir nomes de variáveis capazes de contextualizar seu conteúdo, contudo nem sempre isso é possível e definir nomes
-de variáveis exageradamente grandes pode criar problemas de legibilidade do código.  Para tal a linguagem Python permite escrever comentários,
-ou seja, blocos de códigos que serão ignorados pelo computador na hora de transformas o código em linguagem de máquina, existem dois tipo:</p>
-<ul class="simple">
-<li>Para comentários de uma <strong>única</strong> linha, utilizamos o caractere <tt class="docutils literal"><span class="pre">#</span></tt></li>
-</ul>
-<div class="highlight-python"><div class="highlight"><pre><span class="c"># define a idade do jogador</span>
-<span class="n">idade</span> <span class="o">=</span> <span class="mi">10</span>
+<p><strong>Revisão</strong> (15 min.)</p>
+<p>Comece a aula fazendo uma revisão da aula anterior, resgatando o comando <tt class="docutils literal"><span class="pre">print</span></tt>. Veja se eles lembram como tudo funciona, senão faça breve uma revisão. Utilize o exemplo <tt class="docutils literal"><span class="pre">aula4-exemplo1.py</span></tt> como idéia para retomar o conteúdo.</p>
+<p>Prossiga na recapitulação de dois conceitos-chave da aula anterior: <strong>entrada</strong> e <strong>saída</strong>. Uma sugestão é um programa de &#8220;questionário&#8221; (o programa chamado <tt class="docutils literal"><span class="pre">aula4-entrevista.py</span></tt> na qual eles irão fazer um programa para entrevistar o usuário).</p>
+<p>Deixe-os começar a fazer o programa de entrevista e recomende, apresentar para os familares e colegas.</p>
+<p><strong>ASCII ART</strong></p>
+<p>Depois da revisão, apresente o que eles irão ver na aula, vamos utilizar a função <tt class="docutils literal"><span class="pre">print</span></tt> para fazer um programa que irá criar novas fontes de caracteres, apenas utilizando caracteres.</p>
+<p>Algum exemplos</p>
+<div class="highlight-none"><div class="highlight"><pre> _    _    _    __   _                      /\
+|_)  |_)  / \  /__  |_)   /\   |\/|   /\   |_
+|    | \  \_/  \_|  | \  /--\  |  |  /--\  |_
 </pre></div>
 </div>
-<ul class="simple">
-<li>Para comentários de <strong>múltiplas</strong> linhas, utilizamos <tt class="docutils literal"><span class="pre">&quot;&quot;&quot;</span></tt> ou <tt class="docutils literal"><span class="pre">'''</span></tt></li>
-</ul>
-<div class="highlight-python"><div class="highlight"><pre><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Este é um exemplo de comentário</span>
-<span class="sd">em várias linhas, e o que esta dentro deste bloco</span>
-<span class="sd">não será executado, a variável abaixo não será definida.</span>
-<span class="sd">idade = 10</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<div class="highlight-none"><div class="highlight"><pre> ____    ____     ___     ____   ____       _      __  __      _       //\
+|  _ \  |  _ \   / _ \   / ___| |  _ \     / \    |  \/  |    / \     |/_\|
+| |_) | | |_) | | | | | | |  _  | |_) |   / _ \   | |\/| |   / _ \   | ____|
+|  __/  |  _ &lt;  | |_| | | |_| | |  _ &lt;   / ___ \  | |  | |  / ___ \  |  _|_
+|_|     |_| \_\  \___/   \____| |_| \_\ /_/   \_\ |_|  |_| /_/   \_\ |_____|
 </pre></div>
 </div>
-<div class="admonition-bonus admonition">
-<p class="first admonition-title">Bônus</p>
-<dl class="last docutils">
-<dt>Como declarar diversas variáveis com uma única linha de código?</dt>
-<dd>Apenas separe cada uma com <tt class="docutils literal"><span class="pre">,</span></tt> e depois do <tt class="docutils literal"><span class="pre">=</span></tt> atribua o conteúdo respectivo.</dd>
-</dl>
+<p>Pergunta se eles saberiam criar a visualização acima apenas usando a função <tt class="docutils literal"><span class="pre">print</span></tt>?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;                                               &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot; _    _    _    __   _                      /</span><span class="se">\\</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;|_)  |_)  / \  /__  |_)   /\   |\/|   /\   |_  &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;|    | \  \_/  \_|  | \  /--\  |  |  /--\  |_  &quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;                                               &quot;</span><span class="p">)</span>
+</pre></div>
 </div>
+<ol class="arabic simple">
+<li>Trabalhe uma atividade para construir a primeira letra do nome deles, demonstre a importância do espaçamento para alinhar as letras.
+(Dica: o programa <tt class="docutils literal"><span class="pre">aula4-alfabeto.py</span></tt> contêm as 27 letras do alfabeto)</li>
+</ol>
+<div class="admonition-eficiencia admonition">
+<p class="first admonition-title">Eficiência</p>
+<p class="last">Além da <strong>observação</strong> vista na aula anterior, os bons programadores sabem ser eficiêntes, ou seja, não fazem duas vezes o mesmo trabalho! Imagine o seguinte cenário: teremos que repetir 10 vezes uma letra. Existe algum jeito mais fácil de fazer o código do que usar centenas de  <tt class="docutils literal"><span class="pre">prints</span></tt>?</p>
+</div>
+<p><strong>Funções</strong></p>
+<p>Apresente as funções como mecanismo de facilitar a vida do programador, mostre um exemplo do uso de funções:</p>
 
 <div id="cont"></div>
-<div id="bonus" lang="python" class="ac_section alert alert-warning" >
+<div id="python" lang="python" class="ac_section alert alert-warning" >
 
 <div class="ac_actions">
-<button class='btn btn-success' id="bonus_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="bonus_saveb" onclick="saveEditor('bonus');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="bonus_loadb" onclick="requestCode('bonus');">Load</button>
-<button class='btn btn-default' id="bonus_vizb" onclick="injectCodelens('bonus');">Show in Codelens</button>
+<button class='btn btn-success' id="python_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="python_saveb" onclick="saveEditor('python');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="python_loadb" onclick="requestCode('python');">Load</button>
+<button class='btn btn-default' id="python_vizb" onclick="injectCodelens('python');">Show in Codelens</button>
 
 </div>
 <br/>
-<div id="bonus_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="bonus_code" class="active_code" prefixcode="undefined" lang="python">
-# multiplas definições com uma linha de código
-nome, sobrenome, idade = u"José", u"Silva", 20
-print(nome,sobrenome,idade)
+<div id="python_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="python_code" class="active_code" prefixcode="undefined" lang="python">
+def trabalho():
+  print("trabalho bem dificil!")
+
+trabalho()
+trabalho()
+trabalho()
+trabalho()
 </textarea>
 </div>
 
 <div class="ac_output">
 <div style="text-align: center">
-<canvas id="bonus_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+<canvas id="python_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<pre id="bonus_suffix" style="display:none">
-</pre><pre id="bonus_pre" class="active_out"></pre>
+<pre id="python_suffix" style="display:none">
+</pre><pre id="python_pre" class="active_out"></pre>
 
 </div> <!-- end output --> 
 <div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (bonus)</span> </p>
-<div id="bonus_codelens_div" style="display:none"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (python)</span> </p>
+<div id="python_codelens_div" style="display:none"></div>
 <script>
 if ('block' == 'none') {
     // a hack to preserve the inline-block display style. Toggle() will use display: block
     // (instead of inline-block) if the previous display style was 'none'
-    $('#bonus_saveb').toggle();
-    $('#bonus_loadb').toggle();
+    $('#python_saveb').toggle();
+    $('#python_loadb').toggle();
 }
-if ($("#bonus_code_div").parents(".admonition").length == 0 && $("#bonus_code_div").parents("#exercises").length == 0){
+if ($("#python_code_div").parents(".admonition").length == 0 && $("#python_code_div").parents("#exercises").length == 0){
 	if ($(window).width() > 975){
-		$("#bonus_code_div").offset({
-			left: $("#bonus .clearfix").offset().left
+		$("#python_code_div").offset({
+			left: $("#python .clearfix").offset().left
 		});
 	}
-	$("#bonus_runb").one("click", function(){
+	$("#python_runb").one("click", function(){
 		$({})
 		.queue(function (next) {
 			if ($(window).width() > 975){
-				$("#bonus_code_div").animate({
+				$("#python_code_div").animate({
 					left: 40
 				}, 500, next);
 			}
@@ -355,10 +380,10 @@ if ($("#bonus_code_div").parents(".admonition").length == 0 && $("#bonus_code_di
 			}
 		})
 		.queue(function (next) {
-			$("#bonus_runb").parent().siblings(".ac_output").show();
-			runit('bonus',this, undefined);
-			$("#bonus_runb").on("click", function(){
-				runit('bonus',this, undefined);
+			$("#python_runb").parent().siblings(".ac_output").show();
+			runit('python',this, undefined);
+			$("#python_runb").on("click", function(){
+				runit('python',this, undefined);
 			});
 		})
 		
@@ -366,21 +391,412 @@ if ($("#bonus_code_div").parents(".admonition").length == 0 && $("#bonus_code_di
 }
 else{
 	console.log("inside new if")
-	$("#bonus_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-	$("#bonus_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-	$("#bonus_runb").on("click", function(){
+	$("#python_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#python_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#python_runb").on("click", function(){
 		console.log("button clicked");
-		runit('bonus',this, undefined);
+		runit('python',this, undefined);
 	});
 }
 </script>
 
 </div>
 
-<p><strong>Proposta</strong></p>
+<p>Tópicos importantes sobre funções</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">def</span></tt> é a palavra-chave, SEMPRE que quisermos fazer uma <strong>def</strong>..inição</li>
+<li>o nome da função segue as mesmas regras do nome de variável.</li>
+<li>terminamos a definição da função com <tt class="docutils literal"><span class="pre">():</span></tt> que será melhor explorado em breve.</li>
+<li>TUDO que a função for executar precisa estar dentro de um bloco, este bloco é definido por um espaçamento.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">ERRADO</th>
+<th class="head">CERTO</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="../_images/ident1.png" class="first last" src="../_images/ident1.png" />
+</td>
+<td><img alt="../_images/ident2.png" class="first last" src="../_images/ident2.png" />
+</td>
+</tr>
+</tbody>
+</table>
+<p>O termo correto para este &#8220;recuo em relação a margem&#8221; é <strong>identação</strong> (<a class="reference external" href="http://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o">ver definição</a>). Se prepare para resolver muitos problemas deste tipo enquanto tiver orientando os alunos, treine seu olhar para este tipo de análise rápida.</p>
+<blockquote>
+<div><tt class="docutils literal"><span class="pre">IndentationError:</span> <span class="pre">expected</span> <span class="pre">an</span> <span class="pre">indented</span> <span class="pre">block</span></tt></div></blockquote>
+<ul class="simple">
+<li>para invocarmos a função basta chamá-la pelo nome, sem o <tt class="docutils literal"><span class="pre">def</span></tt> e o <tt class="docutils literal"><span class="pre">:</span></tt></li>
+</ul>
+<p>Exercicios:</p>
+<ul class="simple">
+<li>Criar uma função para mostrar apenas a letra do primeiro nome.
+(Utilize o papel quadriculado para ajudar a planejar as posições, indique que cada quadrado em branco é um espaçamento).</li>
+</ul>
+
+    <button type='button' id='ex1_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex1').show();$('#ex1_hide').show();$('#ex1').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Exemplo
+    </button>
+    <button type='button' id='ex1_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex1').hide();$('#ex1_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex1' style='display:none'>
+
+<div id="cont"></div>
+<div id="f" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="f_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="f_saveb" onclick="saveEditor('f');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="f_loadb" onclick="requestCode('f');">Load</button>
+<button class='btn btn-default' id="f_vizb" onclick="injectCodelens('f');">Show in Codelens</button>
+
 </div>
-<div class="section" id="reflexao">
-<h2>Reflexão<a class="headerlink" href="#reflexao" title="Permalink to this headline">¶</a></h2>
+<br/>
+<div id="f_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="f_code" class="active_code" prefixcode="undefined" lang="python">
+def a():
+    print("      _     ")
+    print("     / \    ")
+    print("    / _ \   ")
+    print("   / ___ \  ")
+    print("  /_/___\_\ ")
+
+a()
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="f_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="f_suffix" style="display:none">
+</pre><pre id="f_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (f)</span> </p>
+<div id="f_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#f_saveb').toggle();
+    $('#f_loadb').toggle();
+}
+if ($("#f_code_div").parents(".admonition").length == 0 && $("#f_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#f_code_div").offset({
+			left: $("#f .clearfix").offset().left
+		});
+	}
+	$("#f_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#f_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#f_runb").parent().siblings(".ac_output").show();
+			runit('f',this, undefined);
+			$("#f_runb").on("click", function(){
+				runit('f',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#f_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#f_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#f_runb").on("click", function(){
+		console.log("button clicked");
+		runit('f',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+
+    </div>
+<p><strong>Lembretes (ou comentários)</strong></p>
+<p>As vezes faz-se necessário explicar com mais detalhes trechos de código, por exemplo, qual motivo de estarmos declarando uma função chamada <tt class="docutils literal"><span class="pre">a()</span></tt>? Nada melhor que explicar na nossa língua nativa, o português! Ensine aos alunos que é possível adicionar um comentário (ou lembrete) para descrever melhor o código.</p>
+<p>Reserver um tempo na aula para apresentar, agora formalmente, as duas maneiras de se fazer isso:</p>
+<ul class="simple">
+<li>Para comentários de uma linha apenas utilizamos a hashtag <tt class="docutils literal"><span class="pre">#</span></tt> (também conhecido como <a class="reference external" href="http://priberam.pt/dlpo/cerquilha">cerquilha</a> mas os jovens se indentificam com <em>hashtag</em>)</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># isto é um comentário de uma linha</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Para comentários de múltiplas linhas, utilizamos o texto dentro de 3 aspas duplas (<tt class="docutils literal"><span class="pre">&quot;&quot;&quot;</span></tt>) ou simples (<tt class="docutils literal"><span class="pre">'''</span></tt>). Os dois jeitos valem, só não vale misturar!</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">isto é um comentário, qualquer coisa</span>
+<span class="sd">que eu escrever aqui o computador não vai</span>
+<span class="sd">interpretar, posso falar qualquer, mas qualquer coisa</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">isto também é um comentário,</span>
+<span class="sd">só que com aspas simples</span>
+<span class="sd">funciona muito bem, só não posso confundir ou é</span>
+<span class="sd">aspas simples ou aspas duplas.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+<p>Oriente os alunos a inserirem nos códigos, a partir de agora, comentários com pequenos textos explicativos.</p>
+<p>Código de referência: <tt class="docutils literal"><span class="pre">aula-4-comentários.py</span></tt></p>
+<p><strong>Símbolos</strong></p>
+<p>Siga a aula com uma ativade que ira expandir as possibilidades de caracteres, até agora utilizamos as letras do alfabeto (de <tt class="docutils literal"><span class="pre">a</span></tt> a <tt class="docutils literal"><span class="pre">z</span></tt>) e alguns caracteres especiais como o <tt class="docutils literal"><span class="pre">/</span></tt>, <tt class="docutils literal"><span class="pre">_</span></tt>, <tt class="docutils literal"><span class="pre">\</span></tt>.</p>
+<p>Nesta seção iremo ver:</p>
+<ul class="simple">
+<li>Como expandir nossos universos de símbolos?</li>
+<li>Como transformar símbolos em códigos e vice-versa.</li>
+</ul>
+<p>Palavras-chave: caracteres UTF-8 e funções: <tt class="docutils literal"><span class="pre">chr()</span></tt> e <tt class="docutils literal"><span class="pre">ord()</span></tt> do Python.</p>
+<p>Demonstre para a sala que todo caractere possui um código associado, por exemplo, a letra <tt class="docutils literal"><span class="pre">a</span></tt> possui o código <tt class="docutils literal"><span class="pre">97</span></tt>, a letra <tt class="docutils literal"><span class="pre">b</span></tt> o código <tt class="docutils literal"><span class="pre">98</span></tt> e assim por diante.</p>
+<p>Letra em código: <tt class="docutils literal"><span class="pre">ord()</span></tt></p>
+
+<div id="cont"></div>
+<div id="ord" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="ord_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="ord_saveb" onclick="saveEditor('ord');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="ord_loadb" onclick="requestCode('ord');">Load</button>
+<button class='btn btn-default' id="ord_vizb" onclick="injectCodelens('ord');">Show in Codelens</button>
+
+</div>
+<br/>
+<div id="ord_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="ord_code" class="active_code" prefixcode="undefined" lang="python">
+codigo = ord("a")
+print(codigo)
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="ord_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="ord_suffix" style="display:none">
+</pre><pre id="ord_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (ord)</span> </p>
+<div id="ord_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#ord_saveb').toggle();
+    $('#ord_loadb').toggle();
+}
+if ($("#ord_code_div").parents(".admonition").length == 0 && $("#ord_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#ord_code_div").offset({
+			left: $("#ord .clearfix").offset().left
+		});
+	}
+	$("#ord_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#ord_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#ord_runb").parent().siblings(".ac_output").show();
+			runit('ord',this, undefined);
+			$("#ord_runb").on("click", function(){
+				runit('ord',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#ord_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#ord_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#ord_runb").on("click", function(){
+		console.log("button clicked");
+		runit('ord',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Código em letra: <tt class="docutils literal"><span class="pre">chr()</span></tt></p>
+
+<div id="cont"></div>
+<div id="chr" lang="python" class="ac_section alert alert-warning" >
+
+<div class="ac_actions">
+<button class='btn btn-success' id="chr_runb">Run</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="chr_saveb" onclick="saveEditor('chr');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="chr_loadb" onclick="requestCode('chr');">Load</button>
+<button class='btn btn-default' id="chr_vizb" onclick="injectCodelens('chr');">Show in Codelens</button>
+
+</div>
+<br/>
+<div id="chr_code_div" style="display: block" class="ac_code_div">
+<textarea cols="50" rows="12" id="chr_code" class="active_code" prefixcode="undefined" lang="python">
+letra = chr(97)
+print(letra)
+</textarea>
+</div>
+
+<div class="ac_output">
+<div style="text-align: center">
+<canvas id="chr_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="chr_suffix" style="display:none">
+</pre><pre id="chr_pre" class="active_out"></pre>
+
+</div> <!-- end output --> 
+<div class="clearfix"></div>
+<p class="ac_caption"><span class="ac_caption_text"> (chr)</span> </p>
+<div id="chr_codelens_div" style="display:none"></div>
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#chr_saveb').toggle();
+    $('#chr_loadb').toggle();
+}
+if ($("#chr_code_div").parents(".admonition").length == 0 && $("#chr_code_div").parents("#exercises").length == 0){
+	if ($(window).width() > 975){
+		$("#chr_code_div").offset({
+			left: $("#chr .clearfix").offset().left
+		});
+	}
+	$("#chr_runb").one("click", function(){
+		$({})
+		.queue(function (next) {
+			if ($(window).width() > 975){
+				$("#chr_code_div").animate({
+					left: 40
+				}, 500, next);
+			}
+			else{
+				next();
+			}
+		})
+		.queue(function (next) {
+			$("#chr_runb").parent().siblings(".ac_output").show();
+			runit('chr',this, undefined);
+			$("#chr_runb").on("click", function(){
+				runit('chr',this, undefined);
+			});
+		})
+		
+	});
+}
+else{
+	console.log("inside new if")
+	$("#chr_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
+	$("#chr_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
+	$("#chr_runb").on("click", function(){
+		console.log("button clicked");
+		runit('chr',this, undefined);
+	});
+}
+</script>
+
+</div>
+
+<p>Experimente outros valores com eles, agora sugira um desafio para a sala:</p>
+<ul class="simple">
+<li>Colocar como código um número bem grande, tipo 10000, o que acontece?</li>
+</ul>
+<p>Exercício 1: passe os seguintes códigos para os alunos.</p>
+<ul class="simple">
+<li>174</li>
+<li>9733</li>
+<li>9745</li>
+<li>9734</li>
+<li>10004</li>
+<li>10008</li>
+<li>10084</li>
+</ul>
+
+    <button type='button' id='ex2_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex2').show();$('#ex2_hide').show();$('#ex2').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex2_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex2').hide();$('#ex2_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex2' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">174</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">9733</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">9745</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">9734</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">10004</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">10008</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">10084</span><span class="p">))</span>
+</pre></div>
+</div>
+
+    </div>
+<p>Exercício 2: abra o arquivo <tt class="docutils literal"><span class="pre">aula4-simbolos.py</span></tt> e peça para eles anotarem pelo menos 10 códigos referentes aos símbolos.</p>
+<p>Finalize a aula voltando na atividade de desenhar, e peça para eles criarem novos desenhos a partir dos símbolos que eles aprenderam.</p>
+<img alt="../_images/utfart.png" src="../_images/utfart.png" />
+
+    <button type='button' id='ex3_show' class='btn btn-default reveal_button' style='margin-bottom:10px;' onclick="$(this).hide();$('#ex3').show();$('#ex3_hide').show();$('#ex3').find('.CodeMirror').each(function(i, el){el.CodeMirror.refresh();});">
+        Resposta
+    </button>
+    <button type='button' id='ex3_hide' class='btn btn-default reveal_button' onclick="$(this).hide();$('#ex3').hide();$('#ex3_show').show();" style='display:none'>Ocultar</button>
+    <div id='ex3' style='display:none'>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
+
+<span class="s">                               ._ o o</span>
+<span class="s">                               \_`-)|_</span>
+<span class="s">                            ,&quot;&quot;       </span><span class="se">\</span>
+<span class="s">                          ,&quot;  ## |   ಠ ಠ.</span>
+<span class="s">                        ,&quot; ##   ,-\__    `.</span>
+<span class="s">                      ,&quot;       /     `--._;)</span>
+<span class="s">                    ,&quot;     ## /</span>
+<span class="s">                  ,&quot;   ##    /</span>
+
+
+<span class="s">            &quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    </div>
+<p>Dicas:</p>
+<ul class="simple">
+<li>Podemos fazer nosso desenho usando um print apenas, colocando o texto entre aspas triplas (igual fazemos nos comentários)</li>
+</ul>
+<p>O arquivo <tt class="docutils literal"><span class="pre">aula4-desenhos-utf8.py</span></tt> contém exemplos disso.</p>
+<p>Dica: <a class="reference external" href="https://twitter.com/utf8art">&#64;utf8art</a> (no Twitter) possui muitos exemplos de desenhos para sugerir nas aulas.</p>
+</div>
+<div class="section" id="reflexao-15-min">
+<h2>Reflexão (15 min)<a class="headerlink" href="#reflexao-15-min" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Trabalhe a construção de atividades que envolvem desenhos.</li>
+<li>O que pode ser desenhado?</li>
+<li>Qual as dificuldade pra se criar um desenho?</li>
+<li>Sugira algumas idéias que poderão ser vistas nas próximas aulas.</li>
+</ul>
 <p><strong>Comentários: Educador, clique no link abaixo (Show Comments) e utilize este espaço para fazer comentários sobre este plano</strong></p>
 <script type="text/javascript">
     function aula4_disqus(source) { 
