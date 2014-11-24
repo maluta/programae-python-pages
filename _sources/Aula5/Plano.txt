@@ -8,24 +8,43 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 5: Funções
-============================
+Aula 5: Perguntas & Respostas
+=============================
 
 Objetivos
 +++++++++
 
-- Aprender a construir e utilizar funções
-- Inicio dos projetos das empresas
+- Aprender a fazer decisões no código
+- Aprender a quebrar o código em funções.
+- Introdução de estruturas de controle ``if`` e ``else``
+-
 
 Preparação
 ++++++++++
 
-- Se ainda não possui o IDLE - Veja na seção de ajuda `Como instalar o Python <../Apoio/comoinstalar.html>`__
-- Conferir se as funcionalidades `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE estã funcionando corretamente.
+- Ambiente IDLE instalado.
 
 
 Atividades
 ++++++++++
+
+
+**Revisão** (20 min)
+
+Comece a aula fazendo uma revisão da última aula, com algumas perguntas chave:
+
+- Quais outros símbolos eles tiveram idéia?
+- Qual a importância de *comentários* no código?
+- Qual o papel das funções para organizar o trabalho?
+
+Nesta parte da revisão introduza um conceito muito importante: a importância da **elegância do código**. Oriente-os sempre a ter um olhar de deixar o código legível, de fácil leitura (tanto por eles mesmo quanto por outros). Diga que você irá orientá-los sempre a ter uma postura de artista e que não só o resultado, mas todo o processo importa, incluindo a qualidade do texto (código).
+
+.. admonition:: Artistas
+
+  Muitas pessoas consideram os programadores artistas da tecnologia, são pessoas capazes de pegar um
+  monte de códido aparentemente indecifrável e transformar em algo transformador. Este
+
+
 
 **Conceitos computacionais necessários**
 

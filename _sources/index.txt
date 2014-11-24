@@ -84,7 +84,7 @@ Aula 4: Texto & Funções
 Aula 5: Perguntas & Respostas (I)
 ::::::::::::::::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula5/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula5./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -95,7 +95,7 @@ Aula 5: Perguntas & Respostas (I)
 Aula 6: Perguntas & Respostas (II)
 ::::::::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula6/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula6./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -106,7 +106,7 @@ Aula 6: Perguntas & Respostas (II)
 Aula 7: Perguntas & Respostas (III)
 :::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula7/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula7./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -117,7 +117,7 @@ Aula 7: Perguntas & Respostas (III)
 Aula 8: Vitrine (I)
 :::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula8/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula8./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -128,7 +128,7 @@ Aula 8: Vitrine (I)
 Aula 9: Vitrine (||)
 ::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula9/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula9./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -139,7 +139,7 @@ Aula 9: Vitrine (||)
 Aula 10 - 14: Desenvolvimento & Trilhas
 :::::::::::::::::::::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula10/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula10./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -149,7 +149,7 @@ Aula 10 - 14: Desenvolvimento & Trilhas
 Aula 15: Publicação
 :::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula11/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula11./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -159,21 +159,21 @@ Aula 15: Publicação
 Aula 16: Apresentação
 :::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula11/Plano.html>`_
+↳  Ver conteúdo `do plano de aula <Aula11./Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
 
    Aula11/Plano.rst
 
-Gamificando as aulas
-::::::::::::::::::::
+.. Gamificando as aulas
+.. ::::::::::::::::::::
 
-É possível utilizar o técnicas de gamificação para dar as aulas.
+.. É possível utilizar o técnicas de gamificação para dar as aulas.
 
-`Ver conteúdo <Apoio/games.html>`_
+.. `Ver conteúdo <Apoio/games.html>`_
 
-.. toctree::
-   :hidden:
+.. .. toctree::
+..    :hidden:
 
-   Apoio/games.rst
+..    Apoio/games.rst
