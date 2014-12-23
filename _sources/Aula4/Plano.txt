@@ -107,7 +107,7 @@ Tópicos importantes sobre funções
 |.. image:: ../../_static/ident1.png | .. image:: ../../_static/ident2.png  |
 +------------------------------------+--------------------------------------+
 
-O termo correto para este "recuo em relação a margem" é **identação** (`ver definição <http://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o>`__). Se prepare para resolver muitos problemas deste tipo enquanto tiver orientando os alunos, treine seu olhar para este tipo de análise rápida.
+O termo correto para este "recuo em relação a margem" é **indentação** (`ver definição <http://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o>`__). Se prepare para resolver muitos problemas deste tipo enquanto tiver orientando os alunos, treine seu olhar para este tipo de análise rápida.
 
   ``IndentationError: expected an indented block``
 

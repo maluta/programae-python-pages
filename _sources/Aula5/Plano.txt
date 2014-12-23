@@ -8,8 +8,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Aula 5: Perguntas & Respostas
-=============================
+Aula 5: Perguntas & Respostas (I)
+=================================
 
 Objetivos
 +++++++++
@@ -17,13 +17,13 @@ Objetivos
 - Aprender a fazer decisões no código
 - Aprender a quebrar o código em funções.
 - Introdução de estruturas de controle ``if`` e ``else``
--
 
 Preparação
 ++++++++++
 
-- Ambiente IDLE instalado.
-
+- No Computador:
+    - IDLE configurado com uma fonte mono-espaçada (ex. Courier) [`como faz? <../Apoio/idle.html#alterando-a-fonte>`_]
+    - `Editar <../Apoio/idle.html#sugestao-de-layout>`__ e `executar <../Apoio/idle.html#executando-um-codigo>`__ códigos no IDLE.
 
 Atividades
 ++++++++++
@@ -37,33 +37,25 @@ Comece a aula fazendo uma revisão da última aula, com algumas perguntas chave:
 - Qual a importância de *comentários* no código?
 - Qual o papel das funções para organizar o trabalho?
 
-Nesta parte da revisão introduza um conceito muito importante: a importância da **elegância do código**. Oriente-os sempre a ter um olhar de deixar o código legível, de fácil leitura (tanto por eles mesmo quanto por outros). Diga que você irá orientá-los sempre a ter uma postura de artista e que não só o resultado, mas todo o processo importa, incluindo a qualidade do texto (código).
+Nesta parte da revisão introduza um conceito muito importante: a importância da **elegância do código**.
+
+Oriente-os sempre a ter um olhar de deixar o código legível, de fácil leitura (tanto por eles mesmo quanto por outros). Diga que você irá orientá-los sempre a ter uma postura de artista e que não só o resultado, mas todo o processo importa, incluindo a qualidade do texto (código).
 
 .. admonition:: Artistas
 
-  Muitas pessoas consideram os programadores artistas da tecnologia, são pessoas capazes de pegar um
-  monte de códido aparentemente indecifrável e transformar em algo transformador. Este
-
-
+  Muitas pessoas consideram os programadores artistas da tecnologia, são pessoas capazes de pegar uma série de códidos aparentemente indecifrável e transformar em algo funcional.
 
 **Conceitos computacionais necessários**
 
-Faça os `exercícios de funções <http://www.codecademy.com/pt-BR/courses/python-beginner-pt-BR-30pxi/0/1>`_ do Codecademy.
+Recomende os `exercícios de funções <http://www.codecademy.com/pt-BR/courses/python-beginner-pt-BR-30pxi/0/1>`_ do Codecademy.
 
 .. admonition:: Reuso
 
   É importante trabalhar com os alunos a importância das funções com uma ferramenta para re-aproveitamento do código.
 
-Alguns sinônimos para funções:
-
-- mini-programa
-- código reutilizável
-
-
 **Na sala de aula**
 
-1. Abra o Editor de Texto do IDLE e mostre como declarar uma função.
-
+1. Abra o Editor de Texto do IDLE e revise como é declarar uma função.
 
 Exemplo:
 
@@ -77,42 +69,14 @@ Exemplo:
 
 Execute o código e proponha as seguintes perguntas:
 
-- Qual a saída deste trecho de código?
-- O que é necessário para vermos a execução do ``print``
+- Qual a saída deste trecho de código? [*Resp.: 3 linhas com os respectivos conteúdos do print*]
+- O que é necessário para vermos a execução do ``print``? [*Resp.: Invocar a função*]
 
-
-É importante destacar:
-  - `indentação <../Apoio/boaspraticas.html#indentacao>`__ do bloco: 4 espaços ou *tab*.
-  - a definição de função segue o seguinte formato:
-
-  ``def`` **nome** ``(`` **parametros** ``)`` ``:``
-
-     # seu código aqui
-
-     **return** valor
-
-Da mesma forma que passamos parâmetros para as funções ``print()``, ``len()``, ``input()``, ``range()`` nas aulas anteriores, podemos criar nossas
-próprias funções com inúmeros parâmetros bem como retornar valores das funções. Um exemplo de função para somar dois números x e y:
-
-.. activecode:: aula8_ex2
-
-  def soma(x,y):
-    return x + y
-
-  print(soma(5,4))
-
-**A escolha do nome de um função segue as mesmas regras das variáveis.**
-
-
-
-**Prosposta**
-
-- Construir funções simples para operações aritméticas.
-- Como colocar dentro de funções o quê aprendemos nas ultimas aulas?
+É importante sempre relembrá-los de que precisamos sempre respeitar a `indentação <../Apoio/boaspraticas.html#indentacao>`__ e que a escolha do nome de um função segue as mesmas regras das variáveis. Peça para algum aluno apresentar, com suas palavras, como uma função é definida e invocada no Python.
 
 **Exercícios**
 
-1. Fazer uma função que imprima o nome de cada um dos membros das equipe.
+1. Fazer uma função que imprima o nome do autor do programa mais dois amigos.
 
 .. reveal:: ex1
     :showtitle: Ver resposta
@@ -122,13 +86,13 @@ próprias funções com inúmeros parâmetros bem como retornar valores das fun�
 
         def imprime_nomes():
           print("Nome 1")
-          print("Nome 1")
-          print("Nome 1")
+          print("Nome 2")
+          print("Nome 3")
 
         imprime_nomes()
 
 
-2. Fazer uma função que retorne a soma das idades de cada um dos membros da equipe (lembre de converter para inteiro, é um erro que os alunos comentem com frequência)
+2. Fazer uma função que retorne a soma das idades de cada uma das pessoas citadas acima (lembre-se do conceito de converter para inteiro usando a função ``int()`` a saída do ``input()``, é um erro que os alunos comentem com frequência)
 
 .. reveal:: ex2
     :showtitle: Ver resposta
@@ -145,46 +109,90 @@ próprias funções com inúmeros parâmetros bem como retornar valores das fun�
 
         print(retorna_soma())
 
-**Gamification: atividades para o jogo**
 
-Proponha uma reflexão de como eles irão utilizar funções na construção dos seus
-programas e jogos. Proponha a atividade para fazer um **validador de idade** para o jogo e
-o **about** (ou seja, a função que imprime os autores do programa)
+Trace um comparativo das funções que aprendemos a definir na última aula e outras funções que já utilizamos desde o começo: ``print()``, ``ord()``, ``input()``, etc.
+
+Faça-os refletir quais propriedades são comuns a todas esta funções: todas recebem **parâmetros**. A função ``print`` recebe um argumento entre parênteses que é o conteúdo a ser exibido, a função ``input`` pode receber um parâmtro que é apresentado quando a função pára o programa até o usuário entrar com um valor e pressionar a tecla Enter.
+
+Mostre que podemos criar nossas próprias funções que recebem parâmetros, vamos começar com um exemplo bem simples: criar uma função de dobra o valor passado como parâmetro e outra função para fazer a soma de dois números, também passado como parâmetros.
+
+.. activecode:: aula8_ex2
+
+  def dobra(x):
+    return x * 2
+
+  # o código abaixo não faz parte da função,
+  # estamos agora chamando a função e apresentando
+  # o resultado de retorno como parâmetro para o print
+  print(dobra(5))
 
 
-1. Validador de Idade
+Note também uma outra característica: as funções podem retornar valores, para isso utilizamos a palavra-reservada ``return``. Na aula anterior nós trabalhamos o modelo mais simples de função, apens declaramos e invocamos, sem passar parâmetros e definir retorno. O modelo mais completo de função é aquele que recebe parâmetros e devolve um valor com o *return*.
+
+.. activecode:: aula8_ex3
+
+  def soma(x,y):
+    return x + y
+
+  print(soma(5,4))
+
+
+**Prosposta da Aula**
+
+- Construir um programa que funciona como calculadora das quatro operações básicas da matemática.
+
+Construa junto com a sala uma lista de items que precisamos ter para utilizar
+
+1. Funções para cada operação aritmética.
+2. Entrada do usuário.
+3. Escolha da operação.
+
+Comece definindo a operação soma, não se esqueça de orientá-los a inserir um comentário no código descrevendo o que esta função faz.
 
 .. sourcecode:: python
 
-  def valida_idade():
-    idade = input("Qual sua idade? ")
-    if int(idade) >= 15:
-      print("Bem-vindo ao jogo")
-      return True
-    else:
-      print("Você não pode jogar!")
-      return False
+  # Efetua a operação de adição com dois números
+  def soma(x,y):
+    return x + y
 
-  # precisamos invocar (chamar) a função
-  valida_idade()
+Peça para esques completarem as outras funções. Se houve dificuldade para entender a linha do *return* utilize uma variável temporária para armazenar o resultado da conta para depois retorná-la.
 
-Se eles tiverem dúvidas no `if` fale que ele será abordado com mais detalhes na próxima aula.
+.. reveal:: ex3
+    :showtitle: Resposta
+    :hidetitle: Ocultar
 
-2. Sobre (About)
+    .. sourcecode:: python
 
-.. sourcecode:: python
+        # Efetua a subtração de dois números
+        def sub(x,y):
+          total = x - y
+          return total
 
-  def sobre():
-    print("Este programa foi desenvolvido por:")
-    print("1. Fulano")
-    print("2. Ciclano")
-    print("3. Beltrano")
+        # Efetua a multiplicação de dois números
+        def mul(x,y):
+          total = x * y
+          return total
 
-  sobre() # chama a função
+        # Efetua a divisão de dois números
+        def div(x,y):
+          total = x / y
+          return total
 
-Peça para que eles salvem o arquivo no editor e enviem para seu e-mail.
 
-Caso sobre um tempo, mostre o `Gist <https://gist.github.com/>`_ para armazenar trechos de código.
+O próximo passo será construir as condições para escolher qual operação vamos executar, para isso iremos aprender um conceito novo da linguagem Python, três novas palavras-reservadas: ``if``, ``elif`` e ``else``.
+
+Mostre para os alunos que até o momento nós trabalhamos apenas com sequências de instruções, códigos que são executados linha após linhas, mas no nosso caso querendo impor uma condição, queremos escolher qual parte do nosso programa será executada dependendo da entrada do usuário. Mostre para os alunos como os blocos de condicional funcionam através de um exemplo prático: um programa que verifica a idade do usuário, **se** o valor digitado por maior ou igual a 15 ele pode ver a mensagem de boas vindas, **senão** ele obtém a mensagem de acesso negado. 
+
+.. activecode:: cond
+
+  idade = int( input("Qual a sua idade? ") )
+
+  if idade >= 15:
+    print("Seja bem-vindo!")
+  else:
+    print("Acesso negado!")
+
+
 
 
 Reflexão

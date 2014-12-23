@@ -8,34 +8,83 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Formação
-========
+Antes das Aulas
+===============
 
-"Estamos num esforço de adaptar nosso pensamento, observando o ambiente que nos cerca, investigando e traduzindo para códigos a nossa cultura, na esperança de redescobrir nossa história e moldar nosso futuro"
+.. *"Estamos num esforço de adaptar nosso pensamento, observando o ambiente que nos cerca, investigando e traduzindo para códigos a nossa cultura, na esperança de redescobrir nossa história e moldar nosso futuro"*
 
-**A linguagem**
+Olá educador, seja bem vindo aos planos de aula!
 
-1. Passagem por toda a linguagem, trilha **Codecademy** `Python <http://www.codecademy.com/pt-BR/tracks/python>`__ (~13 horas pra terminar)
-  Embora iremos trabalhar as aulas com o Python na sua última versão (3) a trilha do Codecademy (que usa uma versão anterior da linguagem) reflete muito bem os aspectos necessários para entender a sintaxe dentro de um ambiente livre de dependências, basta utilizar o navegador de computador com acesso a internet. As diferenças entre o Python3 e Python2 serão trabalhadas posteriormente.
-2. Instalação do Python
-3. Familiarização com o ambiente (IDLE)
-4. Praticar
+Vamos nesta parte te ajudar a se preparar nos diferentes conhecimentos, necessários, para trabalhar tópicos da ciência da computação atravavés do ensino da linguagem de programação Python. Não é necessário que você tenha algum conhecimento técnico prévio, mas é importante que você se prepare para tal.
 
-**As aulas**
+A seguir dividiremos em etapas a serem concluídas.
+
+
+**A) Dominar a técnica**
+
+Não precisamos ser especialistas para transferir o conhecimento, o papel do educador reside em ser um facilitador para o aprendizado. Entretanto, também não há como ensinar sem dominar o mínimo do assunto que nos propusemos a falar. Dito isso, recomendamos fazer as seguintes atividades:
+
+1. **Conhecer a sintaxe da linguagem Python.**
+
+Ter o primeiro contato com a sintaxe do Python através dos exercícios do `Codecademy <http://www.codecademy.com/pt-BR/tracks/python>`__. Você precisará de aproximadante 13 horas pra terminar todo o curso, contudo, o curso aborda mais do que precisamos. Tenha como meta para antes de iniciar as aulas obter 50% da trilha e finalizar o restante durante do andamento das aulas.
+
+  Nota: Embora iremos trabalhar as aulas com o Python na sua última versão trilha do Codecademy usa uma versão anterior da linguagem, isso não impede o aprendizado dos aspectos necessários para entender a sintaxe dentro de um ambiente livre de dependências, basta utilizar o navegador de computador com acesso a internet. Não se preocupe, as diferenças entre serão trabalhadas posteriormente nos planos de aula.
+
+2. **Instalação do Python 3.4.x no seu computador.**
+
+As aulas irão acontecer com o Python instalado localmente nas máquinas do laboratório, portanto é importante que você teste no seu computador. O Python é um software gratuito que pode ser obtido no site oficial do projeto (www.python.org) na seção Downloads. Siga este `passo-a-passo  <../Apoio/comoinstalar.html>`__ para instalar o Python no seu comptuador.
+
+3. **Familiarização com o ambiente de desenvolvimento: IDLE**
+
+Após o Python instalado no seu computador é preciso praticar um pouco com ambiente de desenvolvimento.
+
+- Para iniciar o IDLE utilize o `Menu Iniciar <../Apoio/idle.html#para-executar>`__ ou então procure pelo nome: **IDLE (Python GUI)**
+
+
+.. admonition:: Cuidado
+
+  Um erro comum é abrir o "Python (command line)", que consiste em uma tela preta e o ``>>>``. Embora seja possível trabalhar parte do conteúdo neste ambiente, não é o que usaremos nas atividades das aulas. Se você abriu esta tela feche-o e ache o executável correto. Se prepare para tirar muita destas dúvidas dos alunos em sala de aula. Uma dica é criar na "Área de Trabalho o *link* direto para o IDLE."
+
+- Entender os modos de funcionamento do IDLE: **console interativo** e o **editor de códigos**.
+
+Ao inicar o IDLE você está no `console interativo <../Apoio/idle.html#console-interativo>`__, um modo para testar as primeiras funcionalidades da linguagem no modo: pergunta→resposta. Para executar procedimentos de mais de uma linha de código você precisa abrir o `editor de textos <../Apoio/idle.html#novo-codigo>`__ que é um modo para desenvolvimento de software que permite digitar o programa e executá-lo. Durante boa parte das aulas você ira trabalhar duas janelas, portanto siga esta recomendação de `posicionamento de janelas <../Apoio/idle.html#sugestao-de-layout>`__ quando estiver utilizando o IDLE.
+
+4. **Praticar**
+
+A pratica é a técnica mais importante no preparo das aulas, vai possibilitar você se sentir familiarizado com o ambiente de desenvolvimento e seguro para tirar dúvidas dos alunos no momento das aulas. Como utilizaremos esta ferramenta em praticamente todas as aulas é importante você praticar a construção e execução de alguns programas, brinque com o console e depois pegue alguns exemplos de códigos prontos para executar.
+
+Antes de cada aula execute os exemplos (ou prepare seus próprios), isso trará confiança para seu papel de educador mesmo que você ainda não esteja pleno com o conteúdo da linguagem.
+
+**B) Técnicas didáticas**
+
+Como já foi dito no início deste texto, este curso foi concebido para ser ministrado por interessados sem um conhecimento técnico prévio, neste quesito também consideramos a não-necessidade de uma experiência prévia em sala de aula. Se este for o seu caso recomandamos assistir alguns vídeos da série **Técnicas Didáticas** da Fundação Lemann, são vídeos curtos, cada um abordando uma técnica específica.
+
+`Assistir aos vídeos <http://www.fundacaolemann.org.br/tecnicas-didaticas/conheca/>`__
+
+**Metodologia para uma boa aula**
 
 1. Estudar os planos de aula
-2. Se preparar
-3. Conhecer os erros mais comuns
+2. Se preparar: testar antes os códigos, ver se há alguma técnica didática que se encaixa no contexto das aulas.
+3. Conhecer os erros mais comuns (isso vem muito com as observações em sala)
 
-**Os código para as aulas**
+**C) Material de Apoio**
+
+Para utilizar o material de apoio você precisa do Python instalado no computador. Basta fazer o download e seguir os passos indicados para executar.
+
+**Material do professor**
 
 1. Faça o `download <https://github.com/Programae/python-exemplos/archive/master.zip>`__ da plataforma para as aulas.
 2. Descompacte o arquivo zip e execute o arquivo ``aulas.py``
 3. Compartilhe o endereço com os alunos do laboratório.
 
-**Blogs**
+**Material do aluno**
 
-Como referência:
+O curso não foi pensado para fazer uso de material impresso, embora existe uma recomendação para o educador sugerir que os alunos anotem os comandos.
+Contudo, cada aluno DEVE ter seu caderninho virtual, onde ele poderá acessar os conteúdos trabalhados em sala de aula.
 
-- http://freepythontips.wordpress.com/
-- http://www.blog.pythonlibrary.org
+1.  Fazer `download <https://github.com/Programae/python-exemplos/archive/master.zip>`__ do caderninho online para as aulas.
+2.  Executar o arquivo ``caderninho.py``
+
+A primeira leitura deste texto irá trazer muitas dúvidas, trabalhe cada ponto com calma e sempre recorra a esta pagina qunado precisar.
+
+Vamos para a sala de aula!

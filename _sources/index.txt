@@ -30,14 +30,12 @@ Olá educador, estes planos tem como objetivos gerais:
   `diretamente <../programae-python-pages/Apoio/contatos.html>`__.
 
 
-Formação & Preparo
-::::::::::::::::::
+Antes das Aulas
+:::::::::::::::
 
-Todas as referências de conteúdo, leituras, comunidades, para você acompanhar bem os planos de aula.
+Esta seção aborda os tópicos necessários para você se preparar para ministrar as aulas, tudo para você acompanhar bem as atividades descritas nos planos.
 
 `Ver conteúdo <Forma/formacao.html>`__
-
-
 
 Aula 1: Começando
 :::::::::::::::::
@@ -84,7 +82,7 @@ Aula 4: Texto & Funções
 Aula 5: Perguntas & Respostas (I)
 ::::::::::::::::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula5./Plano.html>`_ (em revisão)
+↳  Ver conteúdo `do plano de aula <Aula5/Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
@@ -95,7 +93,7 @@ Aula 5: Perguntas & Respostas (I)
 Aula 6: Perguntas & Respostas (II)
 ::::::::::::::::::::::::::
 
-↳  Ver conteúdo `do plano de aula <Aula6./Plano.html>`_ (em revisão)
+↳  Ver conteúdo `do plano de aula <Aula6/Plano.html>`_ (em revisão)
 
 .. toctree::
    :hidden:
